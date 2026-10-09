@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-09T22:57:45+03:00",
+ "generated_at": "2026-10-09T23:00:14+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -505,24 +505,24 @@
   "pdf_name": "RUH_status_report_1100PM_9Oct2026.pdf"
  },
  "live": {
-  "as_of": "2026-10-09T22:55:02+03:00",
+  "as_of": "2026-10-09T23:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
-   "takeoffs_last_hour": 14,
-   "landings_last_hour": 6,
+   "takeoffs_last_hour": 12,
+   "landings_last_hour": 7,
    "takeoffs_last_30": 8,
-   "landings_last_30": 2,
+   "landings_last_30": 3,
    "last_takeoff": {
     "time": "10:52 PM",
     "flight": "SV637",
     "city": "Amman",
-    "minutes_ago": 2
+    "minutes_ago": 7
    },
    "last_landing": {
-    "time": "10:41 PM",
-    "flight": "GF169",
-    "city": "Bahrain",
-    "minutes_ago": 14
+    "time": "10:59 PM",
+    "flight": "SV775",
+    "city": "Cochin",
+    "minutes_ago": 1
    }
   },
   "cancellations": {
@@ -591,17 +591,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-08T23:00:00+03:00",
-   "end": "2026-10-09T22:55:02+03:00",
+   "start": "2026-10-09T00:00:00+03:00",
+   "end": "2026-10-09T23:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-08T23:00:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 15,
-     "landings": 2,
-     "cancelled": 17
-    },
     {
      "hour_start": "2026-10-09T00:00:00+03:00",
      "label": "12 AM",
@@ -760,14 +753,21 @@
      "hour_start": "2026-10-09T22:00:00+03:00",
      "label": "10 PM",
      "takeoffs": 12,
-     "landings": 5,
+     "landings": 7,
      "cancelled": 9
+    },
+    {
+     "hour_start": "2026-10-09T23:00:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
-    "takeoffs": 223,
+    "takeoffs": 208,
     "landings": 186,
-    "cancelled": 174
+    "cancelled": 157
    },
    "halts": [
     {
