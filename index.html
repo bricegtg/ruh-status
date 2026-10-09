@@ -28,7 +28,7 @@ a{color:#5EEAD4;text-decoration:none}footer{margin-top:18px;font-size:11px;color
 <header><h1>RUH AIRPORT STATUS</h1><div class="asof" id="asof">Loading&hellip;</div></header>
 <div class="stale" id="stale"></div>
 <div id="app"></div>
-<footer>King Khalid International (RUH) &middot; Riyadh time &middot; refreshes every 5 min &middot; <a href="latest.json">JSON</a></footer>
+<footer>King Khalid International (RUH) &middot; Riyadh time &middot; live numbers every 5 min &middot; <a href="latest.json">JSON</a></footer>
 </div>
 <script>
 const $=s=>document.getElementById(s);
@@ -37,11 +37,12 @@ const v=x=>x===null||x===undefined?"n/a":esc(x);
 const t12=iso=>iso?new Date(iso).toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Riyadh"}):"n/a";
 const card=(t,h)=>`<section class="card"><h2>${t}</h2>${h}</section>`;
 function render(d){
-  const age=d.as_of?Math.round((Date.now()-new Date(d.as_of))/60000):null;
-  $("asof").innerHTML=`As of <b>${t12(d.as_of)} AST</b><br>${v(d.date_long)}`;
+  const da=d.data_as_of||d.live_as_of||d.as_of;const age=da?Math.round((Date.now()-new Date(da))/60000):null;
+  $("asof").innerHTML=`Live data <b>${t12(d.live_as_of||d.as_of)} AST</b><br>Report ${t12(d.editorial_as_of||d.as_of)} AST`;
   const st=$("stale"); if(age!==null&&age>90){st.style.display="block";st.textContent=`Stale: this report is ${Math.floor(age/60)}h ${age%60}m old. A newer edition may be pending.`}else st.style.display="none";
   const m=d.movements||{},c=d.cancellations||{},lt=m.last_takeoff,ll=m.last_landing;let h="";
-  h+=card("Status",`<span class="badge ${esc((d.level||"").toUpperCase())}">${v(d.level)}</span><div class="hl">${v(d.headline)}</div><div class="sl">${v(d.status_line)}</div><div class="sub" style="margin-top:6px">Next update ${v(d.next_update)}</div>`);
+  h+=card("Status",`<span class="badge ${esc((d.level||"").toUpperCase())}">${v(d.level)}</span><div class="hl">${v(d.headline)}</div><div class="sl">${v(d.status_line)}</div><div class="sub" style="margin-top:6px">Headline and news from the ${t12(d.editorial_as_of||d.as_of)} AST report &middot; next report ${v(d.next_update)}</div>`);
+  if(d.live_as_of)h+=`<div class="sub" style="margin-top:12px">Numbers below update automatically every 5 min from the Flightradar24 board &middot; live as of ${t12(d.live_as_of)} AST</div>`;
   h+=card("Last hour",`<div class="kpis"><div class="kpi"><b>${v(m.takeoffs_last_hour)}</b><span>Takeoffs</span></div><div class="kpi"><b>${v(m.landings_last_hour)}</b><span>Landings</span></div></div>`+
     (lt?`<div class="row">Last takeoff <b>${v(lt.time)}</b> &middot; ${v(lt.flight)} to ${v(lt.city)}</div>`:"")+(ll?`<div class="row">Last landing <b>${v(ll.time)}</b> &middot; ${v(ll.flight)} from ${v(ll.city)}</div>`:""));
   h+=card("Cancellations & diversions today",`<div class="kpis"><div class="kpi"><b>${v(c.total)}</b><span>Cancelled (${v(c.pct_of_scheduled)}% of ${v(c.scheduled)})</span></div><div class="kpi"><b>${v(c.departures)}</b><span>Departures</span></div><div class="kpi"><b>${v(c.arrivals)}</b><span>Arrivals</span></div><div class="kpi"><b>${v(d.diversions)}</b><span>Diverted</span></div></div>`);
