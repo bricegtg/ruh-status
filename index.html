@@ -30,6 +30,7 @@ a{color:#5EEAD4;text-decoration:none}footer{margin-top:18px;font-size:11px;color
 <div id="app"></div>
 <footer>King Khalid International (RUH) &middot; Riyadh time &middot; live numbers every 5 min &middot; <a href="latest.json">JSON</a></footer>
 </div>
+<script src="flow.js"></script>
 <script>
 const $=s=>document.getElementById(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -46,10 +47,11 @@ function render(d){
   h+=card("Last hour",`<div class="kpis"><div class="kpi"><b>${v(m.takeoffs_last_hour)}</b><span>Takeoffs</span></div><div class="kpi"><b>${v(m.landings_last_hour)}</b><span>Landings</span></div></div>`+
     (lt?`<div class="row">Last takeoff <b>${v(lt.time)}</b> &middot; ${v(lt.flight)} to ${v(lt.city)}</div>`:"")+(ll?`<div class="row">Last landing <b>${v(ll.time)}</b> &middot; ${v(ll.flight)} from ${v(ll.city)}</div>`:""));
   h+=card("Cancellations & diversions today",`<div class="kpis"><div class="kpi"><b>${v(c.total)}</b><span>Cancelled (${v(c.pct_of_scheduled)}% of ${v(c.scheduled)})</span></div><div class="kpi"><b>${v(c.departures)}</b><span>Departures</span></div><div class="kpi"><b>${v(c.arrivals)}</b><span>Arrivals</span></div><div class="kpi"><b>${v(d.diversions)}</b><span>Diverted</span></div></div>`);
+  h+=card(`Airport flow, last 24 hours &middot; <a href="flow.html">full chart</a>`,'<div id="flowc"></div>');
   h+=card("Halts (45+ min, no movement)",(d.halts||[]).map(x=>`<div class="row">${v(x.label)} <span class="sub">&middot; ${v(x.minutes)} min</span></div>`).join("")||'<div class="sub">None recorded</div>');
   h+=card("Gulf routes &middot; next flight",(d.gulf||[]).map(g=>`<div class="row"><span class="code">${v(g.code)}</span>${v(g.city)}: <b>${v(g.flight)}</b> ${g.airline?v(g.airline):""}<div class="sub">Sched ${v(g.scheduled)}${g.estimated&&g.estimated!==g.scheduled?" &middot; est "+v(g.estimated):""}${g.tomorrow?" (tomorrow)":""} &middot; ${v(g.status)} &middot; ${v(g.cancelled_today)} cancelled today</div></div>`).join(""));
   h+=card("Top news"+(d.news_checked?` &middot; checked ${v(d.news_checked)}`:""),(d.news||[]).map(n=>`<div class="row"><span class="tag ${esc((n.tag||"").toUpperCase())}">${v(n.tag)}</span>${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${v(n.title)}</a>`:v(n.title)}<div class="sub">${v(n.source)}</div></div>`).join(""));
-  $("app").innerHTML=h;
+  $("app").innerHTML=h; if(window.renderFlow)renderFlow($("flowc"),d.flow24,{width:560,height:300});
 }
 async function load(){try{const r=await fetch("latest.json?t="+Date.now(),{cache:"no-store"});render(await r.json())}catch(e){$("asof").textContent="Could not load data"}}
 load();setInterval(load,5*60*1000);

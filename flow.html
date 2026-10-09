@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0B1F3A"><title>RUH airport flow, last 24 hours</title>
+<style>body{margin:0;background:#0B1F3A;color:#E8EEF6;font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:16px 12px 40px}h1{font-size:13px;letter-spacing:2px;color:#14B8A6;margin:0 0 4px}
+.sub{color:#9FB0C6;font-size:12px}.card{background:#12305A;border-radius:10px;padding:12px 8px;margin-top:12px;border-left:4px solid #14B8A6}
+.kp{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:13px}.kp b{color:#fff;font-size:18px}a{color:#5EEAD4;text-decoration:none}</style></head>
+<body><div class="wrap"><h1>AIRPORT FLOW, LAST 24 HOURS</h1>
+<div class="sub" id="cap">Loading&hellip;</div>
+<div class="card"><div id="chart"></div></div>
+<div class="kp" id="kp"></div>
+<p class="sub">Recorded takeoffs and landings at RUH per hour over the last 24 hours, Riyadh time; the newest bar is the current, partial hour. &#215; marks flights cancelled, at their scheduled time. Gray boxes are halts: 45 minutes or more with no takeoff or landing on the Flightradar24 board. Updates automatically every 5 minutes.</p>
+<p class="sub"><a href="./">&larr; Back to RUH status</a> &middot; <a href="latest.json">JSON</a></p></div>
+<script src="flow.js"></script>
+<script>
+var t12=function(i){return new Date(i).toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Riyadh"})};
+function load(){fetch("latest.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){var f=d.flow24;
+ renderFlow(document.getElementById("chart"),f,{width:Math.max(360,Math.min(900,innerWidth*1.6)),height:320});
+ if(f){document.getElementById("cap").textContent=t12(f.start)+" to "+t12(f.end)+" AST (live as of "+t12(d.live_as_of||f.end)+")";
+ document.getElementById("kp").innerHTML="<span><b>"+f.totals.takeoffs+"</b> takeoffs</span><span><b>"+f.totals.landings+"</b> landings</span><span><b>"+f.totals.cancelled+"</b> cancelled</span><span><b>"+(f.halts||[]).length+"</b> halts</span>";}
+}).catch(function(){document.getElementById("cap").textContent="Could not load data"})}
+load();setInterval(load,300000);
+</script></body></html>
