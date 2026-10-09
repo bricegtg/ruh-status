@@ -6,7 +6,7 @@ function renderFlow(el, f, opt) {
   var B = f.buckets, n = B.length, W = opt.width || 680, H = opt.height || 300;
   var L = 34, R = 8, T = 34, BOT = 46, pw = W - L - R, ph = H - T - BOT, bw = pw / n;
   var mx = 4; B.forEach(function (b) { mx = Math.max(mx, b.takeoffs + b.landings); });
-  var ymax = Math.ceil(mx * 1.35 / 5) * 5, y = function (v) { return T + ph - v / ymax * ph; };
+  var ymax = Math.ceil(mx * 1.35 / 8) * 8, y = function (v) { return T + ph - v / ymax * ph; };
   var t0 = new Date(f.buckets[0].hour_start).getTime(), tEnd = new Date(f.end).getTime();
   var xt = function (ms) { return L + (ms - t0) / 3600000 * bw; };
   var esc = function (s) { return String(s).replace(/[&<>]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]; }); };
