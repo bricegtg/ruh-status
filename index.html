@@ -1,1 +1,55 @@
-<!doctype html><title>RUH Status</title><p>RUH Airport Status widget feed: <a href="latest.json">latest.json</a></p>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B1F3A">
+<title>RUH Airport Status</title>
+<style>
+:root{--navy:#0B1F3A;--navy2:#12305A;--teal:#14B8A6;--ink:#E8EEF6;--muted:#9FB0C6;--amber:#F59E0B;--red:#F87171}
+*{box-sizing:border-box}body{margin:0;background:var(--navy);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 40px}
+header{display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:2px solid var(--teal);padding-bottom:10px}
+h1{font-size:13px;letter-spacing:2px;color:var(--teal);margin:0}
+.asof{font-size:12px;color:var(--muted);text-align:right}
+.badge{display:inline-block;font-weight:800;font-size:13px;letter-spacing:1px;padding:4px 10px;border-radius:4px;background:var(--amber);color:var(--navy)}
+.badge.NORMAL{background:var(--teal)}.badge.CLOSED,.badge.HALTED{background:var(--red)}
+.stale{display:none;margin:12px 0 0;padding:8px 10px;border-left:4px solid var(--amber);background:#2A2A1E;color:#FCD34D;font-size:13px}
+.card{background:var(--navy2);border-radius:10px;padding:14px;margin-top:12px;border-left:4px solid var(--teal)}
+.card h2{margin:0 0 8px;font-size:11px;letter-spacing:1.6px;color:var(--teal);text-transform:uppercase}
+.hl{font-size:17px;font-weight:700;margin:10px 0 4px}.sl{color:var(--muted);font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px}
+.kpi{background:rgba(255,255,255,.05);border-radius:8px;padding:8px}.kpi b{display:block;font-size:24px;color:#fff}.kpi span{font-size:11px;color:var(--muted)}
+.row{padding:7px 0;border-top:1px solid rgba(255,255,255,.08);font-size:14px}.row:first-of-type{border-top:0}
+.sub{color:var(--muted);font-size:12px}.code{font-weight:800;color:var(--teal);margin-right:6px}
+.tag{font-size:10px;font-weight:800;padding:2px 6px;border-radius:3px;margin-right:6px;background:#475569;color:#fff}
+.tag.CONFIRMED,.tag.CORROBORATED{background:var(--teal);color:var(--navy)}.tag.UNVERIFIED,.tag.CLAIM{background:var(--amber);color:var(--navy)}
+a{color:#5EEAD4;text-decoration:none}footer{margin-top:18px;font-size:11px;color:var(--muted);text-align:center}
+</style></head><body><div class="wrap">
+<header><h1>RUH AIRPORT STATUS</h1><div class="asof" id="asof">Loading&hellip;</div></header>
+<div class="stale" id="stale"></div>
+<div id="app"></div>
+<footer>King Khalid International (RUH) &middot; Riyadh time &middot; refreshes every 5 min &middot; <a href="latest.json">JSON</a></footer>
+</div>
+<script>
+const $=s=>document.getElementById(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const v=x=>x===null||x===undefined?"n/a":esc(x);
+const t12=iso=>iso?new Date(iso).toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Riyadh"}):"n/a";
+const card=(t,h)=>`<section class="card"><h2>${t}</h2>${h}</section>`;
+function render(d){
+  const age=d.as_of?Math.round((Date.now()-new Date(d.as_of))/60000):null;
+  $("asof").innerHTML=`As of <b>${t12(d.as_of)} AST</b><br>${v(d.date_long)}`;
+  const st=$("stale"); if(age!==null&&age>90){st.style.display="block";st.textContent=`Stale: this report is ${Math.floor(age/60)}h ${age%60}m old. A newer edition may be pending.`}else st.style.display="none";
+  const m=d.movements||{},c=d.cancellations||{},lt=m.last_takeoff,ll=m.last_landing;let h="";
+  h+=card("Status",`<span class="badge ${esc((d.level||"").toUpperCase())}">${v(d.level)}</span><div class="hl">${v(d.headline)}</div><div class="sl">${v(d.status_line)}</div><div class="sub" style="margin-top:6px">Next update ${v(d.next_update)}</div>`);
+  h+=card("Last hour",`<div class="kpis"><div class="kpi"><b>${v(m.takeoffs_last_hour)}</b><span>Takeoffs</span></div><div class="kpi"><b>${v(m.landings_last_hour)}</b><span>Landings</span></div></div>`+
+    (lt?`<div class="row">Last takeoff <b>${v(lt.time)}</b> &middot; ${v(lt.flight)} to ${v(lt.city)}</div>`:"")+(ll?`<div class="row">Last landing <b>${v(ll.time)}</b> &middot; ${v(ll.flight)} from ${v(ll.city)}</div>`:""));
+  h+=card("Cancellations & diversions today",`<div class="kpis"><div class="kpi"><b>${v(c.total)}</b><span>Cancelled (${v(c.pct_of_scheduled)}% of ${v(c.scheduled)})</span></div><div class="kpi"><b>${v(c.departures)}</b><span>Departures</span></div><div class="kpi"><b>${v(c.arrivals)}</b><span>Arrivals</span></div><div class="kpi"><b>${v(d.diversions)}</b><span>Diverted</span></div></div>`);
+  h+=card("Halts (45+ min, no movement)",(d.halts||[]).map(x=>`<div class="row">${v(x.label)} <span class="sub">&middot; ${v(x.minutes)} min</span></div>`).join("")||'<div class="sub">None recorded</div>');
+  h+=card("Gulf routes &middot; next flight",(d.gulf||[]).map(g=>`<div class="row"><span class="code">${v(g.code)}</span>${v(g.city)}: <b>${v(g.flight)}</b> ${g.airline?v(g.airline):""}<div class="sub">Sched ${v(g.scheduled)}${g.estimated&&g.estimated!==g.scheduled?" &middot; est "+v(g.estimated):""}${g.tomorrow?" (tomorrow)":""} &middot; ${v(g.status)} &middot; ${v(g.cancelled_today)} cancelled today</div></div>`).join(""));
+  h+=card("Top news"+(d.news_checked?` &middot; checked ${v(d.news_checked)}`:""),(d.news||[]).map(n=>`<div class="row"><span class="tag ${esc((n.tag||"").toUpperCase())}">${v(n.tag)}</span>${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${v(n.title)}</a>`:v(n.title)}<div class="sub">${v(n.source)}</div></div>`).join(""));
+  $("app").innerHTML=h;
+}
+async function load(){try{const r=await fetch("latest.json?t="+Date.now(),{cache:"no-store"});render(await r.json())}catch(e){$("asof").textContent="Could not load data"}}
+load();setInterval(load,5*60*1000);
+</script></body></html>
