@@ -73,44 +73,40 @@ function frameLines(d, f, max) {
   return L;
 }
 
+// Widget canvas sizes in points (iPhone 6.1"); used to size the chart to the space that is left.
+const SZ = { small: [158, 158], medium: [338, 158], large: [338, 354], extraLarge: [715, 338] };
+const PAD = 12;
+
+function txt(stack, t, col, size, bold, lines, minScale) {
+  const s = stack.addText(String(t)); s.textColor = col; s.font = bold ? Font.boldSystemFont(size) : Font.systemFont(size);
+  s.lineLimit = lines || 1; s.minimumScaleFactor = minScale || 0.6; return s;
+}
+
 function addFrame(stack, d, f, family, max) {
-  if (f === "flow") {
-    for (const [t, col, size, bold] of frameLines(d, f, max)) { const s = stack.addText(t); s.textColor = col; s.font = bold ? Font.boldSystemFont(size) : Font.systemFont(size); s.lineLimit = 1; s.minimumScaleFactor = 0.6; }
-    stack.addSpacer(3);
-    const big = family === "large" || family === "extraLarge", w = family === "small" ? 140 : big ? 310 : 300, h = family === "small" ? 70 : big ? 120 : 78;
-    const img = flowImage(d.flow24, w, h, family !== "small");
-    if (img) { const wi = stack.addImage(img); wi.imageSize = new Size(w, h); }
-    return;
-  }
   for (const [t, col, size, bold] of frameLines(d, f, max)) {
-    const s = stack.addText(t);
-    s.textColor = col;
-    s.font = bold ? Font.boldSystemFont(family === "small" ? size - 1 : size) : Font.systemFont(family === "small" ? size - 1 : size);
-    s.lineLimit = family === "small" ? 3 : 4;
-    s.minimumScaleFactor = 0.7;
-    stack.addSpacer(2);
+    const sz = family === "small" ? size - 1 : size;
+    txt(stack, t, col, sz, bold, family === "small" ? 3 : 4, 0.7); stack.addSpacer(2);
   }
 }
 
 function nextIndex() {
   let i = fm.fileExists(IDX) ? parseInt(fm.readString(IDX)) || 0 : new Date().getHours();
-  i = (i + 1) % FRAMES.length;
-  fm.writeString(IDX, String(i));
-  return i;
+  i = (i + 1) % FRAMES.length; fm.writeString(IDX, String(i)); return i;
 }
 
-// Rolling 24 h flow chart (stacked landings + takeoffs per hour, x = cancellations, gray = halts)
-function flowImage(f, w, h, labels) {
-  const dc = new DrawContext(); dc.size = new Size(w, h); dc.opaque = false; dc.respectScreenScale = true;
+// Rolling 24 h flow chart. opts: {axis: hour labels, halts: vertical halt labels, every: label step}
+function flowImage(f, w, h, labels, opts) {
+  opts = opts || {}; const axis = opts.axis !== undefined ? opts.axis : labels, hl = !!opts.halts;
   if (!f || !f.buckets) return null;
-  const B = f.buckets, n = B.length, L = 4, R = 4, T = 4, BOT = labels ? 26 : 12, pw = w - L - R, ph = h - T - BOT, bw = pw / n;
+  const dc = new DrawContext(); dc.size = new Size(w, h); dc.opaque = false; dc.respectScreenScale = true;
+  const B = f.buckets, n = B.length, L = 4, R = 4, T = 4, BOT = axis ? 24 : 12, pw = w - L - R, ph = h - T - BOT, bw = pw / n;
   let mx = 4; for (const b of B) mx = Math.max(mx, b.takeoffs + b.landings);
-  const ymax = mx * 1.15, Y = v => T + ph - v / ymax * ph;
+  const ymax = mx * (hl ? 1.25 : 1.12), Y = v => T + ph - v / ymax * ph;
   const t0 = new Date(B[0].hour_start).getTime(), tEnd = new Date(f.end).getTime(), X = ms => L + (ms - t0) / 3600000 * bw;
-  dc.setFillColor(new Color("#8A97A8", 0.35));
-  for (const hl of f.halts || []) {
-    const a = Math.max(X(new Date(hl.start).getTime()), L), e = Math.min(X(hl.end ? new Date(hl.end).getTime() : tEnd), w - R);
-    if (e > a) dc.fillRect(new Rect(a, T, e - a, ph));
+  const spans = [];
+  for (const x of f.halts || []) {
+    const a = Math.max(X(new Date(x.start).getTime()), L), e = Math.min(X(x.end ? new Date(x.end).getTime() : tEnd), w - R);
+    if (e > a) { dc.setFillColor(new Color("#8A97A8", 0.35)); dc.fillRect(new Rect(a, T, e - a, ph)); spans.push([a, e, x.label]); }
   }
   B.forEach((b, i) => {
     const x0 = L + i * bw + bw * 0.12, bwid = bw * 0.76;
@@ -118,49 +114,106 @@ function flowImage(f, w, h, labels) {
     if (b.takeoffs) { dc.setFillColor(TEAL); dc.fillRect(new Rect(x0, Y(b.landings + b.takeoffs), bwid, Y(b.landings) - Y(b.landings + b.takeoffs))); }
     if (b.cancelled) { dc.setTextColor(new Color("#F2B8B5")); dc.setFont(Font.boldSystemFont(Math.min(9, 5 + b.cancelled * 0.3)));
       dc.drawTextInRect("\u00d7", new Rect(x0 - 2, T + ph, bwid + 4, 11)); }
-    if (labels && (i % 6 === 0 || i === n - 1)) { dc.setTextColor(MUTED); dc.setFont(Font.systemFont(8));
-      dc.drawTextInRect(b.label, new Rect(x0 - 12, h - 12, bwid + 24, 11)); }
+    const every = opts.every || 6;
+    if (axis && (i % every === 0 || i === n - 1)) { dc.setTextColor(MUTED); dc.setFont(Font.systemFont(8));
+      dc.drawTextInRect(b.label, new Rect(x0 - 14, h - 11, bwid + 28, 11)); }
   });
   dc.setFillColor(new Color("#9FB0C6", 0.5)); dc.fillRect(new Rect(L, T + ph, pw, 0.7));
+  if (hl) { // halt labels: rotate the canvas by drawing characters stacked is unreadable; use short time text centered in the box top
+    dc.setFont(Font.boldSystemFont(7)); dc.setTextColor(WHITE);
+    for (const [a, e, lab] of spans) {
+      const short = String(lab).replace("Halt ", "").replace(/ (AM|PM)/g, "").replace("since ", ">");
+      const wdt = Math.max(e - a, 30), cx = (a + e) / 2;
+      dc.drawTextInRect(short, new Rect(cx - wdt / 2 - 6, T + 1, wdt + 12, 10));
+    }
+  }
   return dc.getImage();
 }
 
+function countsRow(stack, d, family) {
+  const c = d.cancellations || {}, row = stack.addStack(); row.centerAlignContent();
+  const cell = (big, small) => { const s = row.addStack(); s.layoutVertically();
+    txt(s, v(big), WHITE, family === "small" ? 13 : 16, true); txt(s, small, MUTED, 8); row.addSpacer(); };
+  cell(c.departures, "dep cxl"); cell(c.arrivals, "arr cxl"); cell(d.diversions, "diverted");
+  if (family !== "small") { const m = d.movements || {}; cell(`${v(m.takeoffs_last_hour)}/${v(m.landings_last_hour)}`, "tko/lnd 1h"); }
+}
+
+function gulfRow(stack, d) {
+  const g = (d.gulf || []).map(x => `${x.code} ${x.flight ? x.flight + " " + (x.tomorrow ? "tmrw " : "") + v(x.estimated || x.scheduled) : "none"}`);
+  txt(stack, "Gulf next: " + g.join(" · "), MUTED, 9, false, 2, 0.6);
+}
+
+// Locked single frame that fills the widget (Smart Stack). Returns nothing; draws into body.
+function lockedFrame(body, d, f, family, availH, W) {
+  const ft = (d.flow24 || {}).totals || {};
+  if (f === "flow") {
+    txt(body, `FLOW · LAST 24 H · ${v(ft.takeoffs)} tko · ${v(ft.landings)} lnd · ${v(ft.cancelled)} ×`, TEAL, 10, true);
+    body.addSpacer(3);
+    const h = Math.max(50, availH - 16), img = flowImage(d.flow24, W, h, family !== "small", { halts: family !== "small", every: family === "small" ? 12 : (family === "medium" ? 6 : 3) });
+    if (img) { const wi = body.addImage(img); wi.imageSize = new Size(W, h); }
+    return;
+  }
+  if (f === "status") {
+    txt(body, v(d.level), levelColor(d.level), family === "small" ? 14 : 16, true);
+    txt(body, d.status_line || d.headline || "", WHITE, family === "small" ? 10 : 12, false, family === "small" ? 3 : 2, 0.7);
+    if (family === "large" && d.headline) { body.addSpacer(3); txt(body, d.headline, MUTED, 11, false, 4, 0.7); }
+    body.addSpacer(); countsRow(body, d, family);
+    if (family === "large") { body.addSpacer(6); gulfRow(body, d); }
+    return;
+  }
+  addFrame(body, d, f, family, family === "large" ? 6 : family === "medium" ? 3 : 2);
+  body.addSpacer();
+  if (f !== "cancellations" && family !== "small") countsRow(body, d, family);
+}
+
 async function buildWidget(d, offline) {
-  const family = config.widgetFamily || "medium";
-  const w = new ListWidget();
-  w.backgroundColor = NAVY;
-  w.setPadding(10, 12, 10, 12);
+  const family = config.widgetFamily || (args.queryParameters && args.queryParameters.preview) || "medium";
+  const [WW, WH] = SZ[family] || SZ.medium, W = WW - 2 * PAD;
+  const w = new ListWidget(); w.backgroundColor = NAVY; w.setPadding(10, PAD, 10, PAD);
   w.refreshAfterDate = new Date(Date.now() + REFRESH_MIN * 60000);
+  w.url = URLScheme.forRunningScript();
   const head = w.addStack(); head.centerAlignContent();
-  const t = head.addText("RUH STATUS"); t.font = Font.heavySystemFont(10); t.textColor = TEAL;
-  head.addSpacer();
-  if (!d) { const e = w.addText("No data yet. Check connection."); e.textColor = WHITE; return w; }
+  txt(head, "RUH STATUS", TEAL, 10, true); head.addSpacer();
+  if (!d) { txt(w, "No data yet. Check connection.", WHITE, 12, false, 3); return w; }
   const age = ageMin(d), stale = age !== null && age > STALE_MIN;
-  const a = head.addText(`live ${t12(d.live_as_of || d.as_of)} · rpt ${t12(d.editorial_as_of || d.as_of)}`); a.font = Font.systemFont(9); a.textColor = stale ? AMBER : MUTED;
+  const a = txt(head, family === "small" ? t12(d.live_as_of || d.as_of) : `live ${t12(d.live_as_of || d.as_of)} · rpt ${t12(d.editorial_as_of || d.as_of)}`, stale ? AMBER : MUTED, 9);
   w.addSpacer(4);
-  const i = nextIndex();
+  const param = String(args.widgetParameter || "").trim().toLowerCase();
+  const locked = FRAMES.includes(param) ? param : null;
   const body = w.addStack(); body.layoutVertically();
-  if (family === "large" || family === "extraLarge") {
-    addFrame(body, d, "status", family);
+  const HEAD = 18, FOOT = 12, avail = WH - 20 - HEAD - FOOT;   // 20 = vertical padding
+  let i = -1;
+  if (locked) {
+    lockedFrame(body, d, locked, family, avail, W);
+  } else if (family === "large" || family === "extraLarge") {
+    // status block + rotating frame; flow is sized to the remaining height, then counts + Gulf footer
+    txt(body, v(d.level), levelColor(d.level), 15, true);
+    txt(body, d.status_line || d.headline || "", WHITE, 12, false, 3, 0.7);
     body.addSpacer(6);
-    addFrame(body, d, FRAMES[1 + (i % (FRAMES.length - 1))], family, 4);
+    i = nextIndex(); const f = FRAMES[1 + (i % (FRAMES.length - 1))];
+    if (f === "flow") {
+      const ft = (d.flow24 || {}).totals || {};
+      txt(body, `FLOW · LAST 24 H · ${v(ft.takeoffs)} tko · ${v(ft.landings)} lnd · ${v(ft.cancelled)} ×`, TEAL, 10, true); body.addSpacer(2);
+      const h = Math.max(90, avail - 66 - 16 - 50), img = flowImage(d.flow24, W, h, true, { halts: true, every: 3 });
+      if (img) { const wi = body.addImage(img); wi.imageSize = new Size(W, h); }
+    } else addFrame(body, d, f, family, 5);
+    body.addSpacer();
+    countsRow(body, d, family); body.addSpacer(4); gulfRow(body, d);
   } else {
-    addFrame(body, d, FRAMES[i], family);
+    i = nextIndex(); const f = FRAMES[i];
+    if (f === "flow") lockedFrame(body, d, "flow", family, avail, W);
+    else { addFrame(body, d, f, family); }
   }
   w.addSpacer();
   const foot = w.addStack();
-  const dots = foot.addText((family === "large" ? "" : FRAMES.map((_, k) => (k === i ? "●" : "○")).join(" ")));
-  dots.font = Font.systemFont(7); dots.textColor = TEAL;
+  const dots = txt(foot, locked ? locked.toUpperCase() : (i >= 0 && family !== "large" ? FRAMES.map((_, k) => (k === i ? "\u25CF" : "\u25CB")).join(" ") : ""), TEAL, 7);
   foot.addSpacer();
-  if (stale || offline) {
-    const s = foot.addText(stale ? `STALE ${Math.round(age / 60 * 10) / 10}h` : "offline cache");
-    s.font = Font.boldSystemFont(8); s.textColor = AMBER;
-  }
+  if (stale || offline) txt(foot, stale ? `STALE ${Math.round(age / 60 * 10) / 10}h` : "offline cache", AMBER, 8, true);
   return w;
 }
 
-async function showTable(d, offline) {
-  const tbl = new UITable(); tbl.showSeparators = true;
+function fillTable(tbl, d, offline, onRefresh, note) {
+  tbl.removeAllRows();
   const add = (title, sub, col, onSelect, h) => {
     const r = new UITableRow(); r.backgroundColor = NAVY; if (h) r.height = h;
     const c = r.addText(title, sub || null); c.titleColor = col || WHITE; c.subtitleColor = MUTED;
@@ -168,9 +221,13 @@ async function showTable(d, offline) {
     if (onSelect) { r.dismissOnSelect = false; r.onSelect = onSelect; }
     tbl.addRow(r);
   };
-  const hdr = (txt) => { const r = new UITableRow(); r.isHeader = true; r.backgroundColor = new Color("#0F2C52");
-    const c = r.addText(txt); c.titleColor = TEAL; c.titleFont = Font.boldSystemFont(13); tbl.addRow(r); };
-  if (!d) { add("No data available", "Check the URL or connection"); tbl.present(); return; }
+  const hdr = (t) => { const r = new UITableRow(); r.isHeader = true; r.backgroundColor = new Color("#0F2C52");
+    const c = r.addText(t); c.titleColor = TEAL; c.titleFont = Font.boldSystemFont(13); tbl.addRow(r); };
+  // Refresh button row
+  const rr = new UITableRow(); rr.backgroundColor = TEAL; rr.height = 52; rr.dismissOnSelect = false; rr.onSelect = onRefresh;
+  const rc = rr.addText("\u21BB  Refresh", note || "Tap to fetch the latest data"); rc.titleColor = NAVY; rc.subtitleColor = NAVY;
+  rc.titleFont = Font.boldSystemFont(16); rc.subtitleFont = Font.systemFont(11); tbl.addRow(rr);
+  if (!d) { add("No data available", "Check the URL or connection"); return; }
   const age = ageMin(d);
   hdr(`RUH STATUS · live ${t12(d.live_as_of || d.as_of)} · report ${t12(d.editorial_as_of || d.as_of)} AST${age > STALE_MIN ? " · STALE" : ""}${offline ? " · offline" : ""}`);
   add(v(d.level), d.status_line, levelColor(d.level), null, 70);
@@ -183,8 +240,8 @@ async function showTable(d, offline) {
   if (d.flow24) {
     const ft = d.flow24.totals || {};
     hdr(`FLOW · LAST 24 H · ${v(ft.takeoffs)} takeoffs · ${v(ft.landings)} landings · ${v(ft.cancelled)} cancelled`);
-    const img = flowImage(d.flow24, 360, 150, true);
-    if (img) { const r = new UITableRow(); r.backgroundColor = NAVY; r.height = 160; const c = r.addImage(img); c.centerAligned(); tbl.addRow(r); }
+    const img = flowImage(d.flow24, 360, 170, true, { halts: true, every: 3 });
+    if (img) { const r = new UITableRow(); r.backgroundColor = NAVY; r.height = 180; const ic = r.addImage(img); ic.centerAligned(); tbl.addRow(r); }
     add("Teal = takeoffs · blue = landings · × = cancelled · gray = halt 45+ min", null, MUTED, null, 40);
   }
   hdr("CANCELLATIONS · DIVERSIONS · HALTS");
@@ -197,14 +254,31 @@ async function showTable(d, offline) {
   hdr("TOP NEWS" + (d.news_checked ? ` · checked ${d.news_checked}` : "") + " (tap to open)");
   for (const n of d.news || []) add(`[${v(n.tag)}] ${v(n.title)}`, `${v(n.source)}`, tagColor(n.tag),
     n.url ? () => Safari.open(n.url) : null, 84);
+}
+
+function nowLabel() { return new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", second: "2-digit", hour12: true, timeZone: "Asia/Riyadh" }); }
+
+async function showTable(d, offline) {
+  const tbl = new UITable(); tbl.showSeparators = true;
+  let busy = false;
+  const refresh = async () => {
+    if (busy) return; busy = true;
+    fillTable(tbl, d, offline, refresh, "Refreshing\u2026"); tbl.reload();
+    const r = await getData(); d = r.data || d; offline = r.offline;
+    fillTable(tbl, d, offline, refresh, (offline ? "Refresh failed (showing cache) " : "Last refreshed ") + nowLabel() + " AST");
+    tbl.reload(); busy = false;
+  };
+  fillTable(tbl, d, offline, refresh, "Last refreshed " + nowLabel() + " AST");
   await tbl.present(true);
 }
 
-const { data, offline } = await getData();
+const { data, offline } = await getData();   // every run (widget or app) fetches fresh data and updates the cache
 if (config.runsInWidget) {
   Script.setWidget(await buildWidget(data, offline));
 } else if (config.runsInApp && args.queryParameters && args.queryParameters.preview) {
-  (await buildWidget(data, offline)).presentMedium();
+  const fam = args.queryParameters.preview;
+  const wd = await buildWidget(data, offline);
+  if (fam === "small") await wd.presentSmall(); else if (fam === "large") await wd.presentLarge(); else await wd.presentMedium();
 } else {
   await showTable(data, offline);
 }

@@ -24,8 +24,9 @@ h1{font-size:13px;letter-spacing:2px;color:var(--teal);margin:0}
 .tag{font-size:10px;font-weight:800;padding:2px 6px;border-radius:3px;margin-right:6px;background:#475569;color:#fff}
 .tag.CONFIRMED,.tag.CORROBORATED{background:var(--teal);color:var(--navy)}.tag.UNVERIFIED,.tag.CLAIM{background:var(--amber);color:var(--navy)}
 a{color:#5EEAD4;text-decoration:none}footer{margin-top:18px;font-size:11px;color:var(--muted);text-align:center}
-</style></head><body><div class="wrap">
+.rbar{display:flex;align-items:center;gap:10px;margin:10px 0 0}.rbtn{background:#14B8A6;color:#0B1F3A;border:0;border-radius:8px;padding:9px 16px;font-weight:800;font-size:14px;cursor:pointer}.rbtn:disabled{opacity:.7}.spin{display:none;width:14px;height:14px;border:2px solid #0B1F3A;border-top-color:transparent;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px;margin-right:6px}.busy .spin{display:inline-block}@keyframes sp{to{transform:rotate(360deg)}}.lr{font-size:12px;color:#9FB0C6}</style></head><body><div class="wrap">
 <header><h1>RUH AIRPORT STATUS</h1><div class="asof" id="asof">Loading&hellip;</div></header>
+<div class="rbar"><button class="rbtn" id="rbtn" onclick="load(true)"><span class="spin"></span>Refresh</button><span class="lr" id="lr"></span></div>
 <div class="stale" id="stale"></div>
 <div id="app"></div>
 <footer>King Khalid International (RUH) &middot; Riyadh time &middot; live numbers every 5 min &middot; <a href="latest.json">JSON</a></footer>
@@ -53,6 +54,8 @@ function render(d){
   h+=card("Top news"+(d.news_checked?` &middot; checked ${v(d.news_checked)}`:""),(d.news||[]).map(n=>`<div class="row"><span class="tag ${esc((n.tag||"").toUpperCase())}">${v(n.tag)}</span>${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${v(n.title)}</a>`:v(n.title)}<div class="sub">${v(n.source)}</div></div>`).join(""));
   $("app").innerHTML=h; if(window.renderFlow)renderFlow($("flowc"),d.flow24,{width:560,height:300});
 }
-async function load(){try{const r=await fetch("latest.json?t="+Date.now(),{cache:"no-store"});render(await r.json())}catch(e){$("asof").textContent="Could not load data"}}
+function stamp(ok){var b=document.getElementById("rbtn");b.disabled=false;b.classList.remove("busy");document.getElementById("lr").textContent=(ok?"Last refreshed ":"Refresh failed ")+new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",second:"2-digit",hour12:true,timeZone:"Asia/Riyadh"})+" AST";}
+function busy(){var b=document.getElementById("rbtn");b.disabled=true;b.classList.add("busy");}
+async function load(){busy();try{const r=await fetch("latest.json?t="+Date.now(),{cache:"no-store"});render(await r.json());stamp(true)}catch(e){$("asof").textContent="Could not load data";stamp(false)}}
 load();setInterval(load,5*60*1000);
 </script></body></html>
