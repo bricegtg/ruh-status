@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-09T23:15:12+03:00",
+ "generated_at": "2026-10-09T23:20:17+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -505,34 +505,34 @@
   "pdf_name": "RUH_status_report_1100PM_9Oct2026.pdf"
  },
  "live": {
-  "as_of": "2026-10-09T23:15:01+03:00",
+  "as_of": "2026-10-09T23:20:02+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 11,
-   "landings_last_hour": 6,
-   "takeoffs_last_30": 7,
-   "landings_last_30": 3,
+   "landings_last_hour": 8,
+   "takeoffs_last_30": 5,
+   "landings_last_30": 5,
    "last_takeoff": {
-    "time": "11:12 PM",
-    "flight": "SV1045",
+    "time": "11:14 PM",
+    "flight": "XY11",
     "city": "Jeddah",
-    "minutes_ago": 3
+    "minutes_ago": 5
    },
    "last_landing": {
-    "time": "11:02 PM",
-    "flight": "F3122",
-    "city": "Jeddah",
-    "minutes_ago": 12
+    "time": "11:19 PM",
+    "flight": "SV234",
+    "city": "Zurich",
+    "minutes_ago": 0
    }
   },
   "cancellations": {
-   "total": 163,
-   "departures": 71,
+   "total": 164,
+   "departures": 72,
    "arrivals": 92,
    "pct_of_scheduled": 23,
    "scheduled": 703
   },
-  "diversions": 17,
+  "diversions": 18,
   "gulf": [
    {
     "code": "DXB",
@@ -551,7 +551,7 @@
     "flight": "SV572",
     "airline": "Saudia",
     "scheduled": "11:15 AM",
-    "estimated": null,
+    "estimated": "11:15 AM",
     "tomorrow": true,
     "status": "none until tomorrow",
     "cancelled_today": 3
@@ -592,7 +592,7 @@
   ],
   "flow24": {
    "start": "2026-10-09T00:00:00+03:00",
-   "end": "2026-10-09T23:15:01+03:00",
+   "end": "2026-10-09T23:20:02+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -726,12 +726,12 @@
      "label": "6 PM",
      "takeoffs": 1,
      "landings": 9,
-     "cancelled": 10
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-09T19:00:00+03:00",
      "label": "7 PM",
-     "takeoffs": 12,
+     "takeoffs": 11,
      "landings": 12,
      "cancelled": 9
     },
@@ -759,15 +759,15 @@
     {
      "hour_start": "2026-10-09T23:00:00+03:00",
      "label": "11 PM",
-     "takeoffs": 2,
-     "landings": 1,
+     "takeoffs": 3,
+     "landings": 3,
      "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 211,
-    "landings": 187,
-    "cancelled": 159
+    "landings": 189,
+    "cancelled": 160
    },
    "halts": [
     {
