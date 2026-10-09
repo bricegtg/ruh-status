@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-10T02:15:19+03:00",
+ "generated_at": "2026-10-10T02:20:18+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -456,24 +456,24 @@
   "pdf_name": "RUH_status_report_200AM_10Oct2026.pdf"
  },
  "live": {
-  "as_of": "2026-10-10T02:15:01+03:00",
+  "as_of": "2026-10-10T02:20:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 2,
+   "landings_last_hour": 0,
    "takeoffs_last_30": 0,
    "landings_last_30": 0,
    "last_takeoff": {
     "time": "1:13 AM",
     "flight": "SV1529",
     "city": "Tabuk",
-    "minutes_ago": 62
+    "minutes_ago": 67
    },
    "last_landing": {
     "time": "1:18 AM",
     "flight": "XY98",
     "city": "Medina",
-    "minutes_ago": 57
+    "minutes_ago": 62
    }
   },
   "cancellations": {
@@ -543,7 +543,7 @@
   ],
   "flow24": {
    "start": "2026-10-09T03:00:00+03:00",
-   "end": "2026-10-10T02:15:01+03:00",
+   "end": "2026-10-10T02:20:01+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -712,13 +712,13 @@
      "label": "2 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 0
+     "cancelled": 1
     }
    ],
    "totals": {
     "takeoffs": 198,
     "landings": 184,
-    "cancelled": 165
+    "cancelled": 166
    },
    "halts": [
     {
@@ -749,7 +749,7 @@
      "start": "2026-10-10T01:18:00+03:00",
      "end": null,
      "label": "Halt since 1:18 AM",
-     "minutes": 57
+     "minutes": 62
     }
    ]
   },
@@ -758,7 +758,7 @@
     "start": "2026-10-10T01:18:00+03:00",
     "end": null,
     "label": "Halt since 1:18 AM",
-    "minutes": 57
+    "minutes": 62
    },
    {
     "start": "2026-10-09T19:41:09+03:00",
