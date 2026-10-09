@@ -5,57 +5,112 @@
 <meta name="theme-color" content="#0B1F3A">
 <title>RUH Airport Status</title>
 <style>
-:root{--navy:#0B1F3A;--navy2:#12305A;--teal:#14B8A6;--ink:#E8EEF6;--muted:#9FB0C6;--amber:#F59E0B;--red:#F87171}
-*{box-sizing:border-box}body{margin:0;background:var(--navy);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-.wrap{max-width:720px;margin:0 auto;padding:16px 14px 40px}
-header{display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:2px solid var(--teal);padding-bottom:10px}
-h1{font-size:13px;letter-spacing:2px;color:var(--teal);margin:0}
-.asof{font-size:12px;color:var(--muted);text-align:right}
-.badge{display:inline-block;font-weight:800;font-size:13px;letter-spacing:1px;padding:4px 10px;border-radius:4px;background:var(--amber);color:var(--navy)}
-.badge.NORMAL{background:var(--teal)}.badge.CLOSED,.badge.HALTED{background:var(--red)}
-.stale{display:none;margin:12px 0 0;padding:8px 10px;border-left:4px solid var(--amber);background:#2A2A1E;color:#FCD34D;font-size:13px}
+:root{--navy:#0B1F3A;--navy2:#12305A;--teal:#14B8A6;--ink:#E8EEF6;--muted:#9FB0C6;--amber:#F59E0B;--red:#F87171;--green:#34D399}
+*{box-sizing:border-box}body{margin:0;background:var(--navy);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:14px 12px 40px}
+.top{font-size:10.5px;letter-spacing:1.6px;color:var(--teal);font-weight:700;display:flex;justify-content:space-between;gap:8px;border-bottom:2px solid var(--teal);padding-bottom:8px}
+.rbar{display:flex;align-items:center;gap:10px;margin:10px 0 0;flex-wrap:wrap}
+.rbtn{background:var(--teal);color:var(--navy);border:0;border-radius:8px;padding:9px 16px;font-weight:800;font-size:14px;cursor:pointer}.rbtn:disabled{opacity:.7}
+.spin{display:none;width:14px;height:14px;border:2px solid var(--navy);border-top-color:transparent;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px;margin-right:6px}.busy .spin{display:inline-block}@keyframes sp{to{transform:rotate(360deg)}}
+.lr{font-size:12px;color:var(--muted)}
+.banner{display:none;margin:10px 0 0;padding:9px 11px;border-left:4px solid var(--amber);background:#2A2A1E;color:#FCD34D;font-size:13px;border-radius:4px}.banner.err{border-color:var(--red);background:#341C22;color:#FCA5A5}
+h1{font-size:24px;margin:12px 0 4px}
+.badge{display:inline-block;font-weight:800;font-size:13px;letter-spacing:1px;padding:4px 10px;border-radius:4px;background:var(--amber);color:var(--navy);vertical-align:middle}
+.badge.OPEN,.badge.OPERATING{background:var(--green)}.badge.CLOSED,.badge.HALTED{background:var(--red)}
+.asof{color:var(--muted);font-size:13px;margin-left:6px}
+.sline{margin-top:8px;font-weight:600}
 .card{background:var(--navy2);border-radius:10px;padding:14px;margin-top:12px;border-left:4px solid var(--teal)}
-.card h2{margin:0 0 8px;font-size:11px;letter-spacing:1.6px;color:var(--teal);text-transform:uppercase}
-.hl{font-size:17px;font-weight:700;margin:10px 0 4px}.sl{color:var(--muted);font-size:13px}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px}
-.kpi{background:rgba(255,255,255,.05);border-radius:8px;padding:8px}.kpi b{display:block;font-size:24px;color:#fff}.kpi span{font-size:11px;color:var(--muted)}
-.row{padding:7px 0;border-top:1px solid rgba(255,255,255,.08);font-size:14px}.row:first-of-type{border-top:0}
+.card h2{margin:0 0 8px;font-size:11px;letter-spacing:1.6px;color:var(--teal);text-transform:uppercase}.card h2 .n{display:inline-block;background:var(--teal);color:var(--navy);border-radius:50%;width:18px;height:18px;text-align:center;line-height:18px;margin-right:6px;font-size:11px}
+.hl{font-size:17px;font-weight:700;margin:0 0 6px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.kpi{background:rgba(255,255,255,.05);border-radius:8px;padding:9px}.kpi b{display:block;font-size:24px;color:#fff;line-height:1.15}.kpi .l{font-size:10.5px;letter-spacing:1px;color:var(--teal);font-weight:700;text-transform:uppercase}.kpi .s{font-size:12px;color:var(--muted)}
+.live{margin-top:10px;padding:10px;border:1px dashed rgba(20,184,166,.6);border-radius:8px;font-size:13px}.live .t{font-size:10.5px;letter-spacing:1px;color:var(--teal);font-weight:700;text-transform:uppercase;margin-bottom:4px}
+.up{color:#FCA5A5;font-weight:700}.same{color:var(--muted)}
+.row{padding:8px 0;border-top:1px solid rgba(255,255,255,.08);font-size:14px}.row:first-of-type{border-top:0}
 .sub{color:var(--muted);font-size:12px}.code{font-weight:800;color:var(--teal);margin-right:6px}
-.tag{font-size:10px;font-weight:800;padding:2px 6px;border-radius:3px;margin-right:6px;background:#475569;color:#fff}
-.tag.CONFIRMED,.tag.CORROBORATED{background:var(--teal);color:var(--navy)}.tag.UNVERIFIED,.tag.CLAIM{background:var(--amber);color:var(--navy)}
-a{color:#5EEAD4;text-decoration:none}footer{margin-top:18px;font-size:11px;color:var(--muted);text-align:center}
-.rbar{display:flex;align-items:center;gap:10px;margin:10px 0 0}.rbtn{background:#14B8A6;color:#0B1F3A;border:0;border-radius:8px;padding:9px 16px;font-weight:800;font-size:14px;cursor:pointer}.rbtn:disabled{opacity:.7}.spin{display:none;width:14px;height:14px;border:2px solid #0B1F3A;border-top-color:transparent;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px;margin-right:6px}.busy .spin{display:inline-block}@keyframes sp{to{transform:rotate(360deg)}}.lr{font-size:12px;color:#9FB0C6}</style></head><body><div class="wrap">
-<header><h1>RUH AIRPORT STATUS</h1><div class="asof" id="asof">Loading&hellip;</div></header>
-<div class="rbar"><button class="rbtn" id="rbtn" onclick="load(true)"><span class="spin"></span>Refresh</button><span class="lr" id="lr"></span></div>
-<div class="stale" id="stale"></div>
-<div id="app"></div>
-<footer>King Khalid International (RUH) &middot; Riyadh time &middot; live numbers every 5 min &middot; <a href="latest.json">JSON</a></footer>
+.tag{font-size:10px;font-weight:800;padding:2px 6px;border-radius:3px;margin-right:6px;background:#475569;color:#fff;white-space:nowrap}
+.tag.CONFIRMED,.tag.CORROBORATED{background:var(--teal);color:var(--navy)}.tag.UNVERIFIED,.tag.UNCONFIRMED{background:#B91C1C}.tag.CLAIM{background:var(--amber);color:var(--navy)}
+details summary{cursor:pointer;color:#5EEAD4;font-size:13px;margin-top:6px}
+.tabs{display:flex;gap:6px;margin:4px 0 8px}.tabs button{background:transparent;border:1px solid var(--teal);color:var(--teal);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:700}.tabs button.on{background:var(--teal);color:var(--navy)}
+a{color:#5EEAD4;text-decoration:none}.btnlink{display:inline-block;margin-top:10px;border:1px solid var(--teal);border-radius:8px;padding:7px 12px;font-weight:700;font-size:13px}
+footer{margin-top:18px;font-size:11px;color:var(--muted);text-align:center}
+</style></head><body><div class="wrap">
+<div class="top"><span>KING KHALID INTERNATIONAL AIRPORT &middot; RIYADH</span><span id="dt"></span></div>
+<div class="rbar"><button class="rbtn" id="rbtn" onclick="load()"><span class="spin"></span>Refresh</button><span class="lr" id="lr"></span></div>
+<div class="banner err" id="err"></div>
+<div class="banner" id="stale"></div>
+<div id="app"><p class="sub">Loading&hellip;</p></div>
+<footer>Report figures come from the latest hourly RUH Airport Status edition. Live figures are recalculated from the Flightradar24 board every 5 minutes and are labelled as live. All times are Riyadh time (AST, UTC+3). <a href="flow.html">Flow chart</a> &middot; <a href="latest.json">JSON</a></footer>
 </div>
 <script src="flow.js"></script>
 <script>
-const $=s=>document.getElementById(s);
-const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const v=x=>x===null||x===undefined?"n/a":esc(x);
-const t12=iso=>iso?new Date(iso).toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Riyadh"}):"n/a";
-const card=(t,h)=>`<section class="card"><h2>${t}</h2>${h}</section>`;
+var $=function(s){return document.getElementById(s)};
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function v(x){return x===null||x===undefined||x===""?"n/a":esc(x)}
+function t12(iso){if(!iso)return "n/a";var d=new Date(iso);if(isNaN(d))return "n/a";return d.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Riyadh"})}
+function mins(iso){var d=new Date(iso);return isNaN(d)?null:Math.round((Date.now()-d)/60000)}
+function card(t,h,n){return '<section class="card"><h2>'+(n?'<span class="n">'+n+'</span>':'')+t+'</h2>'+h+'</section>'}
+function delta(a,b){if(typeof a!=="number"||typeof b!=="number")return "";var d=a-b;return d>0?' <span class="up">(+'+d+' since report)</span>':(d<0?' <span class="up">('+d+' since report)</span>':' <span class="same">(no change)</span>')}
+function mv(x,dir){return x?v(x.time)+' &middot; '+v(x.flight)+' '+dir+' '+v(x.city):"n/a"}
+var LAST=null,VIEW="report";
 function render(d){
-  const da=d.data_as_of||d.live_as_of||d.as_of;const age=da?Math.round((Date.now()-new Date(da))/60000):null;
-  $("asof").innerHTML=`Live data <b>${t12(d.live_as_of||d.as_of)} AST</b><br>Report ${t12(d.editorial_as_of||d.as_of)} AST`;
-  const st=$("stale"); if(age!==null&&age>90){st.style.display="block";st.textContent=`Stale: this report is ${Math.floor(age/60)}h ${age%60}m old. A newer edition may be pending.`}else st.style.display="none";
-  const m=d.movements||{},c=d.cancellations||{},lt=m.last_takeoff,ll=m.last_landing;let h="";
-  h+=card("Status",`<span class="badge ${esc((d.level||"").toUpperCase())}">${v(d.level)}</span><div class="hl">${v(d.headline)}</div><div class="sl">${v(d.status_line)}</div><div class="sub" style="margin-top:6px">Headline and news from the ${t12(d.editorial_as_of||d.as_of)} AST report &middot; next report ${v(d.next_update)}</div>`);
-  if(d.live_as_of)h+=`<div class="sub" style="margin-top:12px">Numbers below update automatically every 5 min from the Flightradar24 board &middot; live as of ${t12(d.live_as_of)} AST</div>`;
-  h+=card("Last hour",`<div class="kpis"><div class="kpi"><b>${v(m.takeoffs_last_hour)}</b><span>Takeoffs</span></div><div class="kpi"><b>${v(m.landings_last_hour)}</b><span>Landings</span></div></div>`+
-    (lt?`<div class="row">Last takeoff <b>${v(lt.time)}</b> &middot; ${v(lt.flight)} to ${v(lt.city)}</div>`:"")+(ll?`<div class="row">Last landing <b>${v(ll.time)}</b> &middot; ${v(ll.flight)} from ${v(ll.city)}</div>`:""));
-  h+=card("Cancellations & diversions today",`<div class="kpis"><div class="kpi"><b>${v(c.total)}</b><span>Cancelled (${v(c.pct_of_scheduled)}% of ${v(c.scheduled)})</span></div><div class="kpi"><b>${v(c.departures)}</b><span>Departures</span></div><div class="kpi"><b>${v(c.arrivals)}</b><span>Arrivals</span></div><div class="kpi"><b>${v(d.diversions)}</b><span>Diverted</span></div></div>`);
-  h+=card(`Airport flow, last 24 hours &middot; <a href="flow.html">full chart</a>`,'<div id="flowc"></div>');
-  h+=card("Halts (45+ min, no movement)",(d.halts||[]).map(x=>`<div class="row">${v(x.label)} <span class="sub">&middot; ${v(x.minutes)} min</span></div>`).join("")||'<div class="sub">None recorded</div>');
-  h+=card("Gulf routes &middot; next flight",(d.gulf||[]).map(g=>`<div class="row"><span class="code">${v(g.code)}</span>${v(g.city)}: <b>${v(g.flight)}</b> ${g.airline?v(g.airline):""}<div class="sub">Sched ${v(g.scheduled)}${g.estimated&&g.estimated!==g.scheduled?" &middot; est "+v(g.estimated):""}${g.tomorrow?" (tomorrow)":""} &middot; ${v(g.status)} &middot; ${v(g.cancelled_today)} cancelled today</div></div>`).join(""));
-  h+=card("Top news"+(d.news_checked?` &middot; checked ${v(d.news_checked)}`:""),(d.news||[]).map(n=>`<div class="row"><span class="tag ${esc((n.tag||"").toUpperCase())}">${v(n.tag)}</span>${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${v(n.title)}</a>`:v(n.title)}<div class="sub">${v(n.source)}</div></div>`).join(""));
-  $("app").innerHTML=h; if(window.renderFlow)renderFlow($("flowc"),d.flow24,{width:560,height:300});
+  var r=d.report||{},k=r.kpis||{},L=d.live,h="";
+  $("dt").textContent=r.date_long||"";
+  // banners
+  var ra=r.as_of?mins(r.as_of):null,la=L&&L.as_of?mins(L.as_of):null,msg=[];
+  if(ra!==null&&ra>90)msg.push("The latest hourly report is "+Math.floor(ra/60)+"h "+(ra%60)+"m old (as of "+t12(r.as_of)+" AST); a newer edition may be pending.");
+  if(!L)msg.push("Live 5-minute figures are not available; showing report figures only.");else if(la!==null&&la>20)msg.push("Live figures are "+la+" min old (as of "+t12(L.as_of)+" AST); the live feed may be delayed.");
+  $("stale").style.display=msg.length?"block":"none";$("stale").innerHTML=msg.map(esc).join("<br>");
+  // header block (PDF top)
+  h+='<h1>RUH Airport Status</h1><span class="badge '+esc((r.level||"").toUpperCase())+'">'+v(r.level)+'</span><span class="asof">'+(r.slot?esc(r.slot)+' report &middot; ':'')+'as of '+v(r.as_of_label||t12(r.as_of))+(r.date_long?', '+esc(r.date_long):'')+', Riyadh time</span>';
+  h+='<div class="sub" style="margin-top:8px">'+v(k.cancelled_total)+' flights cancelled today &middot; last takeoff '+v(k.last_takeoff&&k.last_takeoff.time)+' &middot; last landing '+v(k.last_landing&&k.last_landing.time)+'</div>';
+  if(r.status_line)h+='<div class="sline">'+esc(r.status_line)+'</div>';
+  if(r.pdf)h+='<a class="btnlink" href="'+esc(r.pdf)+'?v='+encodeURIComponent(r.as_of||"")+'" target="_blank" rel="noopener">Open the '+(r.slot?esc(r.slot)+' ':'')+'report PDF</a>';
+  // headline
+  h+=card("Headline",'<div class="hl">'+v(r.headline)+'</div>'+(r.synopsis?'<details><summary>Full summary</summary><p class="sub" style="font-size:13px">'+esc(r.synopsis)+'</p></details>':''));
+  // KPI tiles as in PDF
+  var lt=k.last_takeoff,ll=k.last_landing;
+  h+=card("Key figures &middot; "+(r.slot?esc(r.slot)+" report, ":"")+"as of "+v(r.as_of_label||t12(r.as_of)),
+   '<div class="kpis">'+
+   '<div class="kpi"><span class="l">Flights cancelled today</span><b>'+v(k.cancelled_total)+'</b><span class="s">'+v(k.cancelled_departures)+' departures + '+v(k.cancelled_arrivals)+' arrivals, '+v(k.pct_of_scheduled)+'% of '+v(k.scheduled)+' scheduled</span></div>'+
+   '<div class="kpi"><span class="l">Last takeoff</span><b>'+v(lt&&lt.time)+'</b><span class="s">'+(lt?v(lt.flight)+' to '+v(lt.city)+(lt.minutes_ago!=null?', '+v(lt.minutes_ago)+' min before '+v(r.as_of_label):''):'n/a')+'</span></div>'+
+   '<div class="kpi"><span class="l">Last landing</span><b>'+v(ll&&ll.time)+'</b><span class="s">'+(ll?v(ll.flight)+' from '+v(ll.city)+(ll.minutes_ago!=null?', '+v(ll.minutes_ago)+' min before '+v(r.as_of_label):''):'n/a')+'</span></div>'+
+   '<div class="kpi"><span class="l">Takeoffs, last hour</span><b>'+v(k.takeoffs_last_hour)+'</b><span class="s">'+v(k.landings_last_hour)+' landings in the last hour</span></div>'+
+   '<div class="kpi"><span class="l">Arrivals diverted</span><b>'+v(k.diverted)+'</b><span class="s">'+(k.diverted_to&&k.diverted_to.length?'Mostly to '+k.diverted_to.map(esc).join(", ")+'.':'None recorded today.')+'</span></div>'+
+   '</div>'+
+   (L?'<div class="live"><div class="t">Live since report &middot; as of '+t12(L.as_of)+' AST</div>'+
+     (L.cancellations?'Cancelled today: <b>'+v(L.cancellations.total)+'</b>'+delta(L.cancellations.total,k.cancelled_total)+' &middot; '+v(L.cancellations.departures)+' dep + '+v(L.cancellations.arrivals)+' arr, '+v(L.cancellations.pct_of_scheduled)+'% of '+v(L.cancellations.scheduled)+'<br>':'')+
+     'Diverted: <b>'+v(L.diversions)+'</b>'+delta(L.diversions,k.diverted)+'<br>'+
+     (L.movements?'Last hour to '+t12(L.as_of)+': <b>'+v(L.movements.takeoffs_last_hour)+'</b> takeoffs, <b>'+v(L.movements.landings_last_hour)+'</b> landings<br>Last takeoff '+mv(L.movements.last_takeoff,"to")+'<br>Last landing '+mv(L.movements.last_landing,"from"):'')+
+     '</div>':'')+
+   '<p class="sub">Cancellation basis: '+v(d.cancel_basis)+'</p>');
+  // 1 flow
+  var fr=r.flow24,fl=L&&L.flow24;
+  h+=card('Airport flow, last 24 hours','<div class="tabs"><button id="tbr" onclick="VIEW=\'report\';drawFlow()">Report '+t12(r.as_of)+'</button>'+(fl?'<button id="tbl" onclick="VIEW=\'live\';drawFlow()">Live '+t12(L.as_of)+'</button>':'')+'</div><div id="flowcap" class="sub"></div><div id="flowc"></div><p class="sub">Takeoffs (teal) and landings (blue) per hour; the newest bar is the current, partial hour. &times; marks flights cancelled, at their scheduled time. Gray boxes are halts: 45 minutes or more with no takeoff or landing on the board. <a href="flow.html">Full-size chart</a></p>',1);
+  // halts
+  var hs=r.halts||[];
+  h+=card("Halts (45+ min with no takeoff or landing)",hs.length?hs.map(function(x){return '<div class="row">'+v(x.label)+' <span class="sub">&middot; '+v(x.minutes)+' min</span></div>'}).join(""):'<div class="sub">None recorded.</div>');
+  // 3 gulf
+  var lg={};((L&&L.gulf)||[]).forEach(function(g){lg[g.code]=g});
+  var gs=r.gulf||[],ok=gs.filter(function(g){return g.status==="On schedule"}).length;
+  h+=card("Watched Gulf routes &middot; next departures from RUH",'<div class="sub" style="margin-bottom:4px">'+ok+' of '+gs.length+' routes on schedule in the '+(r.slot?esc(r.slot)+' ':'')+'report.</div>'+gs.map(function(g){var x=lg[g.code],chg=x&&(x.flight!==g.flight||x.status!==g.status||(x.estimated||null)!==(g.estimated||null));
+    return '<div class="row"><span class="code">'+v(g.code)+'</span>'+v(g.city)+': <b>'+v(g.flight)+'</b> '+(g.airline?esc(g.airline):'')+'<div class="sub">Scheduled '+v(g.scheduled)+(g.estimated&&g.estimated!==g.scheduled?' &middot; estimate '+esc(g.estimated):'')+' &middot; '+v(g.status)+' &middot; '+v(g.cancelled_today)+' cancelled today</div>'+
+     (chg?'<div class="sub" style="color:#5EEAD4">Live '+t12(L.as_of)+': '+v(x.flight)+' &middot; '+(x.tomorrow?'tomorrow ':'')+v(x.scheduled)+(x.estimated&&x.estimated!==x.scheduled?' (est '+esc(x.estimated)+')':'')+' &middot; '+v(x.status)+'</div>':'')+'</div>'}).join("")+(r.gulf_footnote?'<p class="sub">'+esc(r.gulf_footnote)+'</p>':''),3);
+  // 4 news
+  var ns=r.news||[];
+  h+=card("News and statements",(r.news_title?'<div class="hl" style="font-size:15px">'+esc(r.news_title)+'</div>':'')+(r.news_checked?'<div class="sub">Checked at '+esc(r.news_checked)+'. Times are publication or post times, Riyadh time.</div>':'')+
+    ns.map(function(n,i){return (i===8?'<details><summary>'+(ns.length-8)+' earlier items</summary>':'')+'<div class="row"><span class="tag '+esc((n.tag||"").toUpperCase())+'">'+v(n.tag)+'</span>'+(n.url?'<a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+v(n.title)+'</a>':v(n.title))+'<div class="sub">'+v(n.source)+(n.time?' &middot; '+esc(n.time):'')+(n.extra?' &middot; '+esc(n.extra):'')+'</div>'+(n.body?'<details><summary>Details</summary><p class="sub" style="font-size:13px">'+esc(n.body)+'</p></details>':'')+'</div>'}).join("")+(ns.length>8?'</details>':'')||'<div class="sub">No news items in this report.</div>',4);
+  h+='<p class="sub" style="text-align:center">Next report '+v(r.next_update)+' AST</p>';
+  $("app").innerHTML=h;LAST=d;drawFlow();
 }
-function stamp(ok){var b=document.getElementById("rbtn");b.disabled=false;b.classList.remove("busy");document.getElementById("lr").textContent=(ok?"Last refreshed ":"Refresh failed ")+new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",second:"2-digit",hour12:true,timeZone:"Asia/Riyadh"})+" AST";}
-function busy(){var b=document.getElementById("rbtn");b.disabled=true;b.classList.add("busy");}
-async function load(){busy();try{const r=await fetch("latest.json?t="+Date.now(),{cache:"no-store"});render(await r.json());stamp(true)}catch(e){$("asof").textContent="Could not load data";stamp(false)}}
+function drawFlow(){if(!LAST)return;var r=LAST.report||{},L=LAST.live,f=VIEW==="live"&&L&&L.flow24?L.flow24:r.flow24,isL=f&&L&&f===L.flow24;
+  if($("tbr"))$("tbr").className=isL?"":"on";if($("tbl"))$("tbl").className=isL?"on":"";
+  $("flowcap").innerHTML=f?(isL?"Live":"As in the report")+": "+t12(f.start)+" to "+t12(f.end)+" AST &middot; "+v(f.totals&&f.totals.takeoffs)+" takeoffs, "+v(f.totals&&f.totals.landings)+" landings, "+v(f.totals&&f.totals.cancelled)+" cancelled":"";
+  if(window.renderFlow)renderFlow($("flowc"),f,{width:560,height:300});}
+function stamp(ok){var b=$("rbtn");b.disabled=false;b.classList.remove("busy");$("lr").textContent=(ok?"Last refreshed ":"Refresh failed ")+new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",second:"2-digit",hour12:true,timeZone:"Asia/Riyadh"})+" AST";}
+function load(){var b=$("rbtn");b.disabled=true;b.classList.add("busy");
+  fetch("latest.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(function(d){
+    if(!d||!d.report)throw new Error("unexpected data");$("err").style.display="none";render(d);stamp(true);
+  }).catch(function(e){$("err").style.display="block";$("err").textContent="Could not load the latest data ("+e.message+")."+(LAST?" Showing the last loaded version.":" Please try Refresh.");stamp(false)});}
 load();setInterval(load,5*60*1000);
 </script></body></html>
