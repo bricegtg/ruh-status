@@ -1,59 +1,52 @@
 {
  "schema": 2,
- "generated_at": "2026-10-10T08:01:00+03:00",
+ "generated_at": "2026-10-10T09:00:56+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH Airport Status 8:00 AM AST: DISRUPTED",
-  "slot": "8:00 AM",
-  "as_of": "2026-10-10T07:50:00+03:00",
-  "as_of_label": "7:50 AM",
+  "title": "RUH Airport Status 9:00 AM AST: DISRUPTED",
+  "slot": "9:00 AM",
+  "as_of": "2026-10-10T08:54:00+03:00",
+  "as_of_label": "8:54 AM",
   "date_long": "Saturday 10 October 2026",
   "level": "DISRUPTED",
-  "status_line": "Overnight halt 1:18\u20132:20 AM ended; morning traffic moving; cancellations remain elevated.",
-  "headline": "RUH is open and moving after the overnight halt; 115 flights cancelled today so far.",
-  "synopsis": "There were 0 takeoffs in the last hour, the latest RX319 to Cairo at 6:31 AM. The latest landing was RJ736 from Amman at 6:37 AM, with 0 landings in the last hour. 115 flights are cancelled today (52 departures, 63 arrivals) and 3 arrivals have diverted. Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop.",
-  "next_update": "9:00 AM",
+  "status_line": "Halt 6:37\u20138:08 AM (91 minutes) ended; traffic resumed. Cancellations remain elevated. No official explanation for the stop.",
+  "headline": "Morning halt 6:37\u20138:08 AM ended; traffic moving again; 116 flights cancelled today so far.",
+  "synopsis": "There were 21 takeoffs in the last hour, the latest XY365 to Hyderabad at 8:54 AM. The latest landing was SV1167 from Dammam at 8:51 AM, with 7 landings in the last hour. 116 flights are cancelled today (53 departures, 63 arrivals) and 3 arrivals have diverted. Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop. This morning: a 91-minute halt ran from 6:37 to 8:08 AM with no takeoff or landing; traffic has since resumed. No official explanation.",
+  "next_update": "10:00 AM",
   "kpis": {
-   "cancelled_total": 115,
-   "cancelled_departures": 52,
+   "cancelled_total": 116,
+   "cancelled_departures": 53,
    "cancelled_arrivals": 63,
    "pct_of_scheduled": 15,
-   "scheduled": 770,
+   "scheduled": 769,
    "diverted": 3,
    "diverted_to": [
     "Qassim",
     "Dammam",
     "MAA"
    ],
-   "takeoffs_last_hour": 0,
-   "landings_last_hour": 0,
+   "takeoffs_last_hour": 21,
+   "landings_last_hour": 7,
    "last_takeoff": {
-    "time": "6:31 AM",
-    "flight": "RX319",
-    "city": "Cairo",
-    "minutes_ago": 79
+    "time": "8:54 AM",
+    "flight": "XY365",
+    "city": "Hyderabad",
+    "minutes_ago": 1
    },
    "last_landing": {
-    "time": "6:37 AM",
-    "flight": "RJ736",
-    "city": "Amman",
-    "minutes_ago": 74
+    "time": "8:51 AM",
+    "flight": "SV1167",
+    "city": "Dammam",
+    "minutes_ago": 4
    }
   },
   "flow24": {
-   "start": "2026-10-09T08:00:00+03:00",
-   "end": "2026-10-10T07:50:00+03:00",
-   "start_label": "8:00 AM Friday",
+   "start": "2026-10-09T09:00:00+03:00",
+   "end": "2026-10-10T08:54:00+03:00",
+   "start_label": "9:00 AM Friday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-09T08:00:00+03:00",
-     "label": "8 AM",
-     "takeoffs": 14,
-     "landings": 8,
-     "cancelled": 4
-    },
     {
      "hour_start": "2026-10-09T09:00:00+03:00",
      "label": "9 AM",
@@ -178,7 +171,7 @@
      "label": "2 AM",
      "takeoffs": 10,
      "landings": 5,
-     "cancelled": 6
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-10T03:00:00+03:00",
@@ -213,13 +206,20 @@
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 3
+     "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-10T08:00:00+03:00",
+     "label": "8 AM",
+     "takeoffs": 21,
+     "landings": 7,
+     "cancelled": 5
     }
    ],
    "totals": {
-    "takeoffs": 201,
-    "landings": 191,
-    "cancelled": 184
+    "takeoffs": 208,
+    "landings": 190,
+    "cancelled": 187
    },
    "halts": [
     {
@@ -248,18 +248,18 @@
     },
     {
      "start": "2026-10-10T06:37:17+03:00",
-     "end": null,
-     "label": "Halt since 6:37 AM",
-     "minutes": 74
+     "end": "2026-10-10T08:08:24+03:00",
+     "label": "Halt 6:37\u20138:08 AM",
+     "minutes": 91
     }
    ]
   },
   "halts": [
    {
     "start": "2026-10-10T06:37:17+03:00",
-    "end": null,
-    "label": "Halt since 6:37 AM",
-    "minutes": 74
+    "end": "2026-10-10T08:08:24+03:00",
+    "label": "Halt 6:37\u20138:08 AM",
+    "minutes": 91
    },
    {
     "start": "2026-10-10T01:18:00+03:00",
@@ -307,12 +307,12 @@
    {
     "code": "BAH",
     "city": "Bahrain",
-    "flight": "GF162",
+    "flight": "GF164",
     "airline": "Gulf Air",
-    "scheduled": "7:00 AM",
-    "estimated": "7:00 AM",
+    "scheduled": "12:05 PM",
+    "estimated": "12:05 PM",
     "tomorrow": false,
-    "status": "Has not left yet",
+    "status": "On schedule",
     "cancelled_today": 0
    },
    {
@@ -350,24 +350,33 @@
    }
   ],
   "gulf_footnote": "Riyadh Air RX243 to Dubai, due 3:50 PM, finally left at 9:50 PM. Cancelled today include Emirates EK816, EK820, EK818, flydubai FZ848, FZ842, FZ856 and flynas XY217 to Dubai; Qatar Airways QR1167, QR1171, QR1241, QR1169, QR1165, QR1239 and QR1173 to Doha; Etihad EY552, EY556 and EY560 to Abu Dhabi; SalamAir OV206 to Muscat.",
-  "news_title": "Airline suspensions continue into Saturday; no new GACA word on overnight RUH halt; overnight strike claims unverified.",
-  "news_checked": "7:55 AM",
+  "news_title": "Morning halt 6:37\u20138:08 AM ended with no official word; airline suspensions into Saturday; overnight strike claims still unverified.",
+  "news_checked": "8:57 AM",
   "news": [
    {
     "tag": "CONFIRMED",
     "title": "PIA suspends Riyadh flights; Lufthansa, Etihad and flydubai cuts continue",
     "source": "Dawn",
     "time": "4:43 AM",
-    "extra": "published 4:43 AM (Dawn updated); last checked 7:55 AM",
+    "extra": "published 4:43 AM (Dawn updated); last checked 8:57 AM",
     "body": "Dawn reports Pakistan International Airlines temporarily suspended flights to Riyadh, citing the Middle East situation. The same roundup notes Lufthansa Group suspended Riyadh services until 16 October, Etihad cancelled further Abu Dhabi\u2013Riyadh flights into Saturday, and flydubai cancelled Riyadh and Yanbu through 10 October. Flightradar24 figures cited there are yesterday\u2019s; see this edition\u2019s board totals for today.",
     "url": "https://www.dawn.com/news/2036078"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Social posts claim a Ugandan national was killed in a Houthi missile attack at Riyadh airport",
+    "source": "Unverified accounts on X",
+    "time": "7:45 AM",
+    "extra": "published ~7:45 AM; last checked 8:57 AM",
+    "body": "Accounts on X name Ugandan bus driver Muwenda Edward as killed in a Houthi missile attack at Riyadh airport. GACA\u2019s confirmed fatality count remains three Saudi citizens from the 8 October attacks; no official confirmation of this additional name as of this check.",
+    "url": "https://x.com/lulanzeashirafu/status/2108780867317608954"
    },
    {
     "tag": "CONFIRMED",
     "title": "Saudi Gazette: coalition destroyed 136 Houthi military targets",
     "source": "Saudi Gazette on X",
     "time": "5:35 AM",
-    "extra": "published 5:35 AM; last checked 7:55 AM",
+    "extra": "published 5:35 AM; last checked 8:57 AM",
     "body": "Saudi Gazette reports the coalition announced a large-scale operation against the Houthis, destroying 136 military targets in areas under the group\u2019s control. No RUH operational information and no official comment on overnight airport disruption.",
     "url": "https://x.com/Saudi_Gazette/status/2108748264434458932"
    },
@@ -376,7 +385,7 @@
     "title": "EU Commission President condemns Houthi strikes on Riyadh airport",
     "source": "Ursula von der Leyen on X",
     "time": "1:49 PM",
-    "extra": "published 1:49 PM yesterday (9 Oct); last checked 7:55 AM",
+    "extra": "published 1:49 PM yesterday (9 Oct); last checked 8:57 AM",
     "body": "European Commission President Ursula von der Leyen said Houthis again struck Riyadh\u2019s airport, taking three innocent lives, expressed solidarity with Saudi Arabia and Gulf partners, and said attacks on civilian infrastructure are unacceptable. No RUH operational information.",
     "url": "https://x.com/vonderleyen/status/2108510053921608011"
    },
@@ -385,7 +394,7 @@
     "title": "OIC Independent Permanent Human Rights Commission condemns Houthi attacks on civilian facilities",
     "source": "Al Ekhbariya on X (Arabic)",
     "time": "2:29 AM",
-    "extra": "published 2:29 AM; last checked 7:55 AM",
+    "extra": "published 2:29 AM; last checked 8:57 AM",
     "body": "Saudi state TV Al Ekhbariya reports the OIC Independent Permanent Human Rights Commission condemned the Houthi terrorist attacks on civilian facilities in the Kingdom. No RUH operational information.",
     "url": "https://x.com/alekhbariyaNews/status/2108701465703321789"
    },
@@ -394,7 +403,7 @@
     "title": "Coalition says 136 Houthi military targets destroyed",
     "source": "SPA English on X",
     "time": "2:16 AM",
-    "extra": "published 2:16 AM; last checked 7:55 AM",
+    "extra": "published 2:16 AM; last checked 8:57 AM",
     "body": "Saudi Press Agency reports the coalition said 136 military targets were destroyed in Houthi-controlled areas. No RUH operational information; no official comment on the 1:53 AM strike claims.",
     "url": "https://x.com/Spa_Eng/status/2108698085849526756"
    },
@@ -403,7 +412,7 @@
     "title": "Yemen's Prime Minister condemns the Houthi attack on King Khalid airport",
     "source": "Al Jazeera English on X",
     "time": "2:00 AM",
-    "extra": "published 2:00 AM; last checked 7:55 AM",
+    "extra": "published 2:00 AM; last checked 8:57 AM",
     "body": "Yemen's Prime Minister Shaya Zindani called the Houthi attack on King Khalid airport a crime and accused the group of acting for Iran. No operational information.",
     "url": "https://x.com/AJEnglish/status/2108693997246177287"
    },
@@ -412,13 +421,13 @@
     "title": "Posts claim another missile strike at RUH around 1:53 AM",
     "source": "Unverified accounts on X",
     "time": "1:55 AM",
-    "extra": "published 1:53 to 1:55 AM; last checked 7:55 AM",
+    "extra": "published 1:53 to 1:55 AM; last checked 8:57 AM",
     "body": "Several partisan accounts (e.g. https://x.com/Gh2_xz/status/2108692859532755307, https://x.com/sam_alassani/status/2108692503016636856) claim a new missile strike or direct hit at King Khalid airport and that flights stopped. Another account says the reports remain unconfirmed (https://x.com/WarUpdates/status/2108692202742600125). No official, Civil Defense or wire confirmation as of 2:05 AM; see the board figures in this edition.",
     "url": "https://x.com/Israeli_Sniper/status/2108692862040674684"
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_800AM_10Oct2026.pdf"
+  "pdf_name": "RUH_status_report_900AM_10Oct2026.pdf"
  },
  "live": {
   "as_of": "2026-10-10T02:45:01+03:00",
