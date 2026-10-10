@@ -56,6 +56,7 @@ footer{max-width:900px;margin:0 auto;padding:0 12px 30px;font-size:11px;color:va
 .tl{position:relative;margin:4px 0 10px;padding-left:22px}.tl:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--hair)}
 .tli{position:relative;background:var(--card);border-radius:8px;padding:10px 12px;margin:8px 0;box-shadow:0 1px 2px rgba(10,39,53,.08)}.tli .dot{position:absolute;left:-20px;top:14px;width:12px;height:12px;border-radius:50%;border:2px solid var(--bg)}
 .tli .tm{font-size:12px;font-weight:700;color:var(--head)}.tli .ttl{font-weight:700;margin:2px 0;color:var(--head)}.tli .ap{font-size:10px;font-weight:800;border:1px solid var(--hair);border-radius:3px;padding:1px 5px;margin-left:6px;color:var(--muted)}
+.apchip{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.02em;padding:1px 7px;border-radius:9px;margin-right:6px;vertical-align:2px;background:var(--teal);color:var(--onteal)}.ap-DMM{background:var(--teal2);color:var(--card)}.ap-KSA,.ap-SA{background:transparent;color:var(--muted);border:1px solid var(--hair)}
 .sumb{margin:2px 0 6px;padding-left:20px}.sumb li{font-size:16px;line-height:1.45;font-weight:600;color:var(--head);margin:0 0 7px}.sumb li::marker{color:var(--teal)}
 svg text{font-family:Montserrat,Arial,sans-serif}
 </style></head><body>
@@ -191,10 +192,17 @@ function line(series,kx,ky,unit){
 function renderSummary(){
   var r=D.report||{},S=D.summary||{},dm=D.dammam,h="",strikes=arr(D.strikes);
   var head=S.headline||r.headline;
-  var bl=arr(S.bullets).filter(function(x){return typeof x==="string"&&x.trim()});
-  if(!bl.length&&head)bl=String(head).replace(/([.;])\s+(?=\S)/g,"$1\u0000").split("\u0000").map(function(x){return x.trim()}).filter(Boolean);
+  var APL={RUH:"Riyadh (RUH)",DMM:"Dammam (DMM)",KSA:"Saudi Arabia",SA:"Saudi Arabia"};
+  function apOf(t,given){if(given){var g=String(given).toUpperCase();return APL[g]?g:null}
+    if(/\b(Dammam|DMM|King Fahd)\b/i.test(t))return "DMM";if(/\b(Riyadh|RUH|King Khalid)\b/i.test(t))return "RUH";
+    if(/^\s*(GACA|NOTAM|Saudi|Kingdom|SPA)\b/i.test(t))return "KSA";return "RUH"}
+  var bl=[];
+  arr(S.bullets).forEach(function(x){if(typeof x==="string"&&x.trim())bl.push({t:x.trim(),a:apOf(x)});else if(x&&x.text)bl.push({t:String(x.text).trim(),a:apOf(x.text,x.airport||"KSA_none")||null})});
+  arr(S.airports).forEach(function(A){arr(A.bullets).forEach(function(x){var t=typeof x==="string"?x:(x&&x.text);if(t&&t.trim())bl.push({t:t.trim(),a:apOf(t,A.code)})})});
+  if(!bl.length&&head)String(head).replace(/([.;])\s+(?=\S)/g,"$1\u0000").split("\u0000").map(function(x){return x.trim()}).filter(Boolean).forEach(function(x){bl.push({t:x,a:apOf(x)})});
+  bl=bl.map(function(o){return '<span class="apchip ap-'+(o.a||"")+'">'+(APL[o.a]||"")+'</span>'+esc(o.t)}).map(function(x){return x.replace('<span class="apchip ap-"></span>','')});
   var ttl=S.title||S.headline_title;
-  h+=card("Summary"+(S.as_of||r.as_of?" &middot; as of "+t12(S.as_of||r.as_of)+" AST":""),(ttl?'<div class="hl">'+esc(ttl)+'</div>':'')+(bl.length?'<ul class="sumb">'+bl.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul>':(ttl?'':coming("Headline")))+(r.date_long&&bl.length?'<div class="sub">'+esc(r.date_long)+'</div>':''));
+  h+=card("Summary"+(S.as_of||r.as_of?" &middot; as of "+t12(S.as_of||r.as_of)+" AST":""),(ttl?'<div class="hl">'+esc(ttl)+'</div>':'')+(bl.length?'<ul class="sumb">'+bl.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul>':(ttl?'':coming("Headline")))+(r.date_long&&bl.length?'<div class="sub">'+esc(r.date_long)+'</div>':''));
   var ap=arr(S.airports);
   if(!ap.length){ap=[{name:"Riyadh, King Khalid (RUH)",level:r.level,status_line:r.status_line,tab:"riyadh"},{name:"Dammam, King Fahd (DMM)",level:dm&&dm.level,status_line:dm&&dm.status_line,tab:"dammam"}]}
   h+=card("Airport status",'<div class="pills">'+ap.map(function(a){var t=a.tab||(/dmm|dammam/i.test((a.code||"")+(a.name||""))?"dammam":"riyadh");return '<a class="pill" href="#'+t+'" style="color:inherit;font-weight:400"><div>'+lvl(a.level)+'</div><div><div style="font-weight:700;color:var(--head)">'+esc(a.name||a.code)+'</div><div class="sub">'+(a.status_line?esc(a.status_line):(has(a.level)?'':'Data coming'))+'</div></div></a>'}).join("")+'</div>');
