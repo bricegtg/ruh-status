@@ -192,15 +192,19 @@ function line(series,kx,ky,unit){
 function renderSummary(){
   var r=D.report||{},S=D.summary||{},dm=D.dammam,h="",strikes=arr(D.strikes);
   var head=S.headline||r.headline;
-  var APL={RUH:"Riyadh (RUH)",DMM:"Dammam (DMM)",KSA:"Saudi Arabia",SA:"Saudi Arabia"};
+  var NOT={};arr(r.notams).forEach(function(n){NOT[n.id]=n});var APL={RUH:"Riyadh (RUH)",DMM:"Dammam (DMM)",KSA:"Saudi Arabia",SA:"Saudi Arabia"};
   function apOf(t,given){if(given){var g=String(given).toUpperCase();return APL[g]?g:null}
     if(/\b(Dammam|DMM|King Fahd)\b/i.test(t))return "DMM";if(/\b(Riyadh|RUH|King Khalid)\b/i.test(t))return "RUH";
-    if(/^\s*(GACA|NOTAM|Saudi|Kingdom|SPA)\b/i.test(t))return "KSA";return "RUH"}
+    var nm=t.match(/NOTAM (A\d+\/\d+)/);if(nm&&NOT[nm[1]]&&NOT[nm[1]].airport)return NOT[nm[1]].airport;if(/^\s*(GACA|NOTAM|Saudi|Kingdom|SPA)\b/i.test(t))return "KSA";return "RUH"}
   var bl=[];
+  function dlong(x){var d=new Date(x);return t12(x)+" "+d.toLocaleDateString("en-US",{timeZone:"Asia/Riyadh",weekday:"short",day:"numeric",month:"short"})}
+  function notamTxt(t){var nm=t.match(/NOTAM (A\d+\/\d+)/);if(!nm)return t;var N=NOT[nm[1]];
+    if(!N)return t+" (NOTAM = official notice to pilots)";
+    return "NOTAM "+N.id+", an official notice to pilots: airport closed ("+N.restriction+") from "+dlong(N.from)+" until "+dlong(N.to)+" AST."}
   arr(S.bullets).forEach(function(x){if(typeof x==="string"&&x.trim())bl.push({t:x.trim(),a:apOf(x)});else if(x&&x.text)bl.push({t:String(x.text).trim(),a:apOf(x.text,x.airport||"KSA_none")||null})});
   arr(S.airports).forEach(function(A){arr(A.bullets).forEach(function(x){var t=typeof x==="string"?x:(x&&x.text);if(t&&t.trim())bl.push({t:t.trim(),a:apOf(t,A.code)})})});
   if(!bl.length&&head)String(head).replace(/([.;])\s+(?=\S)/g,"$1\u0000").split("\u0000").map(function(x){return x.trim()}).filter(Boolean).forEach(function(x){bl.push({t:x,a:apOf(x)})});
-  bl=bl.map(function(o){return '<span class="apchip ap-'+(o.a||"")+'">'+(APL[o.a]||"")+'</span>'+esc(o.t)}).map(function(x){return x.replace('<span class="apchip ap-"></span>','')});
+  bl=bl.map(function(o){return '<span class="apchip ap-'+(o.a||"")+'">'+(APL[o.a]||"")+'</span>'+esc(notamTxt(o.t))}).map(function(x){return x.replace('<span class="apchip ap-"></span>','')});
   var ttl=S.title||S.headline_title;
   h+=card("Summary"+(S.as_of||r.as_of?" &middot; as of "+t12(S.as_of||r.as_of)+" AST":""),(ttl?'<div class="hl">'+esc(ttl)+'</div>':'')+(bl.length?'<ul class="sumb">'+bl.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul>':(ttl?'':coming("Headline")))+(r.date_long&&bl.length?'<div class="sub">'+esc(r.date_long)+'</div>':''));
   var ap=arr(S.airports);
