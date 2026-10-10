@@ -57,19 +57,22 @@ footer{max-width:900px;margin:0 auto;padding:0 12px 30px;font-size:11px;color:va
 .tli{position:relative;background:var(--card);border-radius:8px;padding:10px 12px;margin:8px 0;box-shadow:0 1px 2px rgba(10,39,53,.08)}.tli .dot{position:absolute;left:-20px;top:14px;width:12px;height:12px;border-radius:50%;border:2px solid var(--bg)}
 .tli .tm{font-size:12px;font-weight:700;color:var(--head)}.tli .ttl{font-weight:700;margin:2px 0;color:var(--head)}.tli .ap{font-size:10px;font-weight:800;border:1px solid var(--hair);border-radius:3px;padding:1px 5px;margin-left:6px;color:var(--muted)}
 .apchip{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.02em;padding:1px 7px;border-radius:9px;margin-right:6px;vertical-align:2px;background:var(--teal);color:var(--onteal)}.ap-DMM{background:var(--teal2);color:var(--card)}.ap-KSA,.ap-SA{background:transparent;color:var(--muted);border:1px solid var(--hair)}
+.aplink{color:inherit;text-decoration:none}
 .sumb{margin:2px 0 6px;padding-left:20px}.sumb li{font-size:16px;line-height:1.45;font-weight:600;color:var(--head);margin:0 0 7px}.sumb li::marker{color:var(--teal)}
 svg text{font-family:Montserrat,Arial,sans-serif}
 </style></head><body>
 <header class="top"><div class="tw">
  <div class="brand"><div><div class="k">KSA AIRPORTS &amp; SECURITY</div><div class="t">Status Report</div></div>
  <div class="ctl"><button class="ib r" id="rbtn" onclick="load()"><span class="spin"></span>Refresh</button><button class="ib" id="thm" onclick="toggleTheme()" aria-label="Toggle light or dark mode">Dark</button></div></div>
- <nav id="nav"><a href="#summary" data-t="summary">Summary</a><a href="#news" data-t="news">News</a><a href="#timeline" data-t="timeline">Timeline</a><a href="#riyadh" data-t="riyadh">Riyadh airport</a><a href="#dammam" data-t="dammam">Dammam airport</a><a href="#economy" data-t="economy">Economy</a></nav>
+ <nav id="nav"><a href="#summary" data-t="summary">Summary</a><a href="#news" data-t="news">News</a><a href="#timeline" data-t="timeline">Timeline</a><a href="#ksa" data-t="ksa">Saudi Arabia</a><a href="#riyadh" data-t="riyadh">Riyadh airport</a><a href="#dammam" data-t="dammam">Dammam airport</a><a href="#economy" data-t="economy">Economy</a></nav>
 </div></header>
 <main>
  <div class="meta" id="lr"></div>
  <div class="banner err" id="err"></div><div class="banner" id="stale"></div>
  <section class="tab" id="t-summary"><div class="coming">Loading&hellip;</div></section>
  <section class="tab" id="t-timeline"></section>
+ <section class="tab" id="t-ksa"></section>
+ <section class="tab" id="t-ap"></section>
  <section class="tab" id="t-riyadh"></section>
  <section class="tab" id="t-dammam"></section>
  <section class="tab" id="t-economy"></section>
@@ -78,7 +81,7 @@ svg text{font-family:Montserrat,Arial,sans-serif}
 <footer>All times Riyadh time (AST, UTC+3), 12-hour clock. Figures come from the hourly status report; live airport figures are recalculated from the Flightradar24 board every 5 minutes and labelled as live. Tags: CONFIRMED = official statement or directly checked; CORROBORATED = several independent reports; UNVERIFIED = single or social report; CLAIM = claim by a party; SUPERSEDED = replaced by later information. <a href="latest.json">JSON</a></footer>
 <script src="flow.js"></script>
 <script>
-var $=function(s){return document.getElementById(s)},D=null,TABS=["summary","news","timeline","riyadh","dammam","economy"];
+var $=function(s){return document.getElementById(s)},D=null,TABS=["summary","news","timeline","ksa","ap","riyadh","dammam","economy"];
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function has(x){return x!==null&&x!==undefined&&x!==""}
 function v(x){return has(x)?esc(x):"n/a"}
@@ -262,6 +265,33 @@ function renderTimeline(){
   el.innerHTML=h;
 }
 function tlSet(k,v){TLS[k]=v;renderTimeline()}
+
+/* ---------- Saudi Arabia overview (airports.{IATA}, live FR24 boards) ---------- */
+var KORD=["RUH","JED","DMM","MED","AHB","GIZ","TIF","ELQ","TUU"];
+function pillOf(p){return lvl(p==="NO DATA"?null:p)}
+function renderKsa(){
+  var A=D&&D.airports,el=$("t-ksa");if(!A){el.innerHTML=coming("Saudi Arabia airports");return}
+  var cnt={};KORD.forEach(function(c){var p=(A[c]||{}).pill||"NO DATA";cnt[p]=(cnt[p]||0)+1});
+  var h=card("Saudi Arabia &middot; 9 major airports",'<div class="sub">'+["HALTED","DISRUPTED","NORMAL","NO DATA"].filter(function(p){return cnt[p]}).map(function(p){return pillOf(p)+' '+cnt[p]}).join(" &nbsp; ")+'</div><p class="sub" style="margin:8px 0 0">Live, automatic counts from Flightradar24 airport boards, refreshed about every 5 minutes. Not editor-checked; the hourly report covers Riyadh.</p>');
+  h+=KORD.map(function(c){var a=A[c];if(!a)return "";var m=a.movements||{},x=a.cancellations||{},i=a.idle||{},b=a.ksa_bot;
+    return card('<a href="#ap-'+c+'" class="aplink">'+esc(a.city)+' ('+c+') &rsaquo;</a>',pillOf(a.pill)+' <span class="sub">'+esc(a.name)+(a.as_of?' &middot; as of '+t12(a.as_of)+' AST':'')+'</span>'+
+     (a.as_of?'<div class="tiles" style="margin-top:8px"><div class="tile"><span class="l">Cancelled today</span><b>'+v(x.total)+'</b><span class="s">'+(has(x.pct_of_scheduled)?esc(x.pct_of_scheduled)+'% of '+v(x.scheduled)+' scheduled':'&nbsp;')+'</span></div>'+
+     '<div class="tile"><span class="l">Last hour</span><b>'+v(m.takeoffs_last_hour)+' / '+v(m.landings_last_hour)+'</b><span class="s">takeoffs / landings</span></div>'+
+     '<div class="tile"><span class="l">Last movement</span><b>'+(i.last_movement?t12(i.last_movement):'none seen')+'</b><span class="s">'+(has(i.minutes_since_last_movement)?esc(i.minutes_since_last_movement)+' min ago':'in the boards read')+(i.scheduled_since_last_movement?' &middot; '+esc(i.scheduled_since_last_movement)+' due since':'')+'</span></div>'+
+     '<div class="tile"><span class="l">Diverted</span><b>'+v(a.diversions)+'</b><span class="s">arrivals today</span></div></div>':'<div style="margin-top:8px">'+coming(a.city+" live board")+'</div>')+
+     (b?'<div class="live"><div class="t">KSA Bot'+(b.level?' &middot; '+lvl(b.level):'')+'</div>'+(b.headline?'<b>'+esc(b.headline)+'</b>':'')+(b.notes?'<div class="sub">'+esc(b.notes)+'</div>':'')+'</div>':''))}).join("");
+  h+=card("How the status pill is set",'<p class="sub" style="margin:0">'+esc(D.airports_rule||"")+'</p>');
+  el.innerHTML=h;
+}
+function renderAp(c){
+  var a=D&&D.airports&&D.airports[c],el=$("t-ap");if(!el)return;
+  if(!a){el.innerHTML=D?card("Airport",coming(c)):"";return}
+  var m=a.movements||{},x=a.cancellations||{},b=a.ksa_bot||{};
+  var o={name:a.city+", "+a.name,code:c,level:a.pill==="NO DATA"?null:a.pill,status_line:b.headline||null,headline:b.notes||null,as_of:a.as_of,as_of_label:a.as_of?t12(a.as_of)+" AST (live board)":null,flow24:a.flow24,halts:a.halts,
+    kpis:{cancelled_total:x.total,cancelled_departures:x.departures,cancelled_arrivals:x.arrivals,pct_of_scheduled:x.pct_of_scheduled,scheduled:x.scheduled,diverted:a.diversions,takeoffs_last_hour:m.takeoffs_last_hour,landings_last_hour:m.landings_last_hour,last_takeoff:m.last_takeoff,last_landing:m.last_landing}};
+  renderAirport("ap",o,!a.as_of);
+  el.insertAdjacentHTML("afterbegin",'<div class="sub" style="margin-top:10px"><a href="#ksa">&lsaquo; All Saudi airports</a>'+(c==="RUH"?' &middot; <a href="#riyadh">Riyadh report view</a>':c==="DMM"?' &middot; <a href="#dammam">Dammam airport tab</a>':'')+' &middot; Status pill: live-board rule (see Saudi Arabia tab).</div>');
+}
 function render(){
   if(!D)return;var r=D.report||{},L=D.live,msg=[],ra=mins(r.as_of);
   if(ra!==null&&ra>90)msg.push("The latest report is "+Math.floor(ra/60)+"h "+(ra%60)+"m old (as of "+t12(r.as_of)+" AST). A newer edition may be pending.");
@@ -271,10 +301,12 @@ function render(){
   try{var dm=D.dammam;renderAirport("dammam",airportFrom("Dammam, King Fahd International","DMM",dm,false),!dm)}catch(e){$("t-dammam").innerHTML=coming("Dammam airport")}
   try{renderEconomy()}catch(e){$("t-economy").innerHTML=coming("Economy")}
   try{renderNews()}catch(e){$("t-news").innerHTML=coming("News")}
+  try{renderKsa()}catch(e){$("t-ksa").innerHTML=coming("Saudi Arabia overview")}
+  var hh=(location.hash||"").slice(1);if(/^ap-[A-Z]{3}$/.test(hh))try{renderAp(hh.slice(3))}catch(e){}
   try{renderTimeline()}catch(e){$("t-timeline").innerHTML=coming("Timeline")}
 }
-function show(){var t=(location.hash||"#summary").slice(1);if(TABS.indexOf(t)<0)t="summary";TABS.forEach(function(x){$("t-"+x).classList.toggle("on",x===t)});
-  [].forEach.call(document.querySelectorAll("nav a"),function(a){a.classList.toggle("on",a.getAttribute("data-t")===t)});}
+function show(){var t=(location.hash||"#summary").slice(1);if(/^ap-[A-Z]{3}$/.test(t)){renderAp(t.slice(3));t="ap"}if(TABS.indexOf(t)<0)t="summary";TABS.forEach(function(x){$("t-"+x).classList.toggle("on",x===t)});
+  [].forEach.call(document.querySelectorAll("nav a"),function(a){a.classList.toggle("on",a.getAttribute("data-t")===(t==="ap"?"ksa":t))});}
 function setThemeBtn(){$("thm").textContent=document.documentElement.getAttribute("data-theme")==="dark"?"Light":"Dark"}
 function toggleTheme(){var t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",t);try{localStorage.setItem("ruh-theme",t)}catch(e){}setThemeBtn();render();}
 function stamp(ok){var b=$("rbtn");b.disabled=false;b.classList.remove("busy");$("lr").textContent=(ok?"Last refreshed ":"Refresh failed ")+new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Riyadh"})+" AST"+(D&&D.report&&D.report.slot?" \u00b7 "+D.report.slot+" report":"")}
