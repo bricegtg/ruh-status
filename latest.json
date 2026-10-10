@@ -1,13 +1,13 @@
 {
  "schema": 2,
- "generated_at": "2026-10-11T01:05:26+03:00",
+ "generated_at": "2026-10-11T01:08:26+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 1:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "1:00 AM",
-  "as_of": "2026-10-11T00:56:00+03:00",
-  "as_of_label": "12:56 AM",
+  "title": null,
+  "slot": null,
+  "as_of": "2026-10-11T00:55:00+03:00",
+  "as_of_label": "12:55 AM",
   "date_long": "Sunday 11 October 2026",
   "level": "HALTED",
   "status_line": "Airport halted since 8:10 PM, 290 minutes. No takeoff or landing since flynas XY278 from Sharm el-Sheikh at 8:10 PM (that landing ended the prior 2:05\u20138:10 PM halt of ~365 minutes). No takeoff since XY277 at 1:39 PM. GACA ops remain suspended after Saturday\u2019s attack; GACA 12:46 AM follow-up: 12 fatalities and 309 injured. NOTAM A3586/26: AD NOT AVBL through 11 Oct 2100 UTC (midnight AST Monday). FR24 12:01 AM: flights on approach to Dammam again. Cancellations remain elevated.",
@@ -30,18 +30,18 @@
     "time": "1:39 PM",
     "flight": "XY277",
     "city": "Sharm el-Sheikh",
-    "minutes_ago": 677
+    "minutes_ago": 675
    },
    "last_landing": {
     "time": "8:10 PM",
     "flight": "XY278",
     "city": "Sharm el-Sheikh",
-    "minutes_ago": 287
+    "minutes_ago": 285
    }
   },
   "flow24": {
    "start": "2026-10-10T01:00:00+03:00",
-   "end": "2026-10-11T00:56:00+03:00",
+   "end": "2026-10-11T00:55:00+03:00",
    "start_label": "1:00 AM Saturday",
    "unit": "hour",
    "buckets": [
@@ -242,7 +242,7 @@
      "start": "2026-10-10T20:10:03+03:00",
      "end": null,
      "label": "Halt since 8:10 PM",
-     "minutes": 290
+     "minutes": 285
     }
    ]
   },
@@ -251,7 +251,7 @@
     "start": "2026-10-10T20:10:03+03:00",
     "end": null,
     "label": "Halt since 8:10 PM",
-    "minutes": 290
+    "minutes": 285
    },
    {
     "start": "2026-10-10T14:05:30+03:00",
@@ -399,19 +399,8 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_100AM_11Oct2026.pdf",
-  "last_hour": [
-   "Riyadh halted since 8:10 PM, 290 minutes \u2014 no takeoff or landing since XY278.",
-   "No departures in the last hour. The last takeoff was flynas XY277 to Sharm el-Sheikh at 1:39 PM, about 11 hours ago.",
-   "No landings in the last hour. The last landing was XY278 from Sharm el-Sheikh at 8:10 PM, about 5 hours ago.",
-   "481 flights are cancelled today (232 departures, 249 arrivals), 65% of 741 scheduled, and 1 arrivals have diverted.",
-   "Dammam airport disrupted: 3 takeoffs and 7 landings in the last hour; latest takeoff 6E88 to Kozhikode at 12:48 AM, latest landing PK247 from Lahore at 12:48 AM.",
-   "Dammam: 40 flights cancelled today (20 departures, 20 arrivals), 16% of 251 scheduled; 0 arrivals diverted.",
-   "Confirmed, GACA at 12:46 AM: GACA follow-up: 12 fatalities and 309 injured in Saturday RUH attack.",
-   "Confirmed, Flightradar24 at 12:01 AM: Flights on approach to Dammam again.",
-   "Confirmed, GACA at 12:51 AM: Statement | Follow-up on the attack targeting King Khalid International Airport in Riyadh.",
-   "Shipping, IMF PortWatch 4 Oct: Hormuz 4 (0 tankers), Bab el-Mandeb 34 (11 tankers), Suez Canal 46 (15 tankers) transits. Saudi crude exports 4.125m b/d in July (JODI, monthly). Brent futures $104.72 (ICE front-month, delayed quote)."
-  ]
+  "pdf_name": null,
+  "last_hour": null
  },
  "live": {
   "as_of": "2026-10-11T01:05:01+03:00",
@@ -745,7 +734,7 @@
   ]
  },
  "maritime": {
-  "updated": "2026-10-11T00:58:15.561336+03:00",
+  "updated": "2026-10-11T00:56:29.868102+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -811,13 +800,13 @@
  },
  "summary": {
   "headline": "Airport halted since 8:10 PM, 290 minutes \u2014 no takeoff or landing since XY278 at 8:10 PM; no takeoff since XY277 at 1:39 PM; GACA 12:46 AM: 12 dead, 309 injured; NOTAM A3586/26 still suspends ops through Sunday 2100 UTC; 481 flights cancelled today so far.",
-  "as_of": "2026-10-11T00:56+03:00",
+  "as_of": "2026-10-11T00:55+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 8:10 PM (287 min)."
+    "status_line": "No takeoff or landing since 8:10 PM (285 min)."
    },
    {
     "code": "DMM",
@@ -834,8 +823,8 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 8:10 PM (287 min).",
-  "as_of": "2026-10-11T00:56+03:00",
+  "status_line": "No takeoff or landing since 8:10 PM (285 min).",
+  "as_of": "2026-10-11T00:55+03:00",
   "kpis": {
    "cancelled_total": 481,
    "cancelled_departures": 232,
@@ -861,7 +850,7 @@
   },
   "flow24": {
    "start": "2026-10-10T01:00+03:00",
-   "end": "2026-10-11T00:56+03:00",
+   "end": "2026-10-11T00:55+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-10T01:00+03:00",
@@ -1063,7 +1052,7 @@
   "halts": [
    {
     "label": "Halt since 8:10 PM",
-    "minutes": 287,
+    "minutes": 285,
     "start": "2026-10-10T20:10+03:00",
     "end": null
    },
@@ -1102,7 +1091,7 @@
  "dammam": {
   "level": "DISRUPTED",
   "status_line": "3 takeoffs and 7 landings in the last hour.",
-  "as_of": "2026-10-11T00:56+03:00",
+  "as_of": "2026-10-11T00:55+03:00",
   "kpis": {
    "cancelled_total": 40,
    "cancelled_departures": 20,
@@ -1126,7 +1115,7 @@
   },
   "flow24": {
    "start": "2026-10-10T01:00+03:00",
-   "end": "2026-10-11T00:56+03:00",
+   "end": "2026-10-11T00:55+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-10T01:00+03:00",
