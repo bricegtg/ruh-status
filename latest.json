@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-11T01:00:25+03:00",
+ "generated_at": "2026-10-11T01:00:30+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -414,7 +414,7 @@
   ]
  },
  "live": {
-  "as_of": "2026-10-11T00:55:01+03:00",
+  "as_of": "2026-10-11T01:00:02+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
@@ -425,19 +425,19 @@
     "time": "1:39 PM",
     "flight": "XY277",
     "city": "Sharm el-Sheikh",
-    "minutes_ago": 675
+    "minutes_ago": 680
    },
    "last_landing": {
     "time": "8:10 PM",
     "flight": "XY278",
     "city": "Sharm el-Sheikh",
-    "minutes_ago": 285
+    "minutes_ago": 290
    }
   },
   "cancellations": {
-   "total": 481,
+   "total": 482,
    "departures": 232,
-   "arrivals": 249,
+   "arrivals": 250,
    "pct_of_scheduled": 65,
    "scheduled": 741
   },
@@ -500,17 +500,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-10T01:00:00+03:00",
-   "end": "2026-10-11T00:55:01+03:00",
+   "start": "2026-10-10T02:00:00+03:00",
+   "end": "2026-10-11T01:00:02+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-10T01:00:00+03:00",
-     "label": "1 AM",
-     "takeoffs": 2,
-     "landings": 3,
-     "cancelled": 5
-    },
     {
      "hour_start": "2026-10-10T02:00:00+03:00",
      "label": "2 AM",
@@ -671,12 +664,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 26
+    },
+    {
+     "hour_start": "2026-10-11T01:00:00+03:00",
+     "label": "1 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 6
     }
    ],
    "totals": {
-    "takeoffs": 135,
-    "landings": 103,
-    "cancelled": 336
+    "takeoffs": 133,
+    "landings": 100,
+    "cancelled": 337
    },
    "halts": [
     {
@@ -701,7 +701,7 @@
      "start": "2026-10-10T20:10:03+03:00",
      "end": null,
      "label": "Halt since 8:10 PM",
-     "minutes": 285
+     "minutes": 290
     }
    ]
   },
@@ -710,7 +710,7 @@
     "start": "2026-10-10T20:10:03+03:00",
     "end": null,
     "label": "Halt since 8:10 PM",
-    "minutes": 285
+    "minutes": 290
    },
    {
     "start": "2026-10-10T14:05:30+03:00",
