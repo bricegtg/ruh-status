@@ -51,17 +51,23 @@ details summary{cursor:pointer;color:var(--link);font-size:13px;margin-top:4px;f
 .tab>.card+.card{margin-top:25px;position:relative;overflow:visible}.tab>.card+.card::before{content:"";position:absolute;left:4px;right:4px;top:-13px;height:1px;background:var(--hair);pointer-events:none}
 footer{max-width:900px;margin:0 auto;padding:0 12px 30px;font-size:11px;color:var(--muted);text-align:center}
 .sowhat{margin-top:12px;background:#E6F4F4;border-radius:8px;padding:12px 14px;font-size:13.5px;line-height:1.55}[data-theme=dark] .sowhat{background:rgba(20,184,166,.13)}.sowhat .k{font-size:10px;letter-spacing:1.4px;font-weight:800;color:var(--teal);text-transform:uppercase;margin-bottom:4px}
+.tlbar{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}.chip{border:1px solid var(--hair);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 10px;font:600 12px Montserrat,Arial,sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:5px}.chip.on{background:var(--teal);border-color:var(--teal);color:var(--onteal)}.chip .c{opacity:.75;font-weight:700}.chip .d{width:9px;height:9px;border-radius:50%;display:inline-block}
+.tlday{position:sticky;top:92px;z-index:2;background:var(--bg);padding:8px 2px 6px;font-size:11px;letter-spacing:1.4px;font-weight:800;color:var(--teal);text-transform:uppercase;border-bottom:1px solid var(--hair)}
+.tl{position:relative;margin:4px 0 10px;padding-left:22px}.tl:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--hair)}
+.tli{position:relative;background:var(--card);border-radius:8px;padding:10px 12px;margin:8px 0;box-shadow:0 1px 2px rgba(10,39,53,.08)}.tli .dot{position:absolute;left:-20px;top:14px;width:12px;height:12px;border-radius:50%;border:2px solid var(--bg)}
+.tli .tm{font-size:12px;font-weight:700;color:var(--head)}.tli .ttl{font-weight:700;margin:2px 0;color:var(--head)}.tli .ap{font-size:10px;font-weight:800;border:1px solid var(--hair);border-radius:3px;padding:1px 5px;margin-left:6px;color:var(--muted)}
 svg text{font-family:Montserrat,Arial,sans-serif}
 </style></head><body>
 <header class="top"><div class="tw">
  <div class="brand"><div><div class="k">KSA AIRPORTS &amp; SECURITY</div><div class="t">Status Report</div></div>
  <div class="ctl"><button class="ib r" id="rbtn" onclick="load()"><span class="spin"></span>Refresh</button><button class="ib" id="thm" onclick="toggleTheme()" aria-label="Toggle light or dark mode">Dark</button></div></div>
- <nav id="nav"><a href="#summary" data-t="summary">Summary</a><a href="#news" data-t="news">News</a><a href="#riyadh" data-t="riyadh">Riyadh airport</a><a href="#dammam" data-t="dammam">Dammam airport</a><a href="#economy" data-t="economy">Economy</a></nav>
+ <nav id="nav"><a href="#summary" data-t="summary">Summary</a><a href="#news" data-t="news">News</a><a href="#timeline" data-t="timeline">Timeline</a><a href="#riyadh" data-t="riyadh">Riyadh airport</a><a href="#dammam" data-t="dammam">Dammam airport</a><a href="#economy" data-t="economy">Economy</a></nav>
 </div></header>
 <main>
  <div class="meta" id="lr"></div>
  <div class="banner err" id="err"></div><div class="banner" id="stale"></div>
  <section class="tab" id="t-summary"><div class="coming">Loading&hellip;</div></section>
+ <section class="tab" id="t-timeline"></section>
  <section class="tab" id="t-riyadh"></section>
  <section class="tab" id="t-dammam"></section>
  <section class="tab" id="t-economy"></section>
@@ -70,7 +76,7 @@ svg text{font-family:Montserrat,Arial,sans-serif}
 <footer>All times Riyadh time (AST, UTC+3), 12-hour clock. Figures come from the hourly status report; live airport figures are recalculated from the Flightradar24 board every 5 minutes and labelled as live. Tags: CONFIRMED = official statement or directly checked; CORROBORATED = several independent reports; UNVERIFIED = single or social report; CLAIM = claim by a party; SUPERSEDED = replaced by later information. <a href="latest.json">JSON</a></footer>
 <script src="flow.js"></script>
 <script>
-var $=function(s){return document.getElementById(s)},D=null,TABS=["summary","news","riyadh","dammam","economy"];
+var $=function(s){return document.getElementById(s)},D=null,TABS=["summary","news","timeline","riyadh","dammam","economy"];
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function has(x){return x!==null&&x!==undefined&&x!==""}
 function v(x){return has(x)?esc(x):"n/a"}
@@ -215,6 +221,31 @@ function renderNews(){
   var h=card("News and statements"+(r.news_checked?" &middot; checked "+esc(r.news_checked):""),(r.news_title&&!arr(D.news).length?'<div class="hl" style="font-size:15px">'+esc(r.news_title)+'</div>':'')+(N.length?N.map(function(n){return newsRow(n,true)}).join(""):coming("News")));
   $("t-news").innerHTML=h;
 }
+/* ---------- timeline ---------- */
+var TLC={attack:["Attack","#A11D1D","#F87171"],airport:["Airport","#0AA6A2","#14B8A6"],airline:["Airline","#2563EB","#60A5FA"],official:["Official","#0A2735","#E8EEF6"],military:["Military","#5B6B2F","#A3B86C"],diplomatic:["Diplomatic","#7C3AED","#C4B5FD"],economic:["Economic","#B7791F","#F59E0B"]};
+var TLS={cat:null,ap:null,old:false};
+function tlColor(c){var x=TLC[c];return x?(document.documentElement.getAttribute("data-theme")==="dark"?x[2]:x[1]):css("--muted")}
+function renderTimeline(){
+  var el=$("t-timeline"),all=arr(D.timeline).filter(function(i){return i&&i.title});
+  if(!all.length){el.innerHTML=card("Timeline",coming("Timeline of events since 3 Oct"));return}
+  var cats={},aps={};all.forEach(function(i){cats[i.category||"other"]=(cats[i.category||"other"]||0)+1;if(i.airport)aps[i.airport]=(aps[i.airport]||0)+1});
+  var items=all.filter(function(i){return (!TLS.cat||(i.category||"other")===TLS.cat)&&(!TLS.ap||i.airport===TLS.ap)});
+  items.sort(function(a,b){var x=pd(a.ts),y=pd(b.ts);x=x?+x:0;y=y?+y:0;return TLS.old?x-y:y-x});
+  var chip=function(kind,key,label,n,dot){var on=TLS[kind]===key;return '<button class="chip'+(on?' on':'')+'" onclick="tlSet(\''+kind+'\','+(on?'null':'\''+esc(key)+'\'')+')">'+(dot?'<span class="d" style="background:'+dot+'"></span>':'')+esc(label)+' <span class="c">'+n+'</span></button>'};
+  var h='<div class="card"><h2>Timeline &middot; '+all.length+' events since 3 Oct</h2><div class="sub">Filter by category</div><div class="tlbar">'+Object.keys(cats).map(function(c){return chip("cat",c,(TLC[c]||[c])[0],cats[c],tlColor(c))}).join("")+'</div>'+
+    (Object.keys(aps).length?'<div class="sub">Filter by airport</div><div class="tlbar">'+Object.keys(aps).sort().map(function(a){return chip("ap",a,a,aps[a])}).join("")+'</div>':'')+
+    '<div class="tlbar"><button class="chip" onclick="TLS.old=!TLS.old;renderTimeline()">'+(TLS.old?'Oldest first &#8595;':'Newest first &#8595;')+'</button>'+((TLS.cat||TLS.ap)?'<button class="chip" onclick="TLS.cat=null;TLS.ap=null;renderTimeline()">Clear filters &times;</button>':'')+'<span class="sub" style="align-self:center">Showing '+items.length+' of '+all.length+'</span></div>'+
+    '<div class="leg">'+Object.keys(TLC).filter(function(c){return cats[c]}).map(function(c){return '<span><i style="background:'+tlColor(c)+'"></i>'+TLC[c][0]+'</span>'}).join("")+'</div></div>';
+  var day=null,open=false;
+  items.forEach(function(i){var d=pd(i.ts),dl=i.date_label||(d?d.toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric",timeZone:"Asia/Riyadh"}):"Undated");
+    if(dl!==day){if(open)h+='</div>';h+='<div class="tlday">'+esc(dl)+'</div><div class="tl">';day=dl;open=true}
+    h+='<div class="tli"><span class="dot" style="background:'+tlColor(i.category)+'"></span><div class="tm">'+esc(i.time_label||(d?t12(i.ts):""))+(i.airport?'<span class="ap">'+esc(i.airport)+'</span>':'')+' <span class="sub" style="font-weight:600">&middot; '+esc((TLC[i.category]||[i.category||""])[0])+'</span></div>'+
+      '<div class="ttl">'+tag(i.tag)+esc(i.title)+'</div>'+(i.detail?'<div style="font-size:13.5px">'+esc(i.detail)+'</div>':'')+
+      '<div class="sub" style="margin-top:3px">'+(i.url?'<a target="_blank" rel="noopener" href="'+esc(i.url)+'">'+v(i.source||"Source")+'</a>':v(i.source))+'</div></div>'});
+  if(open)h+='</div>';if(!items.length)h+='<div class="coming">No events match these filters.</div>';
+  el.innerHTML=h;
+}
+function tlSet(k,v){TLS[k]=v;renderTimeline()}
 function render(){
   if(!D)return;var r=D.report||{},L=D.live,msg=[],ra=mins(r.as_of);
   if(ra!==null&&ra>90)msg.push("The latest report is "+Math.floor(ra/60)+"h "+(ra%60)+"m old (as of "+t12(r.as_of)+" AST). A newer edition may be pending.");
@@ -224,6 +255,7 @@ function render(){
   try{var dm=D.dammam;renderAirport("dammam",airportFrom("Dammam, King Fahd International","DMM",dm,false),!dm)}catch(e){$("t-dammam").innerHTML=coming("Dammam airport")}
   try{renderEconomy()}catch(e){$("t-economy").innerHTML=coming("Economy")}
   try{renderNews()}catch(e){$("t-news").innerHTML=coming("News")}
+  try{renderTimeline()}catch(e){$("t-timeline").innerHTML=coming("Timeline")}
 }
 function show(){var t=(location.hash||"#summary").slice(1);if(TABS.indexOf(t)<0)t="summary";TABS.forEach(function(x){$("t-"+x).classList.toggle("on",x===t)});
   [].forEach.call(document.querySelectorAll("nav a"),function(a){a.classList.toggle("on",a.getAttribute("data-t")===t)});}
