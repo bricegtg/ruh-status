@@ -56,6 +56,7 @@ footer{max-width:900px;margin:0 auto;padding:0 12px 30px;font-size:11px;color:va
 .tl{position:relative;margin:4px 0 10px;padding-left:22px}.tl:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--hair)}
 .tli{position:relative;background:var(--card);border-radius:8px;padding:10px 12px;margin:8px 0;box-shadow:0 1px 2px rgba(10,39,53,.08)}.tli .dot{position:absolute;left:-20px;top:14px;width:12px;height:12px;border-radius:50%;border:2px solid var(--bg)}
 .tli .tm{font-size:12px;font-weight:700;color:var(--head)}.tli .ttl{font-weight:700;margin:2px 0;color:var(--head)}.tli .ap{font-size:10px;font-weight:800;border:1px solid var(--hair);border-radius:3px;padding:1px 5px;margin-left:6px;color:var(--muted)}
+.sumb{margin:2px 0 6px;padding-left:20px}.sumb li{font-size:16px;line-height:1.45;font-weight:600;color:var(--head);margin:0 0 7px}.sumb li::marker{color:var(--teal)}
 svg text{font-family:Montserrat,Arial,sans-serif}
 </style></head><body>
 <header class="top"><div class="tw">
@@ -190,7 +191,10 @@ function line(series,kx,ky,unit){
 function renderSummary(){
   var r=D.report||{},S=D.summary||{},dm=D.dammam,h="",strikes=arr(D.strikes);
   var head=S.headline||r.headline;
-  h+=card("Summary"+(S.as_of||r.as_of?" &middot; as of "+t12(S.as_of||r.as_of)+" AST":""),head?'<div class="hl">'+esc(head)+'</div>'+(r.date_long?'<div class="sub">'+esc(r.date_long)+'</div>':''):coming("Headline"));
+  var bl=arr(S.bullets).filter(function(x){return typeof x==="string"&&x.trim()});
+  if(!bl.length&&head)bl=String(head).replace(/([.;])\s+(?=\S)/g,"$1\u0000").split("\u0000").map(function(x){return x.trim()}).filter(Boolean);
+  var ttl=S.title||S.headline_title;
+  h+=card("Summary"+(S.as_of||r.as_of?" &middot; as of "+t12(S.as_of||r.as_of)+" AST":""),(ttl?'<div class="hl">'+esc(ttl)+'</div>':'')+(bl.length?'<ul class="sumb">'+bl.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul>':(ttl?'':coming("Headline")))+(r.date_long&&bl.length?'<div class="sub">'+esc(r.date_long)+'</div>':''));
   var ap=arr(S.airports);
   if(!ap.length){ap=[{name:"Riyadh, King Khalid (RUH)",level:r.level,status_line:r.status_line,tab:"riyadh"},{name:"Dammam, King Fahd (DMM)",level:dm&&dm.level,status_line:dm&&dm.status_line,tab:"dammam"}]}
   h+=card("Airport status",'<div class="pills">'+ap.map(function(a){var t=a.tab||(/dmm|dammam/i.test((a.code||"")+(a.name||""))?"dammam":"riyadh");return '<a class="pill" href="#'+t+'" style="color:inherit;font-weight:400"><div>'+lvl(a.level)+'</div><div><div style="font-weight:700;color:var(--head)">'+esc(a.name||a.code)+'</div><div class="sub">'+(a.status_line?esc(a.status_line):(has(a.level)?'':'Data coming'))+'</div></div></a>'}).join("")+'</div>');
