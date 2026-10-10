@@ -164,7 +164,7 @@ function renderSummary(){
   h+=card("Airport status",'<div class="pills">'+ap.map(function(a){var t=a.tab||(/dmm|dammam/i.test((a.code||"")+(a.name||""))?"dammam":"riyadh");return '<a class="pill" href="#'+t+'" style="color:inherit;font-weight:400"><div>'+lvl(a.level)+'</div><div><div style="font-weight:700;color:var(--head)">'+esc(a.name||a.code)+'</div><div class="sub">'+(a.status_line?esc(a.status_line):(has(a.level)?'':'Data coming'))+'</div></div></a>'}).join("")+'</div>');
   h+=card("Escalation pattern &middot; Houthi strikes on KSA by target type since 8 Sep",strikes.length?strikeChart(strikes):coming("Strike timeline"));
   var N=arr(D.news);if(!N.length)N=arr(r.news);
-  h+=card("Latest news"+(r.news_checked&&!arr(D.news).length?" &middot; checked "+esc(r.news_checked):""),N.length?N.slice(0,5).map(newsRow).join("")+'<a class="btnlink" href="#news">See all news ('+N.length+')</a>':coming("News"));
+  h+=card("Latest news"+(r.news_checked&&!arr(D.news).length?" &middot; checked "+esc(r.news_checked):""),N.length?N.slice(0,5).map(function(n){return newsRow(n,false)}).join("")+'<a class="btnlink" href="#news">See all news ('+N.length+')</a>':coming("News"));
   var ch=arr(S.changed||S.changed_last_hour||S.what_changed);if(!ch.length)ch=(r.last_hour||[]).filter(noGulf);
   h+=card("What changed in the last hour",ch.length?'<ul class="ch">'+ch.map(function(x){return '<li>'+esc(typeof x==="string"?x:(x.text||x.title))+'</li>'}).join("")+'</ul>':coming("Last-hour changes"));
   $("t-summary").innerHTML=h;
