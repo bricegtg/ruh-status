@@ -1,29 +1,438 @@
 {
  "schema": 2,
- "generated_at": "2026-10-10T02:55:19+03:00",
+ "generated_at": "2026-10-10T03:07:29+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
   "title": "RUH Airport Status 3:00 AM AST: DISRUPTED",
   "slot": "3:00 AM",
-  "as_of": "2026-10-10T02:45:00+03:00",
-  "as_of_label": "2:45 AM",
+  "as_of": "2026-10-10T03:04:00+03:00",
+  "as_of_label": "3:04 AM",
   "date_long": "Saturday 10 October 2026",
   "level": "DISRUPTED",
-  "status_line": "Halt 1:18\u20132:20 AM; moving since 2:20 AM; no official reason.",
-  "headline": "New halt 1:18 to 2:20 AM (no landing until 2:40 AM); traffic resuming. No official reason.",
-  "synopsis": "There were 6 takeoffs in the last hour, the latest XY347 to Addis Ababa at 2:41 AM. The latest landing was XY62 from Jeddah at 2:45 AM, with 2 landings in the last hour. 83 flights are cancelled today (37 departures, 46 arrivals) and 0 arrivals have diverted. Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop.",
+  "status_line": "Halt 1:18\u20132:20 AM; traffic moving again since 2:20 AM; no official reason.",
+  "headline": "Overnight halt 1:18 to 2:20 AM ended; flights moving again. No official reason for the stop.",
+  "synopsis": "There were 10 takeoffs in the last hour, the latest SV806 to Dhaka at 2:59 AM. The latest landing was SV1296 from Gurayat at 3:02 AM, with 6 landings in the last hour. 85 flights are cancelled today (39 departures, 46 arrivals) and 0 arrivals have diverted. Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop.",
   "next_update": "4:00 AM",
   "kpis": {
-   "cancelled_total": 83,
-   "cancelled_departures": 37,
+   "cancelled_total": 85,
+   "cancelled_departures": 39,
    "cancelled_arrivals": 46,
    "pct_of_scheduled": 11,
-   "scheduled": 769,
+   "scheduled": 770,
    "diverted": 0,
    "diverted_to": null,
+   "takeoffs_last_hour": 10,
+   "landings_last_hour": 6,
+   "last_takeoff": {
+    "time": "2:59 AM",
+    "flight": "SV806",
+    "city": "Dhaka",
+    "minutes_ago": 5
+   },
+   "last_landing": {
+    "time": "3:02 AM",
+    "flight": "SV1296",
+    "city": "Gurayat",
+    "minutes_ago": 2
+   }
+  },
+  "flow24": {
+   "start": "2026-10-09T04:00:00+03:00",
+   "end": "2026-10-10T03:04:00+03:00",
+   "start_label": "4:00 AM Friday",
+   "unit": "hour",
+   "buckets": [
+    {
+     "hour_start": "2026-10-09T04:00:00+03:00",
+     "label": "4 AM",
+     "takeoffs": 9,
+     "landings": 11,
+     "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-09T05:00:00+03:00",
+     "label": "5 AM",
+     "takeoffs": 1,
+     "landings": 5,
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-09T06:00:00+03:00",
+     "label": "6 AM",
+     "takeoffs": 8,
+     "landings": 11,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-09T07:00:00+03:00",
+     "label": "7 AM",
+     "takeoffs": 12,
+     "landings": 4,
+     "cancelled": 3
+    },
+    {
+     "hour_start": "2026-10-09T08:00:00+03:00",
+     "label": "8 AM",
+     "takeoffs": 14,
+     "landings": 8,
+     "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-09T09:00:00+03:00",
+     "label": "9 AM",
+     "takeoffs": 14,
+     "landings": 8,
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-09T10:00:00+03:00",
+     "label": "10 AM",
+     "takeoffs": 16,
+     "landings": 10,
+     "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-09T11:00:00+03:00",
+     "label": "11 AM",
+     "takeoffs": 16,
+     "landings": 12,
+     "cancelled": 7
+    },
+    {
+     "hour_start": "2026-10-09T12:00:00+03:00",
+     "label": "12 PM",
+     "takeoffs": 6,
+     "landings": 12,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-09T13:00:00+03:00",
+     "label": "1 PM",
+     "takeoffs": 8,
+     "landings": 6,
+     "cancelled": 10
+    },
+    {
+     "hour_start": "2026-10-09T14:00:00+03:00",
+     "label": "2 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-09T15:00:00+03:00",
+     "label": "3 PM",
+     "takeoffs": 14,
+     "landings": 18,
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-09T16:00:00+03:00",
+     "label": "4 PM",
+     "takeoffs": 3,
+     "landings": 1,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-09T17:00:00+03:00",
+     "label": "5 PM",
+     "takeoffs": 12,
+     "landings": 24,
+     "cancelled": 7
+    },
+    {
+     "hour_start": "2026-10-09T18:00:00+03:00",
+     "label": "6 PM",
+     "takeoffs": 1,
+     "landings": 9,
+     "cancelled": 11
+    },
+    {
+     "hour_start": "2026-10-09T19:00:00+03:00",
+     "label": "7 PM",
+     "takeoffs": 11,
+     "landings": 12,
+     "cancelled": 10
+    },
+    {
+     "hour_start": "2026-10-09T20:00:00+03:00",
+     "label": "8 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 11
+    },
+    {
+     "hour_start": "2026-10-09T21:00:00+03:00",
+     "label": "9 PM",
+     "takeoffs": 10,
+     "landings": 6,
+     "cancelled": 15
+    },
+    {
+     "hour_start": "2026-10-09T22:00:00+03:00",
+     "label": "10 PM",
+     "takeoffs": 12,
+     "landings": 7,
+     "cancelled": 10
+    },
+    {
+     "hour_start": "2026-10-09T23:00:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 13,
+     "landings": 10,
+     "cancelled": 11
+    },
+    {
+     "hour_start": "2026-10-10T00:00:00+03:00",
+     "label": "12 AM",
+     "takeoffs": 11,
+     "landings": 6,
+     "cancelled": 9
+    },
+    {
+     "hour_start": "2026-10-10T01:00:00+03:00",
+     "label": "1 AM",
+     "takeoffs": 2,
+     "landings": 3,
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-10T02:00:00+03:00",
+     "label": "2 AM",
+     "takeoffs": 10,
+     "landings": 5,
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-10T03:00:00+03:00",
+     "label": "3 AM",
+     "takeoffs": 0,
+     "landings": 1,
+     "cancelled": 0
+    }
+   ],
+   "totals": {
+    "takeoffs": 203,
+    "landings": 189,
+    "cancelled": 165
+   },
+   "halts": [
+    {
+     "start": "2026-10-09T05:32:33+03:00",
+     "end": "2026-10-09T06:24:19+03:00",
+     "label": "Halt 5:32\u20136:24 AM",
+     "minutes": 52
+    },
+    {
+     "start": "2026-10-09T13:58:29+03:00",
+     "end": "2026-10-09T15:14:10+03:00",
+     "label": "Halt 1:58\u20133:14 PM",
+     "minutes": 76
+    },
+    {
+     "start": "2026-10-09T16:05:26+03:00",
+     "end": "2026-10-09T16:50:42+03:00",
+     "label": "Halt 4:05\u20134:50 PM",
+     "minutes": 45
+    },
+    {
+     "start": "2026-10-09T19:41:09+03:00",
+     "end": "2026-10-09T21:38:31+03:00",
+     "label": "Halt 7:41\u20139:38 PM",
+     "minutes": 117
+    },
+    {
+     "start": "2026-10-10T01:18:00+03:00",
+     "end": "2026-10-10T02:20:04+03:00",
+     "label": "Halt 1:18\u20132:20 AM",
+     "minutes": 62
+    }
+   ]
+  },
+  "halts": [
+   {
+    "start": "2026-10-10T01:18:00+03:00",
+    "end": "2026-10-10T02:20:04+03:00",
+    "label": "Halt 1:18\u20132:20 AM",
+    "minutes": 62
+   },
+   {
+    "start": "2026-10-09T19:41:09+03:00",
+    "end": "2026-10-09T21:38:31+03:00",
+    "label": "Halt 7:41\u20139:38 PM",
+    "minutes": 117
+   },
+   {
+    "start": "2026-10-09T16:05:26+03:00",
+    "end": "2026-10-09T16:50:42+03:00",
+    "label": "Halt 4:05\u20134:50 PM",
+    "minutes": 45
+   },
+   {
+    "start": "2026-10-09T13:58:29+03:00",
+    "end": "2026-10-09T15:14:10+03:00",
+    "label": "Halt 1:58\u20133:14 PM",
+    "minutes": 76
+   },
+   {
+    "start": "2026-10-09T05:32:33+03:00",
+    "end": "2026-10-09T06:24:19+03:00",
+    "label": "Halt 5:32\u20136:24 AM",
+    "minutes": 52
+   },
+   {
+    "start": "2026-10-08T21:29:28+03:00",
+    "end": "2026-10-08T22:31:31+03:00",
+    "label": "Halt 9:29\u201310:31 PM",
+    "minutes": 62
+   }
+  ],
+  "gulf": [
+   {
+    "code": "DXB",
+    "city": "Dubai",
+    "flight": "SV592",
+    "airline": "Saudia",
+    "scheduled": "11:25 PM",
+    "estimated": "12:35 AM",
+    "tomorrow": false,
+    "status": "Has not left yet",
+    "cancelled_today": 5
+   },
+   {
+    "code": "BAH",
+    "city": "Bahrain",
+    "flight": "GF162",
+    "airline": "Gulf Air",
+    "scheduled": "7:00 AM",
+    "estimated": "7:00 AM",
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 0
+   },
+   {
+    "code": "MCT",
+    "city": "Muscat",
+    "flight": "WY684",
+    "airline": "Oman Air",
+    "scheduled": "4:05 PM",
+    "estimated": null,
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 2
+   },
+   {
+    "code": "AUH",
+    "city": "Abu Dhabi",
+    "flight": "SV572",
+    "airline": "Saudia",
+    "scheduled": "11:15 AM",
+    "estimated": "11:15 AM",
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 1
+   },
+   {
+    "code": "DOH",
+    "city": "Doha",
+    "flight": "QR8731",
+    "airline": "Qatar Airways",
+    "scheduled": "11:45 AM",
+    "estimated": null,
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 5
+   }
+  ],
+  "gulf_footnote": "Riyadh Air RX243 to Dubai, due 3:50 PM, finally left at 9:50 PM. Cancelled today include Emirates EK816, EK820, EK818, flydubai FZ848, FZ842, FZ856 and flynas XY217 to Dubai; Qatar Airways QR1167, QR1171, QR1241, QR1169, QR1165, QR1239 and QR1173 to Doha; Etihad EY552, EY556 and EY560 to Abu Dhabi; SalamAir OV206 to Muscat.",
+  "news_title": "Coalition says 136 Houthi targets destroyed; no official word on overnight RUH halt or strike claims.",
+  "news_checked": "3:05 AM",
+  "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "OIC Independent Permanent Human Rights Commission condemns Houthi attacks on civilian facilities",
+    "source": "Al Ekhbariya on X (Arabic)",
+    "time": "2:29 AM",
+    "extra": "published 2:29 AM; last checked 3:05 AM",
+    "body": "Saudi state TV Al Ekhbariya reports the OIC Independent Permanent Human Rights Commission condemned the Houthi terrorist attacks on civilian facilities in the Kingdom. No RUH operational information.",
+    "url": "https://x.com/alekhbariyaNews/status/2108701465703321789"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition says 136 Houthi military targets destroyed",
+    "source": "SPA English on X",
+    "time": "2:16 AM",
+    "extra": "published 2:16 AM; last checked 2:28 AM",
+    "body": "Saudi Press Agency reports the coalition said 136 military targets were destroyed in Houthi-controlled areas. No RUH operational information; no official comment on the 1:53 AM strike claims.",
+    "url": "https://x.com/Spa_Eng/status/2108698085849526756"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Yemen's Prime Minister condemns the Houthi attack on King Khalid airport",
+    "source": "Al Jazeera English on X",
+    "time": "2:00 AM",
+    "extra": "published 2:00 AM; last checked 2:05 AM",
+    "body": "Yemen's Prime Minister Shaya Zindani called the Houthi attack on King Khalid airport a crime and accused the group of acting for Iran. No operational information.",
+    "url": "https://x.com/AJEnglish/status/2108693997246177287"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Posts claim another missile strike at RUH around 1:53 AM",
+    "source": "Unverified accounts on X",
+    "time": "1:55 AM",
+    "extra": "published 1:53 to 1:55 AM; last checked 2:05 AM",
+    "body": "Several partisan accounts (e.g. https://x.com/Gh2_xz/status/2108692859532755307, https://x.com/sam_alassani/status/2108692503016636856) claim a new missile strike or direct hit at King Khalid airport and that flights stopped. Another account says the reports remain unconfirmed (https://x.com/WarUpdates/status/2108692202742600125). No official, Civil Defense or wire confirmation as of 2:05 AM; see the board figures in this edition.",
+    "url": "https://x.com/Israeli_Sniper/status/2108692862040674684"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition releases footage of strikes on Houthi ballistic missile facilities",
+    "source": "Al Arabiya English on X",
+    "time": "1:12 AM",
+    "extra": "published 1:12 AM; last checked 1:33 AM",
+    "body": "The Saudi-led coalition released footage of strikes on Houthi ballistic missile facilities and says air support continues around the clock. No RUH operational information.",
+    "url": "https://x.com/AlArabiya_Eng/status/2108682046952345614"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Posts claim landings stopped again at RUH just before 1:00 AM, with aircraft holding and explosions heard",
+    "source": "Ansar Allah-linked account on X",
+    "time": "12:52 AM",
+    "extra": "published 12:52 AM; last checked 1:03 AM",
+    "body": "A Houthi-aligned account and several copies (e.g. https://x.com/Global_Yemen/status/2108677739834425669) claim flights stopped at King Khalid airport with aircraft circling. One post also claims a ballistic missile was fired at Riyadh (https://x.com/RyanRozbiani/status/2108679137443410249). No official, Civil Defense or wire confirmation as of 1:03 AM; see the board figures in this edition.",
+    "url": "https://x.com/Ye_AnsarAllah/status/2108677127059239127"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Trump says he is not happy about the Houthi attacks on King Khalid airport",
+    "source": "Roya News on X (Arabic)",
+    "time": "12:56 AM",
+    "extra": "published 12:56 AM; last checked 1:03 AM",
+    "body": "Jordan's Roya News quotes US President Trump saying he is not happy about the Houthi attacks on King Khalid airport in Riyadh. No operational information.",
+    "url": "https://x.com/RoyaNews/status/2108677952661803496"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Turkey condemns the Houthi attacks on Abha and King Khalid airports",
+    "source": "Al Ekhbariya on X (Arabic)",
+    "time": "11:43 PM",
+    "extra": "published 11:43 PM (9 Oct); last checked 12:31 AM",
+    "body": "Saudi state TV Al Ekhbariya reports Turkey condemned the Houthi attacks on Abha and King Khalid international airports. No operational information.",
+    "url": "https://x.com/alekhbariyaNews/status/2108659698786275499"
+   }
+  ],
+  "pdf": "report.pdf",
+  "pdf_name": "RUH_status_report_300AM_10Oct2026.pdf"
+ },
+ "live": {
+  "as_of": "2026-10-10T02:45:01+03:00",
+  "source": "Flightradar24 RUH boards (automatic, no editor)",
+  "movements": {
    "takeoffs_last_hour": 6,
-   "landings_last_hour": 2,
+   "landings_last_hour": 1,
+   "takeoffs_last_30": 6,
+   "landings_last_30": 1,
    "last_takeoff": {
     "time": "2:41 AM",
     "flight": "XY347",
@@ -31,16 +440,80 @@
     "minutes_ago": 3
    },
    "last_landing": {
-    "time": "2:45 AM",
-    "flight": "XY62",
-    "city": "Jeddah",
-    "minutes_ago": 0
+    "time": "2:40 AM",
+    "flight": "ZP2101",
+    "city": "Baku",
+    "minutes_ago": 4
    }
   },
+  "cancellations": {
+   "total": 83,
+   "departures": 37,
+   "arrivals": 46,
+   "pct_of_scheduled": 11,
+   "scheduled": 769
+  },
+  "diversions": 0,
+  "gulf": [
+   {
+    "code": "DXB",
+    "city": "Dubai",
+    "flight": "SV592",
+    "airline": "Saudia",
+    "scheduled": "11:25 PM",
+    "estimated": "12:35 AM",
+    "tomorrow": false,
+    "status": "Has not left yet",
+    "cancelled_today": 5
+   },
+   {
+    "code": "AUH",
+    "city": "Abu Dhabi",
+    "flight": "SV572",
+    "airline": "Saudia",
+    "scheduled": "11:15 AM",
+    "estimated": "11:15 AM",
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 1
+   },
+   {
+    "code": "DOH",
+    "city": "Doha",
+    "flight": "QR8731",
+    "airline": "Qatar Airways",
+    "scheduled": "11:45 AM",
+    "estimated": null,
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 5
+   },
+   {
+    "code": "BAH",
+    "city": "Bahrain",
+    "flight": "GF162",
+    "airline": "Gulf Air",
+    "scheduled": "7:00 AM",
+    "estimated": "7:00 AM",
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 0
+   },
+   {
+    "code": "MCT",
+    "city": "Muscat",
+    "flight": "OV206",
+    "airline": "SalamAir",
+    "scheduled": "3:00 PM",
+    "estimated": null,
+    "tomorrow": false,
+    "status": "On schedule",
+    "cancelled_today": 1
+   }
+  ],
   "flow24": {
    "start": "2026-10-09T03:00:00+03:00",
-   "end": "2026-10-10T02:45:00+03:00",
-   "start_label": "3:00 AM Friday",
+   "end": "2026-10-10T02:45:01+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -216,515 +689,6 @@
     "takeoffs": 204,
     "landings": 185,
     "cancelled": 167
-   },
-   "halts": [
-    {
-     "start": "2026-10-09T05:32:33+03:00",
-     "end": "2026-10-09T06:24:19+03:00",
-     "label": "Halt 5:32\u20136:24 AM",
-     "minutes": 52
-    },
-    {
-     "start": "2026-10-09T13:58:29+03:00",
-     "end": "2026-10-09T15:14:10+03:00",
-     "label": "Halt 1:58\u20133:14 PM",
-     "minutes": 76
-    },
-    {
-     "start": "2026-10-09T16:05:26+03:00",
-     "end": "2026-10-09T16:50:42+03:00",
-     "label": "Halt 4:05\u20134:50 PM",
-     "minutes": 45
-    },
-    {
-     "start": "2026-10-09T19:41:09+03:00",
-     "end": "2026-10-09T21:38:31+03:00",
-     "label": "Halt 7:41\u20139:38 PM",
-     "minutes": 117
-    },
-    {
-     "start": "2026-10-10T01:18:00+03:00",
-     "end": "2026-10-10T02:20:04+03:00",
-     "label": "Halt 1:18\u20132:20 AM",
-     "minutes": 62
-    }
-   ]
-  },
-  "halts": [
-   {
-    "start": "2026-10-10T01:18:00+03:00",
-    "end": "2026-10-10T02:20:04+03:00",
-    "label": "Halt 1:18\u20132:20 AM",
-    "minutes": 62
-   },
-   {
-    "start": "2026-10-09T19:41:09+03:00",
-    "end": "2026-10-09T21:38:31+03:00",
-    "label": "Halt 7:41\u20139:38 PM",
-    "minutes": 117
-   },
-   {
-    "start": "2026-10-09T16:05:26+03:00",
-    "end": "2026-10-09T16:50:42+03:00",
-    "label": "Halt 4:05\u20134:50 PM",
-    "minutes": 45
-   },
-   {
-    "start": "2026-10-09T13:58:29+03:00",
-    "end": "2026-10-09T15:14:10+03:00",
-    "label": "Halt 1:58\u20133:14 PM",
-    "minutes": 76
-   },
-   {
-    "start": "2026-10-09T05:32:33+03:00",
-    "end": "2026-10-09T06:24:19+03:00",
-    "label": "Halt 5:32\u20136:24 AM",
-    "minutes": 52
-   },
-   {
-    "start": "2026-10-08T21:29:28+03:00",
-    "end": "2026-10-08T22:31:31+03:00",
-    "label": "Halt 9:29\u201310:31 PM",
-    "minutes": 62
-   }
-  ],
-  "gulf": [
-   {
-    "code": "DXB",
-    "city": "Dubai",
-    "flight": "SV592",
-    "airline": "Saudia",
-    "scheduled": "11:25 PM",
-    "estimated": "12:35 AM",
-    "tomorrow": false,
-    "status": "Has not left yet",
-    "cancelled_today": 5
-   },
-   {
-    "code": "BAH",
-    "city": "Bahrain",
-    "flight": "GF162",
-    "airline": "Gulf Air",
-    "scheduled": "7:00 AM",
-    "estimated": "7:00 AM",
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 0
-   },
-   {
-    "code": "MCT",
-    "city": "Muscat",
-    "flight": "OV206",
-    "airline": "SalamAir",
-    "scheduled": "3:00 PM",
-    "estimated": null,
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 1
-   },
-   {
-    "code": "AUH",
-    "city": "Abu Dhabi",
-    "flight": "SV572",
-    "airline": "Saudia",
-    "scheduled": "11:15 AM",
-    "estimated": "11:15 AM",
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 1
-   },
-   {
-    "code": "DOH",
-    "city": "Doha",
-    "flight": "QR8731",
-    "airline": "Qatar Airways",
-    "scheduled": "11:45 AM",
-    "estimated": null,
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 5
-   }
-  ],
-  "gulf_footnote": "Riyadh Air RX243 to Dubai, due 3:50 PM, finally left at 9:50 PM. Cancelled today include Emirates EK816, EK820, EK818, flydubai FZ848, FZ842, FZ856 and flynas XY217 to Dubai; Qatar Airways QR1167, QR1171, QR1241, QR1169, QR1165, QR1239 and QR1173 to Doha; Etihad EY552, EY556 and EY560 to Abu Dhabi; SalamAir OV206 to Muscat.",
-  "news_title": "Turkey and the UAE join condemnations of the attacks on King Khalid airport; no official reason for the 9 October evening stop.",
-  "news_checked": "2:28 AM",
-  "news": [
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition says 136 Houthi military targets destroyed",
-    "source": "SPA English on X",
-    "time": "2:16 AM",
-    "extra": "published 2:16 AM; last checked 2:28 AM",
-    "body": "Saudi Press Agency reports the coalition said 136 military targets were destroyed in Houthi-controlled areas. No RUH operational information; no official comment on the 1:53 AM strike claims.",
-    "url": "https://x.com/Spa_Eng/status/2108698085849526756"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Yemen's Prime Minister condemns the Houthi attack on King Khalid airport",
-    "source": "Al Jazeera English on X",
-    "time": "2:00 AM",
-    "extra": "published 2:00 AM; last checked 2:05 AM",
-    "body": "Yemen's Prime Minister Shaya Zindani called the Houthi attack on King Khalid airport a crime and accused the group of acting for Iran. No operational information.",
-    "url": "https://x.com/AJEnglish/status/2108693997246177287"
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "Posts claim another missile strike at RUH around 1:53 AM",
-    "source": "Unverified accounts on X",
-    "time": "1:55 AM",
-    "extra": "published 1:53 to 1:55 AM; last checked 2:05 AM",
-    "body": "Several partisan accounts (e.g. https://x.com/Gh2_xz/status/2108692859532755307, https://x.com/sam_alassani/status/2108692503016636856) claim a new missile strike or direct hit at King Khalid airport and that flights stopped. Another account says the reports remain unconfirmed (https://x.com/WarUpdates/status/2108692202742600125). No official, Civil Defense or wire confirmation as of 2:05 AM; see the board figures in this edition.",
-    "url": "https://x.com/Israeli_Sniper/status/2108692862040674684"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition releases footage of strikes on Houthi ballistic missile facilities",
-    "source": "Al Arabiya English on X",
-    "time": "1:12 AM",
-    "extra": "published 1:12 AM; last checked 1:33 AM",
-    "body": "The Saudi-led coalition released footage of strikes on Houthi ballistic missile facilities and says air support continues around the clock. No RUH operational information.",
-    "url": "https://x.com/AlArabiya_Eng/status/2108682046952345614"
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "Posts claim landings stopped again at RUH just before 1:00 AM, with aircraft holding and explosions heard",
-    "source": "Ansar Allah-linked account on X",
-    "time": "12:52 AM",
-    "extra": "published 12:52 AM; last checked 1:03 AM",
-    "body": "A Houthi-aligned account and several copies (e.g. https://x.com/Global_Yemen/status/2108677739834425669) claim flights stopped at King Khalid airport with aircraft circling. One post also claims a ballistic missile was fired at Riyadh (https://x.com/RyanRozbiani/status/2108679137443410249). No official, Civil Defense or wire confirmation as of 1:03 AM; see the board figures in this edition.",
-    "url": "https://x.com/Ye_AnsarAllah/status/2108677127059239127"
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "Trump says he is not happy about the Houthi attacks on King Khalid airport",
-    "source": "Roya News on X (Arabic)",
-    "time": "12:56 AM",
-    "extra": "published 12:56 AM; last checked 1:03 AM",
-    "body": "Jordan's Roya News quotes US President Trump saying he is not happy about the Houthi attacks on King Khalid airport in Riyadh. No operational information.",
-    "url": "https://x.com/RoyaNews/status/2108677952661803496"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Turkey condemns the Houthi attacks on Abha and King Khalid airports",
-    "source": "Al Ekhbariya on X (Arabic)",
-    "time": "11:43 PM",
-    "extra": "published 11:43 PM (9 Oct); last checked 12:31 AM",
-    "body": "Saudi state TV Al Ekhbariya reports Turkey condemned the Houthi attacks on Abha and King Khalid international airports. No operational information.",
-    "url": "https://x.com/alekhbariyaNews/status/2108659698786275499"
-   },
-   {
-    "tag": "CORROBORATED",
-    "title": "UAE condemns the Houthi attacks on King Khalid airport and a Saudia aircraft, which killed three Saudis",
-    "source": "Al Arabiya English on X",
-    "time": "10:44 PM",
-    "extra": "published 10:44 PM; last checked 11:29 PM",
-    "body": "The UAE Foreign Ministry condemned the Houthi attacks on King Khalid International Airport and a Saudia aircraft, which killed three Saudis, calling them a blatant violation of Saudi sovereignty. Al Ekhbariya also reported the condemnation at 10:38 PM (https://x.com/alekhbariyaNews/status/2108643190026932411). No operational information.",
-    "url": "https://x.com/AlArabiya_Eng/status/2108644785523245206"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "UN envoy for Yemen and Mauritania condemn the Houthi attacks on King Khalid and Abha airports",
-    "source": "SPA English on X",
-    "time": "10:18 PM",
-    "extra": "published 10:18 PM; last checked 10:35 PM",
-    "body": "SPA reports Mauritania condemned the attacks targeting King Khalid International Airport in Riyadh and Abha International Airport. At 10:12 PM Al Ekhbariya reported the UN special envoy for Yemen also condemned the attacks on both airports (https://x.com/alekhbariyaNews/status/2108636663836803288). Neither gives an operational reason for the evening halt.",
-    "url": "https://x.com/Spa_Eng/status/2108638241230668168"
-   },
-   {
-    "tag": "CORROBORATED",
-    "title": "Flightradar24: many flights diverting to alternate airfields, then flights now making their way toward Riyadh",
-    "source": "Flightradar24 on X",
-    "time": "9:31 PM",
-    "extra": "posts 8:50, 9:20 and 9:31 PM; last checked 9:33 PM",
-    "body": "At 9:20 PM Flightradar24 posted that many flights were diverting to alternate airfields (https://x.com/flightradar24/status/2108623703919763526); at 9:31 PM it said flights are now making their way toward Riyadh. At 8:50 PM it noted the last landing was over an hour ago (https://x.com/flightradar24/status/2108616180432814231). The board matches: 9 diversions during the stop, no landing yet after 7:41 PM.",
-    "url": "https://x.com/flightradar24/status/2108626438731727023"
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "teleSUR says Houthi spokesman Saree claimed a ballistic missile attack on Riyadh airport; no matching Saree post found",
-    "source": "teleSUR English on X",
-    "time": "9:00 PM",
-    "extra": "published 9:00 PM; last checked 9:11 PM",
-    "body": "teleSUR English reports that Houthi spokesman Yahya Saree claimed a ballistic missile attack on King Khalid International Airport. We found no matching post on Saree's own account. The Ministry of Defense, SPA and Reuters had said nothing as of 9:11 PM.",
-    "url": "https://x.com/telesurenglish/status/2108618495336362264"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "France and Syria condemn the Houthi attacks; Syria names King Khalid airport",
-    "source": "Al Ekhbariya on X (Arabic)",
-    "time": "8:39 PM",
-    "extra": "published 8:39 PM; last checked 8:45 PM",
-    "body": "Saudi state TV Al Ekhbariya reports France condemned the Houthi attacks on civilian sites in the Kingdom and expressed solidarity. At 8:22 PM it reported Syria condemned the attacks on King Khalid International Airport (https://x.com/alekhbariyaNews/status/2108609076263354737). Neither gives operational information.",
-    "url": "https://x.com/alekhbariyaNews/status/2108613297809523022"
-   }
-  ],
-  "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_300AM_10Oct2026.pdf"
- },
- "live": {
-  "as_of": "2026-10-10T02:55:01+03:00",
-  "source": "Flightradar24 RUH boards (automatic, no editor)",
-  "movements": {
-   "takeoffs_last_hour": 7,
-   "landings_last_hour": 4,
-   "takeoffs_last_30": 6,
-   "landings_last_30": 4,
-   "last_takeoff": {
-    "time": "2:50 AM",
-    "flight": "PA475",
-    "city": "Lahore",
-    "minutes_ago": 4
-   },
-   "last_landing": {
-    "time": "2:51 AM",
-    "flight": "XY300",
-    "city": "Istanbul",
-    "minutes_ago": 3
-   }
-  },
-  "cancellations": {
-   "total": 83,
-   "departures": 37,
-   "arrivals": 46,
-   "pct_of_scheduled": 11,
-   "scheduled": 770
-  },
-  "diversions": 0,
-  "gulf": [
-   {
-    "code": "DXB",
-    "city": "Dubai",
-    "flight": "SV592",
-    "airline": "Saudia",
-    "scheduled": "11:25 PM",
-    "estimated": "12:35 AM",
-    "tomorrow": false,
-    "status": "Has not left yet",
-    "cancelled_today": 5
-   },
-   {
-    "code": "AUH",
-    "city": "Abu Dhabi",
-    "flight": "SV572",
-    "airline": "Saudia",
-    "scheduled": "11:15 AM",
-    "estimated": "11:15 AM",
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 1
-   },
-   {
-    "code": "DOH",
-    "city": "Doha",
-    "flight": "QR8731",
-    "airline": "Qatar Airways",
-    "scheduled": "11:45 AM",
-    "estimated": null,
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 5
-   },
-   {
-    "code": "BAH",
-    "city": "Bahrain",
-    "flight": "GF162",
-    "airline": "Gulf Air",
-    "scheduled": "7:00 AM",
-    "estimated": "7:00 AM",
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 0
-   },
-   {
-    "code": "MCT",
-    "city": "Muscat",
-    "flight": "OV206",
-    "airline": "SalamAir",
-    "scheduled": "3:00 PM",
-    "estimated": null,
-    "tomorrow": false,
-    "status": "On schedule",
-    "cancelled_today": 1
-   }
-  ],
-  "flow24": {
-   "start": "2026-10-09T03:00:00+03:00",
-   "end": "2026-10-10T02:55:01+03:00",
-   "unit": "hour",
-   "buckets": [
-    {
-     "hour_start": "2026-10-09T03:00:00+03:00",
-     "label": "3 AM",
-     "takeoffs": 5,
-     "landings": 1,
-     "cancelled": 4
-    },
-    {
-     "hour_start": "2026-10-09T04:00:00+03:00",
-     "label": "4 AM",
-     "takeoffs": 9,
-     "landings": 11,
-     "cancelled": 4
-    },
-    {
-     "hour_start": "2026-10-09T05:00:00+03:00",
-     "label": "5 AM",
-     "takeoffs": 1,
-     "landings": 5,
-     "cancelled": 5
-    },
-    {
-     "hour_start": "2026-10-09T06:00:00+03:00",
-     "label": "6 AM",
-     "takeoffs": 8,
-     "landings": 11,
-     "cancelled": 6
-    },
-    {
-     "hour_start": "2026-10-09T07:00:00+03:00",
-     "label": "7 AM",
-     "takeoffs": 12,
-     "landings": 4,
-     "cancelled": 3
-    },
-    {
-     "hour_start": "2026-10-09T08:00:00+03:00",
-     "label": "8 AM",
-     "takeoffs": 14,
-     "landings": 8,
-     "cancelled": 4
-    },
-    {
-     "hour_start": "2026-10-09T09:00:00+03:00",
-     "label": "9 AM",
-     "takeoffs": 14,
-     "landings": 8,
-     "cancelled": 5
-    },
-    {
-     "hour_start": "2026-10-09T10:00:00+03:00",
-     "label": "10 AM",
-     "takeoffs": 16,
-     "landings": 10,
-     "cancelled": 4
-    },
-    {
-     "hour_start": "2026-10-09T11:00:00+03:00",
-     "label": "11 AM",
-     "takeoffs": 16,
-     "landings": 12,
-     "cancelled": 7
-    },
-    {
-     "hour_start": "2026-10-09T12:00:00+03:00",
-     "label": "12 PM",
-     "takeoffs": 6,
-     "landings": 12,
-     "cancelled": 6
-    },
-    {
-     "hour_start": "2026-10-09T13:00:00+03:00",
-     "label": "1 PM",
-     "takeoffs": 8,
-     "landings": 6,
-     "cancelled": 10
-    },
-    {
-     "hour_start": "2026-10-09T14:00:00+03:00",
-     "label": "2 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 6
-    },
-    {
-     "hour_start": "2026-10-09T15:00:00+03:00",
-     "label": "3 PM",
-     "takeoffs": 14,
-     "landings": 18,
-     "cancelled": 5
-    },
-    {
-     "hour_start": "2026-10-09T16:00:00+03:00",
-     "label": "4 PM",
-     "takeoffs": 3,
-     "landings": 1,
-     "cancelled": 6
-    },
-    {
-     "hour_start": "2026-10-09T17:00:00+03:00",
-     "label": "5 PM",
-     "takeoffs": 12,
-     "landings": 24,
-     "cancelled": 7
-    },
-    {
-     "hour_start": "2026-10-09T18:00:00+03:00",
-     "label": "6 PM",
-     "takeoffs": 1,
-     "landings": 9,
-     "cancelled": 11
-    },
-    {
-     "hour_start": "2026-10-09T19:00:00+03:00",
-     "label": "7 PM",
-     "takeoffs": 11,
-     "landings": 12,
-     "cancelled": 10
-    },
-    {
-     "hour_start": "2026-10-09T20:00:00+03:00",
-     "label": "8 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 11
-    },
-    {
-     "hour_start": "2026-10-09T21:00:00+03:00",
-     "label": "9 PM",
-     "takeoffs": 10,
-     "landings": 6,
-     "cancelled": 15
-    },
-    {
-     "hour_start": "2026-10-09T22:00:00+03:00",
-     "label": "10 PM",
-     "takeoffs": 12,
-     "landings": 7,
-     "cancelled": 10
-    },
-    {
-     "hour_start": "2026-10-09T23:00:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 13,
-     "landings": 10,
-     "cancelled": 11
-    },
-    {
-     "hour_start": "2026-10-10T00:00:00+03:00",
-     "label": "12 AM",
-     "takeoffs": 11,
-     "landings": 6,
-     "cancelled": 9
-    },
-    {
-     "hour_start": "2026-10-10T01:00:00+03:00",
-     "label": "1 AM",
-     "takeoffs": 2,
-     "landings": 3,
-     "cancelled": 5
-    },
-    {
-     "hour_start": "2026-10-10T02:00:00+03:00",
-     "label": "2 AM",
-     "takeoffs": 7,
-     "landings": 4,
-     "cancelled": 5
-    }
-   ],
-   "totals": {
-    "takeoffs": 205,
-    "landings": 188,
-    "cancelled": 169
    },
    "halts": [
     {
