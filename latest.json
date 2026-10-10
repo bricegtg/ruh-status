@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-11T01:47:19+03:00",
+ "generated_at": "2026-10-11T01:49:08+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -1026,7 +1026,9 @@
      "label": "Halt 6:29\u20137:15 PM",
      "minutes": 45
     }
-   ]
+   ],
+   "auto_pill": "HALTED",
+   "pill_source": "auto"
   },
   "JED": {
    "code": "JED",
@@ -1286,7 +1288,9 @@
      "label": "Halt 1:57\u20132:54 PM",
      "minutes": 57
     }
-   ]
+   ],
+   "auto_pill": "DISRUPTED",
+   "pill_source": "auto"
   },
   "DMM": {
    "code": "DMM",
@@ -1552,7 +1556,9 @@
      "label": "Halt 2:19\u20133:08 PM",
      "minutes": 49
     }
-   ]
+   ],
+   "auto_pill": "DISRUPTED",
+   "pill_source": "auto"
   },
   "MED": {
    "code": "MED",
@@ -1774,7 +1780,9 @@
     },
     "halts": []
    },
-   "halts": []
+   "halts": [],
+   "auto_pill": "DISRUPTED",
+   "pill_source": "auto"
   },
   "AHB": {
    "code": "AHB",
@@ -2046,7 +2054,9 @@
      "label": "Halt 6:01 PM\u20136:25 AM",
      "minutes": 743
     }
-   ]
+   ],
+   "auto_pill": "HALTED",
+   "pill_source": "auto"
   },
   "GIZ": {
    "code": "GIZ",
@@ -2258,7 +2268,9 @@
     },
     "halts": []
    },
-   "halts": []
+   "halts": [],
+   "auto_pill": "HALTED",
+   "pill_source": "auto"
   },
   "TIF": {
    "code": "TIF",
@@ -2566,13 +2578,15 @@
      "label": "Halt 11:07 AM\u201312:32 PM",
      "minutes": 85
     }
-   ]
+   ],
+   "auto_pill": "HALTED",
+   "pill_source": "auto"
   },
   "ELQ": {
    "code": "ELQ",
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
-   "pill": "NORMAL",
+   "pill": "QUIET",
    "as_of": "2026-10-11T01:45:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
@@ -2880,7 +2894,9 @@
      "label": "Halt 8:50\u20139:51 AM",
      "minutes": 61
     }
-   ]
+   ],
+   "auto_pill": "QUIET",
+   "pill_source": "auto"
   },
   "TUU": {
    "code": "TUU",
@@ -3212,10 +3228,12 @@
      "label": "Halt 5:15\u20136:29 PM",
      "minutes": 74
     }
-   ]
+   ],
+   "auto_pill": "HALTED",
+   "pill_source": "auto"
   }
  },
- "airports_rule": "From the live Flightradar24 boards only. HALTED: no takeoff or landing for 45+ minutes while 2 or more flights scheduled in that time (15+ min ago) have not operated. DISRUPTED: 10%+ of today's scheduled flights cancelled, or 2+ arrivals diverted. NORMAL: neither. NO DATA: no board read in the last 30 minutes. KSA Bot's own level, when given, is shown separately.",
+ "airports_rule": "From the live Flightradar24 boards only. NO DATA: the board returned no rows, or was not read in the last 30 minutes. HALTED: 0 takeoffs or landings for 45+ minutes AND (2+ flights were scheduled to move in that window OR the board shows cancellations or diversions in it). QUIET: 0 movements for 45+ minutes but no flights scheduled in that window (no flights scheduled). DISRUPTED: 10%+ of today's scheduled flights cancelled, or 2+ arrivals diverted. NORMAL: none of the above. When KSA Bot (editor) gives a level for an airport, that level is shown, marked 'editor', with the automatic status alongside.",
  "maritime": {
   "updated": "2026-10-11T00:56:29.868102+03:00",
   "error": null,
