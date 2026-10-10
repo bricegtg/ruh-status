@@ -1,23 +1,23 @@
 {
  "schema": 2,
- "generated_at": "2026-10-10T13:01:09+03:00",
+ "generated_at": "2026-10-10T14:00:14+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH Airport Status 1:00 PM AST: DISRUPTED",
-  "slot": "1:00 PM",
-  "as_of": "2026-10-10T12:56:00+03:00",
-  "as_of_label": "12:56 PM",
+  "title": "RUH Airport Status 2:00 PM AST: DISRUPTED",
+  "slot": "2:00 PM",
+  "as_of": "2026-10-10T13:55:00+03:00",
+  "as_of_label": "1:55 PM",
   "date_long": "Saturday 10 October 2026",
   "level": "DISRUPTED",
-  "status_line": "Halt 6:37\u20138:08 AM (91 minutes) ended; traffic resumed. Cancellations remain elevated into Saturday afternoon. No official explanation for the morning stop.",
-  "headline": "Morning halt 6:37\u20138:08 AM ended; traffic moving again; 151 flights cancelled today so far.",
-  "synopsis": "There were 21 takeoffs in the last hour, the latest XY349 to Hurghada at 12:52 PM. The latest landing was F3204 from Tabuk at 12:40 PM, with 13 landings in the last hour. 151 flights are cancelled today (73 departures, 78 arrivals) and 3 arrivals have diverted. Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop. This morning: a 91-minute halt ran from 6:37 to 8:08 AM with no takeoff or landing; traffic has since resumed. No official explanation. UAE carriers and now SriLankan Airlines are still cutting Riyadh; board cancellations remain elevated on Saturday.",
-  "next_update": "2:00 PM",
+  "status_line": "Halt 6:37\u20138:08 AM (91 minutes) ended; traffic resumed. No new halt this afternoon. Cancellations remain elevated. No official explanation for the morning stop.",
+  "headline": "Morning halt 6:37\u20138:08 AM ended; traffic moving again; 157 flights cancelled today so far.",
+  "synopsis": "There were 12 takeoffs in the last hour, the latest XY277 to Sharm el-Sheikh at 1:39 PM. The latest landing was SV1143 from Dammam at 1:52 PM, with 12 landings in the last hour. 157 flights are cancelled today (76 departures, 81 arrivals) and 3 arrivals have diverted. Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop. This morning: a 91-minute halt ran from 6:37 to 8:08 AM with no takeoff or landing; traffic has since resumed with no new afternoon halt as of this check. No official explanation. UAE carriers and SriLankan Airlines are still cutting Riyadh; board cancellations remain elevated on Saturday.",
+  "next_update": "3:00 PM",
   "kpis": {
-   "cancelled_total": 151,
-   "cancelled_departures": 73,
-   "cancelled_arrivals": 78,
+   "cancelled_total": 157,
+   "cancelled_departures": 76,
+   "cancelled_arrivals": 81,
    "pct_of_scheduled": 20,
    "scheduled": 769,
    "diverted": 3,
@@ -26,34 +26,27 @@
     "Dammam",
     "MAA"
    ],
-   "takeoffs_last_hour": 21,
-   "landings_last_hour": 13,
+   "takeoffs_last_hour": 12,
+   "landings_last_hour": 12,
    "last_takeoff": {
-    "time": "12:52 PM",
-    "flight": "XY349",
-    "city": "Hurghada",
-    "minutes_ago": 4
+    "time": "1:39 PM",
+    "flight": "XY277",
+    "city": "Sharm el-Sheikh",
+    "minutes_ago": 16
    },
    "last_landing": {
-    "time": "12:40 PM",
-    "flight": "F3204",
-    "city": "Tabuk",
-    "minutes_ago": 16
+    "time": "1:52 PM",
+    "flight": "SV1143",
+    "city": "Dammam",
+    "minutes_ago": 4
    }
   },
   "flow24": {
-   "start": "2026-10-09T13:00:00+03:00",
-   "end": "2026-10-10T12:56:00+03:00",
-   "start_label": "1:00 PM Friday",
+   "start": "2026-10-09T14:00:00+03:00",
+   "end": "2026-10-10T13:55:00+03:00",
+   "start_label": "2:00 PM Friday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-09T13:00:00+03:00",
-     "label": "1 PM",
-     "takeoffs": 8,
-     "landings": 6,
-     "cancelled": 10
-    },
     {
      "hour_start": "2026-10-09T14:00:00+03:00",
      "label": "2 PM",
@@ -214,12 +207,19 @@
      "takeoffs": 21,
      "landings": 13,
      "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-10T13:00:00+03:00",
+     "label": "1 PM",
+     "takeoffs": 12,
+     "landings": 12,
+     "cancelled": 6
     }
    ],
    "totals": {
-    "takeoffs": 218,
-    "landings": 185,
-    "cancelled": 195
+    "takeoffs": 222,
+    "landings": 191,
+    "cancelled": 191
    },
    "halts": [
     {
@@ -296,12 +296,12 @@
    {
     "code": "DXB",
     "city": "Dubai",
-    "flight": "XY205",
-    "airline": "flynas",
-    "scheduled": "1:05 PM",
-    "estimated": "1:05 PM",
+    "flight": "SV554",
+    "airline": "Saudia",
+    "scheduled": "1:45 PM",
+    "estimated": "1:45 PM",
     "tomorrow": false,
-    "status": "On schedule",
+    "status": "Has not left yet",
     "cancelled_today": 8
    },
    {
@@ -350,16 +350,16 @@
    }
   ],
   "gulf_footnote": "Riyadh Air RX243 to Dubai, due 3:50 PM, finally left at 9:50 PM. Cancelled today include Emirates EK816, EK820, EK818, flydubai FZ848, FZ842, FZ856 and flynas XY217 to Dubai; Qatar Airways QR1167, QR1171, QR1241, QR1169, QR1165, QR1239 and QR1173 to Doha; Etihad EY552, EY556 and EY560 to Abu Dhabi; SalamAir OV206 to Muscat.",
-  "news_title": "Morning halt 6:37\u20138:08 AM ended with no official word; SriLankan suspends Riyadh until 18 Oct; UAE carriers still cutting Saturday; state media says Friday flow was smooth.",
-  "news_checked": "12:55 PM",
+  "news_title": "No new afternoon halt; morning stop 6:37\u20138:08 AM still unexplained; SriLankan suspends Riyadh until 18 Oct; UAE carriers still cutting Saturday; GACA has not commented on today\u2019s stop.",
+  "news_checked": "1:55 PM",
   "news": [
    {
     "tag": "CONFIRMED",
     "title": "SriLankan Airlines suspends all Riyadh flights until 18 October",
-    "source": "Aviation Voice / The Morning",
+    "source": "Aviation Voice / The Morning / Newswire",
     "time": "12:20 PM",
-    "extra": "published ~12:20 PM AST (Aviation Voice / The Morning 10 Oct); last checked 12:55 PM",
-    "body": "Aviation Voice and The Morning report SriLankan Airlines has temporarily suspended all flights to Riyadh until 18 October 2026 after the security incident at King Khalid airport, citing ongoing safety and operational assessments. The airline said services will resume once conditions are considered suitable. Board totals in this edition are the live Flightradar24 figures.",
+    "extra": "published ~12:20\u201312:45 PM AST (Aviation Voice / The Morning / Newswire 10 Oct); last checked 1:55 PM",
+    "body": "Aviation Voice, The Morning and Newswire report SriLankan Airlines has temporarily suspended all flights to Riyadh until 18 October 2026 after the security incident at King Khalid airport, citing ongoing safety and operational assessments. The airline said services will resume once conditions are considered suitable. Board totals in this edition are the live Flightradar24 figures.",
     "url": "https://x.com/Aviation_Voice/status/2108850021340721242"
    },
    {
@@ -436,7 +436,7 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_100PM_10Oct2026.pdf"
+  "pdf_name": "RUH_status_report_200PM_10Oct2026.pdf"
  },
  "live": {
   "as_of": "2026-10-10T02:45:01+03:00",
