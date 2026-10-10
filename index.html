@@ -54,7 +54,7 @@ svg text{font-family:Montserrat,Arial,sans-serif}
 <header class="top"><div class="tw">
  <div class="brand"><div><div class="k">KSA AIRPORTS &amp; SECURITY</div><div class="t">Status Report</div></div>
  <div class="ctl"><button class="ib r" id="rbtn" onclick="load()"><span class="spin"></span>Refresh</button><button class="ib" id="thm" onclick="toggleTheme()" aria-label="Toggle light or dark mode">Dark</button></div></div>
- <nav id="nav"><a href="#summary" data-t="summary">Summary</a><a href="#riyadh" data-t="riyadh">Riyadh airport</a><a href="#dammam" data-t="dammam">Dammam airport</a><a href="#economy" data-t="economy">Economy</a><a href="#news" data-t="news">News</a></nav>
+ <nav id="nav"><a href="#summary" data-t="summary">Summary</a><a href="#news" data-t="news">News</a><a href="#riyadh" data-t="riyadh">Riyadh airport</a><a href="#dammam" data-t="dammam">Dammam airport</a><a href="#economy" data-t="economy">Economy</a></nav>
 </div></header>
 <main>
  <div class="meta" id="lr"></div>
@@ -68,7 +68,7 @@ svg text{font-family:Montserrat,Arial,sans-serif}
 <footer>All times Riyadh time (AST, UTC+3), 12-hour clock. Figures come from the hourly status report; live airport figures are recalculated from the Flightradar24 board every 5 minutes and labelled as live. Tags: CONFIRMED = official statement or directly checked; CORROBORATED = several independent reports; UNVERIFIED = single or social report; CLAIM = claim by a party; SUPERSEDED = replaced by later information. <a href="latest.json">JSON</a></footer>
 <script src="flow.js"></script>
 <script>
-var $=function(s){return document.getElementById(s)},D=null,TABS=["summary","riyadh","dammam","economy","news"];
+var $=function(s){return document.getElementById(s)},D=null,TABS=["summary","news","riyadh","dammam","economy"];
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function has(x){return x!==null&&x!==undefined&&x!==""}
 function v(x){return has(x)?esc(x):"n/a"}
@@ -162,9 +162,11 @@ function renderSummary(){
   var ap=arr(S.airports);
   if(!ap.length){ap=[{name:"Riyadh, King Khalid (RUH)",level:r.level,status_line:r.status_line,tab:"riyadh"},{name:"Dammam, King Fahd (DMM)",level:dm&&dm.level,status_line:dm&&dm.status_line,tab:"dammam"}]}
   h+=card("Airport status",'<div class="pills">'+ap.map(function(a){var t=a.tab||(/dmm|dammam/i.test((a.code||"")+(a.name||""))?"dammam":"riyadh");return '<a class="pill" href="#'+t+'" style="color:inherit;font-weight:400"><div>'+lvl(a.level)+'</div><div><div style="font-weight:700;color:var(--head)">'+esc(a.name||a.code)+'</div><div class="sub">'+(a.status_line?esc(a.status_line):(has(a.level)?'':'Data coming'))+'</div></div></a>'}).join("")+'</div>');
+  h+=card("Escalation pattern &middot; Houthi strikes on KSA by target type since 8 Sep",strikes.length?strikeChart(strikes):coming("Strike timeline"));
+  var N=arr(D.news);if(!N.length)N=arr(r.news);
+  h+=card("Latest news"+(r.news_checked&&!arr(D.news).length?" &middot; checked "+esc(r.news_checked):""),N.length?N.slice(0,5).map(newsRow).join("")+'<a class="btnlink" href="#news">See all news ('+N.length+')</a>':coming("News"));
   var ch=arr(S.changed||S.changed_last_hour||S.what_changed);if(!ch.length)ch=(r.last_hour||[]).filter(noGulf);
   h+=card("What changed in the last hour",ch.length?'<ul class="ch">'+ch.map(function(x){return '<li>'+esc(typeof x==="string"?x:(x.text||x.title))+'</li>'}).join("")+'</ul>':coming("Last-hour changes"));
-  h+=card("Escalation pattern &middot; Houthi strikes on KSA by target type since 8 Sep",strikes.length?strikeChart(strikes):coming("Strike timeline"));
   $("t-summary").innerHTML=h;
 }
 function renderEconomy(){
@@ -179,9 +181,10 @@ function renderEconomy(){
   h+=card("Brent crude &middot; US$ per barrel",br&&(br.latest||bs.length)?(br.latest?'<div class="tiles"><div class="tile"><span class="l">Latest</span><b>$'+num(br.latest.usd||br.latest.price,2)+'</b><span class="s">'+dlong(br.latest.date)+'</span></div></div>':'')+line(bs,"date",bs.length&&bs[0].usd!==undefined?"usd":"price")+(br.source?'<div class="sub">Source: '+esc(br.source)+'</div>':''):coming("Brent price"));
   $("t-economy").innerHTML=h;
 }
+function newsRow(n,full){var tm=n.time||(n.at?t12(n.at):"");return '<div class="row">'+tag(n.tag)+(n.url?'<a target="_blank" rel="noopener" href="'+esc(n.url)+'">'+v(n.title)+'</a>':'<b>'+v(n.title)+'</b>')+'<div class="sub">'+v(n.source)+(tm?' &middot; '+esc(tm):'')+(full&&n.extra?' &middot; '+esc(n.extra):'')+'</div>'+(full&&n.body?'<details><summary>Details</summary><p class="sub" style="font-size:13px">'+esc(n.body)+'</p></details>':'')+'</div>'}
 function renderNews(){
   var N=arr(D.news),r=D.report||{};if(!N.length)N=arr(r.news);
-  var h=card("News and statements"+(r.news_checked?" &middot; checked "+esc(r.news_checked):""),(r.news_title&&!arr(D.news).length?'<div class="hl" style="font-size:15px">'+esc(r.news_title)+'</div>':'')+(N.length?N.map(function(n){var tm=n.time||(n.at?t12(n.at):"");return '<div class="row">'+tag(n.tag)+(n.url?'<a target="_blank" rel="noopener" href="'+esc(n.url)+'">'+v(n.title)+'</a>':'<b>'+v(n.title)+'</b>')+'<div class="sub">'+v(n.source)+(tm?' &middot; '+esc(tm):'')+(n.extra?' &middot; '+esc(n.extra):'')+'</div>'+(n.body?'<details><summary>Details</summary><p class="sub" style="font-size:13px">'+esc(n.body)+'</p></details>':'')+'</div>'}).join(""):coming("News")));
+  var h=card("News and statements"+(r.news_checked?" &middot; checked "+esc(r.news_checked):""),(r.news_title&&!arr(D.news).length?'<div class="hl" style="font-size:15px">'+esc(r.news_title)+'</div>':'')+(N.length?N.map(function(n){return newsRow(n,true)}).join(""):coming("News")));
   $("t-news").innerHTML=h;
 }
 function render(){
