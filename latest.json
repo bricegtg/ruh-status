@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-11T03:01:22+03:00",
+ "generated_at": "2026-10-11T03:46:34+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -543,7 +543,7 @@
   ]
  },
  "live": {
-  "as_of": "2026-10-11T03:00:01+03:00",
+  "as_of": "2026-10-11T03:05:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
@@ -554,20 +554,20 @@
     "time": "1:39 PM",
     "flight": "XY277",
     "city": "Sharm el-Sheikh",
-    "minutes_ago": 800
+    "minutes_ago": 805
    },
    "last_landing": {
     "time": "8:10 PM",
     "flight": "XY278",
     "city": "Sharm el-Sheikh",
-    "minutes_ago": 410
+    "minutes_ago": 415
    }
   },
   "cancellations": {
-   "total": 518,
-   "departures": 250,
-   "arrivals": 268,
-   "pct_of_scheduled": 70,
+   "total": 528,
+   "departures": 257,
+   "arrivals": 271,
+   "pct_of_scheduled": 71,
    "scheduled": 740
   },
   "diversions": 2,
@@ -603,7 +603,7 @@
     "estimated": null,
     "tomorrow": false,
     "status": "On schedule",
-    "cancelled_today": 8
+    "cancelled_today": 9
    },
    {
     "code": "BAH",
@@ -619,18 +619,18 @@
    {
     "code": "MCT",
     "city": "Muscat",
-    "flight": "OV206",
-    "airline": "SalamAir",
-    "scheduled": "3:00 PM",
+    "flight": "WY684",
+    "airline": "Oman Air",
+    "scheduled": "4:05 PM",
     "estimated": null,
     "tomorrow": false,
     "status": "On schedule",
-    "cancelled_today": 0
+    "cancelled_today": 1
    }
   ],
   "flow24": {
    "start": "2026-10-10T04:00:00+03:00",
-   "end": "2026-10-11T03:00:01+03:00",
+   "end": "2026-10-11T03:05:01+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -799,13 +799,13 @@
      "label": "3 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 0
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 122,
     "landings": 89,
-    "cancelled": 362
+    "cancelled": 364
    },
    "halts": [
     {
@@ -824,7 +824,7 @@
      "start": "2026-10-10T20:10:03+03:00",
      "end": null,
      "label": "Halt since 8:10 PM",
-     "minutes": 410
+     "minutes": 415
     }
    ]
   },
@@ -833,7 +833,7 @@
     "start": "2026-10-10T20:10:03+03:00",
     "end": null,
     "label": "Halt since 8:10 PM",
-    "minutes": 410
+    "minutes": 415
    },
    {
     "start": "2026-10-10T14:05:30+03:00",
@@ -873,7 +873,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-11T03:00:01+03:00",
+   "as_of": "2026-10-11T03:05:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -884,43 +884,43 @@
      "time": "1:39 PM",
      "flight": "XY277",
      "city": "Sharm el-Sheikh",
-     "minutes_ago": 800
+     "minutes_ago": 805
     },
     "last_landing": {
      "time": "8:10 PM",
      "flight": "XY278",
      "city": "Sharm el-Sheikh",
-     "minutes_ago": 410
+     "minutes_ago": 415
     }
    },
    "cancellations": {
-    "total": 518,
-    "departures": 250,
-    "arrivals": 268,
-    "pct_of_scheduled": 70,
+    "total": 528,
+    "departures": 257,
+    "arrivals": 271,
+    "pct_of_scheduled": 71,
     "scheduled": 740
    },
    "diversions": 2,
    "idle": {
     "last_movement": "2026-10-10T20:10:03+03:00",
-    "minutes_since_last_movement": 410,
+    "minutes_since_last_movement": 415,
     "movements_last_3h": 0,
-    "due_not_operated": 78,
-    "cancelled_in_window": 69,
+    "due_not_operated": 77,
+    "cancelled_in_window": 70,
     "diverted_in_window": 2,
     "next_scheduled": "2026-10-11T03:25:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-10T20:10:03+03:00",
       "end": null,
-      "not_operated": 208
+      "not_operated": 210
      }
     ],
-    "board_rows": 2039
+    "board_rows": 2048
    },
    "flow24": {
     "start": "2026-10-10T04:00:00+03:00",
-    "end": "2026-10-11T03:00:01+03:00",
+    "end": "2026-10-11T03:05:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -1089,13 +1089,13 @@
       "label": "3 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 0
+      "cancelled": 2
      }
     ],
     "totals": {
      "takeoffs": 122,
      "landings": 89,
-     "cancelled": 362
+     "cancelled": 364
     },
     "halts": [
      {
@@ -1114,7 +1114,7 @@
       "start": "2026-10-10T20:10:03+03:00",
       "end": null,
       "label": "Halt since 8:10 PM",
-      "minutes": 410
+      "minutes": 415
      }
     ]
    },
@@ -1123,7 +1123,7 @@
      "start": "2026-10-10T20:10:03+03:00",
      "end": null,
      "label": "Halt since 8:10 PM",
-     "minutes": 410
+     "minutes": 415
     },
     {
      "start": "2026-10-10T14:05:30+03:00",
@@ -1162,7 +1162,7 @@
     "notes": "FR24: 0 movements in the last 3h against 98 flights due (83 cancelled or diverted); last takeoff XY277 at 1:39 PM Sat. 377 of 458 flights today cancelled. GACA: https://x.com/ksagaca/status/2109037908653211923",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "HALTED",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "JED": {
@@ -1441,7 +1441,7 @@
     "notes": "FR24: 51 movements in the last 3h (latest PC694 landed 1:43 AM). 78 of 456 flights today cancelled (17%), mostly Riyadh routes.",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "DISRUPTED",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "DMM": {
@@ -1726,7 +1726,7 @@
     "notes": "FR24: 23 movements in the last 3h (latest E5316 departed 1:48 AM). 41 of 251 flights today cancelled (16%); several Saturday-night arrivals diverted (6E83 to SHJ, 6E81 to AUH).",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "DISRUPTED",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "MED": {
@@ -1961,7 +1961,7 @@
     "notes": "FR24: 22 movements in the last 3h (latest VF205 landed 1:32 AM). 28 of 190 flights today cancelled (15%), 1 diversion.",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "DISRUPTED",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "AHB": {
@@ -2252,7 +2252,7 @@
     "notes": "Daytime-only operations through 15 Oct per NOTAM (ch-aviation: https://www.ch-aviation.com/news/172663-saudi-arabia-shuts-najran-and-jazan-airports-after-attacks). FR24: last movement SV8870 at 6:17 PM Sat; next departure SV1645 at 6:55 AM. 26 of 89 flights today cancelled.",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "HALTED",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "GIZ": {
@@ -2477,7 +2477,7 @@
     "notes": "FR24 shows only 11 flights listed today and none with an actual time. NOTAM closure from 7 Oct reported by ch-aviation (https://www.ch-aviation.com/news/172663-saudi-arabia-shuts-najran-and-jazan-airports-after-attacks); GACA confirmed the 5 Oct attack injured 3 (https://www.aa.com.tr/en/middle-east/saudi-arabia-says-3-injured-in-attacks-on-2-airports-in-country-s-south-amid-escalation-with-houthis/4079309).",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "QUIET",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "TIF": {
@@ -2815,7 +2815,7 @@
     "notes": "FR24: last movement F354 at 8:19 PM Sat; 3 of 7 flights due in the last 3h cancelled, the rest unconfirmed or delayed (MS815 delayed to 2:01 AM). 14 of 25 flights today cancelled (56%).",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "DISRUPTED",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "ELQ": {
@@ -3142,7 +3142,7 @@
     "notes": "FR24: last departure F3472 at 12:14 AM, FZ872 to Dubai departing about 1:45 AM; 2 of 22 flights today cancelled.",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "QUIET",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   },
   "TUU": {
@@ -3502,7 +3502,7 @@
     "notes": "FR24: 5 of 6 flights due in the last 3h cancelled, all to or from Riyadh; MS811 from Cairo estimated 1:39 AM. 15 of 47 flights today cancelled (32%).",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "DISRUPTED",
+   "auto_pill": "NO DATA",
    "pill_source": "editor"
   }
  },
