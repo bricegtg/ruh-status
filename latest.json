@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-11T19:51:32+03:00",
+ "generated_at": "2026-10-11T19:52:56+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -3501,24 +3501,24 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-11T19:50:01+03:00",
+   "as_of": "2026-10-11T19:35:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 1,
-    "landings_last_hour": 0,
-    "takeoffs_last_30": 1,
+    "takeoffs_last_hour": 0,
+    "landings_last_hour": 1,
+    "takeoffs_last_30": 0,
     "landings_last_30": 0,
     "last_takeoff": {
-     "time": "7:48 PM",
-     "flight": "F3402",
-     "city": "Jeddah",
-     "minutes_ago": 2
+     "time": "5:24 PM",
+     "flight": "G9182",
+     "city": "Sharjah",
+     "minutes_ago": 131
     },
     "last_landing": {
      "time": "6:47 PM",
      "flight": "F3401",
      "city": "Jeddah",
-     "minutes_ago": 63
+     "minutes_ago": 48
     }
    },
    "cancellations": {
@@ -3530,19 +3530,19 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-11T19:48:18+03:00",
-    "minutes_since_last_movement": 2,
-    "movements_last_3h": 4,
+    "last_movement": "2026-10-11T18:47:25+03:00",
+    "minutes_since_last_movement": 48,
+    "movements_last_3h": 3,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-11T20:25:00+03:00",
+    "next_scheduled": "2026-10-11T19:40:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 86
    },
    "flow24": {
     "start": "2026-10-10T20:00:00+03:00",
-    "end": "2026-10-11T19:50:01+03:00",
+    "end": "2026-10-11T19:35:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -3709,13 +3709,13 @@
      {
       "hour_start": "2026-10-11T19:00:00+03:00",
       "label": "7 PM",
-      "takeoffs": 1,
+      "takeoffs": 0,
       "landings": 0,
       "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 12,
+     "takeoffs": 11,
      "landings": 10,
      "cancelled": 2
     },
@@ -3782,18 +3782,18 @@
      },
      {
       "start": "2026-10-11T18:47:25+03:00",
-      "end": "2026-10-11T19:48:18+03:00",
-      "label": "Halt 6:47\u20137:48 PM",
-      "minutes": 61
+      "end": null,
+      "label": "Halt since 6:47 PM",
+      "minutes": 48
      }
     ]
    },
    "halts": [
     {
      "start": "2026-10-11T18:47:25+03:00",
-     "end": "2026-10-11T19:48:18+03:00",
-     "label": "Halt 6:47\u20137:48 PM",
-     "minutes": 61
+     "end": null,
+     "label": "Halt since 6:47 PM",
+     "minutes": 48
     },
     {
      "start": "2026-10-11T17:24:18+03:00",
@@ -3832,7 +3832,7 @@
     "notes": "FR24: last departure F3472 at 12:14 AM, FZ872 to Dubai departing about 1:45 AM; 2 of 22 flights today cancelled.",
     "checked": "1:48 AM AST"
    },
-   "auto_pill": "NORMAL",
+   "auto_pill": "QUIET",
    "pill_source": "editor"
   },
   "TUU": {
