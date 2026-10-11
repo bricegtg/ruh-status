@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-11T23:45:50+03:00",
+ "generated_at": "2026-10-11T23:50:51+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 11:00 PM AST: Riyadh HALTED, Dammam HALTED",
-  "slot": "11:00 PM",
-  "as_of": "2026-10-11T22:52:00+03:00",
-  "as_of_label": "10:52 PM",
+  "title": "RUH & DMM Airport Status 12:00 AM AST: Riyadh HALTED, Dammam HALTED",
+  "slot": "12:00 AM",
+  "as_of": "2026-10-11T23:48:00+03:00",
+  "as_of_label": "11:48 PM",
   "date_long": "Sunday 11 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh halted since 9:29 PM, 91 minutes \u2014 Dammam halted since 8:42 PM, 138 minutes after GACA-confirmed attack",
-  "headline": "Riyadh halted since 9:29 PM, 91 min (no movement since SV851) \u2014 Dammam halted since 8:42 PM, 138 min",
+  "status_line": "Riyadh halted since 9:29 PM, 151 minutes \u2014 Dammam halted since 8:42 PM, 198 minutes after GACA-confirmed attack",
+  "headline": "Riyadh halted since 9:29 PM, 151 min (no movement since SV851) \u2014 Dammam halted since 8:42 PM, 198 min",
   "synopsis": "There were 0 takeoffs in the last hour, the latest XY277 to Sharm el-Sheikh at 1:39 PM. The latest landing was SV851 from Phuket at 9:29 PM, with 0 landings in the last hour. 655 flights are cancelled today (325 departures, 330 arrivals) and 4 arrivals have diverted. Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop. Saturday morning: a 91-minute halt ran from 6:37 to 8:08 AM with no takeoff or landing. Saturday afternoon\u2013evening: the board showed no takeoff or landing from 2:05 PM until flynas XY278 from Sharm el-Sheikh landed at 8:10 PM (~365 minutes). Since that landing there has been no further takeoff or landing \u2014 open halt since 8:10 PM (470 minutes at the 4:00 AM Sunday slot). Last takeoff remains flynas XY277 at 1:39 PM; prior last landing before XY278 was Air Cairo SM461 at 2:05 PM. GACA confirms King Khalid International Airport was attacked on Saturday afternoon and operations remain temporarily suspended until damage assessment and facility safety checks are complete. GACA follow-up statement at 12:46 AM Sunday (dated 11 October): the attack resulted in 12 fatalities \u2014 4 Saudi citizens and residents of Bangladeshi (2), American (1), Egyptian (1), Jordanian (1), Syrian (1), Palestinian (1) and Sudanese (1) nationality \u2014 and 309 injured, including some in critical condition; property damage is being assessed. AIS/NOTAC shows NOTAM A3586/26 (NOTAMR) keeping the aerodrome unavailable from 10 Oct 19:24 UTC through 11 Oct 21:00 UTC. Flightradar24 at 11:35 PM reported Dammam-bound flights holding (including one originally for Riyadh); at 12:01 AM FR24 said flights were on approach to Dammam again. Reuters at 9:40 PM had restated the suspension with \u201cseveral\u201d wounded \u2014 GACA\u2019s 12:46 AM tally supersedes that on casualties. AP reports an official saying a missile struck a passenger terminal and wounded many; AFP hospital source earlier said dozens injured / at least five Saudis in ICU; AFP diplomatic source said Houthis hit with a missile around 3:00 PM. Social-media death-toll claims circulating earlier remain unverified against the new official GACA figures. No official Houthi claim for Saturday found yet. Passengers told to confirm flight status before heading to the airport. Board cancellations remain elevated on Sunday 11 October.",
-  "next_update": "12:00 AM",
+  "next_update": "1:00 AM",
   "kpis": {
    "cancelled_total": 655,
    "cancelled_departures": 325,
@@ -31,28 +31,21 @@
     "time": "1:39 PM",
     "flight": "XY277",
     "city": "Sharm el-Sheikh",
-    "minutes_ago": 1992
+    "minutes_ago": 2049
    },
    "last_landing": {
     "time": "9:29 PM",
     "flight": "SV851",
     "city": "Phuket",
-    "minutes_ago": 83
+    "minutes_ago": 139
    }
   },
   "flow24": {
-   "start": "2026-10-10T23:00:00+03:00",
-   "end": "2026-10-11T22:52:00+03:00",
-   "start_label": "11:00 PM Saturday",
+   "start": "2026-10-11T00:00:00+03:00",
+   "end": "2026-10-11T23:48:00+03:00",
+   "start_label": "12:00 AM Sunday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-10T23:00:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 25
-    },
     {
      "hour_start": "2026-10-11T00:00:00+03:00",
      "label": "12 AM",
@@ -212,13 +205,20 @@
      "label": "10 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 17
+     "cancelled": 24
+    },
+    {
+     "hour_start": "2026-10-11T23:00:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 26
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 1,
-    "cancelled": 640
+    "cancelled": 648
    },
    "halts": [
     {
@@ -231,7 +231,7 @@
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 83
+     "minutes": 139
     }
    ]
   },
@@ -240,7 +240,7 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 83
+    "minutes": 139
    },
    {
     "start": "2026-10-10T20:10:03+03:00",
@@ -276,8 +276,80 @@
   "gulf": [],
   "gulf_footnote": null,
   "news_title": "Official channels & verified reporting",
-  "news_checked": "10:51 PM",
+  "news_checked": "12:00 AM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Coalition intercepts and destroys UAV in Eastern Region",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:44 PM",
+    "extra": "published 11:44 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "Coalition: UAV intercepted and destroyed in the Eastern Region.",
+    "url": "https://x.com/Spa_Eng/status/2109384767145939124"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Arab League affirms full support for Saudi Arabia against Houthi attacks",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:23 PM",
+    "extra": "published 11:23 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "Arab League affirms full support for Saudi Arabia against Houthi attacks.",
+    "url": "https://x.com/Spa_Eng/status/2109379391063281843"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Lithuania condemns Houthi attacks and stands with the Kingdom",
+    "source": "SPA (@SPAregions)",
+    "time": "11:21 PM",
+    "extra": "published 11:21 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "The Republic of Lithuania condemns the Houthi attacks and affirms its standing with the Kingdom.",
+    "url": "https://x.com/SPAregions/status/2109378973964636636"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Ireland condemns Houthi attack on Riyadh's King Khalid International Airport",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:19 PM",
+    "extra": "published 11:19 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "Ireland condemns the Houthi attack on Riyadh's King Khalid International Airport.",
+    "url": "https://x.com/Spa_Eng/status/2109378371792883782"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Malaysia condemns attacks on civilians in Saudi Arabia",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:18 PM",
+    "extra": "published 11:18 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "Malaysia condemns attacks on civilians in Saudi Arabia.",
+    "url": "https://x.com/Spa_Eng/status/2109378232730677439"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Nigeria condemns Houthi attack on King Khalid International Airport",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:18 PM",
+    "extra": "published 11:18 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "Nigeria condemns the Houthi attack on King Khalid International Airport.",
+    "url": "https://x.com/Spa_Eng/status/2109378128758088188"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: UK Foreign Secretary condemns Houthi violence, affirms solidarity with Kingdom and Yemen",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "11:17 PM",
+    "extra": "published 11:17 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "In a call with the Saudi foreign minister, the UK Foreign Secretary affirms his country's condemnation of Houthi violence targeting Yemen's interior and civilian facilities in the Kingdom, and affirms solidarity with the Kingdom and Yemen in confronting these attacks.",
+    "url": "https://x.com/alekhbariyatv/status/2109377955797594172"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Coalition intercepts and destroys UAV in Eastern Region",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "10:47 PM",
+    "extra": "published 10:47 PM AST Sun 11 Oct (official account); checked 12:00 AM",
+    "body": "Coalition: UAV intercepted and destroyed in the Eastern Region.",
+    "url": "https://x.com/alekhbariyatv/status/2109370301134032999"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Coalition: UAV intercepted and destroyed in the Eastern Region",
@@ -1486,7 +1558,7 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_1100PM_11Oct2026.pdf",
+  "pdf_name": "RUH_status_report_1200AM_11Oct2026.pdf",
   "last_hour": null,
   "notams": [
    {
@@ -1500,7 +1572,7 @@
   ]
  },
  "live": {
-  "as_of": "2026-10-11T23:45:01+03:00",
+  "as_of": "2026-10-11T23:50:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -1512,7 +1584,7 @@
     "time": "9:29 PM",
     "flight": "SV851",
     "city": "Phuket",
-    "minutes_ago": 136
+    "minutes_ago": 141
    }
   },
   "cancellations": {
@@ -1582,7 +1654,7 @@
   ],
   "flow24": {
    "start": "2026-10-11T00:00:00+03:00",
-   "end": "2026-10-11T23:45:01+03:00",
+   "end": "2026-10-11T23:50:01+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -1751,13 +1823,13 @@
      "label": "11 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 26
+     "cancelled": 27
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 1,
-    "cancelled": 648
+    "cancelled": 649
    },
    "halts": [
     {
@@ -1770,7 +1842,7 @@
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 136
+     "minutes": 141
     }
    ]
   },
@@ -1779,7 +1851,7 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 136
+    "minutes": 141
    },
    {
     "start": "2026-10-10T20:10:03+03:00",
@@ -1819,7 +1891,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -1831,7 +1903,7 @@
      "time": "9:29 PM",
      "flight": "SV851",
      "city": "Phuket",
-     "minutes_ago": 136
+     "minutes_ago": 141
     }
    },
    "cancellations": {
@@ -1844,24 +1916,24 @@
    "diversions": 4,
    "idle": {
     "last_movement": "2026-10-11T21:29:30+03:00",
-    "minutes_since_last_movement": 136,
+    "minutes_since_last_movement": 141,
     "movements_last_3h": 1,
-    "due_not_operated": 66,
-    "cancelled_in_window": 60,
+    "due_not_operated": 67,
+    "cancelled_in_window": 61,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-12T00:00:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
-      "not_operated": 66
+      "not_operated": 67
      }
     ],
     "board_rows": 1400
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -2030,13 +2102,13 @@
       "label": "11 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 26
+      "cancelled": 27
      }
     ],
     "totals": {
      "takeoffs": 0,
      "landings": 1,
-     "cancelled": 648
+     "cancelled": 649
     },
     "halts": [
      {
@@ -2049,7 +2121,7 @@
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 136
+      "minutes": 141
      }
     ]
    },
@@ -2058,7 +2130,7 @@
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 136
+     "minutes": 141
     },
     {
      "start": "2026-10-10T20:10:03+03:00",
@@ -2105,24 +2177,24 @@
    "city": "Jeddah",
    "name": "King Abdulaziz International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 JED boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 4,
     "landings_last_hour": 15,
     "takeoffs_last_30": 0,
-    "landings_last_30": 9,
+    "landings_last_30": 7,
     "last_takeoff": {
      "time": "11:06 PM",
      "flight": "J4605",
      "city": "Khartoum",
-     "minutes_ago": 39
+     "minutes_ago": 44
     },
     "last_landing": {
      "time": "11:29 PM",
      "flight": "SV636",
      "city": "Amman",
-     "minutes_ago": 16
+     "minutes_ago": 21
     }
    },
    "cancellations": {
@@ -2135,12 +2207,12 @@
    "diversions": 14,
    "idle": {
     "last_movement": "2026-10-11T23:29:27+03:00",
-    "minutes_since_last_movement": 16,
+    "minutes_since_last_movement": 21,
     "movements_last_3h": 41,
-    "due_not_operated": 3,
-    "cancelled_in_window": 3,
+    "due_not_operated": 4,
+    "cancelled_in_window": 4,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-11T23:50:00+03:00",
+    "next_scheduled": "2026-10-11T23:55:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-11T19:42:37+03:00",
@@ -2150,14 +2222,14 @@
      {
       "start": "2026-10-11T21:55:36+03:00",
       "end": "2026-10-11T23:00:09+03:00",
-      "not_operated": 25
+      "not_operated": 27
      }
     ],
     "board_rows": 1600
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -2326,13 +2398,13 @@
       "label": "11 PM",
       "takeoffs": 4,
       "landings": 15,
-      "cancelled": 6
+      "cancelled": 7
      }
     ],
     "totals": {
      "takeoffs": 264,
      "landings": 223,
-     "cancelled": 153
+     "cancelled": 154
     },
     "halts": [
      {
@@ -2419,7 +2491,7 @@
    "city": "Dammam",
    "name": "King Fahd International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -2430,13 +2502,13 @@
      "time": "6:55 PM",
      "flight": "XY4002",
      "city": "Istanbul",
-     "minutes_ago": 289
+     "minutes_ago": 294
     },
     "last_landing": {
      "time": "8:42 PM",
      "flight": "XY420",
      "city": "Jeddah",
-     "minutes_ago": 183
+     "minutes_ago": 188
     }
    },
    "cancellations": {
@@ -2449,12 +2521,12 @@
    "diversions": 13,
    "idle": {
     "last_movement": "2026-10-11T20:42:16+03:00",
-    "minutes_since_last_movement": 183,
+    "minutes_since_last_movement": 188,
     "movements_last_3h": 0,
-    "due_not_operated": 32,
+    "due_not_operated": 31,
     "cancelled_in_window": 11,
     "diverted_in_window": 3,
-    "next_scheduled": "2026-10-11T23:48:00+03:00",
+    "next_scheduled": "2026-10-11T23:55:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-11T19:12:08+03:00",
@@ -2471,7 +2543,7 @@
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -2683,7 +2755,7 @@
       "start": "2026-10-11T20:42:16+03:00",
       "end": null,
       "label": "Halt since 8:42 PM",
-      "minutes": 183
+      "minutes": 188
      }
     ]
    },
@@ -2692,7 +2764,7 @@
      "start": "2026-10-11T20:42:16+03:00",
      "end": null,
      "label": "Halt since 8:42 PM",
-     "minutes": 183
+     "minutes": 188
     },
     {
      "start": "2026-10-11T19:12:08+03:00",
@@ -2739,24 +2811,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 2,
+    "takeoffs_last_hour": 3,
     "landings_last_hour": 1,
-    "takeoffs_last_30": 1,
+    "takeoffs_last_30": 2,
     "landings_last_30": 0,
     "last_takeoff": {
-     "time": "11:38 PM",
-     "flight": "GA961",
-     "city": "Jakarta",
-     "minutes_ago": 6
+     "time": "11:45 PM",
+     "flight": "L6301",
+     "city": "Tunis",
+     "minutes_ago": 5
     },
     "last_landing": {
      "time": "11:13 PM",
      "flight": "SV380",
      "city": "Cairo",
-     "minutes_ago": 32
+     "minutes_ago": 37
     }
    },
    "cancellations": {
@@ -2768,19 +2840,19 @@
    },
    "diversions": 1,
    "idle": {
-    "last_movement": "2026-10-11T23:38:34+03:00",
-    "minutes_since_last_movement": 6,
-    "movements_last_3h": 14,
+    "last_movement": "2026-10-11T23:45:15+03:00",
+    "minutes_since_last_movement": 5,
+    "movements_last_3h": 15,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-11T23:50:00+03:00",
+    "next_scheduled": "2026-10-11T23:55:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 508
+    "board_rows": 507
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -2947,13 +3019,13 @@
      {
       "hour_start": "2026-10-11T23:00:00+03:00",
       "label": "11 PM",
-      "takeoffs": 1,
+      "takeoffs": 2,
       "landings": 1,
       "cancelled": 1
      }
     ],
     "totals": {
-     "takeoffs": 68,
+     "takeoffs": 69,
      "landings": 64,
      "cancelled": 38
     },
@@ -3000,7 +3072,7 @@
    "city": "Abha",
    "name": "Abha International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 AHB boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -3011,13 +3083,13 @@
      "time": "5:59 PM",
      "flight": "F3432",
      "city": "Dammam",
-     "minutes_ago": 346
+     "minutes_ago": 351
     },
     "last_landing": {
      "time": "5:15 PM",
      "flight": "F3431",
      "city": "Dammam",
-     "minutes_ago": 390
+     "minutes_ago": 395
     }
    },
    "cancellations": {
@@ -3030,18 +3102,18 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-11T17:59:03+03:00",
-    "minutes_since_last_movement": 346,
+    "minutes_since_last_movement": 351,
     "movements_last_3h": 0,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-12T01:05:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 240
+    "board_rows": 239
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -3235,7 +3307,7 @@
       "start": "2026-10-11T17:59:03+03:00",
       "end": null,
       "label": "Halt since 5:59 PM",
-      "minutes": 346
+      "minutes": 351
      }
     ]
    },
@@ -3244,7 +3316,7 @@
      "start": "2026-10-11T17:59:03+03:00",
      "end": null,
      "label": "Halt since 5:59 PM",
-     "minutes": 346
+     "minutes": 351
     },
     {
      "start": "2026-10-11T06:18:49+03:00",
@@ -3291,7 +3363,7 @@
    "city": "Jazan",
    "name": "King Abdullah bin Abdulaziz",
    "pill": "HALTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 GIZ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -3322,7 +3394,7 @@
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -3516,7 +3588,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -3527,13 +3599,13 @@
      "time": "6:24 PM",
      "flight": "F3452",
      "city": "Dammam",
-     "minutes_ago": 320
+     "minutes_ago": 325
     },
     "last_landing": {
      "time": "5:16 PM",
      "flight": "F3451",
      "city": "Dammam",
-     "minutes_ago": 389
+     "minutes_ago": 394
     }
    },
    "cancellations": {
@@ -3546,10 +3618,10 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-11T18:24:51+03:00",
-    "minutes_since_last_movement": 320,
+    "minutes_since_last_movement": 325,
     "movements_last_3h": 0,
-    "due_not_operated": 3,
-    "cancelled_in_window": 2,
+    "due_not_operated": 2,
+    "cancelled_in_window": 1,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-12T01:50:00+03:00",
     "qualifying_halts_6h": [
@@ -3563,7 +3635,7 @@
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -3775,7 +3847,7 @@
       "start": "2026-10-11T18:24:51+03:00",
       "end": null,
       "label": "Halt since 6:24 PM",
-      "minutes": 320
+      "minutes": 325
      }
     ]
    },
@@ -3784,7 +3856,7 @@
      "start": "2026-10-11T18:24:51+03:00",
      "end": null,
      "label": "Halt since 6:24 PM",
-     "minutes": 320
+     "minutes": 325
     },
     {
      "start": "2026-10-11T17:18:50+03:00",
@@ -3831,7 +3903,7 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 1,
@@ -3842,13 +3914,13 @@
      "time": "10:53 PM",
      "flight": "E5592",
      "city": "Cairo",
-     "minutes_ago": 52
+     "minutes_ago": 57
     },
     "last_landing": {
      "time": "9:46 PM",
      "flight": "E5591",
      "city": "Cairo",
-     "minutes_ago": 119
+     "minutes_ago": 124
     }
    },
    "cancellations": {
@@ -3861,7 +3933,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-11T22:53:02+03:00",
-    "minutes_since_last_movement": 52,
+    "minutes_since_last_movement": 57,
     "movements_last_3h": 3,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -3872,7 +3944,7 @@
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -4126,7 +4198,7 @@
       "start": "2026-10-11T22:53:02+03:00",
       "end": null,
       "label": "Halt since 10:53 PM",
-      "minutes": 52
+      "minutes": 57
      }
     ]
    },
@@ -4135,7 +4207,7 @@
      "start": "2026-10-11T22:53:02+03:00",
      "end": null,
      "label": "Halt since 10:53 PM",
-     "minutes": 52
+     "minutes": 57
     },
     {
      "start": "2026-10-11T21:46:27+03:00",
@@ -4182,7 +4254,7 @@
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-11T23:45:01+03:00",
+   "as_of": "2026-10-11T23:50:01+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -4193,13 +4265,13 @@
      "time": "9:25 PM",
      "flight": "XY450",
      "city": "Jeddah",
-     "minutes_ago": 140
+     "minutes_ago": 145
     },
     "last_landing": {
      "time": "8:41 PM",
      "flight": "XY449",
      "city": "Jeddah",
-     "minutes_ago": 183
+     "minutes_ago": 188
     }
    },
    "cancellations": {
@@ -4212,7 +4284,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-11T21:25:00+03:00",
-    "minutes_since_last_movement": 140,
+    "minutes_since_last_movement": 145,
     "movements_last_3h": 2,
     "due_not_operated": 7,
     "cancelled_in_window": 4,
@@ -4229,7 +4301,7 @@
    },
    "flow24": {
     "start": "2026-10-11T00:00:00+03:00",
-    "end": "2026-10-11T23:45:01+03:00",
+    "end": "2026-10-11T23:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -4465,7 +4537,7 @@
       "start": "2026-10-11T21:25:00+03:00",
       "end": null,
       "label": "Halt since 9:25 PM",
-      "minutes": 140
+      "minutes": 145
      }
     ]
    },
@@ -4474,7 +4546,7 @@
      "start": "2026-10-11T21:25:00+03:00",
      "end": null,
      "label": "Halt since 9:25 PM",
-     "minutes": 140
+     "minutes": 145
     },
     {
      "start": "2026-10-11T18:28:00+03:00",
@@ -4532,7 +4604,7 @@
  },
  "airports_rule": "Automatic status from the live Flightradar24 boards, 3-hour lookback. An official or NOTAM closure overrides everything. HALTED: an active closure, or 0 takeoffs/landings for 45+ minutes while 2 or more flights were scheduled in that window and none operated (cancelled, diverted, or more than 60 minutes past schedule with no actual time). QUIET (grey): 0 movements but fewer than 2 flights due, e.g. an overnight lull or published night closure; the next scheduled flight is shown. DISRUPTED: 15%+ of today's flights cancelled, any diversion today, a halt in the last 6 hours, or a night/partial NOTAM restriction. NORMAL: none of these. NO DATA: the board returned no rows. FR24 'Unknown' flights with no actual time count as due only once 60+ minutes overdue. When KSA Bot's editor level is given (blocks/airports.json), it is shown, marked 'editor', with the automatic status alongside.",
  "maritime": {
-  "updated": "2026-10-11T22:52:50.889870+03:00",
+  "updated": "2026-10-11T23:49:48.785085+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -4597,30 +4669,30 @@
   }
  },
  "summary": {
-  "headline": "Riyadh halted since 9:29 PM, 91 min (no movement since SV851) \u2014 Dammam halted since 8:42 PM, 138 min",
-  "as_of": "2026-10-11T22:52+03:00",
+  "headline": "Riyadh halted since 9:29 PM, 151 min (no movement since SV851) \u2014 Dammam halted since 8:42 PM, 198 min",
+  "as_of": "2026-10-11T23:48+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (83 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (139 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 8:42 PM (130 min)."
+    "status_line": "No takeoff or landing since 8:42 PM (186 min)."
    }
   ],
   "changed": [
-   "Riyadh board shows no movement after SV851\u2019s 9:29 PM landing \u2014 open halt since 9:29 PM. Coalition reported a UAV intercepted and destroyed in the Eastern Region around 10:45 PM. Dammam remains halted since 8:42 PM."
+   "Both airports remain in open halt at midnight: Riyadh 151 minutes since SV851 at 9:29 PM; Dammam 198 minutes since 8:42 PM. Official channels overnight: SPA English and Al Ekhbariya restate the Eastern Region UAV intercept; Arab League, Ireland, Malaysia, Nigeria, Lithuania and the UK Foreign Secretary issue condemnations/solidarity."
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (83 min).",
-  "as_of": "2026-10-11T22:52+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (139 min).",
+  "as_of": "2026-10-11T23:48+03:00",
   "kpis": {
    "cancelled_total": 655,
    "cancelled_departures": 325,
@@ -4646,16 +4718,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-10T23:00+03:00",
-   "end": "2026-10-11T22:52+03:00",
+   "start": "2026-10-11T00:00+03:00",
+   "end": "2026-10-11T23:48+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-10T23:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 25
-    },
     {
      "hour_start": "2026-10-11T00:00+03:00",
      "label": "12 AM",
@@ -4815,13 +4880,20 @@
      "label": "10 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 17
+     "cancelled": 24
+    },
+    {
+     "hour_start": "2026-10-11T23:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 26
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 1,
-    "cancelled": 640
+    "cancelled": 648
    },
    "halts": [
     {
@@ -4839,7 +4911,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 83,
+    "minutes": 139,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    },
@@ -4877,15 +4949,15 @@
  },
  "dammam": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 8:42 PM (130 min).",
-  "as_of": "2026-10-11T22:52+03:00",
+  "status_line": "No takeoff or landing since 8:42 PM (186 min).",
+  "as_of": "2026-10-11T23:48+03:00",
   "kpis": {
-   "cancelled_total": 55,
-   "cancelled_departures": 27,
+   "cancelled_total": 57,
+   "cancelled_departures": 29,
    "cancelled_arrivals": 28,
-   "pct_of_scheduled": 21,
+   "pct_of_scheduled": 22,
    "scheduled": 260,
-   "diverted": 9,
+   "diverted": 13,
    "diverted_to": [
     "Bahrain",
     "AQI",
@@ -4905,16 +4977,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-10T23:00+03:00",
-   "end": "2026-10-11T22:52+03:00",
+   "start": "2026-10-11T00:00+03:00",
+   "end": "2026-10-11T23:48+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-10T23:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 2
-    },
     {
      "hour_start": "2026-10-11T00:00+03:00",
      "label": "12 AM",
@@ -5060,7 +5125,7 @@
      "label": "8 PM",
      "takeoffs": 0,
      "landings": 2,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-11T21:00+03:00",
@@ -5075,12 +5140,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-11T23:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 4
     }
    ],
    "totals": {
     "takeoffs": 75,
     "landings": 70,
-    "cancelled": 54
+    "cancelled": 57
    },
    "halts": [
     {
@@ -5118,7 +5190,7 @@
   "halts": [
    {
     "label": "Halt since 8:42 PM",
-    "minutes": 130,
+    "minutes": 186,
     "start": "2026-10-11T20:42+03:00",
     "end": null
    },
@@ -9738,8 +9810,80 @@
   }
  },
  "news": {
-  "checked": "10:51 PM",
+  "checked": "12:00 AM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Coalition intercepts and destroys UAV in Eastern Region",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:44 PM",
+    "url": "https://x.com/Spa_Eng/status/2109384767145939124",
+    "body": "Coalition: UAV intercepted and destroyed in the Eastern Region.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Arab League affirms full support for Saudi Arabia against Houthi attacks",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:23 PM",
+    "url": "https://x.com/Spa_Eng/status/2109379391063281843",
+    "body": "Arab League affirms full support for Saudi Arabia against Houthi attacks.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Lithuania condemns Houthi attacks and stands with the Kingdom",
+    "source": "SPA (@SPAregions)",
+    "time": "11:21 PM",
+    "url": "https://x.com/SPAregions/status/2109378973964636636",
+    "body": "The Republic of Lithuania condemns the Houthi attacks and affirms its standing with the Kingdom.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Ireland condemns Houthi attack on Riyadh's King Khalid International Airport",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:19 PM",
+    "url": "https://x.com/Spa_Eng/status/2109378371792883782",
+    "body": "Ireland condemns the Houthi attack on Riyadh's King Khalid International Airport.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Malaysia condemns attacks on civilians in Saudi Arabia",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:18 PM",
+    "url": "https://x.com/Spa_Eng/status/2109378232730677439",
+    "body": "Malaysia condemns attacks on civilians in Saudi Arabia.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "SPA: Nigeria condemns Houthi attack on King Khalid International Airport",
+    "source": "SPA (@Spa_Eng)",
+    "time": "11:18 PM",
+    "url": "https://x.com/Spa_Eng/status/2109378128758088188",
+    "body": "Nigeria condemns the Houthi attack on King Khalid International Airport.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: UK Foreign Secretary condemns Houthi violence, affirms solidarity with Kingdom and Yemen",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "11:17 PM",
+    "url": "https://x.com/alekhbariyatv/status/2109377955797594172",
+    "body": "In a call with the Saudi foreign minister, the UK Foreign Secretary affirms his country's condemnation of Houthi violence targeting Yemen's interior and civilian facilities in the Kingdom, and affirms solidarity with the Kingdom and Yemen in confronting these attacks.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Coalition intercepts and destroys UAV in Eastern Region",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "10:47 PM",
+    "url": "https://x.com/alekhbariyatv/status/2109370301134032999",
+    "body": "Coalition: UAV intercepted and destroyed in the Eastern Region.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Coalition: UAV intercepted and destroyed in the Eastern Region",
@@ -11226,7 +11370,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 194,
+  "count": 202,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -13750,6 +13894,110 @@
     "detail": "Coalition: a UAV was intercepted and destroyed in the Eastern Region.",
     "source": "SPA (@SPAregions)",
     "url": "https://x.com/SPAregions/status/2109370037874360421"
+   },
+   {
+    "id": "news-5325ee61a5",
+    "ts": "2026-10-11T22:47:24+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "10:47 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Coalition intercepts and destroys UAV in Eastern Region",
+    "detail": "Coalition: UAV intercepted and destroyed in the Eastern Region.",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2109370301134032999"
+   },
+   {
+    "id": "news-dfc9ceb4b6",
+    "ts": "2026-10-11T23:17:49+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "11:17 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: UK Foreign Secretary condemns Houthi violence, affirms solidarity with Kingdom and Yemen",
+    "detail": "In a call with the Saudi foreign minister, the UK Foreign Secretary affirms his country's condemnation of Houthi violence targeting Yemen's interior and civilian facilities in the Kingdom, and affirms solidarity with the Kingdom and Yemen i",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2109377955797594172"
+   },
+   {
+    "id": "news-d2bd261093",
+    "ts": "2026-10-11T23:18:30+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "11:18 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Nigeria condemns Houthi attack on King Khalid International Airport",
+    "detail": "Nigeria condemns the Houthi attack on King Khalid International Airport.",
+    "source": "SPA (@Spa_Eng)",
+    "url": "https://x.com/Spa_Eng/status/2109378128758088188"
+   },
+   {
+    "id": "news-6aede8acad",
+    "ts": "2026-10-11T23:18:55+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "11:18 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Malaysia condemns attacks on civilians in Saudi Arabia",
+    "detail": "Malaysia condemns attacks on civilians in Saudi Arabia.",
+    "source": "SPA (@Spa_Eng)",
+    "url": "https://x.com/Spa_Eng/status/2109378232730677439"
+   },
+   {
+    "id": "news-959307982f",
+    "ts": "2026-10-11T23:19:28+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "11:19 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Ireland condemns Houthi attack on Riyadh's King Khalid International Airport",
+    "detail": "Ireland condemns the Houthi attack on Riyadh's King Khalid International Airport.",
+    "source": "SPA (@Spa_Eng)",
+    "url": "https://x.com/Spa_Eng/status/2109378371792883782"
+   },
+   {
+    "id": "news-56a180eaee",
+    "ts": "2026-10-11T23:21:52+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "11:21 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Lithuania condemns Houthi attacks and stands with the Kingdom",
+    "detail": "The Republic of Lithuania condemns the Houthi attacks and affirms its standing with the Kingdom.",
+    "source": "SPA (@SPAregions)",
+    "url": "https://x.com/SPAregions/status/2109378973964636636"
+   },
+   {
+    "id": "news-0482283b64",
+    "ts": "2026-10-11T23:23:31+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "11:23 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Arab League affirms full support for Saudi Arabia against Houthi attacks",
+    "detail": "Arab League affirms full support for Saudi Arabia against Houthi attacks.",
+    "source": "SPA (@Spa_Eng)",
+    "url": "https://x.com/Spa_Eng/status/2109379391063281843"
+   },
+   {
+    "id": "news-75dc37f5a9",
+    "ts": "2026-10-11T23:44:53+03:00",
+    "date_label": "Sun 11 Oct",
+    "time_label": "11:44 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Coalition intercepts and destroys UAV in Eastern Region",
+    "detail": "Coalition: UAV intercepted and destroyed in the Eastern Region.",
+    "source": "SPA (@Spa_Eng)",
+    "url": "https://x.com/Spa_Eng/status/2109384767145939124"
    }
   ]
  }
