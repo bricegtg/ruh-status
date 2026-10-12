@@ -1,28 +1,29 @@
 {
  "schema": 2,
- "generated_at": "2026-10-12T15:01:05+03:00",
+ "generated_at": "2026-10-12T15:04:21+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 2:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "2:00 PM",
-  "as_of": "2026-10-12T13:50:00+03:00",
-  "as_of_label": "1:50 PM",
+  "title": "RUH & DMM Airport Status 3:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "3:00 PM",
+  "as_of": "2026-10-12T15:03:00+03:00",
+  "as_of_label": "3:03 PM",
   "date_long": "Monday 12 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh halted since 9:29 PM, 991 minutes \u2014 Dammam disrupted: 3 takeoffs and 2 landings in the last hour",
-  "headline": "Riyadh halted since 9:29 PM, 991 min; GACA suspension extended \u2014 Dammam disrupted, 3 takeoffs / 2 landings last hour",
+  "status_line": "Riyadh halted since 9:29 PM, 1,051 minutes. Dammam disrupted: 5 takeoffs and 4 landings in the last hour",
+  "headline": "Riyadh halted since 9:29 PM, 1,051 minutes; GACA suspension extended. Dammam disrupted, 5 takeoffs and 4 landings last hour",
   "synopsis": "Riyadh halted since 9:29 PM, 930 minutes \u2014 Dammam disrupted: 3 takeoffs and 1 landing in the last hour Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop. Saturday morning: a 91-minute halt ran from 6:37 to 8:08 AM with no takeoff or landing. Saturday afternoon\u2013evening: the board showed no takeoff or landing from 2:05 PM until flynas XY278 from Sharm el-Sheikh landed at 8:10 PM (~365 minutes). Since that landing there has been no further takeoff or landing \u2014 open halt since 8:10 PM (470 minutes at the 4:00 AM Sunday slot). Last takeoff remains flynas XY277 at 1:39 PM; prior last landing before XY278 was Air Cairo SM461 at 2:05 PM. GACA confirms King Khalid International Airport was attacked on Saturday afternoon and operations remain temporarily suspended until damage assessment and facility safety checks are complete. GACA follow-up statement at 12:46 AM Sunday (dated 11 October): the attack resulted in 12 fatalities \u2014 4 Saudi citizens and residents of Bangladeshi (2), American (1), Egyptian (1), Jordanian (1), Syrian (1), Palestinian (1) and Sudanese (1) nationality \u2014 and 309 injured, including some in critical condition; property damage is being assessed. AIS/NOTAC shows NOTAM A3586/26 (NOTAMR) keeping the aerodrome unavailable from 10 Oct 19:24 UTC through 11 Oct 21:00 UTC. Flightradar24 at 11:35 PM reported Dammam-bound flights holding (including one originally for Riyadh); at 12:01 AM FR24 said flights were on approach to Dammam again. Reuters at 9:40 PM had restated the suspension with \u201cseveral\u201d wounded \u2014 GACA\u2019s 12:46 AM tally supersedes that on casualties. AP reports an official saying a missile struck a passenger terminal and wounded many; AFP hospital source earlier said dozens injured / at least five Saudis in ICU; AFP diplomatic source said Houthis hit with a missile around 3:00 PM. Social-media death-toll claims circulating earlier remain unverified against the new official GACA figures. No official Houthi claim for Saturday found yet. Passengers told to confirm flight status before heading to the airport. Board cancellations remain elevated on Sunday 11 October.",
-  "next_update": "3:00 PM",
+  "next_update": "4:00 PM",
   "kpis": {
    "cancelled_total": 543,
    "cancelled_departures": 268,
    "cancelled_arrivals": 275,
    "pct_of_scheduled": 79,
    "scheduled": 685,
-   "diverted": 2,
+   "diverted": 3,
    "diverted_to": [
     "Dubai",
+    "Jeddah",
     "Dammam"
    ],
    "takeoffs_last_hour": 0,
@@ -32,29 +33,15 @@
     "time": "9:29 PM",
     "flight": "SV851",
     "city": "Phuket",
-    "minutes_ago": 981
+    "minutes_ago": 1054
    }
   },
   "flow24": {
-   "start": "2026-10-11T14:00:00+03:00",
-   "end": "2026-10-12T13:50:00+03:00",
-   "start_label": "2:00 PM Sunday",
+   "start": "2026-10-11T16:00:00+03:00",
+   "end": "2026-10-12T15:03:00+03:00",
+   "start_label": "4:00 PM Sunday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-11T14:00:00+03:00",
-     "label": "2 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 30
-    },
-    {
-     "hour_start": "2026-10-11T15:00:00+03:00",
-     "label": "3 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 31
-    },
     {
      "hour_start": "2026-10-11T16:00:00+03:00",
      "label": "4 PM",
@@ -207,13 +194,27 @@
      "label": "1 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 22
+     "cancelled": 25
+    },
+    {
+     "hour_start": "2026-10-12T14:00:00+03:00",
+     "label": "2 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 30
+    },
+    {
+     "hour_start": "2026-10-12T15:00:00+03:00",
+     "label": "3 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 1,
-    "cancelled": 577
+    "cancelled": 551
    },
    "halts": [
     {
@@ -226,7 +227,7 @@
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 981
+     "minutes": 1054
     }
    ]
   },
@@ -235,7 +236,7 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 981
+    "minutes": 1054
    },
    {
     "start": "2026-10-10T20:10:03+03:00",
@@ -253,8 +254,17 @@
   "gulf": [],
   "gulf_footnote": null,
   "news_title": "Official channels & verified reporting",
-  "news_checked": "checked 2:00 PM AST Mon 12 Oct",
+  "news_checked": "checked 3:04 PM AST Mon 12 Oct",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Libya condemns and denounces the attacks targeting the Kingdom",
+    "source": "SPA (@SPAregions)",
+    "time": "2:15 PM",
+    "extra": "published 2:15 PM AST Mon 12 Oct (official account, Arabic, translated); checked 3:04 PM",
+    "body": "Libya condemned and denounced the attacks that targeted the Kingdom, SPA reported.",
+    "url": "https://x.com/SPAregions/status/2109603831432765622"
+   },
    {
     "tag": "CONFIRMED",
     "title": "European Union condemns Houthi attacks on airports in the Kingdom",
@@ -296,7 +306,7 @@
     "title": "Jordan condemns Houthi attacks on King Khalid and King Fahd airports",
     "source": "SPA (@SPAregions)",
     "time": "12:41 PM",
-    "extra": "published 12:41 PM AST Mon 12 Oct (official account); checked 12:59 PM",
+    "extra": "published 12:41 PM AST Mon 12 Oct (official account); checked 12:59 PM; SPA English repost 2:24 PM; checked 3:04 PM",
     "body": "SPA reported that Jordan condemned Houthi militia attacks on King Khalid International Airport in Riyadh and King Fahd International Airport in Dammam.",
     "url": "https://x.com/SPAregions/status/2109580267211940272"
    },
@@ -332,7 +342,7 @@
     "title": "UAE strongly condemns continued Houthi attacks on King Khalid International Airport in Riyadh",
     "source": "Al Ekhbariya (@alekhbariyatv)",
     "time": "11:28 AM",
-    "extra": "published 11:28 AM AST Mon 12 Oct (official account); checked 11:56 AM",
+    "extra": "published 11:28 AM AST Mon 12 Oct (official account); checked 11:56 AM; SPA English repost 2:43 PM; checked 3:04 PM",
     "body": "The UAE said continued Houthi attacks on the Kingdom violate its sovereignty, security and stability, and affirmed full support for any measures Saudi Arabia takes to protect its security.",
     "url": "https://x.com/alekhbariyatv/status/2109561876262834648"
    },
@@ -350,7 +360,7 @@
     "title": "GACA: suspension of operations at King Khalid International Airport in Riyadh extended to complete safety checks",
     "source": "GACA (@ksagaca) / SPA",
     "time": "10:58 AM",
-    "extra": "published 10:58 AM AST Mon 12 Oct (GACA statement; SPA English 11:37 AM, GACA English 11:38 AM); checked 11:56 AM",
+    "extra": "published 10:58 AM AST Mon 12 Oct (GACA statement; SPA English 11:37 AM, GACA English 11:38 AM); checked 11:56 AM; restated by Al Ekhbariya 2:00 PM; checked 3:04 PM",
     "body": "GACA said it is extending the suspension of operations at King Khalid International Airport in Riyadh so the necessary procedures can be completed to verify the safety of its facilities and operational readiness, in coordination with the relevant authorities. No reopening time was given.",
     "url": "https://x.com/ksagaca/status/2109564392455250075"
    },
@@ -1868,7 +1878,7 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_200PM_12Oct2026.pdf",
+  "pdf_name": "RUH_status_report_300PM_12Oct2026.pdf",
   "last_hour": null,
   "notams": [
    {
@@ -4869,7 +4879,7 @@
  },
  "airports_rule": "Automatic status from the live Flightradar24 boards, 3-hour lookback. An official or NOTAM closure overrides everything. HALTED: an active closure, or 0 takeoffs/landings for 45+ minutes while 2 or more flights were scheduled in that window and none operated (cancelled, diverted, or more than 60 minutes past schedule with no actual time). QUIET (grey): 0 movements but fewer than 2 flights due, e.g. an overnight lull or published night closure; the next scheduled flight is shown. DISRUPTED: 15%+ of today's flights cancelled, any diversion today, a halt in the last 6 hours, or a night/partial NOTAM restriction. NORMAL: none of these. NO DATA: the board returned no rows. FR24 'Unknown' flights with no actual time count as due only once 60+ minutes overdue. When KSA Bot's editor level is given (blocks/airports.json), it is shown, marked 'editor', with the automatic status alongside.",
  "maritime": {
-  "updated": "2026-10-12T13:51:27.147744+03:00",
+  "updated": "2026-10-12T15:03:37.145958+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -4934,20 +4944,20 @@
   }
  },
  "summary": {
-  "headline": "Riyadh halted since 9:29 PM, 991 min; GACA suspension extended \u2014 Dammam disrupted, 3 takeoffs / 2 landings last hour",
-  "as_of": "2026-10-12T13:50+03:00",
+  "headline": "Riyadh halted since 9:29 PM, 1,051 minutes; GACA suspension extended. Dammam disrupted, 5 takeoffs and 4 landings last hour",
+  "as_of": "2026-10-12T15:03+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (981 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (1054 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "3 takeoffs and 3 landings in the last hour."
+    "status_line": "5 takeoffs and 4 landings in the last hour."
    }
   ],
   "changed": [
@@ -4956,17 +4966,18 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (981 min).",
-  "as_of": "2026-10-12T13:50+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (1054 min).",
+  "as_of": "2026-10-12T15:03+03:00",
   "kpis": {
    "cancelled_total": 543,
    "cancelled_departures": 268,
    "cancelled_arrivals": 275,
    "pct_of_scheduled": 79,
    "scheduled": 685,
-   "diverted": 2,
+   "diverted": 3,
    "diverted_to": [
     "Dubai",
+    "Jeddah",
     "Dammam"
    ],
    "takeoffs_last_hour": 0,
@@ -4979,23 +4990,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-11T14:00+03:00",
-   "end": "2026-10-12T13:50+03:00",
+   "start": "2026-10-11T16:00+03:00",
+   "end": "2026-10-12T15:03+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-11T14:00+03:00",
-     "label": "2 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 30
-    },
-    {
-     "hour_start": "2026-10-11T15:00+03:00",
-     "label": "3 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 31
-    },
     {
      "hour_start": "2026-10-11T16:00+03:00",
      "label": "4 PM",
@@ -5148,13 +5145,27 @@
      "label": "1 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 22
+     "cancelled": 25
+    },
+    {
+     "hour_start": "2026-10-12T14:00+03:00",
+     "label": "2 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 30
+    },
+    {
+     "hour_start": "2026-10-12T15:00+03:00",
+     "label": "3 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 1,
-    "cancelled": 577
+    "cancelled": 551
    },
    "halts": [
     {
@@ -5172,7 +5183,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 981,
+    "minutes": 1054,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    },
@@ -5192,8 +5203,8 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "3 takeoffs and 3 landings in the last hour.",
-  "as_of": "2026-10-12T13:50+03:00",
+  "status_line": "5 takeoffs and 4 landings in the last hour.",
+  "as_of": "2026-10-12T15:03+03:00",
   "kpis": {
    "cancelled_total": 78,
    "cancelled_departures": 40,
@@ -5202,37 +5213,23 @@
    "scheduled": 228,
    "diverted": 0,
    "diverted_to": [],
-   "takeoffs_last_hour": 3,
-   "landings_last_hour": 3,
+   "takeoffs_last_hour": 5,
+   "landings_last_hour": 4,
    "last_takeoff": {
-    "time": "1:38 PM",
-    "flight": "XY730",
-    "city": "Qassim"
+    "time": "2:59 PM",
+    "flight": "F3451",
+    "city": "Taif"
    },
    "last_landing": {
-    "time": "1:28 PM",
-    "flight": "F3307",
+    "time": "2:48 PM",
+    "flight": "SV1114",
     "city": "Jeddah"
    }
   },
   "flow24": {
-   "start": "2026-10-11T14:00+03:00",
-   "end": "2026-10-12T13:50+03:00",
+   "start": "2026-10-11T16:00+03:00",
+   "end": "2026-10-12T15:03+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-11T14:00+03:00",
-     "label": "2 PM",
-     "takeoffs": 4,
-     "landings": 6,
-     "cancelled": 1
-    },
-    {
-     "hour_start": "2026-10-11T15:00+03:00",
-     "label": "3 PM",
-     "takeoffs": 2,
-     "landings": 4,
-     "cancelled": 4
-    },
     {
      "hour_start": "2026-10-11T16:00+03:00",
      "label": "4 PM",
@@ -5386,12 +5383,26 @@
      "takeoffs": 3,
      "landings": 2,
      "cancelled": 1
+    },
+    {
+     "hour_start": "2026-10-12T14:00+03:00",
+     "label": "2 PM",
+     "takeoffs": 5,
+     "landings": 4,
+     "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-12T15:00+03:00",
+     "label": "3 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
-    "takeoffs": 42,
-    "landings": 34,
-    "cancelled": 68
+    "takeoffs": 41,
+    "landings": 28,
+    "cancelled": 65
    },
    "halts": [
     {
@@ -8805,9 +8816,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-12",
-    "usd": 105.55,
+    "usd": 105.91,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-12T13:40+03:00"
+    "time": "2026-10-12T14:53+03:00"
    },
    "spot_latest": {
     "date": "2026-10-06",
@@ -10046,15 +10057,24 @@
     },
     {
      "date": "2026-10-12",
-     "usd": 105.55
+     "usd": 105.91
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "checked 2:00 PM AST Mon 12 Oct",
+  "checked": "checked 3:04 PM AST Mon 12 Oct",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Libya condemns and denounces the attacks targeting the Kingdom",
+    "source": "SPA (@SPAregions)",
+    "time": "2:15 PM",
+    "url": "https://x.com/SPAregions/status/2109603831432765622",
+    "body": "Libya condemned and denounced the attacks that targeted the Kingdom, SPA reported.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "European Union condemns Houthi attacks on airports in the Kingdom",
@@ -11957,7 +11977,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 238,
+  "count": 239,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -15053,6 +15073,19 @@
     "detail": "European Union condemns Houthi attacks on airports in the Kingdom",
     "source": "SPA (@SPAregions)",
     "url": "https://x.com/SPAregions/status/2109594089830420749"
+   },
+   {
+    "id": "news-5d0e851ae7",
+    "ts": "2026-10-12T14:15:22+03:00",
+    "date_label": "Mon 12 Oct",
+    "time_label": "2:15 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Libya condemns and denounces the attacks targeting the Kingdom",
+    "detail": "Libya condemned and denounced the attacks that targeted the Kingdom, SPA reported.",
+    "source": "SPA (@SPAregions)",
+    "url": "https://x.com/SPAregions/status/2109603831432765622"
    }
   ]
  }
