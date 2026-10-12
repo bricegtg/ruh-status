@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-13T01:02:23+03:00",
+ "generated_at": "2026-10-13T01:02:37+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -1638,24 +1638,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-13T00:55:01+03:00",
+   "as_of": "2026-10-13T01:00:01+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 2,
-    "landings_last_hour": 3,
+    "landings_last_hour": 4,
     "takeoffs_last_30": 2,
     "landings_last_30": 2,
     "last_takeoff": {
      "time": "12:51 AM",
      "flight": "PK744",
      "city": "Karachi",
-     "minutes_ago": 3
+     "minutes_ago": 8
     },
     "last_landing": {
-     "time": "12:33 AM",
-     "flight": "SV1430",
-     "city": "Jeddah",
-     "minutes_ago": 21
+     "time": "12:58 AM",
+     "flight": "MS675",
+     "city": "Cairo",
+     "minutes_ago": 1
     }
    },
    "cancellations": {
@@ -1667,28 +1667,21 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-13T00:51:47+03:00",
-    "minutes_since_last_movement": 3,
-    "movements_last_3h": 13,
+    "last_movement": "2026-10-13T00:58:59+03:00",
+    "minutes_since_last_movement": 1,
+    "movements_last_3h": 14,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-13T01:00:00+03:00",
+    "next_scheduled": "2026-10-13T01:25:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 542
    },
    "flow24": {
-    "start": "2026-10-12T01:00:00+03:00",
-    "end": "2026-10-13T00:55:01+03:00",
+    "start": "2026-10-12T02:00:00+03:00",
+    "end": "2026-10-13T01:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-12T01:00:00+03:00",
-      "label": "1 AM",
-      "takeoffs": 3,
-      "landings": 4,
-      "cancelled": 1
-     },
      {
       "hour_start": "2026-10-12T02:00:00+03:00",
       "label": "2 AM",
@@ -1847,14 +1840,21 @@
       "hour_start": "2026-10-13T00:00:00+03:00",
       "label": "12 AM",
       "takeoffs": 2,
-      "landings": 3,
+      "landings": 4,
+      "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-13T01:00:00+03:00",
+      "label": "1 AM",
+      "takeoffs": 0,
+      "landings": 0,
       "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 62,
-     "landings": 62,
-     "cancelled": 33
+     "takeoffs": 59,
+     "landings": 59,
+     "cancelled": 32
     },
     "halts": [
      {
