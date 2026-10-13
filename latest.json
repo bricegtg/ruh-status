@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-13T07:00:27+03:00",
+ "generated_at": "2026-10-13T08:00:17+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 7:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "7:00 AM",
-  "as_of": "2026-10-13T06:50:00+03:00",
-  "as_of_label": "6:50 AM",
+  "title": "RUH & DMM Airport Status 8:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "8:00 AM",
+  "as_of": "2026-10-13T07:51:00+03:00",
+  "as_of_label": "7:51 AM",
   "date_long": "Tuesday 13 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh halted since 9:29 PM Sunday, 2,011 minutes at 7:00 AM. Dammam moving again after halt ended 6:45 AM (XY764 to Tabuk)",
-  "headline": "Riyadh halted since 9:29 PM Sunday, 2,011 minutes at 7:00 AM; NOTAM closes it until 12:00 AM Sunday 18 Oct. Dammam moving again after 6:45 AM takeoff XY764",
+  "status_line": "Riyadh halted since 9:29 PM Sunday, 2,071 minutes at 8:00 AM. Dammam moving: last hour 2 takeoffs / 1 landing (F3911 7:17 AM, GF101 7:15 AM)",
+  "headline": "Riyadh halted since 9:29 PM Sunday, 2,071 minutes at 8:00 AM; NOTAM closes it until 12:00 AM Sunday 18 Oct. Dammam moving with F3911 takeoff at 7:17 AM",
   "synopsis": "Riyadh halted since 9:29 PM Sunday, 2,011 minutes at 7:00 AM, with no takeoff or landing (last landing SV851 from Phuket). NOTAM A3604/26 keeps the airport unavailable until 12:00 AM Sunday 18 Oct. Dammam moving again after halt 3:57\u20136:45 AM: latest takeoff flynas XY764 to Tabuk at 6:45 AM; last landing XY895 from Cairo at 3:57 AM Yesterday, 9 October: 166 of 703 flights cancelled, 18 arrivals diverted and four halts of 45+ minutes, the longest 7:41 to 9:38 PM (no landing until 9:45 PM). No official reason has been given for the evening stop. Saturday morning: a 91-minute halt ran from 6:37 to 8:08 AM with no takeoff or landing. Saturday afternoon\u2013evening: the board showed no takeoff or landing from 2:05 PM until flynas XY278 from Sharm el-Sheikh landed at 8:10 PM (~365 minutes). Since that landing there has been no further takeoff or landing \u2014 open halt since 8:10 PM (470 minutes at the 4:00 AM Sunday slot). Last takeoff remains flynas XY277 at 1:39 PM; prior last landing before XY278 was Air Cairo SM461 at 2:05 PM. GACA confirms King Khalid International Airport was attacked on Saturday afternoon and operations remain temporarily suspended until damage assessment and facility safety checks are complete. GACA follow-up statement at 12:46 AM Sunday (dated 11 October): the attack resulted in 12 fatalities \u2014 4 Saudi citizens and residents of Bangladeshi (2), American (1), Egyptian (1), Jordanian (1), Syrian (1), Palestinian (1) and Sudanese (1) nationality \u2014 and 309 injured, including some in critical condition; property damage is being assessed. AIS/NOTAC shows NOTAM A3586/26 (NOTAMR) keeping the aerodrome unavailable from 10 Oct 19:24 UTC through 11 Oct 21:00 UTC. Flightradar24 at 11:35 PM reported Dammam-bound flights holding (including one originally for Riyadh); at 12:01 AM FR24 said flights were on approach to Dammam again. Reuters at 9:40 PM had restated the suspension with \u201cseveral\u201d wounded \u2014 GACA\u2019s 12:46 AM tally supersedes that on casualties. AP reports an official saying a missile struck a passenger terminal and wounded many; AFP hospital source earlier said dozens injured / at least five Saudis in ICU; AFP diplomatic source said Houthis hit with a missile around 3:00 PM. Social-media death-toll claims circulating earlier remain unverified against the new official GACA figures. No official Houthi claim for Saturday found yet. Passengers told to confirm flight status before heading to the airport. Board cancellations remain elevated on Sunday 11 October.",
-  "next_update": "8:00 AM",
+  "next_update": "9:00 AM",
   "kpis": {
    "cancelled_total": 470,
    "cancelled_departures": 231,
@@ -25,26 +25,14 @@
    "takeoffs_last_hour": 0,
    "landings_last_hour": 0,
    "last_takeoff": null,
-   "last_landing": {
-    "time": "9:29 PM",
-    "flight": "SV851",
-    "city": "Phuket",
-    "minutes_ago": 2001
-   }
+   "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-12T07:00:00+03:00",
-   "end": "2026-10-13T06:50:00+03:00",
-   "start_label": "7:00 AM Monday",
+   "start": "2026-10-12T08:00:00+03:00",
+   "end": "2026-10-13T07:51:00+03:00",
+   "start_label": "8:00 AM Monday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-12T07:00:00+03:00",
-     "label": "7 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 16
-    },
     {
      "hour_start": "2026-10-12T08:00:00+03:00",
      "label": "8 AM",
@@ -205,19 +193,26 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 24
+    },
+    {
+     "hour_start": "2026-10-13T07:00:00+03:00",
+     "label": "7 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 17
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 559
+    "cancelled": 560
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 2001
+     "minutes": 2062
     }
    ]
   },
@@ -226,7 +221,7 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 2001
+    "minutes": 2062
    },
    {
     "start": "2026-10-10T20:10:03+03:00",
@@ -238,14 +233,14 @@
   "gulf": [],
   "gulf_footnote": null,
   "news_title": "Official channels & verified reporting",
-  "news_checked": "6:50 AM",
+  "news_checked": "8:50 AM",
   "news": [
    {
     "tag": "CORROBORATED",
     "title": "AFP: blasts over Riyadh again Monday night; coalition says it intercepted a Houthi missile",
     "source": "AFP (@AFP)",
     "time": "5:31 AM",
-    "extra": "published 5:31 AM AST Tue 13 Oct; checked 7:00 AM",
+    "extra": "published 5:31 AM AST Tue 13 Oct; checked 8:50 AM",
     "body": "AFP reported that blasts were heard over Riyadh again on Monday night after lethal weekend strikes on Riyadh's airport. The Saudi-led coalition said it intercepted a Houthi missile. AFP also noted Houthi warnings to the US of a \"painful response\" if it enters the conflict.",
     "url": "https://x.com/AFP/status/2109834330927186249"
    },
@@ -254,7 +249,7 @@
     "title": "Reuters: Saudi-led coalition destroyed Houthi ballistic missile fired toward Riyadh",
     "source": "Reuters (@Reuters)",
     "time": "4:20 AM",
-    "extra": "published 4:20 AM AST Tue 13 Oct; checked 7:00 AM",
+    "extra": "published 4:20 AM AST Tue 13 Oct; checked 8:50 AM",
     "body": "Reuters reported that the Saudi-led coalition said it destroyed a Houthi ballistic missile fired toward Riyadh, matching coalition/SPA intercept statements from Monday night.",
     "url": "https://x.com/Reuters/status/2109816436986151102"
    },
@@ -263,25 +258,25 @@
     "title": "Anadolu: several Arab airlines suspend or cancel flights to Riyadh after deadly Houthi attacks",
     "source": "Anadolu (@anadoluagency)",
     "time": "5:30 AM",
-    "extra": "published 5:30 AM AST Tue 13 Oct; airline statements not checked 7:00 AM; checked 7:00 AM",
+    "extra": "published 5:30 AM AST Tue 13 Oct; airline statements not checked 8:50 AM; checked 8:50 AM",
     "body": "Anadolu reported that several Arab airlines have suspended or cancelled flights to Riyadh after deadly Houthi attacks on King Khalid International Airport. It restated Saturday's toll of 13 killed and more than 300 injured, plus a further Sunday strike that killed 1 and injured over 10.",
     "url": "https://x.com/anadoluagency/status/2109834006057607590"
    },
    {
     "tag": "CONFIRMED",
-    "title": "Al Ekhbariya: rain alerts continue across most of the Kingdom through next Saturday",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "5:23 AM",
-    "extra": "published 5:23 AM AST Tue 13 Oct (official account, Arabic, translated); checked 7:00 AM",
-    "body": "Al Ekhbariya reported continuing rain alerts across most regions of the Kingdom through next Saturday. This is a weather notice, not an airport operations statement.",
-    "url": "https://x.com/alekhbariyatv/status/2109832311004918172"
+    "title": "SPA: NCM forecasts thunderstorms and flash floods across much of the Kingdom, including Riyadh and Eastern Province",
+    "source": "SPA (@SPAregions)",
+    "time": "7:00 AM",
+    "extra": "published 7:00 AM AST Tue 13 Oct (official account, Arabic, translated); checked 8:50 AM",
+    "body": "Saudi Press Agency relayed an NCM forecast of moderate to heavy thunderstorms with hail and active winds over Jazan, Asir, Al-Baha and Makkah, lighter to moderate over Najran, Medina, Hail, Tabuk, Al-Jouf, Northern Borders, Riyadh and the Eastern Province, with fog in parts.",
+    "url": "https://x.com/SPAregions/status/2109856658436309332"
    },
    {
     "tag": "UNVERIFIED",
     "title": "ABS-CBN: Philippine Airlines suspends Riyadh flights until 29 November",
     "source": "ABS-CBN News (@ABSCBNNews)",
     "time": "4:45 AM",
-    "extra": "published 4:45 AM AST Tue 13 Oct; single media report, airline statement not seen directly; checked 7:00 AM",
+    "extra": "published 4:45 AM AST Tue 13 Oct; single media report, airline statement not seen directly; checked 8:50 AM",
     "body": "ABS-CBN News reported that Philippine Airlines has suspended its flights to and from Riyadh until 29 November 2026, citing the security situation at King Khalid International Airport. The airline's own notice has not been checked directly.",
     "url": "https://x.com/ABSCBNNews/status/2109822897728733287"
    },
@@ -290,7 +285,7 @@
     "title": "Houthis claim ballistic missile at King Khalid airport and drone at Khamis Mushait base on Monday evening",
     "source": "Anadolu (@anadoluagency), CGTN",
     "time": "4:30 AM",
-    "extra": "Anadolu post 4:30 AM, CGTN 4:02 AM AST Tue 13 Oct; checked 7:00 AM",
+    "extra": "Anadolu post 4:30 AM, CGTN 4:02 AM AST Tue 13 Oct; checked 8:50 AM",
     "body": "Houthi spokesman Yahya Sarea claimed a ballistic missile attack on King Khalid International Airport and a drone attack on the Khamis Mushait air base on Monday evening. The coalition said the missile fired toward Riyadh was intercepted and destroyed. Some OSINT accounts say it hit inside the airport perimeter; that is unconfirmed and conflicts with the official statement.",
     "url": "https://x.com/anadoluagency/status/2109818922862104933"
    },
@@ -304,13 +299,13 @@
     "url": "https://x.com/alekhbariyatv/status/2109818892436537682"
    },
    {
-    "tag": "UNVERIFIED",
-    "title": "Etihad cancels Abu Dhabi flights to Dammam, Jeddah and Riyadh",
-    "source": "Faytuks Network (@FaytuksNetwork)",
-    "time": "4:28 AM",
-    "extra": "posted 4:28 AM AST Tue 13 Oct, citing an Etihad company statement not seen directly; checked 7:00 AM",
-    "body": "Faytuks Network reported an Etihad Airways statement saying flights between Abu Dhabi and Dammam, Jeddah and Riyadh are cancelled due to regional disruption. The statement itself has not been checked directly.",
-    "url": "https://x.com/avsec_pro/status/2109822200941273415"
+    "tag": "CORROBORATED",
+    "title": "Khaleej Times: Etihad cancels all Abu Dhabi\u2013Riyadh flights until 19 Oct; Jeddah and Dammam until 14 Oct",
+    "source": "Khaleej Times",
+    "time": "8:12 AM",
+    "extra": "published 8:12 AM GST Tue 13 Oct (Khaleej Times); cites Etihad company notice; checked 8:50 AM",
+    "body": "Etihad cancelled all Abu Dhabi\u2013Riyadh flights until 19 Oct amid the Riyadh airport closure, and Abu Dhabi\u2013Jeddah and Abu Dhabi\u2013Dammam until 14 Oct, citing regional disruption.",
+    "url": "https://www.khaleejtimes.com/business/aviation/etihad-cancels-all-riyadh-flights-until-october-19-amid-airport-closure"
    },
    {
     "tag": "CONFIRMED",
@@ -503,7 +498,7 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_700AM_13Oct2026.pdf",
+  "pdf_name": "RUH_status_report_800AM_13Oct2026.pdf",
   "last_hour": null,
   "notams": [
    {
@@ -3527,7 +3522,7 @@
  },
  "airports_rule": "Automatic status from the live Flightradar24 boards, 3-hour lookback. An official or NOTAM closure overrides everything. HALTED: an active closure, or 0 takeoffs/landings for 45+ minutes while 2 or more flights were scheduled in that window and none operated (cancelled, diverted, or more than 60 minutes past schedule with no actual time). QUIET (grey): 0 movements but fewer than 2 flights due, e.g. an overnight lull or published night closure; the next scheduled flight is shown. DISRUPTED: 15%+ of today's flights cancelled, any diversion today, a halt in the last 6 hours, or a night/partial NOTAM restriction. NORMAL: none of these. NO DATA: the board returned no rows. FR24 'Unknown' flights with no actual time count as due only once 60+ minutes overdue. When KSA Bot's editor level is given (blocks/airports.json), it is shown, marked 'editor', with the automatic status alongside.",
  "maritime": {
-  "updated": "2026-10-13T06:52:33.615687+03:00",
+  "updated": "2026-10-13T07:53:19.349727+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -3592,20 +3587,20 @@
   }
  },
  "summary": {
-  "headline": "Riyadh halted since 9:29 PM Sunday, 2,011 minutes at 7:00 AM; NOTAM closes it until 12:00 AM Sunday 18 Oct. Dammam moving again after 6:45 AM takeoff XY764",
-  "as_of": "2026-10-13T06:50+03:00",
+  "headline": "Riyadh halted since 9:29 PM Sunday, 2,071 minutes at 8:00 AM; NOTAM closes it until 12:00 AM Sunday 18 Oct. Dammam moving with F3911 takeoff at 7:17 AM",
+  "as_of": "2026-10-13T07:51+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (2001 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (2062 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "1 takeoff and 0 landings in the last hour."
+    "status_line": "2 takeoffs and 1 landing in the last hour."
    }
   ],
   "changed": [
@@ -3614,8 +3609,8 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (2001 min).",
-  "as_of": "2026-10-13T06:50+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (2062 min).",
+  "as_of": "2026-10-13T07:51+03:00",
   "kpis": {
    "cancelled_total": 470,
    "cancelled_departures": 231,
@@ -3627,23 +3622,12 @@
    "takeoffs_last_hour": 0,
    "landings_last_hour": 0,
    "last_takeoff": null,
-   "last_landing": {
-    "time": "9:29 PM",
-    "flight": "SV851",
-    "city": "Phuket"
-   }
+   "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-12T07:00+03:00",
-   "end": "2026-10-13T06:50+03:00",
+   "start": "2026-10-12T08:00+03:00",
+   "end": "2026-10-13T07:51+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-12T07:00+03:00",
-     "label": "7 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 16
-    },
     {
      "hour_start": "2026-10-12T08:00+03:00",
      "label": "8 AM",
@@ -3804,12 +3788,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 24
+    },
+    {
+     "hour_start": "2026-10-13T07:00+03:00",
+     "label": "7 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 17
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 559
+    "cancelled": 560
    },
    "halts": [
     {
@@ -3822,7 +3813,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 2001,
+    "minutes": 2062,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    },
@@ -3836,8 +3827,8 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "1 takeoff and 0 landings in the last hour.",
-  "as_of": "2026-10-13T06:50+03:00",
+  "status_line": "2 takeoffs and 1 landing in the last hour.",
+  "as_of": "2026-10-13T07:51+03:00",
   "kpis": {
    "cancelled_total": 62,
    "cancelled_departures": 30,
@@ -3848,30 +3839,23 @@
    "diverted_to": [
     "Bahrain"
    ],
-   "takeoffs_last_hour": 1,
-   "landings_last_hour": 0,
+   "takeoffs_last_hour": 2,
+   "landings_last_hour": 1,
    "last_takeoff": {
-    "time": "6:45 AM",
-    "flight": "XY764",
-    "city": "Tabuk"
+    "time": "7:17 AM",
+    "flight": "F3911",
+    "city": "Cairo"
    },
    "last_landing": {
-    "time": "3:57 AM",
-    "flight": "XY895",
-    "city": "Cairo"
+    "time": "7:15 AM",
+    "flight": "GF101",
+    "city": "Bahrain"
    }
   },
   "flow24": {
-   "start": "2026-10-12T07:00+03:00",
-   "end": "2026-10-13T06:50+03:00",
+   "start": "2026-10-12T08:00+03:00",
+   "end": "2026-10-13T07:51+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-12T07:00+03:00",
-     "label": "7 AM",
-     "takeoffs": 3,
-     "landings": 1,
-     "cancelled": 3
-    },
     {
      "hour_start": "2026-10-12T08:00+03:00",
      "label": "8 AM",
@@ -4032,10 +4016,17 @@
      "takeoffs": 1,
      "landings": 0,
      "cancelled": 1
+    },
+    {
+     "hour_start": "2026-10-13T07:00+03:00",
+     "label": "7 AM",
+     "takeoffs": 2,
+     "landings": 1,
+     "cancelled": 3
     }
    ],
    "totals": {
-    "takeoffs": 42,
+    "takeoffs": 41,
     "landings": 34,
     "cancelled": 88
    },
@@ -7461,9 +7452,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-13",
-    "usd": 105.47,
+    "usd": 105.39,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-13T06:42+03:00"
+    "time": "2026-10-13T07:41+03:00"
    },
    "spot_latest": {
     "date": "2026-10-06",
@@ -8706,14 +8697,14 @@
     },
     {
      "date": "2026-10-13",
-     "usd": 105.47
+     "usd": 105.39
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "6:50 AM",
+  "checked": "8:50 AM",
   "items": [
    {
     "tag": "CORROBORATED",
@@ -8744,11 +8735,11 @@
    },
    {
     "tag": "CONFIRMED",
-    "title": "Al Ekhbariya: rain alerts continue across most of the Kingdom through next Saturday",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "5:23 AM",
-    "url": "https://x.com/alekhbariyatv/status/2109832311004918172",
-    "body": "Al Ekhbariya reported continuing rain alerts across most regions of the Kingdom through next Saturday. This is a weather notice, not an airport operations statement.",
+    "title": "SPA: NCM forecasts thunderstorms and flash floods across much of the Kingdom, including Riyadh and Eastern Province",
+    "source": "SPA (@SPAregions)",
+    "time": "7:00 AM",
+    "url": "https://x.com/SPAregions/status/2109856658436309332",
+    "body": "Saudi Press Agency relayed an NCM forecast of moderate to heavy thunderstorms with hail and active winds over Jazan, Asir, Al-Baha and Makkah, lighter to moderate over Najran, Medina, Hail, Tabuk, Al-Jouf, Northern Borders, Riyadh and the Eastern Province, with fog in parts.",
     "airport": null
    },
    {
@@ -8779,12 +8770,12 @@
     "airport": null
    },
    {
-    "tag": "UNVERIFIED",
-    "title": "Etihad cancels Abu Dhabi flights to Dammam, Jeddah and Riyadh",
-    "source": "Faytuks Network (@FaytuksNetwork)",
-    "time": "4:28 AM",
-    "url": "https://x.com/avsec_pro/status/2109822200941273415",
-    "body": "Faytuks Network reported an Etihad Airways statement saying flights between Abu Dhabi and Dammam, Jeddah and Riyadh are cancelled due to regional disruption. The statement itself has not been checked directly.",
+    "tag": "CORROBORATED",
+    "title": "Khaleej Times: Etihad cancels all Abu Dhabi\u2013Riyadh flights until 19 Oct; Jeddah and Dammam until 14 Oct",
+    "source": "Khaleej Times",
+    "time": "8:12 AM",
+    "url": "https://www.khaleejtimes.com/business/aviation/etihad-cancels-all-riyadh-flights-until-october-19-amid-airport-closure",
+    "body": "Etihad cancelled all Abu Dhabi\u2013Riyadh flights until 19 Oct amid the Riyadh airport closure, and Abu Dhabi\u2013Jeddah and Abu Dhabi\u2013Dammam until 14 Oct, citing regional disruption.",
     "airport": null
    },
    {
@@ -9289,7 +9280,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 280,
+  "count": 282,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -12231,6 +12222,19 @@
     "url": "https://x.com/SPAregions/status/2109455675357278277"
    },
    {
+    "id": "halt-DMM-1791770186",
+    "ts": "2026-10-12T04:56:26+03:00",
+    "date_label": "Mon 12 Oct",
+    "time_label": "4:56 AM",
+    "category": "airport",
+    "airport": "DMM",
+    "tag": "CONFIRMED",
+    "title": "DMM halt 4:56\u20136:01 AM (65 min)",
+    "detail": "No takeoff or landing for 65+ minutes (FR24 board).",
+    "source": "DMM status tracker (FR24 board)",
+    "url": "https://ruh-status.onrender.com"
+   },
+   {
     "id": "halt-DMM-1791774112",
     "ts": "2026-10-12T06:01:52+03:00",
     "date_label": "Mon 12 Oct",
@@ -12931,6 +12935,19 @@
     "detail": "Al Ekhbariya reported continuing rain alerts across most regions of the Kingdom through next Saturday. This is a weather notice, not an airport operations statement.",
     "source": "Al Ekhbariya (@alekhbariyatv)",
     "url": "https://x.com/alekhbariyatv/status/2109832311004918172"
+   },
+   {
+    "id": "news-5c6063720a",
+    "ts": "2026-10-13T07:00:01+03:00",
+    "date_label": "Tue 13 Oct",
+    "time_label": "7:00 AM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "NCM forecasts thunderstorms and flash floods across much of the Kingdom, including Riyadh and Eastern Province",
+    "detail": "Saudi Press Agency relayed an NCM forecast of moderate to heavy thunderstorms with hail and active winds over Jazan, Asir, Al-Baha and Makkah, lighter to moderate over Najran, Medina, Hail, Tabuk, Al-Jouf, Northern Borders, Riyadh and the E",
+    "source": "SPA (@SPAregions)",
+    "url": "https://x.com/SPAregions/status/2109856658436309332"
    }
   ]
  }
