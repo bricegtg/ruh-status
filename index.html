@@ -212,7 +212,7 @@ function renderSummary(){
   h+=card("Summary"+(S.as_of||r.as_of?" &middot; as of "+t12(S.as_of||r.as_of)+" AST":""),(ttl?'<div class="hl">'+esc(ttl)+'</div>':'')+(bl.length?'<ul class="sumb">'+bl.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul>':(ttl?'':coming("Headline")))+(r.date_long&&bl.length?'<div class="sub">'+esc(r.date_long)+'</div>':''));
   var ap=arr(S.airports);
   if(!ap.length){ap=[{name:"Riyadh, King Khalid (RUH)",level:r.level,status_line:r.status_line,tab:"riyadh"},{name:"Dammam, King Fahd (DMM)",level:dm&&dm.level,status_line:dm&&dm.status_line,tab:"dammam"}]}
-  h+=card("Airport status",'<div class="pills">'+ap.map(function(a){var t=a.tab||(/dmm|dammam/i.test((a.code||"")+(a.name||""))?"dammam":"riyadh");var cd=a.code||(t==="dammam"?"DMM":"RUH"),AA=D.airports&&D.airports[cd];return '<a class="pill" href="#'+t+'" style="color:inherit;font-weight:400"><div>'+(AA?effPill(AA):lvl(a.level))+(AA&&has(a.level)?'<div class="sub" style="margin-top:3px">Report: '+esc(a.level)+'</div>':'')+'</div><div><div style="font-weight:700;color:var(--head)">'+esc(a.name||a.code)+'</div><div class="sub">'+(a.status_line?esc(a.status_line):(has(a.level)?'':'Data coming'))+'</div></div></a>'}).join("")+'</div>');
+  h+=card("Airport status",'<div class="pills">'+ap.map(function(a){var t=a.tab||(/dmm|dammam/i.test((a.code||"")+(a.name||""))?"dammam":"riyadh");var cd=a.code||(t==="dammam"?"DMM":"RUH"),AA=D.airports&&D.airports[cd];return '<a class="pill" href="#'+t+'" style="color:inherit;font-weight:400"><div>'+(AA?effPill(AA):lvl(a.level))+'</div><div><div style="font-weight:700;color:var(--head)">'+esc(a.name||a.code)+'</div><div class="sub">'+(a.status_line?esc(a.status_line):(has(a.level)?'':'Data coming'))+'</div></div></a>'}).join("")+'</div>');
   var SK=D.strikes||{};
   h+=card(esc(SK.title||"Escalation pattern: Houthi strikes on KSA by target type")+" &middot; 8 Sep &ndash; "+(function(){var t=todayRiyadh().split("-");return (+t[2])+" "+MO[t[1]-1]})(),strikes.length?'<div id="strk"></div>'+(SK.so_what?'<div class="sowhat"><div class="k">So what</div>'+esc(SK.so_what)+'</div>':''):coming("Strike timeline"));
   var N=arr(D.news);if(!N.length)N=arr(r.news);
@@ -269,10 +269,21 @@ function tlSet(k,v){TLS[k]=v;renderTimeline()}
 /* ---------- Saudi Arabia overview (airports.{IATA}, live FR24 boards) ---------- */
 var KORD=["RUH","JED","DMM","MED","AHB","GIZ","TIF","ELQ","TUU"];
 function pillOf(p){return lvl(p==="NO DATA"?null:p)}
-function effPill(a){if(!a)return lvl(null);return pillOf(a.pill)+(a.pill_source==="editor"?'<span class="edm">editor</span> <span class="sub" style="font-size:11px">auto check: '+esc(a.auto_pill)+'</span>':'')+(a.pill==="QUIET"||a.auto_pill==="QUIET"?' <span class="sub">'+(a.idle&&a.idle.next_scheduled?'Next flight '+t12(a.idle.next_scheduled):'No flights due')+'</span>':'')}
+function effOf(a){/* evaluated against the current time so the pill flips without a republish */
+  var kb=a.ksa_bot||{},auto=a.auto_pill||a.pill||"NO DATA";
+  if(a.pill_source==="report")return {p:a.pill,src:"report",auto:auto};
+  var ca=kb.checked_at?pd(kb.checked_at):null,fresh=kb.level&&ca&&(Date.now()-ca.getTime())<=3*3600*1000;
+  if(fresh)return {p:String(kb.level).toUpperCase(),src:"editor",auto:auto};
+  return {p:auto,src:"auto",auto:auto,stale:!!kb.level,last:ca?t12(kb.checked_at)+" AST, "+ca.toLocaleDateString("en-US",{timeZone:"Asia/Riyadh",day:"numeric",month:"short"}):(kb.checked?kb.checked+" (no date given)":null)};}
+function effPill(a){if(!a)return lvl(null);var e=effOf(a),h=pillOf(e.p);
+  if(e.src==="editor")h+='<span class="edm">editor</span> <span class="sub" style="font-size:11px">auto check: '+esc(e.auto)+'</span>';
+  else if(e.src==="report")h+='<span class="edm">report</span> <span class="sub" style="font-size:11px">auto check: '+esc(e.auto)+'</span>';
+  else h+=' <span class="sub" style="font-size:11px">auto check'+(e.stale?'; last editor check: '+esc(e.last||"unknown"):'')+'</span>';
+  if(e.auto==="QUIET")h+=' <span class="sub">'+(a.idle&&a.idle.next_scheduled?'Next flight '+t12(a.idle.next_scheduled):'No flights due')+'</span>';
+  return h}
 function renderKsa(){
   var A=D&&D.airports,el=$("t-ksa");if(!A){el.innerHTML=coming("Saudi Arabia airports");return}
-  var cnt={};KORD.forEach(function(c){var p=(A[c]||{}).pill||"NO DATA";cnt[p]=(cnt[p]||0)+1});
+  var cnt={};KORD.forEach(function(c){var p=A[c]?effOf(A[c]).p:"NO DATA";cnt[p]=(cnt[p]||0)+1});
   var h=card("Saudi Arabia &middot; 9 major airports",'<div class="sub">'+["HALTED","DISRUPTED","QUIET","NORMAL","NO DATA"].filter(function(p){return cnt[p]}).map(function(p){return pillOf(p)+' '+cnt[p]}).join(" &nbsp; ")+'</div><p class="sub" style="margin:8px 0 0">Live, automatic counts from Flightradar24 airport boards, refreshed about every 5 minutes. Pills marked editor are KSA Bot&rsquo;s checked level.</p>');
   var KB=arr(D.ksa_summary&&D.ksa_summary.bullets).filter(function(x){return typeof x==="string"&&x.trim()});
   if(KB.length)h+=card("KSA overview &middot; editor",'<ul class="sumb">'+KB.map(function(x){var m=x.match(/^([A-Z]{3}) ([A-Z ]+?): (.*)$/);return '<li>'+(m?'<a class="apchip" href="#ap-'+m[1]+'" style="text-decoration:none">'+esc(((D.airports[m[1]]||{}).city||m[1])+' ('+m[1]+')')+'</a>'+lvl(m[2])+' '+esc(m[3]):esc(x))+'</li>'}).join("")+'</ul>');
@@ -290,7 +301,7 @@ function renderAp(c){
   var a=D&&D.airports&&D.airports[c],el=$("t-ap");if(!el)return;
   if(!a){el.innerHTML=D?card("Airport",coming(c)):"";return}
   var m=a.movements||{},x=a.cancellations||{},b=a.ksa_bot||{};
-  var o={name:a.city+", "+a.name,code:c,level:a.pill==="NO DATA"?null:a.pill,status_line:(a.pill_source==="editor"?"Editor level; automatic status: "+a.auto_pill+". ":"")+(a.pill==="QUIET"?"No flights scheduled. ":"")+(b.headline||"")||null,headline:b.notes||null,as_of:a.as_of,as_of_label:a.as_of?t12(a.as_of)+" AST (live board)":null,flow24:a.flow24,halts:a.halts,
+  var E=effOf(a);var o={name:a.city+", "+a.name,code:c,level:E.p==="NO DATA"?null:E.p,status_line:(E.src!=="auto"?(E.src==="report"?"Hourly report level":"Editor level")+"; automatic check: "+E.auto+". ":(E.stale?"Automatic check (last editor check: "+(E.last||"unknown")+"). ":""))+(E.p==="QUIET"?"No flights scheduled. ":"")+(b.headline||"")||null,headline:b.notes||null,as_of:a.as_of,as_of_label:a.as_of?t12(a.as_of)+" AST (live board)":null,flow24:a.flow24,halts:a.halts,
     kpis:{cancelled_total:x.total,cancelled_departures:x.departures,cancelled_arrivals:x.arrivals,pct_of_scheduled:x.pct_of_scheduled,scheduled:x.scheduled,diverted:a.diversions,takeoffs_last_hour:m.takeoffs_last_hour,landings_last_hour:m.landings_last_hour,last_takeoff:m.last_takeoff,last_landing:m.last_landing}};
   renderAirport("ap",o,!a.as_of);
   el.insertAdjacentHTML("afterbegin",'<div class="sub" style="margin-top:10px"><a href="#ksa">&lsaquo; All Saudi airports</a>'+(c==="RUH"?' &middot; <a href="#riyadh">Riyadh report view</a>':c==="DMM"?' &middot; <a href="#dammam">Dammam airport tab</a>':'')+' &middot; Status pill: live-board rule (see Saudi Arabia tab).</div>');
