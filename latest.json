@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-15T19:06:49+03:00",
+ "generated_at": "2026-10-15T19:09:12+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 6:30 PM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "6:30 PM",
-  "as_of": "2026-10-15T18:55:00+03:00",
-  "as_of_label": "6:55 PM",
+  "title": "RUH & DMM Airport Status 7:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "7:00 PM",
+  "as_of": "2026-10-15T19:05:00+03:00",
+  "as_of_label": "7:05 PM",
   "date_long": "Thursday 15 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 5,550 minutes at 6:00 PM; Dammam moving, 6 movements in the last hour",
-  "headline": "Riyadh airport halted since 9:29 PM Sunday, 5,550 minutes; Coalition demands Houthis stop attacks on airports; Dammam moving",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 5,550 minutes at 6:00 PM, with no scheduled service; NOTAM A3604/26 keeps the airport closed until 12:00 AM Sunday 18 Oct. There was no takeoff or landing on the Flightradar24 board in the last hour; the last takeoff remains Saudia SV1523 to Tabuk at 4:11 AM Wednesday.",
-  "next_update": "7:00 PM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 5,611 minutes at 7:00 PM; Dammam moving, 8 movements in the last hour",
+  "headline": "Riyadh airport halted since 9:29 PM Sunday, 5,611 minutes; Coalition intercepts drone over Khamis Mushait; Dammam moving",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 5,611 minutes at 7:00 PM, with no scheduled service; NOTAM A3604/26 keeps the airport closed until 12:00 AM Sunday 18 Oct. There was no takeoff or landing on the Flightradar24 board in the last hour; the last takeoff remains Saudia SV1523 to Tabuk at 4:11 AM Wednesday.",
+  "next_update": "8:00 PM",
   "kpis": {
    "cancelled_total": 413,
    "cancelled_departures": 217,
@@ -32,18 +32,11 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-14T19:00:00+03:00",
-   "end": "2026-10-15T18:55:00+03:00",
-   "start_label": "7:00 PM Wednesday",
+   "start": "2026-10-14T20:00:00+03:00",
+   "end": "2026-10-15T19:05:00+03:00",
+   "start_label": "8:00 PM Wednesday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T19:00:00+03:00",
-     "label": "7 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 26
-    },
     {
      "hour_start": "2026-10-14T20:00:00+03:00",
      "label": "8 PM",
@@ -204,19 +197,26 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 22
+    },
+    {
+     "hour_start": "2026-10-15T19:00:00+03:00",
+     "label": "7 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 10
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 442
+    "cancelled": 426
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 5606
+     "minutes": 5616
     }
    ]
   },
@@ -225,12 +225,12 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 5606
+    "minutes": 5616
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh still halted; Coalition demands Houthis stop attacks on airports; Dammam moving",
+  "news_title": "Riyadh still halted; drone intercepted over Khamis Mushait; Najran alert cleared; Dammam moving",
   "news_checked": "6:55 PM",
   "news": [
    {
@@ -415,7 +415,7 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_630PM_15Oct2026.pdf",
+  "pdf_name": "RUH_status_report_700PM_15Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
@@ -770,30 +770,30 @@
   }
  },
  "summary": {
-  "headline": "Riyadh airport halted since 9:29 PM Sunday, 5,550 minutes; Coalition demands Houthis stop attacks on airports; Dammam moving",
-  "as_of": "2026-10-15T18:55+03:00",
+  "headline": "Riyadh airport halted since 9:29 PM Sunday, 5,611 minutes; Coalition intercepts drone over Khamis Mushait; Dammam moving",
+  "as_of": "2026-10-15T19:05+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (5606 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (5616 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "3 takeoffs and 2 landings in the last hour."
+    "status_line": "4 takeoffs and 4 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday (5,550 min at 6:00 PM). Dammam moving with no open halt: 2 takeoffs and 4 landings 5:00\u20136:00 PM. Coalition press conference (CONFIRMED): demands the Houthis stop all attacks on civilians, airports, ports and oil sites, and says 127 Houthi mountain stores and many launchers were destroyed. No new attack on the Kingdom and no new GACA or airport operations notice this hour."
+   "Riyadh still halted since 9:29 PM Sunday (5,611 min at 7:00 PM). Dammam moving with no open halt: 4 takeoffs and 4 landings 6:00\u20137:00 PM. Coalition (CONFIRMED, 6:52 PM): drone intercepted and destroyed over Khamis Mushait. Civil Defense alert in Najran 5:57 PM, cleared 5:59 PM. Yemen's information minister says the Houthis fired 5 missiles at the presidential palace in Aden (5:52 PM). No new GACA or airport operations statement."
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (5606 min).",
-  "as_of": "2026-10-15T18:55+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (5616 min).",
+  "as_of": "2026-10-15T19:05+03:00",
   "kpis": {
    "cancelled_total": 413,
    "cancelled_departures": 217,
@@ -812,16 +812,9 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-14T19:00+03:00",
-   "end": "2026-10-15T18:55+03:00",
+   "start": "2026-10-14T20:00+03:00",
+   "end": "2026-10-15T19:05+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T19:00+03:00",
-     "label": "7 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 26
-    },
     {
      "hour_start": "2026-10-14T20:00+03:00",
      "label": "8 PM",
@@ -982,12 +975,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 22
+    },
+    {
+     "hour_start": "2026-10-15T19:00+03:00",
+     "label": "7 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 10
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 442
+    "cancelled": 426
    },
    "halts": [
     {
@@ -1000,7 +1000,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 5606,
+    "minutes": 5616,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -1008,8 +1008,8 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "3 takeoffs and 2 landings in the last hour.",
-  "as_of": "2026-10-15T18:55+03:00",
+  "status_line": "4 takeoffs and 4 landings in the last hour.",
+  "as_of": "2026-10-15T19:05+03:00",
   "kpis": {
    "cancelled_total": 87,
    "cancelled_departures": 43,
@@ -1020,30 +1020,23 @@
    "diverted_to": [
     "Madinah"
    ],
-   "takeoffs_last_hour": 3,
-   "landings_last_hour": 2,
+   "takeoffs_last_hour": 4,
+   "landings_last_hour": 4,
    "last_takeoff": {
-    "time": "6:35 PM",
-    "flight": "IA6612",
-    "city": "Baghdad"
+    "time": "6:55 PM",
+    "flight": "XY735",
+    "city": "Madinah"
    },
    "last_landing": {
-    "time": "6:48 PM",
-    "flight": "XY708",
-    "city": "Madinah"
+    "time": "6:58 PM",
+    "flight": "XY416",
+    "city": "Jeddah"
    }
   },
   "flow24": {
-   "start": "2026-10-14T19:00+03:00",
-   "end": "2026-10-15T18:55+03:00",
+   "start": "2026-10-14T20:00+03:00",
+   "end": "2026-10-15T19:05+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T19:00+03:00",
-     "label": "7 PM",
-     "takeoffs": 4,
-     "landings": 5,
-     "cancelled": 3
-    },
     {
      "hour_start": "2026-10-14T20:00+03:00",
      "label": "8 PM",
@@ -1201,15 +1194,22 @@
     {
      "hour_start": "2026-10-15T18:00+03:00",
      "label": "6 PM",
-     "takeoffs": 3,
-     "landings": 2,
+     "takeoffs": 4,
+     "landings": 4,
      "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-15T19:00+03:00",
+     "label": "7 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
-    "takeoffs": 63,
-    "landings": 58,
-    "cancelled": 93
+    "takeoffs": 60,
+    "landings": 55,
+    "cancelled": 92
    },
    "halts": [
     {
@@ -11753,20 +11753,9 @@
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
   "prev_slot": "6:00 PM",
-  "window_start": "2026-10-15T17:57+03:00",
-  "window_end": "2026-10-15T18:55+03:00",
+  "window_start": "2026-10-15T18:00+03:00",
+  "window_end": "2026-10-15T19:05+03:00",
   "items": [
-   {
-    "date": "2026-10-15",
-    "time": "5:59 PM",
-    "city": "Najran",
-    "type": "all_clear",
-    "what": "Civil Defense all-clear for Najran; danger over",
-    "source": "Al Ekhbariya (relaying Civil Defense)",
-    "url": "https://x.com/alekhbariyatv/status/2110747323668275378",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
    {
     "date": "2026-10-15",
     "time": "6:52 PM",
