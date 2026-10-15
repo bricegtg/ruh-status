@@ -1,13 +1,13 @@
 {
  "schema": 2,
- "generated_at": "2026-10-15T16:01:06+03:00",
+ "generated_at": "2026-10-15T16:01:53+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
   "title": "RUH & DMM Airport Status 4:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
   "slot": "4:00 PM",
-  "as_of": "2026-10-15T15:55:00+03:00",
-  "as_of_label": "3:55 PM",
+  "as_of": "2026-10-15T16:00:00+03:00",
+  "as_of_label": "4:00 PM",
   "date_long": "Thursday 15 October 2026",
   "level": "HALTED",
   "status_line": "Riyadh airport halted since 9:29 PM Sunday, 5,430 minutes at 4:00 PM; Dammam moving again after 1:04\u20132:42 PM halt",
@@ -31,18 +31,11 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-14T16:00:00+03:00",
-   "end": "2026-10-15T15:55:00+03:00",
-   "start_label": "4:00 PM Wednesday",
+   "start": "2026-10-14T17:00:00+03:00",
+   "end": "2026-10-15T16:00:00+03:00",
+   "start_label": "5:00 PM Wednesday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T16:00:00+03:00",
-     "label": "4 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 23
-    },
     {
      "hour_start": "2026-10-14T17:00:00+03:00",
      "label": "5 PM",
@@ -203,19 +196,26 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 19
+    },
+    {
+     "hour_start": "2026-10-15T16:00:00+03:00",
+     "label": "4 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 4
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 435
+    "cancelled": 416
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 5426
+     "minutes": 5431
     }
    ]
   },
@@ -224,7 +224,7 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 5426
+    "minutes": 5431
    }
   ],
   "gulf": [],
@@ -695,7 +695,7 @@
   ]
  },
  "maritime": {
-  "updated": "2026-10-15T15:56:20.588902+03:00",
+  "updated": "2026-10-15T16:01:09.859824+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -761,29 +761,29 @@
  },
  "summary": {
   "headline": "Riyadh airport halted since 9:29 PM Sunday, 5,430 minutes; Dammam moving again after 1:04\u20132:42 PM halt; Houthis deny Madinah attack",
-  "as_of": "2026-10-15T15:55+03:00",
+  "as_of": "2026-10-15T16:00+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (5426 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (5431 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "5 takeoffs and 8 landings in the last hour."
+    "status_line": "5 takeoffs and 7 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday (5,430 min at 4:00 PM). Dammam traffic resumed after its 1:04\u20132:42 PM halt: 4 takeoffs and 7 landings 3:00\u20134:00 PM. Houthi spokesman denies the Madinah cruise-missile attack (CLAIM, via AP); Coalition intercept at 11:48 AM remains the latest major CONFIRMED intercept. No new GACA or airport operations notice this hour."
+   "Riyadh still halted since 9:29 PM Sunday (5,430 min at 4:00 PM). Dammam traffic resumed after its 1:04\u20132:42 PM halt: 5 takeoffs and 7 landings 3:00\u20134:00 PM. Houthi spokesman denies the Madinah cruise-missile attack (CLAIM, via AP); Coalition intercept at 11:48 AM remains the latest major CONFIRMED intercept. No new GACA or airport operations notice this hour."
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (5426 min).",
-  "as_of": "2026-10-15T15:55+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (5431 min).",
+  "as_of": "2026-10-15T16:00+03:00",
   "kpis": {
    "cancelled_total": 397,
    "cancelled_departures": 207,
@@ -801,16 +801,9 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-14T16:00+03:00",
-   "end": "2026-10-15T15:55+03:00",
+   "start": "2026-10-14T17:00+03:00",
+   "end": "2026-10-15T16:00+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T16:00+03:00",
-     "label": "4 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 23
-    },
     {
      "hour_start": "2026-10-14T17:00+03:00",
      "label": "5 PM",
@@ -971,12 +964,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 19
+    },
+    {
+     "hour_start": "2026-10-15T16:00+03:00",
+     "label": "4 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 4
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 435
+    "cancelled": 416
    },
    "halts": [
     {
@@ -989,7 +989,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 5426,
+    "minutes": 5431,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -997,8 +997,8 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "5 takeoffs and 8 landings in the last hour.",
-  "as_of": "2026-10-15T15:55+03:00",
+  "status_line": "5 takeoffs and 7 landings in the last hour.",
+  "as_of": "2026-10-15T16:00+03:00",
   "kpis": {
    "cancelled_total": 84,
    "cancelled_departures": 40,
@@ -1010,11 +1010,11 @@
     "Madinah"
    ],
    "takeoffs_last_hour": 5,
-   "landings_last_hour": 8,
+   "landings_last_hour": 7,
    "last_takeoff": {
-    "time": "3:46 PM",
-    "flight": "XY719",
-    "city": "Ha'il"
+    "time": "3:58 PM",
+    "flight": "SV117",
+    "city": "London"
    },
    "last_landing": {
     "time": "3:48 PM",
@@ -1023,16 +1023,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-14T16:00+03:00",
-   "end": "2026-10-15T15:55+03:00",
+   "start": "2026-10-14T17:00+03:00",
+   "end": "2026-10-15T16:00+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T16:00+03:00",
-     "label": "4 PM",
-     "takeoffs": 9,
-     "landings": 0,
-     "cancelled": 4
-    },
     {
      "hour_start": "2026-10-14T17:00+03:00",
      "label": "5 PM",
@@ -1190,22 +1183,24 @@
     {
      "hour_start": "2026-10-15T15:00+03:00",
      "label": "3 PM",
-     "takeoffs": 4,
+     "takeoffs": 5,
      "landings": 7,
      "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-15T16:00+03:00",
+     "label": "4 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 1
     }
    ],
    "totals": {
-    "takeoffs": 60,
+    "takeoffs": 52,
     "landings": 53,
-    "cancelled": 89
+    "cancelled": 86
    },
    "halts": [
-    {
-     "start": "2026-10-14T15:51+03:00",
-     "end": "2026-10-14T16:38+03:00",
-     "label": "Halt 3:51\u20134:38 PM"
-    },
     {
      "start": "2026-10-14T16:59+03:00",
      "end": "2026-10-14T18:15+03:00",
@@ -4737,9 +4732,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-15",
-    "usd": 104.45,
+    "usd": 104.25,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-15T15:46+03:00"
+    "time": "2026-10-15T15:50+03:00"
    },
    "spot_latest": {
     "date": "2026-10-06",
@@ -5990,7 +5985,7 @@
     },
     {
      "date": "2026-10-15",
-     "usd": 104.45
+     "usd": 104.25
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
@@ -11602,8 +11597,8 @@
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
   "prev_slot": "3:00 PM",
-  "window_start": "2026-10-15T14:55+03:00",
-  "window_end": "2026-10-15T15:55+03:00",
+  "window_start": "2026-10-15T15:00+03:00",
+  "window_end": "2026-10-15T16:00+03:00",
   "items": [],
   "last_24h": [
    {
