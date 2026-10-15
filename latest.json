@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-15T10:56:09+03:00",
+ "generated_at": "2026-10-15T11:00:20+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -379,7 +379,7 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-15T10:55:01+03:00",
+  "as_of": "2026-10-15T11:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
@@ -390,7 +390,7 @@
     "time": "4:11 AM",
     "flight": "SV1523",
     "city": "Tabuk",
-    "minutes_ago": 1843
+    "minutes_ago": 1848
    },
    "last_landing": null
   },
@@ -460,17 +460,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-14T11:00:00+03:00",
-   "end": "2026-10-15T10:55:01+03:00",
+   "start": "2026-10-14T12:00:00+03:00",
+   "end": "2026-10-15T11:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T11:00:00+03:00",
-     "label": "11 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 21
-    },
     {
      "hour_start": "2026-10-14T12:00:00+03:00",
      "label": "12 PM",
@@ -631,25 +624,32 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 12
+    },
+    {
+     "hour_start": "2026-10-15T11:00:00+03:00",
+     "label": "11 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 1
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 376
+    "cancelled": 356
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 5126
+     "minutes": 5131
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 1843
+     "minutes": 1848
     }
    ]
   },
@@ -658,13 +658,13 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 1843
+    "minutes": 1848
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 5126
+    "minutes": 5131
    }
   ]
  },
@@ -11362,7 +11362,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-15T10:55:01+03:00",
+   "as_of": "2026-10-15T11:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -11373,7 +11373,7 @@
      "time": "4:11 AM",
      "flight": "SV1523",
      "city": "Tabuk",
-     "minutes_ago": 1843
+     "minutes_ago": 1848
     },
     "last_landing": null
    },
@@ -11387,28 +11387,21 @@
    "diversions": 2,
    "idle": {
     "last_movement": "2026-10-14T04:11:57+03:00",
-    "minutes_since_last_movement": 1843,
+    "minutes_since_last_movement": 1848,
     "movements_last_3h": 0,
-    "due_not_operated": 65,
-    "cancelled_in_window": 23,
+    "due_not_operated": 70,
+    "cancelled_in_window": 24,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-15T11:00:00+03:00",
+    "next_scheduled": "2026-10-15T11:05:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 1800,
+    "board_rows": 1798,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-14T11:00:00+03:00",
-    "end": "2026-10-15T10:55:01+03:00",
+    "start": "2026-10-14T12:00:00+03:00",
+    "end": "2026-10-15T11:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-14T11:00:00+03:00",
-      "label": "11 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 21
-     },
      {
       "hour_start": "2026-10-14T12:00:00+03:00",
       "label": "12 PM",
@@ -11569,25 +11562,32 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 12
+     },
+     {
+      "hour_start": "2026-10-15T11:00:00+03:00",
+      "label": "11 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 1
      }
     ],
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 376
+     "cancelled": 356
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 5126
+      "minutes": 5131
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 1843
+      "minutes": 1848
      }
     ]
    },
@@ -11596,13 +11596,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 1843
+     "minutes": 1848
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 5126
+     "minutes": 5131
     }
    ],
    "ksa_bot": {
