@@ -1,13 +1,13 @@
 {
  "schema": 2,
- "generated_at": "2026-10-15T20:46:15+03:00",
+ "generated_at": "2026-10-15T20:50:51+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 8:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "8:00 PM",
-  "as_of": "2026-10-15T19:58:00+03:00",
-  "as_of_label": "7:58 PM",
+  "title": "RUH & DMM Airport Status 8:30 PM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "8:30 PM",
+  "as_of": "2026-10-15T20:49:00+03:00",
+  "as_of_label": "8:49 PM",
   "date_long": "Thursday 15 October 2026",
   "level": "HALTED",
   "status_line": "Riyadh airport halted since 9:29 PM Sunday, 5,670 minutes at 8:00 PM; Dammam moving, 6 movements in the last hour",
@@ -15,10 +15,10 @@
   "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 5,670 minutes at 8:00 PM, with no scheduled service; NOTAM A3604/26 keeps the airport closed until 12:00 AM Sunday 18 Oct. There was no takeoff or landing on the Flightradar24 board in the last hour; the last takeoff remains Saudia SV1523 to Tabuk at 4:11 PM on 11 Oct (pre-halt).",
   "next_update": "9:00 PM",
   "kpis": {
-   "cancelled_total": 415,
-   "cancelled_departures": 218,
-   "cancelled_arrivals": 197,
-   "pct_of_scheduled": 55,
+   "cancelled_total": 420,
+   "cancelled_departures": 221,
+   "cancelled_arrivals": 199,
+   "pct_of_scheduled": 56,
    "scheduled": 749,
    "diverted": 6,
    "diverted_to": [
@@ -32,18 +32,11 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-14T20:00:00+03:00",
-   "end": "2026-10-15T19:58:00+03:00",
-   "start_label": "8:00 PM Wednesday",
+   "start": "2026-10-14T21:00:00+03:00",
+   "end": "2026-10-15T20:49:00+03:00",
+   "start_label": "9:00 PM Wednesday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T20:00:00+03:00",
-     "label": "8 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 24
-    },
     {
      "hour_start": "2026-10-14T21:00:00+03:00",
      "label": "9 PM",
@@ -105,7 +98,7 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 11
+     "cancelled": 12
     },
     {
      "hour_start": "2026-10-15T06:00:00+03:00",
@@ -119,21 +112,21 @@
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-15T08:00:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 12
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-15T09:00:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 17
+     "cancelled": 18
     },
     {
      "hour_start": "2026-10-15T10:00:00+03:00",
@@ -204,19 +197,26 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 22
+    },
+    {
+     "hour_start": "2026-10-15T20:00:00+03:00",
+     "label": "8 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 14
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 440
+    "cancelled": 435
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 5669
+     "minutes": 5720
     }
    ]
   },
@@ -225,22 +225,40 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 5669
+    "minutes": 5720
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh still halted; drone intercepted over Khamis Mushait; Najran alert cleared; Dammam moving",
-  "news_checked": "7:56 PM",
+  "news_title": "Riyadh still halted; coalition calls airport attacks a violation of humanitarian law; southern-region drone intercepted; Dammam moving",
+  "news_checked": "8:50 PM",
   "news": [
    {
     "tag": "CONFIRMED",
-    "title": "Coalition spokesman releases press statement from today's conference on the KKIA terrorist attack and the coalition's qualitative operation to neutralize critical Houthi war-supporting capabilities",
-    "source": "Coalition spokesman (@CJFCSpox)",
-    "time": "7:53 PM",
-    "extra": "published 7:53 PM AST Thu 15 Oct (official account); checked 7:56 PM",
-    "body": "The Coalition spokesman posted the press release from today's conference concerning the terrorist attack on King Khalid International Airport and the qualitative operation the coalition carried out to neutralize critical capabilities used by the Houthi militia to support its war effort.",
-    "url": "https://x.com/CJFCSpox/status/2110776135134970136"
+    "title": "Coalition spokesman at KKIA-attack press conference: targeting civilian airports is a flagrant violation of international humanitarian law; coalition will keep dismantling Houthi offensive capabilities",
+    "source": "SPA (@SPAregions) / Coalition spokesman (@CJFCSpox)",
+    "time": "8:09 PM",
+    "extra": "SPA published 8:09 PM AST Thu 15 Oct (translated); Coalition posted the conference press release at 7:53 PM (Arabic) and 8:43 PM (English, https://x.com/CJFCSpox/status/2110788783125721325); checked 8:50 PM",
+    "body": "SPA quoted the Coalition's official spokesman at today's press conference on the King Khalid International Airport attack as saying that targeting civilian airports is a flagrant violation of international humanitarian law and that the coalition will continue dismantling the Houthis' offensive capabilities. The Coalition also posted the conference press release in Arabic (7:53 PM) and English (8:43 PM).",
+    "url": "https://x.com/SPAregions/status/2110780158860820556"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition spokesman Maj. Gen. Turki Al-Maliki's \"final message\" to the Houthi militia: read the coalition statement carefully and between the lines",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "8:02 PM",
+    "extra": "published 8:02 PM AST Thu 15 Oct (infographic, translated); checked 8:50 PM",
+    "body": "Al Ekhbariya posted an infographic quoting Coalition spokesman Maj. Gen. Turki Al-Maliki: \"A final message to the terrorist Houthi militia: read the coalition statement carefully and read between the lines.\" No new operation was announced with it.",
+    "url": "https://x.com/alekhbariyatv/status/2110778375833038965"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Houthi militia fired 16 ballistic missiles and other projectiles at residential neighborhoods in Marib, Yemen",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "8:08 PM",
+    "extra": "published 8:08 PM AST Thu 15 Oct (breaking, translated); inside Yemen, not a strike on Saudi Arabia; checked 8:50 PM",
+    "body": "Al Ekhbariya reported, as breaking news, that the Houthi militia targeted residential neighborhoods in Marib with 16 ballistic missiles and other projectiles. No casualty figures were given in the post.",
+    "url": "https://x.com/alekhbariyatv/status/2110779880967114899"
    },
    {
     "tag": "CONFIRMED",
@@ -256,7 +274,7 @@
     "title": "Coalition: drone launched by the Houthi militia toward the southern region intercepted and destroyed",
     "source": "Coalition spokesman (@CJFCSpox)",
     "time": "7:33 PM",
-    "extra": "published 7:33 PM AST Thu 15 Oct (official account); checked 7:56 PM; also SPA @SPAregions 7:35 PM and Al Ekhbariya 7:35 PM",
+    "extra": "published 7:33 PM AST Thu 15 Oct (official account); also SPA @SPAregions 7:35 PM, Al Ekhbariya 7:35 PM and SPA English @Spa_Eng 8:19 PM; checked 8:50 PM",
     "body": "The Coalition said its forces intercepted and destroyed a drone launched by the Houthi militia toward the southern region. No casualties were reported with the statement.",
     "url": "https://x.com/CJFCSpox/status/2110770993388241239"
    },
@@ -433,12 +451,12 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_800PM_15Oct2026.pdf",
+  "pdf_name": "RUH_status_report_830PM_15Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-15T20:30:02+03:00",
+  "as_of": "2026-10-15T20:50:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -449,9 +467,9 @@
    "last_landing": null
   },
   "cancellations": {
-   "total": 416,
-   "departures": 218,
-   "arrivals": 198,
+   "total": 420,
+   "departures": 221,
+   "arrivals": 199,
    "pct_of_scheduled": 56,
    "scheduled": 749
   },
@@ -515,7 +533,7 @@
   ],
   "flow24": {
    "start": "2026-10-14T21:00:00+03:00",
-   "end": "2026-10-15T20:30:02+03:00",
+   "end": "2026-10-15T20:50:01+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -579,7 +597,7 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 11
+     "cancelled": 12
     },
     {
      "hour_start": "2026-10-15T06:00:00+03:00",
@@ -593,21 +611,21 @@
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-15T08:00:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-15T09:00:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 17
+     "cancelled": 18
     },
     {
      "hour_start": "2026-10-15T10:00:00+03:00",
@@ -684,26 +702,26 @@
      "label": "8 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 10
+     "cancelled": 15
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 427
+    "cancelled": 436
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 5701
+     "minutes": 5721
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 2418
+     "minutes": 2438
     }
    ]
   },
@@ -712,18 +730,18 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 2418
+    "minutes": 2438
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 5701
+    "minutes": 5721
    }
   ]
  },
  "maritime": {
-  "updated": "2026-10-15T19:58:48.143628+03:00",
+  "updated": "2026-10-15T20:50:30.318695+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -789,19 +807,19 @@
  },
  "summary": {
   "headline": "Riyadh airport halted since 9:29 PM Sunday, 5,670 minutes; Coalition intercepts drone toward southern region; Dammam moving",
-  "as_of": "2026-10-15T19:58+03:00",
+  "as_of": "2026-10-15T20:49+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (5669 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (5720 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "2 takeoffs and 4 landings in the last hour."
+    "status_line": "4 takeoffs and 3 landings in the last hour."
    }
   ],
   "changed": [
@@ -810,13 +828,13 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (5669 min).",
-  "as_of": "2026-10-15T19:58+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (5720 min).",
+  "as_of": "2026-10-15T20:49+03:00",
   "kpis": {
-   "cancelled_total": 415,
-   "cancelled_departures": 218,
-   "cancelled_arrivals": 197,
-   "pct_of_scheduled": 55,
+   "cancelled_total": 420,
+   "cancelled_departures": 221,
+   "cancelled_arrivals": 199,
+   "pct_of_scheduled": 56,
    "scheduled": 749,
    "diverted": 6,
    "diverted_to": [
@@ -830,16 +848,9 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-14T20:00+03:00",
-   "end": "2026-10-15T19:58+03:00",
+   "start": "2026-10-14T21:00+03:00",
+   "end": "2026-10-15T20:49+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T20:00+03:00",
-     "label": "8 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 24
-    },
     {
      "hour_start": "2026-10-14T21:00+03:00",
      "label": "9 PM",
@@ -901,7 +912,7 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 11
+     "cancelled": 12
     },
     {
      "hour_start": "2026-10-15T06:00+03:00",
@@ -915,21 +926,21 @@
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-15T08:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 12
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-15T09:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 17
+     "cancelled": 18
     },
     {
      "hour_start": "2026-10-15T10:00+03:00",
@@ -1000,12 +1011,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 22
+    },
+    {
+     "hour_start": "2026-10-15T20:00+03:00",
+     "label": "8 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 14
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 440
+    "cancelled": 435
    },
    "halts": [
     {
@@ -1018,7 +1036,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 5669,
+    "minutes": 5720,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -1026,42 +1044,35 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "2 takeoffs and 4 landings in the last hour.",
-  "as_of": "2026-10-15T19:58+03:00",
+  "status_line": "4 takeoffs and 3 landings in the last hour.",
+  "as_of": "2026-10-15T20:49+03:00",
   "kpis": {
-   "cancelled_total": 88,
-   "cancelled_departures": 44,
-   "cancelled_arrivals": 44,
+   "cancelled_total": 90,
+   "cancelled_departures": 45,
+   "cancelled_arrivals": 45,
    "pct_of_scheduled": 31,
    "scheduled": 286,
    "diverted": 1,
    "diverted_to": [
     "Madinah"
    ],
-   "takeoffs_last_hour": 2,
-   "landings_last_hour": 4,
+   "takeoffs_last_hour": 4,
+   "landings_last_hour": 3,
    "last_takeoff": {
-    "time": "7:36 PM",
-    "flight": "F31071",
-    "city": "Bisha"
+    "time": "8:32 PM",
+    "flight": "F3471",
+    "city": "Qassim"
    },
    "last_landing": {
-    "time": "7:51 PM",
-    "flight": "F3452",
-    "city": "Taif"
+    "time": "8:30 PM",
+    "flight": "XY412",
+    "city": "Jeddah"
    }
   },
   "flow24": {
-   "start": "2026-10-14T20:00+03:00",
-   "end": "2026-10-15T19:58+03:00",
+   "start": "2026-10-14T21:00+03:00",
+   "end": "2026-10-15T20:49+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-14T20:00+03:00",
-     "label": "8 PM",
-     "takeoffs": 6,
-     "landings": 6,
-     "cancelled": 5
-    },
     {
      "hour_start": "2026-10-14T21:00+03:00",
      "label": "9 PM",
@@ -1137,7 +1148,7 @@
      "label": "7 AM",
      "takeoffs": 4,
      "landings": 1,
-     "cancelled": 3
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-15T08:00+03:00",
@@ -1151,7 +1162,7 @@
      "label": "9 AM",
      "takeoffs": 3,
      "landings": 2,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-15T10:00+03:00",
@@ -1219,15 +1230,22 @@
     {
      "hour_start": "2026-10-15T19:00+03:00",
      "label": "7 PM",
-     "takeoffs": 2,
+     "takeoffs": 3,
      "landings": 4,
      "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-15T20:00+03:00",
+     "label": "8 PM",
+     "takeoffs": 3,
+     "landings": 2,
+     "cancelled": 2
     }
    ],
    "totals": {
-    "takeoffs": 62,
-    "landings": 59,
-    "cancelled": 96
+    "takeoffs": 60,
+    "landings": 55,
+    "cancelled": 95
    },
    "halts": [
     {
@@ -4756,9 +4774,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-15",
-    "usd": 106.07,
+    "usd": 105.98,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-15T19:48+03:00"
+    "time": "2026-10-15T20:39+03:00"
    },
    "spot_latest": {
     "date": "2026-10-06",
@@ -6009,23 +6027,41 @@
     },
     {
      "date": "2026-10-15",
-     "usd": 106.07
+     "usd": 105.98
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "7:56 PM",
+  "checked": "8:50 PM",
   "items": [
    {
     "tag": "CONFIRMED",
-    "title": "Coalition spokesman releases press statement from today's conference on the KKIA terrorist attack and the coalition's qualitative operation to neutralize critical Houthi war-supporting capabilities",
-    "source": "Coalition spokesman (@CJFCSpox)",
-    "time": "7:53 PM",
-    "url": "https://x.com/CJFCSpox/status/2110776135134970136",
-    "body": "The Coalition spokesman posted the press release from today's conference concerning the terrorist attack on King Khalid International Airport and the qualitative operation the coalition carried out to neutralize critical capabilities used by the Houthi militia to support its war effort.",
+    "title": "Coalition spokesman at KKIA-attack press conference: targeting civilian airports is a flagrant violation of international humanitarian law; coalition will keep dismantling Houthi offensive capabilities",
+    "source": "SPA (@SPAregions) / Coalition spokesman (@CJFCSpox)",
+    "time": "8:09 PM",
+    "url": "https://x.com/SPAregions/status/2110780158860820556",
+    "body": "SPA quoted the Coalition's official spokesman at today's press conference on the King Khalid International Airport attack as saying that targeting civilian airports is a flagrant violation of international humanitarian law and that the coalition will continue dismantling the Houthis' offensive capabilities. The Coalition also posted the conference press release in Arabic (7:53 PM) and English (8:43 PM).",
     "airport": "RUH"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition spokesman Maj. Gen. Turki Al-Maliki's \"final message\" to the Houthi militia: read the coalition statement carefully and between the lines",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "8:02 PM",
+    "url": "https://x.com/alekhbariyatv/status/2110778375833038965",
+    "body": "Al Ekhbariya posted an infographic quoting Coalition spokesman Maj. Gen. Turki Al-Maliki: \"A final message to the terrorist Houthi militia: read the coalition statement carefully and read between the lines.\" No new operation was announced with it.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Houthi militia fired 16 ballistic missiles and other projectiles at residential neighborhoods in Marib, Yemen",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "8:08 PM",
+    "url": "https://x.com/alekhbariyatv/status/2110779880967114899",
+    "body": "Al Ekhbariya reported, as breaking news, that the Houthi militia targeted residential neighborhoods in Marib with 16 ballistic missiles and other projectiles. No casualty figures were given in the post.",
+    "airport": null
    },
    {
     "tag": "CONFIRMED",
@@ -6683,7 +6719,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 398,
+  "count": 401,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -11859,25 +11895,75 @@
     "detail": "The Coalition spokesman posted the press release from today's conference concerning the terrorist attack on King Khalid International Airport and the qualitative operation the coalition carried out to neutralize critical capabilities used b",
     "source": "Coalition spokesman (@CJFCSpox)",
     "url": "https://x.com/CJFCSpox/status/2110776135134970136"
+   },
+   {
+    "id": "news-b19bad91af",
+    "ts": "2026-10-15T20:02:35+03:00",
+    "date_label": "Thu 15 Oct",
+    "time_label": "8:02 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Coalition spokesman Maj. Gen. Turki Al-Maliki's \"final message\" to the Houthi militia: read the coalition statement care",
+    "detail": "Al Ekhbariya posted an infographic quoting Coalition spokesman Maj. Gen. Turki Al-Maliki: \"A final message to the terrorist Houthi militia: read the coalition statement carefully and read between the lines.\" No new operation was announced w",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2110778375833038965"
+   },
+   {
+    "id": "news-2c7503800a",
+    "ts": "2026-10-15T20:08:34+03:00",
+    "date_label": "Thu 15 Oct",
+    "time_label": "8:08 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Houthi militia fired 16 ballistic missiles and other projectiles at residential neighborhoods in Marib, Ye",
+    "detail": "Al Ekhbariya reported, as breaking news, that the Houthi militia targeted residential neighborhoods in Marib with 16 ballistic missiles and other projectiles. No casualty figures were given in the post.",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2110779880967114899"
+   },
+   {
+    "id": "news-3137dbb2e0",
+    "ts": "2026-10-15T20:09:40+03:00",
+    "date_label": "Thu 15 Oct",
+    "time_label": "8:09 PM",
+    "category": "official",
+    "airport": "RUH",
+    "tag": "CONFIRMED",
+    "title": "Coalition spokesman at KKIA-attack press conference: targeting civilian airports is a flagrant violation of internationa",
+    "detail": "SPA quoted the Coalition's official spokesman at today's press conference on the King Khalid International Airport attack as saying that targeting civilian airports is a flagrant violation of international humanitarian law and that the coal",
+    "source": "SPA (@SPAregions) / Coalition spokesman (@CJFCSpox)",
+    "url": "https://x.com/SPAregions/status/2110780158860820556"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "7:00 PM",
-  "window_start": "2026-10-15T19:00+03:00",
-  "window_end": "2026-10-15T19:58+03:00",
+  "prev_slot": "8:00 PM",
+  "window_start": "2026-10-15T19:58+03:00",
+  "window_end": "2026-10-15T20:49+03:00",
   "items": [
    {
     "date": "2026-10-15",
-    "time": "7:33 PM",
-    "city": "Southern region",
-    "type": "interception",
-    "what": "Coalition: Houthi drone headed toward the southern region intercepted and destroyed",
-    "source": "Coalition spokesman / SPA / Al Ekhbariya",
-    "url": "https://x.com/CJFCSpox/status/2110770993388241239",
+    "time": "8:08 PM",
+    "city": "Al Ekhbariya: Houthi militia fired 16 ballistic missiles and other projectiles at residential neighborhoods in Marib, Yemen",
+    "type": "attack",
+    "what": "Houthi militia fired 16 ballistic missiles and other projectiles at residential neighborhoods in Marib, Yemen",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2110779880967114899",
     "tag": "CONFIRMED",
-    "casualties": "none reported (intercept)"
+    "casualties": null
+   },
+   {
+    "date": "2026-10-15",
+    "time": "8:09 PM",
+    "city": "Coalition spokesman at KKIA-attack press conference: targeting civilian airports is a flagrant violation of international humanitarian law; coalition will keep dismantling Houthi offensive capabilities",
+    "type": "attack",
+    "what": "Coalition spokesman at KKIA-attack press conference: targeting civilian airports is a flagrant violation of international humanitarian law; coalition will keep dismantling Houthi offensive capabilities",
+    "source": "SPA",
+    "url": "https://x.com/SPAregions/status/2110780158860820556",
+    "tag": "CONFIRMED",
+    "casualties": null
    }
   ],
   "last_24h": [
@@ -12034,10 +12120,32 @@
     "url": "https://x.com/CJFCSpox/status/2110770993388241239",
     "tag": "CONFIRMED",
     "casualties": "none reported (intercept)"
+   },
+   {
+    "date": "2026-10-15",
+    "time": "8:08 PM",
+    "city": "Al Ekhbariya: Houthi militia fired 16 ballistic missiles and other projectiles at residential neighborhoods in Marib, Yemen",
+    "type": "attack",
+    "what": "Houthi militia fired 16 ballistic missiles and other projectiles at residential neighborhoods in Marib, Yemen",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2110779880967114899",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-15",
+    "time": "8:09 PM",
+    "city": "Coalition spokesman at KKIA-attack press conference: targeting civilian airports is a flagrant violation of international humanitarian law; coalition will keep dismantling Houthi offensive capabilities",
+    "type": "attack",
+    "what": "Coalition spokesman at KKIA-attack press conference: targeting civilian airports is a flagrant violation of international humanitarian law; coalition will keep dismantling Houthi offensive capabilities",
+    "source": "SPA",
+    "url": "https://x.com/SPAregions/status/2110780158860820556",
+    "tag": "CONFIRMED",
+    "casualties": null
    }
   ],
   "tally_24h": {
-   "attack": 3,
+   "attack": 5,
    "interception": 4,
    "alert": 3,
    "all_clear": 3,
@@ -12045,7 +12153,7 @@
    "casualties": 1,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Attacks 3, interceptions 4, alerts 3, all-clears 3, casualty reports 1.",
+  "tally_text": "Last 24 hours: Attacks 5, interceptions 4, alerts 3, all-clears 3, casualty reports 1.",
   "none_text": null
  },
  "airports": {
@@ -12054,7 +12162,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-15T20:30:02+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -12065,9 +12173,9 @@
     "last_landing": null
    },
    "cancellations": {
-    "total": 416,
-    "departures": 218,
-    "arrivals": 198,
+    "total": 420,
+    "departures": 221,
+    "arrivals": 199,
     "pct_of_scheduled": 56,
     "scheduled": 749
    },
@@ -12076,17 +12184,17 @@
     "last_movement": null,
     "minutes_since_last_movement": null,
     "movements_last_3h": 0,
-    "due_not_operated": 96,
-    "cancelled_in_window": 58,
+    "due_not_operated": 101,
+    "cancelled_in_window": 59,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-15T20:35:00+03:00",
+    "next_scheduled": "2026-10-15T21:00:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 1400,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:30:02+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -12150,7 +12258,7 @@
       "label": "5 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 11
+      "cancelled": 12
      },
      {
       "hour_start": "2026-10-15T06:00:00+03:00",
@@ -12164,21 +12272,21 @@
       "label": "7 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 13
+      "cancelled": 14
      },
      {
       "hour_start": "2026-10-15T08:00:00+03:00",
       "label": "8 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 13
+      "cancelled": 14
      },
      {
       "hour_start": "2026-10-15T09:00:00+03:00",
       "label": "9 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 17
+      "cancelled": 18
      },
      {
       "hour_start": "2026-10-15T10:00:00+03:00",
@@ -12255,26 +12363,26 @@
       "label": "8 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 10
+      "cancelled": 15
      }
     ],
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 427
+     "cancelled": 436
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 5701
+      "minutes": 5721
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 2418
+      "minutes": 2438
      }
     ]
    },
@@ -12283,13 +12391,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 2418
+     "minutes": 2438
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 5701
+     "minutes": 5721
     }
    ],
    "ksa_bot": {
@@ -12307,49 +12415,49 @@
    "city": "Jeddah",
    "name": "King Abdulaziz International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-15T20:25:01+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 JED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 5,
+    "takeoffs_last_hour": 3,
     "landings_last_hour": 12,
-    "takeoffs_last_30": 3,
-    "landings_last_30": 12,
+    "takeoffs_last_30": 0,
+    "landings_last_30": 0,
     "last_takeoff": {
      "time": "8:06 PM",
      "flight": "QR1187",
      "city": "Doha",
-     "minutes_ago": 18
+     "minutes_ago": 43
     },
     "last_landing": {
      "time": "8:17 PM",
      "flight": "SV1544",
      "city": "Tabuk",
-     "minutes_ago": 7
+     "minutes_ago": 32
     }
    },
    "cancellations": {
-    "total": 160,
-    "departures": 70,
-    "arrivals": 90,
+    "total": 162,
+    "departures": 71,
+    "arrivals": 91,
     "pct_of_scheduled": 19,
     "scheduled": 838
    },
    "diversions": 4,
    "idle": {
     "last_movement": "2026-10-15T20:17:51+03:00",
-    "minutes_since_last_movement": 7,
-    "movements_last_3h": 68,
-    "due_not_operated": 1,
-    "cancelled_in_window": 1,
+    "minutes_since_last_movement": 32,
+    "movements_last_3h": 54,
+    "due_not_operated": 7,
+    "cancelled_in_window": 7,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-15T20:30:00+03:00",
+    "next_scheduled": "2026-10-15T20:55:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 1800,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:25:01+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -12427,7 +12535,7 @@
       "label": "7 AM",
       "takeoffs": 17,
       "landings": 8,
-      "cancelled": 4
+      "cancelled": 5
      },
      {
       "hour_start": "2026-10-15T08:00:00+03:00",
@@ -12441,7 +12549,7 @@
       "label": "9 AM",
       "takeoffs": 19,
       "landings": 7,
-      "cancelled": 7
+      "cancelled": 8
      },
      {
       "hour_start": "2026-10-15T10:00:00+03:00",
@@ -12518,13 +12626,13 @@
       "label": "8 PM",
       "takeoffs": 2,
       "landings": 9,
-      "cancelled": 4
+      "cancelled": 10
      }
     ],
     "totals": {
      "takeoffs": 262,
      "landings": 250,
-     "cancelled": 159
+     "cancelled": 167
     },
     "halts": [
      {
@@ -12600,49 +12708,49 @@
    "city": "Dammam",
    "name": "King Fahd International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-15T20:30:02+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 4,
-    "landings_last_hour": 2,
+    "takeoffs_last_hour": 5,
+    "landings_last_hour": 3,
     "takeoffs_last_30": 2,
-    "landings_last_30": 0,
+    "landings_last_30": 2,
     "last_takeoff": {
-     "time": "8:17 PM",
-     "flight": "SV1125",
-     "city": "Jeddah",
-     "minutes_ago": 13
+     "time": "8:32 PM",
+     "flight": "F3471",
+     "city": "Al-Qassim",
+     "minutes_ago": 18
     },
     "last_landing": {
-     "time": "7:51 PM",
-     "flight": "F3452",
-     "city": "Taif",
-     "minutes_ago": 38
+     "time": "8:30 PM",
+     "flight": "XY412",
+     "city": "Jeddah",
+     "minutes_ago": 19
     }
    },
    "cancellations": {
-    "total": 89,
+    "total": 90,
     "departures": 45,
-    "arrivals": 44,
+    "arrivals": 45,
     "pct_of_scheduled": 31,
     "scheduled": 286
    },
    "diversions": 1,
    "idle": {
-    "last_movement": "2026-10-15T20:17:30+03:00",
-    "minutes_since_last_movement": 13,
+    "last_movement": "2026-10-15T20:32:27+03:00",
+    "minutes_since_last_movement": 18,
     "movements_last_3h": 21,
-    "due_not_operated": 0,
-    "cancelled_in_window": 0,
+    "due_not_operated": 2,
+    "cancelled_in_window": 2,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-15T20:35:00+03:00",
+    "next_scheduled": "2026-10-15T20:55:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 600,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:30:02+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -12734,7 +12842,7 @@
       "label": "9 AM",
       "takeoffs": 3,
       "landings": 2,
-      "cancelled": 5
+      "cancelled": 6
      },
      {
       "hour_start": "2026-10-15T10:00:00+03:00",
@@ -12809,15 +12917,15 @@
      {
       "hour_start": "2026-10-15T20:00:00+03:00",
       "label": "8 PM",
-      "takeoffs": 2,
-      "landings": 0,
-      "cancelled": 1
+      "takeoffs": 4,
+      "landings": 2,
+      "cancelled": 3
      }
     ],
     "totals": {
-     "takeoffs": 59,
-     "landings": 53,
-     "cancelled": 93
+     "takeoffs": 61,
+     "landings": 55,
+     "cancelled": 96
     },
     "halts": [
      {
@@ -12923,24 +13031,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-15T20:30:02+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 6,
-    "landings_last_hour": 3,
-    "takeoffs_last_30": 2,
-    "landings_last_30": 1,
+    "takeoffs_last_hour": 5,
+    "landings_last_hour": 1,
+    "takeoffs_last_30": 1,
+    "landings_last_30": 0,
     "last_takeoff": {
-     "time": "8:20 PM",
-     "flight": "GF178",
-     "city": "Bahrain",
-     "minutes_ago": 10
+     "time": "8:43 PM",
+     "flight": "F31236",
+     "city": "Dammam",
+     "minutes_ago": 6
     },
     "last_landing": {
      "time": "8:01 PM",
      "flight": "SV799",
      "city": "Dhaka",
-     "minutes_ago": 29
+     "minutes_ago": 49
     }
    },
    "cancellations": {
@@ -12952,20 +13060,20 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-15T20:20:00+03:00",
-    "minutes_since_last_movement": 10,
+    "last_movement": "2026-10-15T20:43:51+03:00",
+    "minutes_since_last_movement": 6,
     "movements_last_3h": 19,
-    "due_not_operated": 0,
-    "cancelled_in_window": 0,
+    "due_not_operated": 1,
+    "cancelled_in_window": 1,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-15T20:35:00+03:00",
+    "next_scheduled": "2026-10-15T20:55:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 537,
+    "board_rows": 540,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:30:02+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -13132,15 +13240,15 @@
      {
       "hour_start": "2026-10-15T20:00:00+03:00",
       "label": "8 PM",
-      "takeoffs": 2,
+      "takeoffs": 3,
       "landings": 1,
-      "cancelled": 1
+      "cancelled": 3
      }
     ],
     "totals": {
-     "takeoffs": 83,
+     "takeoffs": 84,
      "landings": 73,
-     "cancelled": 39
+     "cancelled": 41
     },
     "halts": []
    },
@@ -13162,12 +13270,6 @@
      "end": "2026-10-14T00:34:12+03:00",
      "label": "Halt 11:48 PM\u201312:34 AM",
      "minutes": 45
-    },
-    {
-     "start": "2026-10-13T19:52:46+03:00",
-     "end": "2026-10-13T20:41:16+03:00",
-     "label": "Halt 7:52\u20138:41 PM",
-     "minutes": 48
     }
    ],
    "ksa_bot": {
@@ -13185,7 +13287,7 @@
    "city": "Abha",
    "name": "Abha International",
    "pill": "QUIET",
-   "as_of": "2026-10-15T20:25:01+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 AHB boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -13196,13 +13298,13 @@
      "time": "5:55 PM",
      "flight": "XY738",
      "city": "Dammam",
-     "minutes_ago": 149
+     "minutes_ago": 174
     },
     "last_landing": {
      "time": "5:01 PM",
      "flight": "XY737",
      "city": "Dammam",
-     "minutes_ago": 203
+     "minutes_ago": 228
     }
    },
    "cancellations": {
@@ -13215,19 +13317,19 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-15T17:55:35+03:00",
-    "minutes_since_last_movement": 149,
-    "movements_last_3h": 3,
+    "minutes_since_last_movement": 174,
+    "movements_last_3h": 1,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-16T01:05:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 228,
+    "board_rows": 226,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:25:01+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -13433,7 +13535,7 @@
       "start": "2026-10-15T17:55:35+03:00",
       "end": null,
       "label": "Halt since 5:55 PM",
-      "minutes": 149
+      "minutes": 174
      }
     ]
    },
@@ -13442,7 +13544,7 @@
      "start": "2026-10-15T17:55:35+03:00",
      "end": null,
      "label": "Halt since 5:55 PM",
-     "minutes": 149
+     "minutes": 174
     },
     {
      "start": "2026-10-15T13:10:54+03:00",
@@ -13490,7 +13592,7 @@
    "city": "Jazan",
    "name": "King Abdullah bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-15T20:25:01+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 GIZ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -13522,7 +13624,7 @@
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:25:01+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -13717,7 +13819,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "QUIET",
-   "as_of": "2026-10-15T20:25:01+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -13728,13 +13830,13 @@
      "time": "6:21 PM",
      "flight": "F3452",
      "city": "Dammam",
-     "minutes_ago": 124
+     "minutes_ago": 148
     },
     "last_landing": {
      "time": "6:26 PM",
      "flight": "XY711",
      "city": "Dammam",
-     "minutes_ago": 118
+     "minutes_ago": 143
     }
    },
    "cancellations": {
@@ -13747,10 +13849,10 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-15T18:26:45+03:00",
-    "minutes_since_last_movement": 118,
-    "movements_last_3h": 4,
-    "due_not_operated": 1,
-    "cancelled_in_window": 0,
+    "minutes_since_last_movement": 143,
+    "movements_last_3h": 2,
+    "due_not_operated": 2,
+    "cancelled_in_window": 1,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-15T22:00:00+03:00",
     "qualifying_halts_6h": [
@@ -13758,14 +13860,19 @@
       "start": "2026-10-15T13:30:12+03:00",
       "end": "2026-10-15T14:50:48+03:00",
       "not_operated": 3
+     },
+     {
+      "start": "2026-10-15T18:26:45+03:00",
+      "end": null,
+      "not_operated": 2
      }
     ],
-    "board_rows": 63,
+    "board_rows": 62,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:25:01+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -13934,13 +14041,13 @@
       "label": "8 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 0
+      "cancelled": 1
      }
     ],
     "totals": {
      "takeoffs": 4,
      "landings": 5,
-     "cancelled": 9
+     "cancelled": 10
     },
     "halts": [
      {
@@ -13977,7 +14084,7 @@
       "start": "2026-10-15T18:26:45+03:00",
       "end": null,
       "label": "Halt since 6:26 PM",
-      "minutes": 118
+      "minutes": 143
      }
     ]
    },
@@ -13986,7 +14093,7 @@
      "start": "2026-10-15T18:26:45+03:00",
      "end": null,
      "label": "Halt since 6:26 PM",
-     "minutes": 118
+     "minutes": 143
     },
     {
      "start": "2026-10-15T15:25:24+03:00",
@@ -14034,24 +14141,24 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-15T20:25:01+03:00",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 0,
-    "landings_last_hour": 1,
-    "takeoffs_last_30": 0,
-    "landings_last_30": 0,
+    "takeoffs_last_hour": 1,
+    "landings_last_hour": 2,
+    "takeoffs_last_30": 1,
+    "landings_last_30": 1,
     "last_takeoff": {
-     "time": "6:47 PM",
-     "flight": "GF186",
-     "city": "Bahrain",
-     "minutes_ago": 97
+     "time": "8:31 PM",
+     "flight": "FZ876",
+     "city": "Dubai",
+     "minutes_ago": 19
     },
     "last_landing": {
-     "time": "7:50 PM",
-     "flight": "SV1250",
-     "city": "Jeddah",
-     "minutes_ago": 34
+     "time": "8:29 PM",
+     "flight": "MS633",
+     "city": "Cairo",
+     "minutes_ago": 20
     }
    },
    "cancellations": {
@@ -14063,20 +14170,20 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-15T19:50:53+03:00",
-    "minutes_since_last_movement": 34,
-    "movements_last_3h": 6,
+    "last_movement": "2026-10-15T20:31:19+03:00",
+    "minutes_since_last_movement": 19,
+    "movements_last_3h": 8,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-15T20:30:00+03:00",
+    "next_scheduled": "2026-10-15T21:30:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 148,
+    "board_rows": 150,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:25:01+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14243,14 +14350,14 @@
      {
       "hour_start": "2026-10-15T20:00:00+03:00",
       "label": "8 PM",
-      "takeoffs": 0,
-      "landings": 0,
+      "takeoffs": 1,
+      "landings": 1,
       "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 20,
-     "landings": 19,
+     "takeoffs": 21,
+     "landings": 20,
      "cancelled": 4
     },
     "halts": [
@@ -14374,25 +14481,25 @@
    "code": "TUU",
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
-   "pill": "QUIET",
-   "as_of": "2026-10-15T20:25:01+03:00",
+   "pill": "DISRUPTED",
+   "as_of": "2026-10-15T20:50:01+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 1,
-    "landings_last_hour": 0,
+    "takeoffs_last_hour": 0,
+    "landings_last_hour": 1,
     "takeoffs_last_30": 0,
-    "landings_last_30": 0,
+    "landings_last_30": 1,
     "last_takeoff": {
      "time": "7:34 PM",
      "flight": "NE123",
      "city": "Cairo",
-     "minutes_ago": 51
+     "minutes_ago": 76
     },
     "last_landing": {
-     "time": "6:45 PM",
-     "flight": "NE122",
+     "time": "8:33 PM",
+     "flight": "NP207",
      "city": "Cairo",
-     "minutes_ago": 100
+     "minutes_ago": 17
     }
    },
    "cancellations": {
@@ -14404,19 +14511,14 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-15T19:34:00+03:00",
-    "minutes_since_last_movement": 51,
-    "movements_last_3h": 4,
-    "due_not_operated": 0,
-    "cancelled_in_window": 0,
+    "last_movement": "2026-10-15T20:33:21+03:00",
+    "minutes_since_last_movement": 17,
+    "movements_last_3h": 5,
+    "due_not_operated": 1,
+    "cancelled_in_window": 1,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-15T20:30:00+03:00",
+    "next_scheduled": "2026-10-15T21:30:00+03:00",
     "qualifying_halts_6h": [
-     {
-      "start": "2026-10-15T11:55:00+03:00",
-      "end": "2026-10-15T14:50:00+03:00",
-      "not_operated": 2
-     },
      {
       "start": "2026-10-15T16:15:00+03:00",
       "end": "2026-10-15T17:15:00+03:00",
@@ -14429,11 +14531,11 @@
      }
     ],
     "board_rows": 134,
-    "current_gap_kind": "halt"
+    "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-14T21:00:00+03:00",
-    "end": "2026-10-15T20:25:01+03:00",
+    "end": "2026-10-15T20:50:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14601,14 +14703,14 @@
       "hour_start": "2026-10-15T20:00:00+03:00",
       "label": "8 PM",
       "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
+      "landings": 1,
+      "cancelled": 1
      }
     ],
     "totals": {
      "takeoffs": 13,
-     "landings": 2,
-     "cancelled": 9
+     "landings": 3,
+     "cancelled": 10
     },
     "halts": [
      {
@@ -14673,18 +14775,18 @@
      },
      {
       "start": "2026-10-15T19:34:00+03:00",
-      "end": null,
-      "label": "Halt since 7:34 PM",
-      "minutes": 51
+      "end": "2026-10-15T20:33:21+03:00",
+      "label": "Halt 7:34\u20138:33 PM",
+      "minutes": 59
      }
     ]
    },
    "halts": [
     {
      "start": "2026-10-15T19:34:00+03:00",
-     "end": null,
-     "label": "Halt since 7:34 PM",
-     "minutes": 51
+     "end": "2026-10-15T20:33:21+03:00",
+     "label": "Halt 7:34\u20138:33 PM",
+     "minutes": 59
     },
     {
      "start": "2026-10-15T17:15:00+03:00",
@@ -14724,7 +14826,7 @@
     "checked": "1:48 AM AST",
     "checked_at": null
    },
-   "auto_pill": "QUIET",
+   "auto_pill": "DISRUPTED",
    "pill_source": "auto (editor check stale)"
   }
  },
