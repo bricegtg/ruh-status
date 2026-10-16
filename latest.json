@@ -1,24 +1,24 @@
 {
  "schema": 2,
- "generated_at": "2026-10-16T22:57:30+03:00",
+ "generated_at": "2026-10-16T23:00:09+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 10:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "10:00 PM",
-  "as_of": "2026-10-16T21:54:00+03:00",
-  "as_of_label": "9:54 PM",
+  "title": "RUH & DMM Airport Status 11:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "11:00 PM",
+  "as_of": "2026-10-16T22:57:00+03:00",
+  "as_of_label": "10:57 PM",
   "date_long": "Friday 16 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 7,230 minutes at 10:00 PM; Dammam moving, no halt open",
-  "headline": "Riyadh airport halted since 9:29 PM Sunday, 7,230 minutes; Dammam moving",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 7,171 minutes at 9:00 PM. No takeoff or landing while the halt is open. 161 flights cancelled so far for Friday (35% of scheduled), and 4 arrivals diverted. NOTAM A3604/26 keeps King Khalid International closed until 12:00 AM Sunday 18 Oct. No new Civil Defense alert or officially confirmed attack since the 7:50 PM all-clear for Khamis Mushait; an open-source claim that a Sipchem plant in the Eastern Province was targeted is unconfirmed.",
-  "next_update": "11:00 PM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 7,290 minutes at 11:00 PM; Dammam moving, no halt open",
+  "headline": "Riyadh airport halted since 9:29 PM Sunday, 7,290 minutes; Dammam moving",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 7,290 minutes at 11:00 PM. No takeoff or landing while the halt is open. 167 flights cancelled so far for Friday (37% of scheduled), and 4 arrivals diverted. NOTAM A3604/26 keeps King Khalid International closed until 12:00 AM Sunday 18 Oct. No new Civil Defense alert or officially confirmed attack since the 7:50 PM all-clear for Khamis Mushait; an open-source claim that a Sipchem plant in the Eastern Province was targeted is unconfirmed.",
+  "next_update": "12:00 AM",
   "kpis": {
-   "cancelled_total": 161,
-   "cancelled_departures": 79,
+   "cancelled_total": 167,
+   "cancelled_departures": 85,
    "cancelled_arrivals": 82,
-   "pct_of_scheduled": 35,
+   "pct_of_scheduled": 37,
    "scheduled": 457,
    "diverted": 4,
    "diverted_to": [
@@ -31,18 +31,11 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-15T22:00:00+03:00",
-   "end": "2026-10-16T21:54:00+03:00",
-   "start_label": "10:00 PM Thursday",
+   "start": "2026-10-15T23:00:00+03:00",
+   "end": "2026-10-16T22:57:00+03:00",
+   "start_label": "11:00 PM Thursday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T22:00:00+03:00",
-     "label": "10 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 18
-    },
     {
      "hour_start": "2026-10-15T23:00:00+03:00",
      "label": "11 PM",
@@ -62,7 +55,7 @@
      "label": "1 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-16T02:00:00+03:00",
@@ -111,14 +104,14 @@
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-16T09:00:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-16T10:00:00+03:00",
@@ -203,19 +196,26 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 8
+    },
+    {
+     "hour_start": "2026-10-16T22:00:00+03:00",
+     "label": "10 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 193
+    "cancelled": 183
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7225
+     "minutes": 7288
     }
    ]
   },
@@ -224,14 +224,41 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 7225
+    "minutes": 7288
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh still halted ahead of Sunday's planned reopening; Brent jumps on Yanbu intercept",
-  "news_checked": "9:58 PM",
+  "news_title": "Riyadh still halted ahead of Sunday's planned reopening; brief Jazan alert, all-clear in four minutes",
+  "news_checked": "10:57 PM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense: early warning sounded in Jazan, then all-clear four minutes later",
+    "source": "Al Ekhbariya (@alekhbariyatv), relaying Saudi Civil Defense",
+    "time": "10:36 PM",
+    "extra": "early warning published 10:32 PM, all-clear 10:36 PM AST Fri 16 Oct (official account); translated from Arabic; checked 10:57 PM",
+    "body": "Saudi Civil Defense issued an early warning for Jazan at 10:32 PM and declared the danger over at 10:36 PM. No interception, debris or casualties were reported in the posts.",
+    "url": "https://x.com/alekhbariyatv/status/2111179543213928573"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Interior Ministry via Civil Defense: filming or sharing interceptions or impact sites exposes people to legal liability",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "time": "10:36 PM",
+    "extra": "published 10:36 PM AST Fri 16 Oct (official account); checked 10:57 PM",
+    "body": "Civil Defense repeated the Interior Ministry warning that filming, publishing or sharing information about the interception of missiles and drones, or where they fall, can lead to legal action.",
+    "url": "https://x.com/SaudiDCD/status/2111179539632234534"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "King Khalid airport tells travelers to follow official authorities and their airline for airspace updates",
+    "source": "King Khalid Intl Airport (@KKIASA)",
+    "time": "10:22 PM",
+    "extra": "published 10:22 PM AST Fri 16 Oct (official account, reply to a traveler); translated from Arabic; checked 10:57 PM",
+    "body": "Replying to a traveler, the airport said that for the latest airspace updates people should follow the relevant official authorities and contact the airline they booked with. It gave no reopening time.",
+    "url": "https://x.com/KKIASA/status/2111176032166519011"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Al Ekhbariya: 'proxy wars', states hiding behind the Houthi terrorist militia to pursue their ambitions, target civilians and evade international responsibility",
@@ -936,12 +963,12 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_1000PM_16Oct2026.pdf",
+  "pdf_name": "RUH_status_report_1100PM_16Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-16T22:56:48+03:00",
+  "as_of": "2026-10-16T23:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -1017,17 +1044,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-15T23:00:00+03:00",
-   "end": "2026-10-16T22:56:48+03:00",
+   "start": "2026-10-16T00:00:00+03:00",
+   "end": "2026-10-16T23:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T23:00:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 23
-    },
     {
      "hour_start": "2026-10-16T00:00:00+03:00",
      "label": "12 AM",
@@ -1188,25 +1208,32 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-16T23:00:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 183
+    "cancelled": 162
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7287
+     "minutes": 7291
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 4005
+     "minutes": 4008
     }
    ]
   },
@@ -1215,18 +1242,18 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 4005
+    "minutes": 4008
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 7287
+    "minutes": 7291
    }
   ]
  },
  "maritime": {
-  "updated": "2026-10-16T21:56:04.093785+03:00",
+  "updated": "2026-10-16T22:58:53.862381+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -1291,20 +1318,20 @@
   }
  },
  "summary": {
-  "headline": "Riyadh airport halted since 9:29 PM Sunday, 7,230 minutes; Dammam moving",
-  "as_of": "2026-10-16T21:54+03:00",
+  "headline": "Riyadh airport halted since 9:29 PM Sunday, 7,290 minutes; Dammam moving",
+  "as_of": "2026-10-16T22:57+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (7225 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (7288 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "4 takeoffs and 3 landings in the last hour."
+    "status_line": "3 takeoffs and 5 landings in the last hour."
    }
   ],
   "changed": [
@@ -1316,13 +1343,13 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (7225 min).",
-  "as_of": "2026-10-16T21:54+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (7288 min).",
+  "as_of": "2026-10-16T22:57+03:00",
   "kpis": {
-   "cancelled_total": 161,
-   "cancelled_departures": 79,
+   "cancelled_total": 167,
+   "cancelled_departures": 85,
    "cancelled_arrivals": 82,
-   "pct_of_scheduled": 35,
+   "pct_of_scheduled": 37,
    "scheduled": 457,
    "diverted": 4,
    "diverted_to": [
@@ -1335,16 +1362,9 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-15T22:00+03:00",
-   "end": "2026-10-16T21:54+03:00",
+   "start": "2026-10-15T23:00+03:00",
+   "end": "2026-10-16T22:57+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T22:00+03:00",
-     "label": "10 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 18
-    },
     {
      "hour_start": "2026-10-15T23:00+03:00",
      "label": "11 PM",
@@ -1364,7 +1384,7 @@
      "label": "1 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-16T02:00+03:00",
@@ -1413,14 +1433,14 @@
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-16T09:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-16T10:00+03:00",
@@ -1505,12 +1525,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 8
+    },
+    {
+     "hour_start": "2026-10-16T22:00+03:00",
+     "label": "10 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 193
+    "cancelled": 183
    },
    "halts": [
     {
@@ -1523,7 +1550,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 7225,
+    "minutes": 7288,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -1531,40 +1558,33 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "4 takeoffs and 3 landings in the last hour.",
-  "as_of": "2026-10-16T21:54+03:00",
+  "status_line": "3 takeoffs and 5 landings in the last hour.",
+  "as_of": "2026-10-16T22:57+03:00",
   "kpis": {
-   "cancelled_total": 64,
+   "cancelled_total": 65,
    "cancelled_departures": 30,
-   "cancelled_arrivals": 34,
+   "cancelled_arrivals": 35,
    "pct_of_scheduled": 28,
    "scheduled": 231,
    "diverted": 0,
    "diverted_to": [],
-   "takeoffs_last_hour": 4,
-   "landings_last_hour": 3,
+   "takeoffs_last_hour": 3,
+   "landings_last_hour": 5,
    "last_takeoff": {
-    "time": "9:51 PM",
-    "flight": "GF110",
+    "time": "10:54 PM",
+    "flight": "GF112",
     "city": "Bahrain"
    },
    "last_landing": {
-    "time": "9:35 PM",
-    "flight": "GF111",
-    "city": "Bahrain"
+    "time": "10:52 PM",
+    "flight": "SV1126",
+    "city": "Jeddah"
    }
   },
   "flow24": {
-   "start": "2026-10-15T22:00+03:00",
-   "end": "2026-10-16T21:54+03:00",
+   "start": "2026-10-15T23:00+03:00",
+   "end": "2026-10-16T22:57+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T22:00+03:00",
-     "label": "10 PM",
-     "takeoffs": 0,
-     "landings": 4,
-     "cancelled": 8
-    },
     {
      "hour_start": "2026-10-15T23:00+03:00",
      "label": "11 PM",
@@ -1647,7 +1667,7 @@
      "label": "10 AM",
      "takeoffs": 4,
      "landings": 3,
-     "cancelled": 4
+     "cancelled": 5
     },
     {
      "hour_start": "2026-10-16T11:00+03:00",
@@ -1725,12 +1745,19 @@
      "takeoffs": 4,
      "landings": 2,
      "cancelled": 3
+    },
+    {
+     "hour_start": "2026-10-16T22:00+03:00",
+     "label": "10 PM",
+     "takeoffs": 3,
+     "landings": 5,
+     "cancelled": 4
     }
    ],
    "totals": {
-    "takeoffs": 50,
-    "landings": 48,
-    "cancelled": 71
+    "takeoffs": 53,
+    "landings": 49,
+    "cancelled": 68
    },
    "halts": [
     {
@@ -5254,9 +5281,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-16",
-    "usd": 109.93,
+    "usd": 109.63,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-16T21:45+03:00"
+    "time": "2026-10-16T22:48+03:00"
    },
    "spot_latest": {
     "date": "2026-10-14",
@@ -6535,15 +6562,42 @@
     },
     {
      "date": "2026-10-16",
-     "usd": 109.93
+     "usd": 109.63
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "9:58 PM",
+  "checked": "10:57 PM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense: early warning sounded in Jazan, then all-clear four minutes later",
+    "source": "Al Ekhbariya (@alekhbariyatv), relaying Saudi Civil Defense",
+    "time": "10:36 PM",
+    "url": "https://x.com/alekhbariyatv/status/2111179543213928573",
+    "body": "Saudi Civil Defense issued an early warning for Jazan at 10:32 PM and declared the danger over at 10:36 PM. No interception, debris or casualties were reported in the posts.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Interior Ministry via Civil Defense: filming or sharing interceptions or impact sites exposes people to legal liability",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "time": "10:36 PM",
+    "url": "https://x.com/SaudiDCD/status/2111179539632234534",
+    "body": "Civil Defense repeated the Interior Ministry warning that filming, publishing or sharing information about the interception of missiles and drones, or where they fall, can lead to legal action.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "King Khalid airport tells travelers to follow official authorities and their airline for airspace updates",
+    "source": "King Khalid Intl Airport (@KKIASA)",
+    "time": "10:22 PM",
+    "url": "https://x.com/KKIASA/status/2111176032166519011",
+    "body": "Replying to a traveler, the airport said that for the latest airspace updates people should follow the relevant official authorities and contact the airline they booked with. It gave no reopening time.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Al Ekhbariya: 'proxy wars', states hiding behind the Houthi terrorist militia to pursue their ambitions, target civilians and evade international responsibility",
@@ -7757,7 +7811,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 456,
+  "count": 459,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -13687,38 +13741,67 @@
     "detail": "Saudi state channel Al Ekhbariya ran a segment saying some states are hiding behind the Houthi militia to pursue their ambitions, target civilians and avoid international accountability. It named no country in the post.",
     "source": "Al Ekhbariya (@alekhbariyatv)",
     "url": "https://x.com/alekhbariyatv/status/2111165496473141399"
+   },
+   {
+    "id": "news-e091ad0c88",
+    "ts": "2026-10-16T22:22:44+03:00",
+    "date_label": "Fri 16 Oct",
+    "time_label": "10:22 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "King Khalid airport tells travelers to follow official authorities and their airline for airspace updates",
+    "detail": "Replying to a traveler, the airport said that for the latest airspace updates people should follow the relevant official authorities and contact the airline they booked with. It gave no reopening time.",
+    "source": "King Khalid Intl Airport (@KKIASA)",
+    "url": "https://x.com/KKIASA/status/2111176032166519011"
+   },
+   {
+    "id": "news-c880105104",
+    "ts": "2026-10-16T22:36:40+03:00",
+    "date_label": "Fri 16 Oct",
+    "time_label": "10:36 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Interior Ministry via Civil Defense: filming or sharing interceptions or impact sites exposes people to legal liability",
+    "detail": "Civil Defense repeated the Interior Ministry warning that filming, publishing or sharing information about the interception of missiles and drones, or where they fall, can lead to legal action.",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2111179539632234534"
+   },
+   {
+    "id": "news-2d11d89327",
+    "ts": "2026-10-16T22:36:41+03:00",
+    "date_label": "Fri 16 Oct",
+    "time_label": "10:36 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Civil Defense: early warning sounded in Jazan, then all-clear four minutes later",
+    "detail": "Saudi Civil Defense issued an early warning for Jazan at 10:32 PM and declared the danger over at 10:36 PM. No interception, debris or casualties were reported in the posts.",
+    "source": "Al Ekhbariya (@alekhbariyatv), relaying Saudi Civil Defense",
+    "url": "https://x.com/alekhbariyatv/status/2111179543213928573"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "9:00 PM",
-  "window_start": "2026-10-16T21:00+03:00",
-  "window_end": "2026-10-16T21:54+03:00",
-  "items": [],
-  "last_24h": [
+  "prev_slot": "10:00 PM",
+  "window_start": "2026-10-16T22:00+03:00",
+  "window_end": "2026-10-16T22:57+03:00",
+  "items": [
    {
-    "date": "2026-10-15",
-    "time": "10:37 PM",
-    "city": "Jizan",
-    "type": "alert",
-    "what": "Civil Defense early-warning alert issued for Jizan",
-    "source": "Al Ekhbariya (relaying Civil Defense)",
-    "url": "https://x.com/alekhbariyatv/status/2110817361892872245",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-15",
-    "time": "10:40 PM",
+    "date": "2026-10-16",
+    "time": "10:36 PM",
     "city": "Jizan",
     "type": "all_clear",
-    "what": "Civil Defense all-clear for Jizan; danger over",
-    "source": "Al Ekhbariya (relaying Civil Defense)",
-    "url": "https://x.com/alekhbariyatv/status/2110818198031651303",
+    "what": "Civil Defense: early warning sounded in Jazan, then all-clear four minutes later",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2111179543213928573",
     "tag": "CONFIRMED",
     "casualties": null
-   },
+   }
+  ],
+  "last_24h": [
    {
     "date": "2026-10-16",
     "time": "4:15 AM",
@@ -13839,19 +13922,30 @@
     "url": "https://x.com/SaudiDCD/status/2111137623712411761",
     "tag": "CONFIRMED",
     "casualties": null
+   },
+   {
+    "date": "2026-10-16",
+    "time": "10:36 PM",
+    "city": "Jizan",
+    "type": "all_clear",
+    "what": "Civil Defense: early warning sounded in Jazan, then all-clear four minutes later",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2111179543213928573",
+    "tag": "CONFIRMED",
+    "casualties": null
    }
   ],
   "tally_24h": {
    "attack": 3,
    "interception": 4,
-   "alert": 3,
+   "alert": 2,
    "all_clear": 3,
    "debris": 0,
    "casualties": 0,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Attacks 3, interceptions 4, alerts 3, all-clears 3.",
-  "none_text": "No new attacks, interceptions or alerts since 9:00 PM AST."
+  "tally_text": "Last 24 hours: Attacks 3, interceptions 4, alerts 2, all-clears 3.",
+  "none_text": null
  },
  "airports": {
   "RUH": {
@@ -13859,7 +13953,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-16T22:56:48+03:00",
+   "as_of": "2026-10-16T23:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -13882,7 +13976,7 @@
     "minutes_since_last_movement": null,
     "movements_last_3h": 0,
     "due_not_operated": 43,
-    "cancelled_in_window": 15,
+    "cancelled_in_window": 16,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-16T23:05:00+03:00",
     "qualifying_halts_6h": [],
@@ -13890,17 +13984,10 @@
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-15T23:00:00+03:00",
-    "end": "2026-10-16T22:56:48+03:00",
+    "start": "2026-10-16T00:00:00+03:00",
+    "end": "2026-10-16T23:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T23:00:00+03:00",
-      "label": "11 PM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 23
-     },
      {
       "hour_start": "2026-10-16T00:00:00+03:00",
       "label": "12 AM",
@@ -14061,25 +14148,32 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 2
+     },
+     {
+      "hour_start": "2026-10-16T23:00:00+03:00",
+      "label": "11 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 2
      }
     ],
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 183
+     "cancelled": 162
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 7287
+      "minutes": 7291
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 4005
+      "minutes": 4008
      }
     ]
    },
@@ -14088,13 +14182,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 4005
+     "minutes": 4008
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7287
+     "minutes": 7291
     }
    ],
    "ksa_bot": {
