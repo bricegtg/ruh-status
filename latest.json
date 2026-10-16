@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-16T03:55:52+03:00",
+ "generated_at": "2026-10-16T04:00:56+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 3:00 AM AST: Riyadh HALTED, Dammam HALTED",
-  "slot": "3:00 AM",
-  "as_of": "2026-10-16T02:59:00+03:00",
-  "as_of_label": "2:59 AM",
+  "title": "RUH & DMM Airport Status 4:00 AM AST: Riyadh HALTED, Dammam HALTED",
+  "slot": "4:00 AM",
+  "as_of": "2026-10-16T03:56:00+03:00",
+  "as_of_label": "3:56 AM",
   "date_long": "Friday 16 October 2026",
   "level": "HALTED",
   "status_line": "Riyadh airport halted since 9:29 PM Sunday, 6,090 minutes at 3:00 AM; Dammam halted since 1:55 AM, 64 minutes",
   "headline": "Riyadh airport halted since 9:29 PM Sunday, 6,090 minutes; Dammam halted since 1:55 AM, 64 minutes; Al Ekhbariya posts airport-casualty tallies",
   "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 6,031 minutes at 2:00 AM, with no scheduled service; NOTAM A3604/26 keeps the airport closed until 12:00 AM Sunday 18 Oct. There was no takeoff or landing on the Flightradar24 board in the last hour; the last takeoff remains Saudia SV1523 to Tabuk at 4:11 PM on 11 Oct (pre-halt).",
-  "next_update": "4:00 AM",
+  "next_update": "5:00 AM",
   "kpis": {
    "cancelled_total": 66,
    "cancelled_departures": 26,
@@ -31,18 +31,11 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-15T03:00:00+03:00",
-   "end": "2026-10-16T02:59:00+03:00",
-   "start_label": "3:00 AM Thursday",
+   "start": "2026-10-15T04:00:00+03:00",
+   "end": "2026-10-16T03:56:00+03:00",
+   "start_label": "4:00 AM Thursday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T03:00:00+03:00",
-     "label": "3 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 12
-    },
     {
      "hour_start": "2026-10-15T04:00:00+03:00",
      "label": "4 AM",
@@ -125,14 +118,14 @@
      "label": "3 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 20
+     "cancelled": 21
     },
     {
      "hour_start": "2026-10-15T16:00:00+03:00",
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 21
+     "cancelled": 22
     },
     {
      "hour_start": "2026-10-15T17:00:00+03:00",
@@ -203,19 +196,26 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-16T03:00:00+03:00",
+     "label": "3 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 5
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 415
+    "cancelled": 410
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 6090
+     "minutes": 6147
     }
    ]
   },
@@ -224,14 +224,41 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 6090
+    "minutes": 6147
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
   "news_title": "Riyadh still halted; Dammam moving again after 103-minute halt; UN Security Council affirms Kingdom's right to self-defense",
-  "news_checked": "2:59 AM",
+  "news_checked": "3:58 AM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Houthi militia's repeated attacks on holy sites, pilgrims and civilians expose its false claims to defend Islam",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "3:30 AM",
+    "extra": "published 3:30 AM AST Fri 16 Oct (official account, Arabic, translated); checked 3:58 AM",
+    "body": "State TV said the 'terrorist Houthi militia' chants slogans and claims to champion Islam, while its repeated terrorist attacks expose the falseness of those claims and a hostile approach that targets holy sites, their visitors and innocent civilians.",
+    "url": "https://x.com/alekhbariyatv/status/2110891097589248064"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Cargo Facts: Riyadh's King Khalid International Airport remains closed after the deadly missile strikes",
+    "source": "Cargo Facts (@CargoFacts)",
+    "time": "3:00 AM",
+    "extra": "posted 3:00 AM AST Fri 16 Oct (trade publication); consistent with the live board and NOTAM A3604/26; checked 3:58 AM",
+    "body": "Air-cargo trade outlet Cargo Facts reported that King Khalid International Airport remains closed following the deadly missile strikes on the airport. The live Flightradar24 board shows no Riyadh movements this hour.",
+    "url": "https://x.com/CargoFacts/status/2110883660073214060"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "US State Department reported to raise Saudi Arabia to Level 3 'Reconsider Travel', citing missile attacks",
+    "source": "MD Bay News (@MDBayNews)",
+    "time": "2:56 AM",
+    "extra": "posted 2:56 AM AST Fri 16 Oct; State Department advisory page not checked directly; checked 3:58 AM",
+    "body": "A news account reported that the State Department issued a Level 3 'Reconsider Travel' advisory for Saudi Arabia, citing missile attacks along with arrests and exit bans. The advisory itself has not been checked directly.",
+    "url": "https://x.com/MDBayNews/status/2110882501367329027"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Al Ekhbariya: infographic on casualties from Houthi attacks on King Khalid International Airport in Riyadh",
@@ -513,12 +540,12 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_300AM_16Oct2026.pdf",
+  "pdf_name": "RUH_status_report_400AM_16Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-16T03:55:01+03:00",
+  "as_of": "2026-10-16T04:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -594,17 +621,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-15T04:00:00+03:00",
-   "end": "2026-10-16T03:55:01+03:00",
+   "start": "2026-10-15T05:00:00+03:00",
+   "end": "2026-10-16T04:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T04:00:00+03:00",
-     "label": "4 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 12
-    },
     {
      "hour_start": "2026-10-15T05:00:00+03:00",
      "label": "5 AM",
@@ -765,25 +785,32 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-16T04:00:00+03:00",
+     "label": "4 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 410
+    "cancelled": 400
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 6146
+     "minutes": 6151
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 2863
+     "minutes": 2868
     }
    ]
   },
@@ -792,18 +819,18 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 2863
+    "minutes": 2868
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 6146
+    "minutes": 6151
    }
   ]
  },
  "maritime": {
-  "updated": "2026-10-16T02:59:39.177619+03:00",
+  "updated": "2026-10-16T03:57:50.594622+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -869,19 +896,19 @@
  },
  "summary": {
   "headline": "Riyadh airport halted since 9:29 PM Sunday, 6,090 minutes; Dammam halted since 1:55 AM, 64 minutes; Al Ekhbariya posts airport-casualty tallies",
-  "as_of": "2026-10-16T02:59+03:00",
+  "as_of": "2026-10-16T03:56+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (6090 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (6147 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 1:55 AM (63 min)."
+    "status_line": "0 takeoffs and 5 landings in the last hour."
    }
   ],
   "changed": [
@@ -890,8 +917,8 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (6090 min).",
-  "as_of": "2026-10-16T02:59+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (6147 min).",
+  "as_of": "2026-10-16T03:56+03:00",
   "kpis": {
    "cancelled_total": 66,
    "cancelled_departures": 26,
@@ -909,16 +936,9 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-15T03:00+03:00",
-   "end": "2026-10-16T02:59+03:00",
+   "start": "2026-10-15T04:00+03:00",
+   "end": "2026-10-16T03:56+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T03:00+03:00",
-     "label": "3 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 12
-    },
     {
      "hour_start": "2026-10-15T04:00+03:00",
      "label": "4 AM",
@@ -1001,14 +1021,14 @@
      "label": "3 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 20
+     "cancelled": 21
     },
     {
      "hour_start": "2026-10-15T16:00+03:00",
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 21
+     "cancelled": 22
     },
     {
      "hour_start": "2026-10-15T17:00+03:00",
@@ -1079,12 +1099,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-16T03:00+03:00",
+     "label": "3 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 5
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 415
+    "cancelled": 410
    },
    "halts": [
     {
@@ -1097,7 +1124,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 6090,
+    "minutes": 6147,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -1105,40 +1132,33 @@
  },
  "dammam": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 1:55 AM (63 min).",
-  "as_of": "2026-10-16T02:59+03:00",
+  "status_line": "0 takeoffs and 5 landings in the last hour.",
+  "as_of": "2026-10-16T03:56+03:00",
   "kpis": {
-   "cancelled_total": 51,
+   "cancelled_total": 52,
    "cancelled_departures": 25,
-   "cancelled_arrivals": 26,
-   "pct_of_scheduled": 22,
-   "scheduled": 231,
+   "cancelled_arrivals": 27,
+   "pct_of_scheduled": 23,
+   "scheduled": 230,
    "diverted": 0,
    "diverted_to": [],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 0,
+   "landings_last_hour": 5,
    "last_takeoff": {
     "time": "1:48 AM",
     "flight": "NP132",
     "city": "Cairo"
    },
    "last_landing": {
-    "time": "1:55 AM",
-    "flight": "F3472",
-    "city": "Qassim"
+    "time": "3:30 AM",
+    "flight": "XY736",
+    "city": "Madinah"
    }
   },
   "flow24": {
-   "start": "2026-10-15T03:00+03:00",
-   "end": "2026-10-16T02:59+03:00",
+   "start": "2026-10-15T04:00+03:00",
+   "end": "2026-10-16T03:56+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-15T03:00+03:00",
-     "label": "3 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 3
-    },
     {
      "hour_start": "2026-10-15T04:00+03:00",
      "label": "4 AM",
@@ -1207,7 +1227,7 @@
      "label": "1 PM",
      "takeoffs": 1,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-15T14:00+03:00",
@@ -1299,12 +1319,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-16T03:00+03:00",
+     "label": "3 AM",
+     "takeoffs": 0,
+     "landings": 5,
+     "cancelled": 4
     }
    ],
    "totals": {
     "takeoffs": 53,
-    "landings": 49,
-    "cancelled": 103
+    "landings": 54,
+    "cancelled": 106
    },
    "halts": [
     {
@@ -1349,17 +1376,17 @@
     },
     {
      "start": "2026-10-16T01:55+03:00",
-     "end": null,
-     "label": "Halt since 1:55 AM"
+     "end": "2026-10-16T03:13+03:00",
+     "label": "Halt 1:55\u20133:13 AM"
     }
    ]
   },
   "halts": [
    {
-    "label": "Halt since 1:55 AM",
-    "minutes": 63,
+    "label": "Halt 1:55\u20133:13 AM",
+    "minutes": 78,
     "start": "2026-10-16T01:55+03:00",
-    "end": null
+    "end": "2026-10-16T03:13+03:00"
    },
    {
     "label": "Halt 11:40 PM\u20131:23 AM",
@@ -4838,9 +4865,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-16",
-    "usd": 105.74,
+    "usd": 105.54,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-16T02:42+03:00"
+    "time": "2026-10-16T03:46+03:00"
    },
    "spot_latest": {
     "date": "2026-10-14",
@@ -6114,16 +6141,43 @@
      "usd": 106.06
     },
     {
-     "date": "2026-10-15",
-     "usd": 105.74
+     "date": "2026-10-16",
+     "usd": 105.54
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "2:59 AM",
+  "checked": "3:58 AM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Houthi militia's repeated attacks on holy sites, pilgrims and civilians expose its false claims to defend Islam",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "3:30 AM",
+    "url": "https://x.com/alekhbariyatv/status/2110891097589248064",
+    "body": "State TV said the 'terrorist Houthi militia' chants slogans and claims to champion Islam, while its repeated terrorist attacks expose the falseness of those claims and a hostile approach that targets holy sites, their visitors and innocent civilians.",
+    "airport": null
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Cargo Facts: Riyadh's King Khalid International Airport remains closed after the deadly missile strikes",
+    "source": "Cargo Facts (@CargoFacts)",
+    "time": "3:00 AM",
+    "url": "https://x.com/CargoFacts/status/2110883660073214060",
+    "body": "Air-cargo trade outlet Cargo Facts reported that King Khalid International Airport remains closed following the deadly missile strikes on the airport. The live Flightradar24 board shows no Riyadh movements this hour.",
+    "airport": null
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "US State Department reported to raise Saudi Arabia to Level 3 'Reconsider Travel', citing missile attacks",
+    "source": "MD Bay News (@MDBayNews)",
+    "time": "2:56 AM",
+    "url": "https://x.com/MDBayNews/status/2110882501367329027",
+    "body": "A news account reported that the State Department issued a Level 3 'Reconsider Travel' advisory for Saudi Arabia, citing missile attacks along with arrests and exit bans. The advisory itself has not been checked directly.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Al Ekhbariya: infographic on casualties from Houthi attacks on King Khalid International Airport in Riyadh",
@@ -6870,7 +6924,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 419,
+  "count": 420,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -12263,8 +12317,8 @@
     "category": "airport",
     "airport": "DMM",
     "tag": "CONFIRMED",
-    "title": "DMM halt since 1:55 AM (ongoing)",
-    "detail": "No takeoff or landing for 61+ minutes (FR24 board).",
+    "title": "DMM halt 1:55\u20133:13 AM (78 min)",
+    "detail": "No takeoff or landing for 78 minutes (FR24 board).",
     "source": "DMM status tracker (FR24 board)",
     "url": "https://ruh-status.onrender.com"
    },
@@ -12319,15 +12373,40 @@
     "detail": "Al Ekhbariya published an infographic on injuries from Houthi militia attacks on King Abdullah International Airport in Jazan.",
     "source": "Al Ekhbariya (@alekhbariyatv)",
     "url": "https://x.com/alekhbariyatv/status/2110875048244654359"
+   },
+   {
+    "id": "news-a3049a4a34",
+    "ts": "2026-10-16T03:30:30+03:00",
+    "date_label": "Fri 16 Oct",
+    "time_label": "3:30 AM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Al Ekhbariya: Houthi militia's repeated attacks on holy sites, pilgrims and civilians expose its false claims to defend ",
+    "detail": "State TV said the 'terrorist Houthi militia' chants slogans and claims to champion Islam, while its repeated terrorist attacks expose the falseness of those claims and a hostile approach that targets holy sites, their visitors and innocent ",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2110891097589248064"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "2:00 AM",
-  "window_start": "2026-10-16T02:00+03:00",
-  "window_end": "2026-10-16T02:59+03:00",
-  "items": [],
+  "prev_slot": "3:00 AM",
+  "window_start": "2026-10-16T02:59+03:00",
+  "window_end": "2026-10-16T03:56+03:00",
+  "items": [
+   {
+    "date": "2026-10-16",
+    "time": "3:30 AM",
+    "city": "Al Ekhbariya: Houthi militia's repeated attacks on holy sites, pilgrims and civilians expose its false claims to defend Islam",
+    "type": "attack",
+    "what": "Houthi militia's repeated attacks on holy sites, pilgrims and civilians expose its false claims to defend Islam",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2110891097589248064",
+    "tag": "CONFIRMED",
+    "casualties": null
+   }
+  ],
   "last_24h": [
    {
     "date": "2026-10-15",
@@ -12471,10 +12550,21 @@
     "url": "https://x.com/alekhbariyatv/status/2110818198031651303",
     "tag": "CONFIRMED",
     "casualties": null
+   },
+   {
+    "date": "2026-10-16",
+    "time": "3:30 AM",
+    "city": "Al Ekhbariya: Houthi militia's repeated attacks on holy sites, pilgrims and civilians expose its false claims to defend Islam",
+    "type": "attack",
+    "what": "Houthi militia's repeated attacks on holy sites, pilgrims and civilians expose its false claims to defend Islam",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2110891097589248064",
+    "tag": "CONFIRMED",
+    "casualties": null
    }
   ],
   "tally_24h": {
-   "attack": 0,
+   "attack": 1,
    "interception": 4,
    "alert": 4,
    "all_clear": 4,
@@ -12482,8 +12572,8 @@
    "casualties": 1,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Interceptions 4, alerts 4, all-clears 4, casualty reports 1.",
-  "none_text": "No new attacks, interceptions or alerts since 2:00 AM AST."
+  "tally_text": "Last 24 hours: Attacks 1, interceptions 4, alerts 4, all-clears 4, casualty reports 1.",
+  "none_text": null
  },
  "airports": {
   "RUH": {
@@ -12491,7 +12581,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -12513,26 +12603,19 @@
     "last_movement": null,
     "minutes_since_last_movement": null,
     "movements_last_3h": 0,
-    "due_not_operated": 31,
-    "cancelled_in_window": 9,
+    "due_not_operated": 30,
+    "cancelled_in_window": 10,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-16T04:00:00+03:00",
+    "next_scheduled": "2026-10-16T04:05:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 1433,
+    "board_rows": 1432,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 12
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -12693,25 +12776,32 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 5
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 2
      }
     ],
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 410
+     "cancelled": 400
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 6146
+      "minutes": 6151
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 2863
+      "minutes": 2868
      }
     ]
    },
@@ -12720,13 +12810,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 2863
+     "minutes": 2868
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 6146
+     "minutes": 6151
     }
    ],
    "ksa_bot": {
@@ -12744,24 +12834,24 @@
    "city": "Jeddah",
    "name": "King Abdulaziz International",
    "pill": "NORMAL",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 JED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 13,
+    "takeoffs_last_hour": 12,
     "landings_last_hour": 8,
-    "takeoffs_last_30": 7,
-    "landings_last_30": 5,
+    "takeoffs_last_30": 5,
+    "landings_last_30": 3,
     "last_takeoff": {
      "time": "3:50 AM",
      "flight": "VF610",
      "city": "Ankara",
-     "minutes_ago": 4
+     "minutes_ago": 9
     },
     "last_landing": {
      "time": "3:47 AM",
      "flight": "SV849",
      "city": "Bangkok",
-     "minutes_ago": 7
+     "minutes_ago": 12
     }
    },
    "cancellations": {
@@ -12774,28 +12864,21 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-16T03:50:45+03:00",
-    "minutes_since_last_movement": 4,
-    "movements_last_3h": 78,
+    "minutes_since_last_movement": 9,
+    "movements_last_3h": 77,
     "due_not_operated": 1,
     "cancelled_in_window": 1,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-16T04:00:00+03:00",
+    "next_scheduled": "2026-10-16T04:05:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 2181,
+    "board_rows": 2180,
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 11,
-      "landings": 8,
-      "cancelled": 8
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -12956,12 +13039,19 @@
       "takeoffs": 12,
       "landings": 8,
       "cancelled": 5
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 293,
-     "landings": 264,
-     "cancelled": 172
+     "takeoffs": 282,
+     "landings": 256,
+     "cancelled": 164
     },
     "halts": [
      {
@@ -13031,24 +13121,24 @@
    "city": "Dammam",
    "name": "King Fahd International",
    "pill": "HALTED",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
     "landings_last_hour": 5,
     "takeoffs_last_30": 0,
-    "landings_last_30": 2,
+    "landings_last_30": 1,
     "last_takeoff": {
      "time": "1:48 AM",
      "flight": "NP132",
      "city": "Cairo",
-     "minutes_ago": 127
+     "minutes_ago": 132
     },
     "last_landing": {
      "time": "3:30 AM",
      "flight": "XY736",
      "city": "Medina",
-     "minutes_ago": 25
+     "minutes_ago": 30
     }
    },
    "cancellations": {
@@ -13061,18 +13151,13 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-16T03:30:28+03:00",
-    "minutes_since_last_movement": 25,
+    "minutes_since_last_movement": 30,
     "movements_last_3h": 9,
     "due_not_operated": 1,
     "cancelled_in_window": 1,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-16T04:00:00+03:00",
+    "next_scheduled": "2026-10-16T05:15:00+03:00",
     "qualifying_halts_6h": [
-     {
-      "start": "2026-10-15T20:58:42+03:00",
-      "end": "2026-10-15T21:56:21+03:00",
-      "not_operated": 13
-     },
      {
       "start": "2026-10-15T23:40:32+03:00",
       "end": "2026-10-16T01:23:24+03:00",
@@ -13084,21 +13169,14 @@
       "not_operated": 11
      }
     ],
-    "board_rows": 714,
+    "board_rows": 713,
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 0,
-      "landings": 1,
-      "cancelled": 4
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -13259,20 +13337,21 @@
       "takeoffs": 0,
       "landings": 5,
       "cancelled": 4
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
      "takeoffs": 53,
-     "landings": 54,
-     "cancelled": 106
+     "landings": 53,
+     "cancelled": 102
     },
     "halts": [
-     {
-      "start": "2026-10-15T02:42:20+03:00",
-      "end": "2026-10-15T04:54:10+03:00",
-      "label": "Halt 2:42\u20134:54 AM",
-      "minutes": 132
-     },
      {
       "start": "2026-10-15T05:14:21+03:00",
       "end": "2026-10-15T06:59:46+03:00",
@@ -13376,24 +13455,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 3,
-    "landings_last_hour": 1,
+    "takeoffs_last_hour": 2,
+    "landings_last_hour": 2,
     "takeoffs_last_30": 0,
-    "landings_last_30": 0,
+    "landings_last_30": 1,
     "last_takeoff": {
      "time": "3:21 AM",
      "flight": "TK149",
      "city": "Istanbul",
-     "minutes_ago": 34
+     "minutes_ago": 39
     },
     "last_landing": {
-     "time": "3:12 AM",
-     "flight": "QR1174",
-     "city": "Doha",
-     "minutes_ago": 43
+     "time": "3:51 AM",
+     "flight": "RJ726",
+     "city": "Amman",
+     "minutes_ago": 9
     }
    },
    "cancellations": {
@@ -13405,13 +13484,13 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-16T03:21:00+03:00",
-    "minutes_since_last_movement": 34,
-    "movements_last_3h": 17,
+    "last_movement": "2026-10-16T03:51:29+03:00",
+    "minutes_since_last_movement": 9,
+    "movements_last_3h": 16,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-16T04:05:00+03:00",
+    "next_scheduled": "2026-10-16T04:20:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-15T21:43:38+03:00",
@@ -13423,17 +13502,10 @@
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 8,
-      "landings": 4,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -13592,13 +13664,20 @@
       "hour_start": "2026-10-16T03:00:00+03:00",
       "label": "3 AM",
       "takeoffs": 3,
-      "landings": 1,
+      "landings": 2,
       "cancelled": 1
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 87,
-     "landings": 58,
+     "takeoffs": 79,
+     "landings": 55,
      "cancelled": 49
     },
     "halts": [
@@ -13645,7 +13724,7 @@
    "city": "Abha",
    "name": "Abha International",
    "pill": "QUIET",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 AHB boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -13656,13 +13735,13 @@
      "time": "5:55 PM",
      "flight": "XY738",
      "city": "Dammam",
-     "minutes_ago": 599
+     "minutes_ago": 604
     },
     "last_landing": {
      "time": "5:01 PM",
      "flight": "XY737",
      "city": "Dammam",
-     "minutes_ago": 653
+     "minutes_ago": 658
     }
    },
    "cancellations": {
@@ -13675,28 +13754,21 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-15T17:55:35+03:00",
-    "minutes_since_last_movement": 599,
+    "minutes_since_last_movement": 604,
     "movements_last_3h": 0,
     "due_not_operated": 1,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-16T06:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 196,
+    "board_rows": 195,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -13857,6 +13929,13 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
@@ -13893,7 +13972,7 @@
       "start": "2026-10-15T17:55:35+03:00",
       "end": null,
       "label": "Halt since 5:55 PM",
-      "minutes": 599
+      "minutes": 604
      }
     ]
    },
@@ -13902,7 +13981,7 @@
      "start": "2026-10-15T17:55:35+03:00",
      "end": null,
      "label": "Halt since 5:55 PM",
-     "minutes": 599
+     "minutes": 604
     },
     {
      "start": "2026-10-15T13:10:54+03:00",
@@ -13950,7 +14029,7 @@
    "city": "Jazan",
    "name": "King Abdullah bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 GIZ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -13981,17 +14060,10 @@
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -14149,6 +14221,13 @@
      {
       "hour_start": "2026-10-16T03:00:00+03:00",
       "label": "3 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 0
@@ -14177,7 +14256,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "QUIET",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -14188,13 +14267,13 @@
      "time": "2:33 AM",
      "flight": "MS816",
      "city": "Cairo",
-     "minutes_ago": 81
+     "minutes_ago": 86
     },
     "last_landing": {
      "time": "1:14 AM",
      "flight": "MS815",
      "city": "Cairo",
-     "minutes_ago": 160
+     "minutes_ago": 165
     }
    },
    "cancellations": {
@@ -14207,7 +14286,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-16T02:33:43+03:00",
-    "minutes_since_last_movement": 81,
+    "minutes_since_last_movement": 86,
     "movements_last_3h": 2,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -14224,17 +14303,10 @@
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -14392,6 +14464,13 @@
      {
       "hour_start": "2026-10-16T03:00:00+03:00",
       "label": "3 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 0
@@ -14455,7 +14534,7 @@
       "start": "2026-10-16T02:33:43+03:00",
       "end": null,
       "label": "Halt since 2:33 AM",
-      "minutes": 81
+      "minutes": 86
      }
     ]
    },
@@ -14464,7 +14543,7 @@
      "start": "2026-10-16T02:33:43+03:00",
      "end": null,
      "label": "Halt since 2:33 AM",
-     "minutes": 81
+     "minutes": 86
     },
     {
      "start": "2026-10-16T01:14:53+03:00",
@@ -14512,7 +14591,7 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -14523,13 +14602,13 @@
      "time": "2:36 AM",
      "flight": "MS491",
      "city": "Cairo",
-     "minutes_ago": 78
+     "minutes_ago": 83
     },
     "last_landing": {
      "time": "3:38 AM",
      "flight": "SV1254",
      "city": "Jeddah",
-     "minutes_ago": 16
+     "minutes_ago": 21
     }
    },
    "cancellations": {
@@ -14542,7 +14621,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-16T03:38:34+03:00",
-    "minutes_since_last_movement": 16,
+    "minutes_since_last_movement": 21,
     "movements_last_3h": 4,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -14553,17 +14632,10 @@
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -14724,6 +14796,13 @@
       "takeoffs": 0,
       "landings": 1,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
@@ -14865,7 +14944,7 @@
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-16T03:55:01+03:00",
+   "as_of": "2026-10-16T04:00:01+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 1,
@@ -14876,13 +14955,13 @@
      "time": "3:09 AM",
      "flight": "F3392",
      "city": "Jeddah",
-     "minutes_ago": 46
+     "minutes_ago": 51
     },
     "last_landing": {
      "time": "8:33 PM",
      "flight": "NP207",
      "city": "Cairo",
-     "minutes_ago": 442
+     "minutes_ago": 447
     }
    },
    "cancellations": {
@@ -14895,7 +14974,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-16T03:09:00+03:00",
-    "minutes_since_last_movement": 46,
+    "minutes_since_last_movement": 51,
     "movements_last_3h": 2,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -14912,17 +14991,10 @@
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-15T04:00:00+03:00",
-    "end": "2026-10-16T03:55:01+03:00",
+    "start": "2026-10-15T05:00:00+03:00",
+    "end": "2026-10-16T04:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-15T04:00:00+03:00",
-      "label": "4 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-15T05:00:00+03:00",
       "label": "5 AM",
@@ -15083,6 +15155,13 @@
       "takeoffs": 1,
       "landings": 0,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-16T04:00:00+03:00",
+      "label": "4 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
@@ -15155,7 +15234,7 @@
       "start": "2026-10-16T03:09:00+03:00",
       "end": null,
       "label": "Halt since 3:09 AM",
-      "minutes": 46
+      "minutes": 51
      }
     ]
    },
@@ -15164,7 +15243,7 @@
      "start": "2026-10-16T03:09:00+03:00",
      "end": null,
      "label": "Halt since 3:09 AM",
-     "minutes": 46
+     "minutes": 51
     },
     {
      "start": "2026-10-16T02:11:00+03:00",
