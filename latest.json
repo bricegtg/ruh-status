@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-17T06:45:57+03:00",
+ "generated_at": "2026-10-17T06:50:57+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 6:00 AM AST: Riyadh HALTED, Dammam HALTED",
-  "slot": "6:00 AM",
-  "as_of": "2026-10-17T06:17:00+03:00",
-  "as_of_label": "6:17 AM",
+  "title": "RUH & DMM Airport Status 7:00 AM AST: Riyadh HALTED, Dammam HALTED",
+  "slot": "7:00 AM",
+  "as_of": "2026-10-17T06:48:00+03:00",
+  "as_of_label": "6:48 AM",
   "date_long": "Saturday 17 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 7,710 minutes at 6:00 AM; Dammam halted since 5:27 AM (50 minutes at 6:17 AM), no takeoff since 1:50 AM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 7,771 minutes at 7:00 AM; Dammam halted since 5:27 AM, 93 minutes at 7:00 AM, no takeoff since 1:50 AM",
   "headline": "Riyadh airport halted since 9:29 PM Sunday; Dammam halted since 5:27 AM, no takeoff since 1:50 AM",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 7,710 minutes at 6:00 AM. No takeoff or landing while the halt is open. 18 flights cancelled so far for Saturday (14% of scheduled), and 0 arrivals diverted. NOTAM A3604/26 keeps King Khalid International closed until 12:00 AM Sunday 18 Oct; GACA has not announced whether it will reopen then. No new Civil Defense alert or coalition intercept statement since the 5:00 AM edition. Al Ekhbariya reports Yemen's Transport Ministry condemning the Houthis' second attack on Aden airport; media also report the EU-GCC summit in Riyadh postponed and a UK travel warning, neither confirmed officially yet.",
-  "next_update": "7:00 AM",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 7,771 minutes at 7:00 AM. No takeoff or landing while the halt is open. 18 flights cancelled so far for Saturday (14% of scheduled), and 0 arrivals diverted. NOTAM A3604/26 keeps King Khalid International closed until 12:00 AM Sunday 18 Oct; GACA has not announced whether it will reopen then. No new Civil Defense alert, coalition intercept or official Saudi statement since the 6:00 AM edition. AGBI reports experts divided on whether the NOTAM closure will be extended and says at least 25 airliners have flown out of Riyadh since last Saturday. Social reports of a UK travel warning and Air India cancellations through 20 October are not yet officially confirmed.",
+  "next_update": "8:00 AM",
   "kpis": {
    "cancelled_total": 18,
    "cancelled_departures": 9,
@@ -29,7 +29,7 @@
   },
   "flow24": {
    "start": "2026-10-16T07:00:00+03:00",
-   "end": "2026-10-17T06:17:00+03:00",
+   "end": "2026-10-17T06:48:00+03:00",
    "start_label": "7:00 AM Friday",
    "unit": "hour",
    "buckets": [
@@ -101,14 +101,14 @@
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 9
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-16T17:00:00+03:00",
      "label": "5 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 8
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-16T18:00:00+03:00",
@@ -205,14 +205,14 @@
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 155
+    "cancelled": 159
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7728
+     "minutes": 7759
     }
    ]
   },
@@ -221,14 +221,32 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 7728
+    "minutes": 7759
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh still halted 18 hours before the NOTAM's planned reopening; Dammam halted again since 5:27 AM",
-  "news_checked": "6:20 AM",
+  "news_title": "Riyadh still halted 17 hours before the NOTAM's planned reopening; Dammam halted since 5:27 AM",
+  "news_checked": "6:52 AM",
   "news": [
+   {
+    "tag": "UNVERIFIED",
+    "title": "Air India reported to cancel all flights to and from Riyadh, Dammam and Jeddah until 20 October",
+    "source": "Makkah Updates (@MakkahUpdate)",
+    "time": "6:26 AM",
+    "extra": "Single social account; no Air India statement found yet",
+    "body": "Makkah Updates says Air India has cancelled all flights to and from Riyadh, Dammam and Jeddah until 20 October, with full refunds offered. Air India has not been seen confirming this yet.",
+    "url": "https://x.com/MakkahUpdate/status/2111297733575217364"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "UK reported to advise against all but essential travel to Saudi Arabia",
+    "source": "X (@celticarab)",
+    "time": "6:22 AM",
+    "extra": "First seen 5:40 AM (@celticarab); EJPH News at 6:22 AM attributes it to the UK Foreign Office and Reuters; not yet checked on gov.uk",
+    "body": "EJPH News, citing the UK Foreign Office and Reuters, says the UK now advises against all but essential travel to Saudi Arabia after Houthi missile and drone attacks and warns more airport attacks and flight cancellations are very likely. Not yet confirmed on the official UK travel-advice page.",
+    "url": "https://x.com/ejphnews/status/2111298110848954842"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Al Ekhbariya: Yemen's Transport Ministry condemns the Houthi militia's second attack on Aden International Airport",
@@ -248,20 +266,11 @@
     "url": "https://x.com/5w1hbrief/status/2111295181551276376"
    },
    {
-    "tag": "UNVERIFIED",
-    "title": "UK reported to advise against all but essential travel to Saudi Arabia",
-    "source": "X (@celticarab)",
-    "time": "5:40 AM",
-    "extra": "posted 5:40 AM AST Sat 17 Oct; UK Foreign Office advisory not checked directly; checked 6:20 AM",
-    "body": "A social post linked a report that the UK now advises against all but essential travel to Saudi Arabia because of the Houthi attacks. The Foreign Office page itself has not been checked.",
-    "url": "https://x.com/celticarab/status/2111286164825207009"
-   },
-   {
     "tag": "CLAIM",
     "title": "Saudi military said to have destroyed two Houthi ballistic missile launchers in Yemen",
     "source": "X (@TheWorldEye_)",
     "time": "5:53 AM",
-    "extra": "posted 5:53 AM AST Sat 17 Oct; no Coalition or Saudi defense ministry statement found in the official-account check; checked 6:20 AM",
+    "extra": "Also posted at 6:22 AM attributing it to the Saudi-led coalition (@FarooqMoin3); no coalition statement found in the official-account search",
     "body": "A single social account claimed the Saudi military neutralized two Houthi ballistic missile launchers in Yemen. The official Saudi accounts checked this hour carry no such statement.",
     "url": "https://x.com/TheWorldEye_/status/2111289349547622798"
    },
@@ -312,21 +321,21 @@
    },
    {
     "tag": "UNVERIFIED",
-    "title": "Social accounts claim a missile from Yemen hit oil facilities in eastern Saudi Arabia and started a fire",
-    "source": "X (@RyanRozbiani, @blastradiusnet1, @dana916)",
-    "time": "2:50 AM",
-    "extra": "posted 2:50-3:17 AM AST Sat 17 Oct with unverified video; no Civil Defense alert, Coalition or Aramco statement found; checked 3:55 AM",
-    "body": "Several accounts posted that a missile from Yemen hit oil facilities in the Eastern Province and started a fire, sharing footage said to show flames. No official Saudi source has confirmed an attack or a fire; treat as an unverified claim.",
-    "url": "https://x.com/RyanRozbiani/status/2111243419641421997"
+    "title": "AGBI: Riyadh airport reopening in doubt; at least 25 airliners flown out since last Saturday",
+    "source": "AGBI",
+    "time": "3:12 PM Fri",
+    "extra": "Published 3:12 PM Friday 16 Oct; analysts split on whether the NOTAM closure is extended",
+    "body": "AGBI reports King Khalid airport is tentatively due to reopen at midnight tonight under the NOTAM, subject to review, but experts are divided on an extension given continuing Houthi attacks. It says flight data show at least 25 commercial aircraft left the airport since last Saturday, mostly to other Saudi airports, and airlines are considering operating from other airports.",
+    "url": "https://www.agbi.com/aviation/2026/10/riyadh-airport-reopening-in-doubt-after-houthi-attacks/"
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_600AM_17Oct2026.pdf",
+  "pdf_name": "RUH_status_report_700AM_17Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-17T06:45:01+03:00",
+  "as_of": "2026-10-17T06:50:02+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -403,7 +412,7 @@
   ],
   "flow24": {
    "start": "2026-10-16T07:00:00+03:00",
-   "end": "2026-10-17T06:45:01+03:00",
+   "end": "2026-10-17T06:50:02+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -474,7 +483,7 @@
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 9
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-16T17:00:00+03:00",
@@ -578,20 +587,20 @@
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 158
+    "cancelled": 159
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7756
+     "minutes": 7761
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 4473
+     "minutes": 4478
     }
    ]
   },
@@ -600,18 +609,18 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 4473
+    "minutes": 4478
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 7756
+    "minutes": 7761
    }
   ]
  },
  "maritime": {
-  "updated": "2026-10-17T06:19:06.601086+03:00",
+  "updated": "2026-10-17T06:49:12.891192+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -677,31 +686,31 @@
  },
  "summary": {
   "headline": "Riyadh airport halted since 9:29 PM Sunday; Dammam halted since 5:27 AM, no takeoff since 1:50 AM",
-  "as_of": "2026-10-17T06:17+03:00",
+  "as_of": "2026-10-17T06:48+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (7728 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (7759 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 5:27 AM (50 min)."
+    "status_line": "No takeoff or landing since 5:27 AM (80 min)."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday (7,710 min at 6:00 AM)",
-   "Dammam halted again since 5:27 AM after one landing (XY884 from Lahore); no takeoff since 1:50 AM",
-   "No new Civil Defense alert or intercept statement since 5:00 AM"
+   "Riyadh still halted since 9:29 PM Sunday (7,771 min at 7:00 AM)",
+   "Dammam still halted since 5:27 AM (93 min at 7:00 AM): no takeoff or landing in the last hour",
+   "No new Civil Defense alert, intercept or official Saudi statement since 6:00 AM"
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (7728 min).",
-  "as_of": "2026-10-17T06:17+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (7759 min).",
+  "as_of": "2026-10-17T06:48+03:00",
   "kpis": {
    "cancelled_total": 18,
    "cancelled_departures": 9,
@@ -717,7 +726,7 @@
   },
   "flow24": {
    "start": "2026-10-16T07:00+03:00",
-   "end": "2026-10-17T06:17+03:00",
+   "end": "2026-10-17T06:48+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-16T07:00+03:00",
@@ -787,14 +796,14 @@
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 9
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-16T17:00+03:00",
      "label": "5 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 8
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-16T18:00+03:00",
@@ -891,7 +900,7 @@
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 155
+    "cancelled": 159
    },
    "halts": [
     {
@@ -904,7 +913,7 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 7728,
+    "minutes": 7759,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -912,8 +921,8 @@
  },
  "dammam": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 5:27 AM (50 min).",
-  "as_of": "2026-10-17T06:17+03:00",
+  "status_line": "No takeoff or landing since 5:27 AM (80 min).",
+  "as_of": "2026-10-17T06:48+03:00",
   "kpis": {
    "cancelled_total": 21,
    "cancelled_departures": 10,
@@ -923,7 +932,7 @@
    "diverted": 0,
    "diverted_to": [],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 1,
+   "landings_last_hour": 0,
    "last_takeoff": {
     "time": "1:50 AM",
     "flight": "SV1131",
@@ -937,7 +946,7 @@
   },
   "flow24": {
    "start": "2026-10-16T07:00+03:00",
-   "end": "2026-10-17T06:17+03:00",
+   "end": "2026-10-17T06:48+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-16T07:00+03:00",
@@ -1021,7 +1030,7 @@
      "label": "6 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-16T19:00+03:00",
@@ -1111,7 +1120,7 @@
    "totals": {
     "takeoffs": 54,
     "landings": 52,
-    "cancelled": 58
+    "cancelled": 59
    },
    "halts": [
     {
@@ -1164,7 +1173,7 @@
   "halts": [
    {
     "label": "Halt since 5:27 AM",
-    "minutes": 50,
+    "minutes": 80,
     "start": "2026-10-17T05:27+03:00",
     "end": null
    },
@@ -5933,8 +5942,26 @@
   }
  },
  "news": {
-  "checked": "6:20 AM",
+  "checked": "6:52 AM",
   "items": [
+   {
+    "tag": "UNVERIFIED",
+    "title": "Air India reported to cancel all flights to and from Riyadh, Dammam and Jeddah until 20 October",
+    "source": "Makkah Updates (@MakkahUpdate)",
+    "time": "6:26 AM",
+    "url": "https://x.com/MakkahUpdate/status/2111297733575217364",
+    "body": "Makkah Updates says Air India has cancelled all flights to and from Riyadh, Dammam and Jeddah until 20 October, with full refunds offered. Air India has not been seen confirming this yet.",
+    "airport": null
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "UK reported to advise against all but essential travel to Saudi Arabia",
+    "source": "X (@celticarab)",
+    "time": "6:22 AM",
+    "url": "https://x.com/ejphnews/status/2111298110848954842",
+    "body": "EJPH News, citing the UK Foreign Office and Reuters, says the UK now advises against all but essential travel to Saudi Arabia after Houthi missile and drone attacks and warns more airport attacks and flight cancellations are very likely. Not yet confirmed on the official UK travel-advice page.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Al Ekhbariya: Yemen's Transport Ministry condemns the Houthi militia's second attack on Aden International Airport",
@@ -5951,15 +5978,6 @@
     "time": "6:16 AM",
     "url": "https://x.com/5w1hbrief/status/2111295181551276376",
     "body": "A news-summary account reported that the EU-Gulf Cooperation Council summit planned in Riyadh has been postponed, with a new date to be announced later. No official GCC or European Council statement has been seen yet.",
-    "airport": null
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "UK reported to advise against all but essential travel to Saudi Arabia",
-    "source": "X (@celticarab)",
-    "time": "5:40 AM",
-    "url": "https://x.com/celticarab/status/2111286164825207009",
-    "body": "A social post linked a report that the UK now advises against all but essential travel to Saudi Arabia because of the Houthi attacks. The Foreign Office page itself has not been checked.",
     "airport": null
    },
    {
@@ -6018,11 +6036,11 @@
    },
    {
     "tag": "UNVERIFIED",
-    "title": "Social accounts claim a missile from Yemen hit oil facilities in eastern Saudi Arabia and started a fire",
-    "source": "X (@RyanRozbiani, @blastradiusnet1, @dana916)",
-    "time": "2:50 AM",
-    "url": "https://x.com/RyanRozbiani/status/2111243419641421997",
-    "body": "Several accounts posted that a missile from Yemen hit oil facilities in the Eastern Province and started a fire, sharing footage said to show flames. No official Saudi source has confirmed an attack or a fire; treat as an unverified claim.",
+    "title": "AGBI: Riyadh airport reopening in doubt; at least 25 airliners flown out since last Saturday",
+    "source": "AGBI",
+    "time": "3:12 PM Fri",
+    "url": "https://www.agbi.com/aviation/2026/10/riyadh-airport-reopening-in-doubt-after-houthi-attacks/",
+    "body": "AGBI reports King Khalid airport is tentatively due to reopen at midnight tonight under the NOTAM, subject to review, but experts are divided on an extension given continuing Houthi attacks. It says flight data show at least 25 commercial aircraft left the airport since last Saturday, mostly to other Saudi airports, and airlines are considering operating from other airports.",
     "airport": null
    }
   ]
@@ -12783,9 +12801,9 @@
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "5:00 AM",
-  "window_start": "2026-10-17T05:00+03:00",
-  "window_end": "2026-10-17T06:17+03:00",
+  "prev_slot": "6:00 AM",
+  "window_start": "2026-10-17T06:00+03:00",
+  "window_end": "2026-10-17T06:48+03:00",
   "items": [],
   "last_24h": [
    {
@@ -12909,7 +12927,7 @@
    "damage": 0
   },
   "tally_text": "Last 24 hours: Attacks 1, interceptions 3, alerts 3, all-clears 3.",
-  "none_text": "No new attacks, interceptions or alerts since 5:00 AM AST."
+  "none_text": "No new attacks, interceptions or alerts since 6:00 AM AST."
  },
  "airports": {
   "RUH": {
@@ -12917,7 +12935,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -12944,12 +12962,12 @@
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-17T07:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 1083,
+    "board_rows": 1086,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -13020,7 +13038,7 @@
       "label": "4 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 9
+      "cancelled": 10
      },
      {
       "hour_start": "2026-10-16T17:00:00+03:00",
@@ -13124,20 +13142,20 @@
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 158
+     "cancelled": 159
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 7756
+      "minutes": 7761
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 4473
+      "minutes": 4478
      }
     ]
    },
@@ -13146,13 +13164,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 4473
+     "minutes": 4478
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7756
+     "minutes": 7761
     }
    ],
    "ksa_bot": {
@@ -13170,24 +13188,24 @@
    "city": "Jeddah",
    "name": "King Abdulaziz International",
    "pill": "NORMAL",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 JED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 18,
+    "takeoffs_last_hour": 16,
     "landings_last_hour": 11,
-    "takeoffs_last_30": 9,
-    "landings_last_30": 6,
+    "takeoffs_last_30": 7,
+    "landings_last_30": 5,
     "last_takeoff": {
      "time": "6:43 AM",
      "flight": "XY425",
      "city": "Abha",
-     "minutes_ago": 2
+     "minutes_ago": 7
     },
     "last_landing": {
-     "time": "6:35 AM",
-     "flight": "SV803",
-     "city": "Dhaka",
-     "minutes_ago": 9
+     "time": "6:47 AM",
+     "flight": "SV753",
+     "city": "Hyderabad",
+     "minutes_ago": 3
     }
    },
    "cancellations": {
@@ -13199,20 +13217,20 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-17T06:43:19+03:00",
-    "minutes_since_last_movement": 2,
+    "last_movement": "2026-10-17T06:47:16+03:00",
+    "minutes_since_last_movement": 3,
     "movements_last_3h": 67,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-17T06:50:00+03:00",
+    "next_scheduled": "2026-10-17T07:00:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 2000,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -13380,13 +13398,13 @@
       "hour_start": "2026-10-17T06:00:00+03:00",
       "label": "6 AM",
       "takeoffs": 13,
-      "landings": 8,
+      "landings": 9,
       "cancelled": 2
      }
     ],
     "totals": {
      "takeoffs": 240,
-     "landings": 218,
+     "landings": 219,
      "cancelled": 112
     },
     "halts": [
@@ -13445,7 +13463,7 @@
    "city": "Dammam",
    "name": "King Fahd International",
    "pill": "HALTED",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -13456,13 +13474,13 @@
      "time": "1:50 AM",
      "flight": "SV1131",
      "city": "Jeddah",
-     "minutes_ago": 294
+     "minutes_ago": 299
     },
     "last_landing": {
      "time": "5:27 AM",
      "flight": "XY884",
      "city": "Lahore",
-     "minutes_ago": 77
+     "minutes_ago": 82
     }
    },
    "cancellations": {
@@ -13475,7 +13493,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T05:27:50+03:00",
-    "minutes_since_last_movement": 77,
+    "minutes_since_last_movement": 82,
     "movements_last_3h": 5,
     "due_not_operated": 1,
     "cancelled_in_window": 1,
@@ -13508,7 +13526,7 @@
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -13738,7 +13756,7 @@
       "start": "2026-10-17T05:27:50+03:00",
       "end": null,
       "label": "Halt since 5:27 AM",
-      "minutes": 77
+      "minutes": 82
      }
     ]
    },
@@ -13747,7 +13765,7 @@
      "start": "2026-10-17T05:27:50+03:00",
      "end": null,
      "label": "Halt since 5:27 AM",
-     "minutes": 77
+     "minutes": 82
     },
     {
      "start": "2026-10-17T04:31:29+03:00",
@@ -13795,7 +13813,7 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 2,
@@ -13806,13 +13824,13 @@
      "time": "6:11 AM",
      "flight": "AH329",
      "city": "Oran",
-     "minutes_ago": 34
+     "minutes_ago": 39
     },
     "last_landing": {
      "time": "5:59 AM",
      "flight": "XY806",
      "city": "Karachi",
-     "minutes_ago": 45
+     "minutes_ago": 50
     }
    },
    "cancellations": {
@@ -13825,7 +13843,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T06:11:00+03:00",
-    "minutes_since_last_movement": 34,
+    "minutes_since_last_movement": 39,
     "movements_last_3h": 18,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -13837,7 +13855,7 @@
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14094,7 +14112,7 @@
    "city": "Abha",
    "name": "Abha International",
    "pill": "NORMAL",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 AHB boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -14105,13 +14123,13 @@
      "time": "6:24 PM",
      "flight": "SV8857",
      "city": "Jeddah",
-     "minutes_ago": 740
+     "minutes_ago": 745
     },
     "last_landing": {
      "time": "6:12 AM",
      "flight": "SV1642",
      "city": "Jeddah",
-     "minutes_ago": 32
+     "minutes_ago": 37
     }
    },
    "cancellations": {
@@ -14124,19 +14142,19 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T06:12:48+03:00",
-    "minutes_since_last_movement": 32,
+    "minutes_since_last_movement": 37,
     "movements_last_3h": 1,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-17T06:50:00+03:00",
+    "next_scheduled": "2026-10-17T06:55:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 182,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14405,7 +14423,7 @@
    "city": "Jazan",
    "name": "King Abdullah bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 GIZ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -14437,7 +14455,7 @@
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14632,7 +14650,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "QUIET",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -14643,13 +14661,13 @@
      "time": "2:41 AM",
      "flight": "XY1712",
      "city": "Dammam",
-     "minutes_ago": 244
+     "minutes_ago": 249
     },
     "last_landing": {
      "time": "1:54 AM",
      "flight": "XY711",
      "city": "Dammam",
-     "minutes_ago": 291
+     "minutes_ago": 296
     }
    },
    "cancellations": {
@@ -14662,7 +14680,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T02:41:31+03:00",
-    "minutes_since_last_movement": 244,
+    "minutes_since_last_movement": 249,
     "movements_last_3h": 0,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -14674,7 +14692,7 @@
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14862,7 +14880,7 @@
       "start": "2026-10-17T02:41:31+03:00",
       "end": null,
       "label": "Halt since 2:41 AM",
-      "minutes": 244
+      "minutes": 249
      }
     ]
    },
@@ -14871,7 +14889,7 @@
      "start": "2026-10-17T02:41:31+03:00",
      "end": null,
      "label": "Halt since 2:41 AM",
-     "minutes": 244
+     "minutes": 249
     },
     {
      "start": "2026-10-16T02:33:43+03:00",
@@ -14919,7 +14937,7 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -14930,13 +14948,13 @@
      "time": "5:01 AM",
      "flight": "SV1255",
      "city": "Jeddah",
-     "minutes_ago": 104
+     "minutes_ago": 109
     },
     "last_landing": {
      "time": "5:52 AM",
      "flight": "SM423",
      "city": "Cairo",
-     "minutes_ago": 53
+     "minutes_ago": 58
     }
    },
    "cancellations": {
@@ -14949,7 +14967,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T05:52:30+03:00",
-    "minutes_since_last_movement": 53,
+    "minutes_since_last_movement": 58,
     "movements_last_3h": 2,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -14961,7 +14979,7 @@
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -15185,7 +15203,7 @@
       "start": "2026-10-17T05:52:30+03:00",
       "end": null,
       "label": "Halt since 5:52 AM",
-      "minutes": 53
+      "minutes": 58
      }
     ]
    },
@@ -15194,7 +15212,7 @@
      "start": "2026-10-17T05:52:30+03:00",
      "end": null,
      "label": "Halt since 5:52 AM",
-     "minutes": 53
+     "minutes": 58
     },
     {
      "start": "2026-10-17T05:01:17+03:00",
@@ -15242,7 +15260,7 @@
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-17T06:45:01+03:00",
+   "as_of": "2026-10-17T06:50:02+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -15253,13 +15271,13 @@
      "time": "4:17 AM",
      "flight": "SV1548",
      "city": "Jeddah",
-     "minutes_ago": 148
+     "minutes_ago": 153
     },
     "last_landing": {
      "time": "8:28 PM",
      "flight": "NP107",
      "city": "Cairo",
-     "minutes_ago": 617
+     "minutes_ago": 622
     }
    },
    "cancellations": {
@@ -15272,7 +15290,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T04:17:00+03:00",
-    "minutes_since_last_movement": 148,
+    "minutes_since_last_movement": 153,
     "movements_last_3h": 1,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -15285,12 +15303,12 @@
       "not_operated": 3
      }
     ],
-    "board_rows": 120,
+    "board_rows": 118,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-16T07:00:00+03:00",
-    "end": "2026-10-17T06:45:01+03:00",
+    "end": "2026-10-17T06:50:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -15532,7 +15550,7 @@
       "start": "2026-10-17T04:17:00+03:00",
       "end": null,
       "label": "Halt since 4:17 AM",
-      "minutes": 148
+      "minutes": 153
      }
     ]
    },
@@ -15541,7 +15559,7 @@
      "start": "2026-10-17T04:17:00+03:00",
      "end": null,
      "label": "Halt since 4:17 AM",
-     "minutes": 148
+     "minutes": 153
     },
     {
      "start": "2026-10-16T23:13:00+03:00",
