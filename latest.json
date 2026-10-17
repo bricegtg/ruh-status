@@ -1,17 +1,17 @@
 {
  "schema": 2,
- "generated_at": "2026-10-18T01:57:00+03:00",
+ "generated_at": "2026-10-18T02:00:22+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 2:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "title": "RUH & DMM Airport Status 2:00 AM AST: Riyadh HALTED, Dammam HALTED",
   "slot": "2:00 AM",
-  "as_of": "2026-10-18T01:52:00+03:00",
-  "as_of_label": "1:52 AM",
+  "as_of": "2026-10-18T01:56:00+03:00",
+  "as_of_label": "1:56 AM",
   "date_long": "Sunday 18 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 8,911 minutes at 2:00 AM; Dammam moving, last movement 1:15 AM after a 12:17 to 1:05 AM gap",
-  "headline": "Riyadh airport still halted since 9:29 PM Sunday 11 Oct with no reopening announced; Coalition downs a drone in the Riyadh region",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 8,911 minutes at 2:00 AM; Dammam halted since 1:15 AM, 45 minutes at 2:00 AM",
+  "headline": "Riyadh airport still halted since 9:29 PM Sunday 11 Oct with no reopening announced; Dammam halted since 1:15 AM; Coalition downs a drone in the Riyadh region",
   "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 8,911 minutes at 2:00 AM. No takeoff or landing while the halt is open. 339 flights are already cancelled for Sunday (58% of scheduled), and 0 arrivals diverted. NOTAM A3604/26, which kept King Khalid International closed, lapsed at 12:00 AM; GACA has not announced a reopening, and SV1052 from Jeddah, due at 12:45 AM, still shows no landing. An unverified OSINT report of a new prior-permission NOTAM (A3650) remains unconfirmed. At 1:39 AM the Coalition said a drone was intercepted and destroyed in the Riyadh region; earlier, Civil Defense alerts for Riyadh (12:05 AM, all-clear 12:11 AM), Abha and Khamis Mushait were followed by the interception of two ballistic missiles toward Khamis Mushait at 12:52 AM. Air India and Air India Express have suspended Saudi flights until 24 October.",
   "next_update": "3:00 AM",
   "kpis": {
@@ -29,7 +29,7 @@
   },
   "flow24": {
    "start": "2026-10-17T02:00:00+03:00",
-   "end": "2026-10-18T01:52:00+03:00",
+   "end": "2026-10-18T01:56:00+03:00",
    "start_label": "2:00 AM Saturday",
    "unit": "hour",
    "buckets": [
@@ -212,7 +212,7 @@
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 8903
+     "minutes": 8907
     }
    ]
   },
@@ -221,7 +221,7 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 8903
+    "minutes": 8907
    }
   ],
   "gulf": [],
@@ -317,7 +317,7 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-18T01:55:01+03:00",
+  "as_of": "2026-10-18T02:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -393,17 +393,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-17T02:00:00+03:00",
-   "end": "2026-10-18T01:55:01+03:00",
+   "start": "2026-10-17T03:00:00+03:00",
+   "end": "2026-10-18T02:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-17T02:00:00+03:00",
-     "label": "2 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 4
-    },
     {
      "hour_start": "2026-10-17T03:00:00+03:00",
      "label": "3 AM",
@@ -564,25 +557,32 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-18T02:00:00+03:00",
+     "label": "2 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 2
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 44
+    "cancelled": 42
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 8906
+     "minutes": 8911
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 5623
+     "minutes": 5628
     }
    ]
   },
@@ -591,13 +591,13 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 5623
+    "minutes": 5628
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 8906
+    "minutes": 8911
    }
   ]
  },
@@ -667,33 +667,33 @@
   }
  },
  "summary": {
-  "headline": "Riyadh airport still halted since 9:29 PM Sunday 11 Oct with no reopening announced; Coalition downs a drone in the Riyadh region",
-  "as_of": "2026-10-18T01:52+03:00",
+  "headline": "Riyadh airport still halted since 9:29 PM Sunday 11 Oct with no reopening announced; Dammam halted since 1:15 AM; Coalition downs a drone in the Riyadh region",
+  "as_of": "2026-10-18T01:56+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (8903 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (8907 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
-    "level": "DISRUPTED",
+    "level": "HALTED",
     "status_line": "2 takeoffs and 2 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday (8,851 min at 1:00 AM); NOTAM A3604/26 lapsed at midnight with no GACA reopening announcement",
-   "Civil Defense alerts in Riyadh (12:05 AM), Abha and Khamis Mushait; all-clears 12:11 and 12:21 AM",
-   "Coalition at 12:52 AM: two Houthi ballistic missiles toward Khamis Mushait intercepted",
-   "Dammam: 1 takeoff and 0 landings in the last hour, latest XY752 to AlUla at 12:17 AM"
+   "Riyadh still halted since 9:29 PM Sunday (8,911 min at 2:00 AM); no GACA reopening announcement after NOTAM A3604/26 lapsed at midnight",
+   "Coalition at 1:39 AM: drone intercepted and destroyed in the Riyadh region; no new Civil Defense alert since the 12:21 AM all-clears",
+   "Air India and Air India Express suspend Riyadh, Dammam and Jeddah flights until 24 October",
+   "Dammam halted since 1:15 AM (45 min at 2:00 AM), after a 12:17 to 1:05 AM gap and 2 takeoffs and 2 landings"
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (8903 min).",
-  "as_of": "2026-10-18T01:52+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (8907 min).",
+  "as_of": "2026-10-18T01:56+03:00",
   "kpis": {
    "cancelled_total": 339,
    "cancelled_departures": 177,
@@ -709,7 +709,7 @@
   },
   "flow24": {
    "start": "2026-10-17T02:00+03:00",
-   "end": "2026-10-18T01:52+03:00",
+   "end": "2026-10-18T01:56+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-17T02:00+03:00",
@@ -896,16 +896,16 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 8903,
+    "minutes": 8907,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
   ]
  },
  "dammam": {
-  "level": "DISRUPTED",
+  "level": "HALTED",
   "status_line": "2 takeoffs and 2 landings in the last hour.",
-  "as_of": "2026-10-18T01:52+03:00",
+  "as_of": "2026-10-18T01:56+03:00",
   "kpis": {
    "cancelled_total": 41,
    "cancelled_departures": 21,
@@ -929,7 +929,7 @@
   },
   "flow24": {
    "start": "2026-10-17T02:00+03:00",
-   "end": "2026-10-18T01:52+03:00",
+   "end": "2026-10-18T01:56+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-17T02:00+03:00",
@@ -1006,7 +1006,7 @@
      "label": "12 PM",
      "takeoffs": 5,
      "landings": 3,
-     "cancelled": 1
+     "cancelled": 2
     },
     {
      "hour_start": "2026-10-17T13:00+03:00",
@@ -1103,7 +1103,7 @@
    "totals": {
     "takeoffs": 57,
     "landings": 60,
-    "cancelled": 28
+    "cancelled": 29
    },
    "halts": [
     {
@@ -13142,7 +13142,7 @@
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
   "prev_slot": "1:00 AM",
   "window_start": "2026-10-18T01:00+03:00",
-  "window_end": "2026-10-18T01:52+03:00",
+  "window_end": "2026-10-18T01:56+03:00",
   "items": [
    {
     "date": "2026-10-18",
@@ -13330,7 +13330,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-18T01:55:01+03:00",
+   "as_of": "2026-10-18T02:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -13352,26 +13352,19 @@
     "last_movement": null,
     "minutes_since_last_movement": null,
     "movements_last_3h": 0,
-    "due_not_operated": 17,
-    "cancelled_in_window": 9,
+    "due_not_operated": 19,
+    "cancelled_in_window": 11,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-18T02:00:00+03:00",
+    "next_scheduled": "2026-10-18T02:10:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 1208,
+    "board_rows": 1210,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-17T02:00:00+03:00",
-    "end": "2026-10-18T01:55:01+03:00",
+    "start": "2026-10-17T03:00:00+03:00",
+    "end": "2026-10-18T02:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-17T02:00:00+03:00",
-      "label": "2 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 4
-     },
      {
       "hour_start": "2026-10-17T03:00:00+03:00",
       "label": "3 AM",
@@ -13532,25 +13525,32 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 5
+     },
+     {
+      "hour_start": "2026-10-18T02:00:00+03:00",
+      "label": "2 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 2
      }
     ],
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 44
+     "cancelled": 42
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 8906
+      "minutes": 8911
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 5623
+      "minutes": 5628
      }
     ]
    },
@@ -13559,13 +13559,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 5623
+     "minutes": 5628
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 8906
+     "minutes": 8911
     }
    ],
    "ksa_bot": {
@@ -13863,7 +13863,7 @@
    "code": "DMM",
    "city": "Dammam",
    "name": "King Fahd International",
-   "pill": "DISRUPTED",
+   "pill": "HALTED",
    "as_of": "2026-10-18T01:55:01+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
@@ -14187,24 +14187,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-18T01:55:01+03:00",
+   "as_of": "2026-10-18T02:00:01+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 4,
     "landings_last_hour": 3,
-    "takeoffs_last_30": 3,
+    "takeoffs_last_30": 2,
     "landings_last_30": 1,
     "last_takeoff": {
      "time": "1:39 AM",
      "flight": "WY678",
      "city": "Muscat",
-     "minutes_ago": 16
+     "minutes_ago": 21
     },
     "last_landing": {
      "time": "1:43 AM",
      "flight": "SV350",
      "city": "Algiers",
-     "minutes_ago": 11
+     "minutes_ago": 16
     }
    },
    "cancellations": {
@@ -14217,7 +14217,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-18T01:43:46+03:00",
-    "minutes_since_last_movement": 11,
+    "minutes_since_last_movement": 16,
     "movements_last_3h": 15,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -14234,17 +14234,10 @@
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-17T02:00:00+03:00",
-    "end": "2026-10-18T01:55:01+03:00",
+    "start": "2026-10-17T03:00:00+03:00",
+    "end": "2026-10-18T02:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-17T02:00:00+03:00",
-      "label": "2 AM",
-      "takeoffs": 6,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-17T03:00:00+03:00",
       "label": "3 AM",
@@ -14405,10 +14398,17 @@
       "takeoffs": 4,
       "landings": 3,
       "cancelled": 1
+     },
+     {
+      "hour_start": "2026-10-18T02:00:00+03:00",
+      "label": "2 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 89,
+     "takeoffs": 83,
      "landings": 48,
      "cancelled": 7
     },
