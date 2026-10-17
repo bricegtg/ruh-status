@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-17T04:50:48+03:00",
+ "generated_at": "2026-10-17T04:55:48+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 4:00 AM AST: Riyadh HALTED, Dammam HALTED",
-  "slot": "4:00 AM",
-  "as_of": "2026-10-17T03:56:00+03:00",
-  "as_of_label": "3:56 AM",
+  "title": "RUH & DMM Airport Status 5:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "5:00 AM",
+  "as_of": "2026-10-17T04:54:00+03:00",
+  "as_of_label": "4:54 AM",
   "date_long": "Saturday 17 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 7,590 minutes at 4:00 AM; Dammam halted since 3:06 AM, 54 minutes, with no takeoff since 1:50 AM",
-  "headline": "Riyadh airport halted since 9:29 PM Sunday; Dammam halted since 3:06 AM, 54 minutes",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 7,530 minutes at 3:00 AM. No takeoff or landing while the halt is open. 18 flights cancelled so far for Saturday (15% of scheduled), and 0 arrivals diverted. NOTAM A3604/26 keeps King Khalid International closed until 12:00 AM Sunday 18 Oct; GACA has not announced whether it will reopen then. King Khalid airport again told travelers at 3:40 AM to follow official authorities and their airline for airspace updates. Unverified social posts claim a missile from Yemen hit oil facilities in the Eastern Province; no Civil Defense alert or official statement confirms it.",
-  "next_update": "5:00 AM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday, 7,650 minutes at 5:00 AM; Dammam landing again since 4:21 AM after a 3:06\u20134:21 AM halt, but no takeoff since 1:50 AM",
+  "headline": "Riyadh airport halted since 9:29 PM Sunday; Dammam landing again since 4:21 AM, no takeoff since 1:50 AM",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday, 7,650 minutes at 5:00 AM. No takeoff or landing while the halt is open. 18 flights cancelled so far for Saturday (15% of scheduled), and 0 arrivals diverted. NOTAM A3604/26 keeps King Khalid International closed until 12:00 AM Sunday 18 Oct; GACA has not announced whether it will reopen then. No new Civil Defense alert or coalition intercept statement since the 4:00 AM edition. Media relay US President Trump saying Saudi Arabia should accept Israel's help against the Houthis, and Iran denying any role in the attacks; neither has drawn an official Saudi response yet.",
+  "next_update": "6:00 AM",
   "kpis": {
    "cancelled_total": 18,
    "cancelled_departures": 9,
@@ -28,18 +28,11 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-16T04:00:00+03:00",
-   "end": "2026-10-17T03:56:00+03:00",
-   "start_label": "4:00 AM Friday",
+   "start": "2026-10-16T05:00:00+03:00",
+   "end": "2026-10-17T04:54:00+03:00",
+   "start_label": "5:00 AM Friday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-16T04:00:00+03:00",
-     "label": "4 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 6
-    },
     {
      "hour_start": "2026-10-16T05:00:00+03:00",
      "label": "5 AM",
@@ -122,14 +115,14 @@
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-16T17:00:00+03:00",
      "label": "5 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 7
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-16T18:00:00+03:00",
@@ -200,19 +193,26 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 1
+    },
+    {
+     "hour_start": "2026-10-17T04:00:00+03:00",
+     "label": "4 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 169
+    "cancelled": 165
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7587
+     "minutes": 7645
     }
    ]
   },
@@ -221,14 +221,41 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 7587
+    "minutes": 7645
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh still halted about 20 hours before the NOTAM's planned reopening; Dammam halted since 3:06 AM",
-  "news_checked": "3:55 AM",
+  "news_title": "Riyadh still halted 19 hours before the NOTAM's planned reopening; Dammam landing again but no takeoff since 1:50 AM",
+  "news_checked": "4:55 AM",
   "news": [
+   {
+    "tag": "UNVERIFIED",
+    "title": "Trump says Saudi Arabia should accept Israel's offer of help against the Houthis",
+    "source": "Nepal News (X)",
+    "time": "4:47 AM",
+    "extra": "Also relayed by Middle East Forum at 4:30 AM; checked 4:55 AM",
+    "body": "Social and news accounts relay remarks by US President Donald Trump that Israel has been 'very helpful' to Saudi Arabia and that the Kingdom should accept its help against the Houthis. No Saudi official response has been published.",
+    "url": "https://x.com/Nepalnews_Eng/status/2111272900070343078"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Iran denies any role in the Houthi attacks on Saudi Arabia; Riyadh says Tehran encouraged them",
+    "source": "X (@HormuzWatch)",
+    "time": "4:38 AM",
+    "extra": "Middle East Eye report relayed on X at 4:38 AM; first seen 3:38 AM; checked 4:55 AM",
+    "body": "Middle East Eye, relayed by several accounts, reports Iran denies involvement and says the Houthis act on their own interests, while Saudi Arabia says Tehran encouraged the attacks. No Saudi official statement on this was found in the official-channel check.",
+    "url": "https://x.com/HormuzWatch/status/2111255487924912232"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Brent reaches about $110 as Hormuz ship attacks and Houthi strikes on Saudi Arabia drive an oil rally",
+    "source": "Business Today (X)",
+    "time": "4:32 AM",
+    "extra": "Checked 4:55 AM",
+    "body": "Business Today reports Brent crude hit $110 a barrel on attacks on ships near Hormuz and Houthi strikes on the Kingdom. The report's own Brent quote is shown in the Economy section.",
+    "url": "https://x.com/business_today/status/2111268994132906008"
+   },
    {
     "tag": "CONFIRMED",
     "title": "King Khalid airport again tells travelers to follow official authorities and their airline for airspace updates",
@@ -237,15 +264,6 @@
     "extra": "published 3:40 AM AST Sat 17 Oct (reply on official account, translated from Arabic); checked 3:55 AM",
     "body": "Replying to a traveler, King Khalid International Airport said that for the latest airspace updates people should follow the competent official authorities or their airline. It gave no reopening time.",
     "url": "https://x.com/KKIASA/status/2111255936966996233"
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "Social accounts relay reports that Iran denied any role in the Houthi attacks on Saudi Arabia and offered to mediate",
-    "source": "X (@HormuzWatch)",
-    "time": "3:38 AM",
-    "extra": "posted 3:38 AM AST Sat 17 Oct; no official Saudi response found; checked 3:55 AM",
-    "body": "An aggregator account posted that Iran's foreign ministry spokesman denied any Iranian role in the Houthi attacks, a day after Riyadh accused Tehran of encouraging the escalation, and offered to mediate. Not checked against an official Iranian or Saudi statement.",
-    "url": "https://x.com/HormuzWatch/status/2111255487924912232"
    },
    {
     "tag": "UNVERIFIED",
@@ -1050,12 +1068,12 @@
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_400AM_17Oct2026.pdf",
+  "pdf_name": "RUH_status_report_500AM_17Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-17T04:50:01+03:00",
+  "as_of": "2026-10-17T04:55:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -1104,7 +1122,7 @@
     "scheduled": "4:55 AM",
     "estimated": null,
     "tomorrow": false,
-    "status": "On schedule",
+    "status": "Has not left yet",
     "cancelled_today": 0
    },
    {
@@ -1132,7 +1150,7 @@
   ],
   "flow24": {
    "start": "2026-10-16T05:00:00+03:00",
-   "end": "2026-10-17T04:50:01+03:00",
+   "end": "2026-10-17T04:55:01+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -1224,7 +1242,7 @@
      "label": "5 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 7
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-16T18:00:00+03:00",
@@ -1307,20 +1325,20 @@
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 164
+    "cancelled": 165
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7641
+     "minutes": 7646
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 4358
+     "minutes": 4363
     }
    ]
   },
@@ -1329,18 +1347,18 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 4358
+    "minutes": 4363
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 7641
+    "minutes": 7646
    }
   ]
  },
  "maritime": {
-  "updated": "2026-10-17T03:57:11.412381+03:00",
+  "updated": "2026-10-17T04:55:23.970275+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -1405,20 +1423,20 @@
   }
  },
  "summary": {
-  "headline": "Riyadh airport halted since 9:29 PM Sunday; Dammam halted since 3:06 AM, 54 minutes",
-  "as_of": "2026-10-17T03:56+03:00",
+  "headline": "Riyadh airport halted since 9:29 PM Sunday; Dammam landing again since 4:21 AM, no takeoff since 1:50 AM",
+  "as_of": "2026-10-17T04:54+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (7587 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (7645 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
-    "level": "HALTED",
-    "status_line": "No takeoff or landing since 3:06 AM (51 min)."
+    "level": "DISRUPTED",
+    "status_line": "0 takeoffs and 4 landings in the last hour."
    }
   ],
   "changed": [
@@ -1429,8 +1447,8 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (7587 min).",
-  "as_of": "2026-10-17T03:56+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (7645 min).",
+  "as_of": "2026-10-17T04:54+03:00",
   "kpis": {
    "cancelled_total": 18,
    "cancelled_departures": 9,
@@ -1445,16 +1463,9 @@
    "last_landing": null
   },
   "flow24": {
-   "start": "2026-10-16T04:00+03:00",
-   "end": "2026-10-17T03:56+03:00",
+   "start": "2026-10-16T05:00+03:00",
+   "end": "2026-10-17T04:54+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-16T04:00+03:00",
-     "label": "4 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 6
-    },
     {
      "hour_start": "2026-10-16T05:00+03:00",
      "label": "5 AM",
@@ -1537,14 +1548,14 @@
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-16T17:00+03:00",
      "label": "5 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 7
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-16T18:00+03:00",
@@ -1615,12 +1626,19 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 1
+    },
+    {
+     "hour_start": "2026-10-17T04:00+03:00",
+     "label": "4 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 169
+    "cancelled": 165
    },
    "halts": [
     {
@@ -1633,48 +1651,41 @@
   "halts": [
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 7587,
+    "minutes": 7645,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
   ]
  },
  "dammam": {
-  "level": "HALTED",
-  "status_line": "No takeoff or landing since 3:06 AM (51 min).",
-  "as_of": "2026-10-17T03:56+03:00",
+  "level": "DISRUPTED",
+  "status_line": "0 takeoffs and 4 landings in the last hour.",
+  "as_of": "2026-10-17T04:54+03:00",
   "kpis": {
-   "cancelled_total": 19,
-   "cancelled_departures": 9,
-   "cancelled_arrivals": 10,
-   "pct_of_scheduled": 10,
+   "cancelled_total": 21,
+   "cancelled_departures": 10,
+   "cancelled_arrivals": 11,
+   "pct_of_scheduled": 11,
    "scheduled": 192,
    "diverted": 0,
    "diverted_to": [],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 1,
+   "landings_last_hour": 4,
    "last_takeoff": {
     "time": "1:50 AM",
     "flight": "SV1131",
     "city": "Jeddah"
    },
    "last_landing": {
-    "time": "3:06 AM",
-    "flight": "XY895",
-    "city": "Cairo"
+    "time": "4:31 AM",
+    "flight": "7L8588",
+    "city": "Frankfurt"
    }
   },
   "flow24": {
-   "start": "2026-10-16T04:00+03:00",
-   "end": "2026-10-17T03:56+03:00",
+   "start": "2026-10-16T05:00+03:00",
+   "end": "2026-10-17T04:54+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-16T04:00+03:00",
-     "label": "4 AM",
-     "takeoffs": 2,
-     "landings": 0,
-     "cancelled": 7
-    },
     {
      "hour_start": "2026-10-16T05:00+03:00",
      "label": "5 AM",
@@ -1757,7 +1768,7 @@
      "label": "4 PM",
      "takeoffs": 2,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-16T17:00+03:00",
@@ -1835,19 +1846,21 @@
      "takeoffs": 0,
      "landings": 1,
      "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-17T04:00+03:00",
+     "label": "4 AM",
+     "takeoffs": 0,
+     "landings": 4,
+     "cancelled": 2
     }
    ],
    "totals": {
-    "takeoffs": 58,
-    "landings": 48,
-    "cancelled": 60
+    "takeoffs": 56,
+    "landings": 52,
+    "cancelled": 56
    },
    "halts": [
-    {
-     "start": "2026-10-16T03:30+03:00",
-     "end": "2026-10-16T04:17+03:00",
-     "label": "Halt 3:30\u20134:17 AM"
-    },
     {
      "start": "2026-10-16T04:23+03:00",
      "end": "2026-10-16T05:53+03:00",
@@ -1885,17 +1898,17 @@
     },
     {
      "start": "2026-10-17T03:06+03:00",
-     "end": null,
-     "label": "Halt since 3:06 AM"
+     "end": "2026-10-17T04:21+03:00",
+     "label": "Halt 3:06\u20134:21 AM"
     }
    ]
   },
   "halts": [
    {
-    "label": "Halt since 3:06 AM",
-    "minutes": 51,
+    "label": "Halt 3:06\u20134:21 AM",
+    "minutes": 76,
     "start": "2026-10-17T03:06+03:00",
-    "end": null
+    "end": "2026-10-17T04:21+03:00"
    },
    {
     "label": "Halt 1:50\u20132:41 AM",
@@ -6662,8 +6675,35 @@
   }
  },
  "news": {
-  "checked": "3:55 AM",
+  "checked": "4:55 AM",
   "items": [
+   {
+    "tag": "UNVERIFIED",
+    "title": "Trump says Saudi Arabia should accept Israel's offer of help against the Houthis",
+    "source": "Nepal News (X)",
+    "time": "4:47 AM",
+    "url": "https://x.com/Nepalnews_Eng/status/2111272900070343078",
+    "body": "Social and news accounts relay remarks by US President Donald Trump that Israel has been 'very helpful' to Saudi Arabia and that the Kingdom should accept its help against the Houthis. No Saudi official response has been published.",
+    "airport": null
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Iran denies any role in the Houthi attacks on Saudi Arabia; Riyadh says Tehran encouraged them",
+    "source": "X (@HormuzWatch)",
+    "time": "4:38 AM",
+    "url": "https://x.com/HormuzWatch/status/2111255487924912232",
+    "body": "Middle East Eye, relayed by several accounts, reports Iran denies involvement and says the Houthis act on their own interests, while Saudi Arabia says Tehran encouraged the attacks. No Saudi official statement on this was found in the official-channel check.",
+    "airport": null
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Brent reaches about $110 as Hormuz ship attacks and Houthi strikes on Saudi Arabia drive an oil rally",
+    "source": "Business Today (X)",
+    "time": "4:32 AM",
+    "url": "https://x.com/business_today/status/2111268994132906008",
+    "body": "Business Today reports Brent crude hit $110 a barrel on attacks on ships near Hormuz and Houthi strikes on the Kingdom. The report's own Brent quote is shown in the Economy section.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "King Khalid airport again tells travelers to follow official authorities and their airline for airspace updates",
@@ -6671,15 +6711,6 @@
     "time": "3:40 AM",
     "url": "https://x.com/KKIASA/status/2111255936966996233",
     "body": "Replying to a traveler, King Khalid International Airport said that for the latest airspace updates people should follow the competent official authorities or their airline. It gave no reopening time.",
-    "airport": null
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "Social accounts relay reports that Iran denied any role in the Houthi attacks on Saudi Arabia and offered to mediate",
-    "source": "X (@HormuzWatch)",
-    "time": "3:38 AM",
-    "url": "https://x.com/HormuzWatch/status/2111255487924912232",
-    "body": "An aggregator account posted that Iran's foreign ministry spokesman denied any Iranian role in the Houthi attacks, a day after Riyadh accused Tehran of encouraging the escalation, and offered to mediate. Not checked against an official Iranian or Saudi statement.",
     "airport": null
    },
    {
@@ -14167,8 +14198,8 @@
     "category": "airport",
     "airport": "DMM",
     "tag": "CONFIRMED",
-    "title": "DMM halt since 3:06 AM (ongoing)",
-    "detail": "No takeoff or landing for 51+ minutes (FR24 board).",
+    "title": "DMM halt 3:06\u20134:21 AM (76 min)",
+    "detail": "No takeoff or landing for 76 minutes (FR24 board).",
     "source": "DMM status tracker (FR24 board)",
     "url": "https://ruh-status.onrender.com"
    },
@@ -14202,22 +14233,11 @@
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "3:00 AM",
-  "window_start": "2026-10-17T03:00+03:00",
-  "window_end": "2026-10-17T03:56+03:00",
+  "prev_slot": "4:00 AM",
+  "window_start": "2026-10-17T04:00+03:00",
+  "window_end": "2026-10-17T04:54+03:00",
   "items": [],
   "last_24h": [
-   {
-    "date": "2026-10-16",
-    "time": "4:15 AM",
-    "city": "Vice Foreign Minister Waleed Elkhereiji tells European and African ambassadors that Houthi terrorist attacks on the Kingdom are war crimes",
-    "type": "attack",
-    "what": "Vice Foreign Minister Waleed Elkhereiji tells European and African ambassadors that Houthi terrorist attacks on the Kingdom are war crimes",
-    "source": "Al Ekhbariya",
-    "url": "https://x.com/alekhbariyatv/status/2110902396503179756",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
    {
     "date": "2026-10-16",
     "time": "5:39 AM",
@@ -14374,7 +14394,7 @@
    }
   ],
   "tally_24h": {
-   "attack": 3,
+   "attack": 2,
    "interception": 5,
    "alert": 3,
    "all_clear": 4,
@@ -14382,8 +14402,8 @@
    "casualties": 0,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Attacks 3, interceptions 5, alerts 3, all-clears 4.",
-  "none_text": "No new attacks, interceptions or alerts since 3:00 AM AST."
+  "tally_text": "Last 24 hours: Attacks 2, interceptions 5, alerts 3, all-clears 4.",
+  "none_text": "No new attacks, interceptions or alerts since 4:00 AM AST."
  },
  "airports": {
   "RUH": {
@@ -14391,7 +14411,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -14416,14 +14436,14 @@
     "due_not_operated": 10,
     "cancelled_in_window": 3,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-17T04:55:00+03:00",
+    "next_scheduled": "2026-10-17T05:05:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 1058,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14515,7 +14535,7 @@
       "label": "5 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 7
+      "cancelled": 8
      },
      {
       "hour_start": "2026-10-16T18:00:00+03:00",
@@ -14598,20 +14618,20 @@
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 164
+     "cancelled": 165
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 7641
+      "minutes": 7646
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 4358
+      "minutes": 4363
      }
     ]
    },
@@ -14620,13 +14640,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 4358
+     "minutes": 4363
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 7641
+     "minutes": 7646
     }
    ],
    "ksa_bot": {
@@ -14644,24 +14664,24 @@
    "city": "Jeddah",
    "name": "King Abdulaziz International",
    "pill": "NORMAL",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 JED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 9,
-    "landings_last_hour": 11,
-    "takeoffs_last_30": 5,
-    "landings_last_30": 3,
+    "takeoffs_last_hour": 8,
+    "landings_last_hour": 10,
+    "takeoffs_last_30": 3,
+    "landings_last_30": 2,
     "last_takeoff": {
      "time": "4:41 AM",
      "flight": "PF717",
      "city": "Lahore",
-     "minutes_ago": 8
+     "minutes_ago": 13
     },
     "last_landing": {
      "time": "4:41 AM",
      "flight": "SV1421",
      "city": "Medina",
-     "minutes_ago": 8
+     "minutes_ago": 13
     }
    },
    "cancellations": {
@@ -14674,19 +14694,19 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T04:41:41+03:00",
-    "minutes_since_last_movement": 8,
-    "movements_last_3h": 59,
+    "minutes_since_last_movement": 13,
+    "movements_last_3h": 57,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-17T04:55:00+03:00",
+    "next_scheduled": "2026-10-17T05:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 2060,
+    "board_rows": 2061,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -14912,25 +14932,25 @@
    "code": "DMM",
    "city": "Dammam",
    "name": "King Fahd International",
-   "pill": "HALTED",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "pill": "DISRUPTED",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
     "landings_last_hour": 4,
     "takeoffs_last_30": 0,
-    "landings_last_30": 4,
+    "landings_last_30": 2,
     "last_takeoff": {
      "time": "1:50 AM",
      "flight": "SV1131",
      "city": "Jeddah",
-     "minutes_ago": 179
+     "minutes_ago": 184
     },
     "last_landing": {
      "time": "4:31 AM",
      "flight": "7L8588",
      "city": "Frankfurt",
-     "minutes_ago": 19
+     "minutes_ago": 24
     }
    },
    "cancellations": {
@@ -14943,8 +14963,8 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T04:31:29+03:00",
-    "minutes_since_last_movement": 19,
-    "movements_last_3h": 9,
+    "minutes_since_last_movement": 24,
+    "movements_last_3h": 8,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
@@ -14966,12 +14986,12 @@
       "not_operated": 4
      }
     ],
-    "board_rows": 685,
+    "board_rows": 684,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -15252,24 +15272,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 4,
+    "takeoffs_last_hour": 5,
     "landings_last_hour": 2,
-    "takeoffs_last_30": 2,
+    "takeoffs_last_30": 3,
     "landings_last_30": 0,
     "last_takeoff": {
      "time": "4:35 AM",
      "flight": "TK139",
      "city": "Istanbul",
-     "minutes_ago": 15
+     "minutes_ago": 20
     },
     "last_landing": {
      "time": "4:17 AM",
      "flight": "MS693",
      "city": "Cairo",
-     "minutes_ago": 33
+     "minutes_ago": 38
     }
    },
    "cancellations": {
@@ -15277,24 +15297,24 @@
     "departures": 2,
     "arrivals": 4,
     "pct_of_scheduled": 3,
-    "scheduled": 191
+    "scheduled": 192
    },
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T04:35:00+03:00",
-    "minutes_since_last_movement": 15,
-    "movements_last_3h": 16,
+    "minutes_since_last_movement": 20,
+    "movements_last_3h": 17,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-17T05:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 614,
+    "board_rows": 615,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -15461,13 +15481,13 @@
      {
       "hour_start": "2026-10-17T04:00:00+03:00",
       "label": "4 AM",
-      "takeoffs": 3,
+      "takeoffs": 4,
       "landings": 2,
       "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 70,
+     "takeoffs": 71,
      "landings": 22,
      "cancelled": 24
     },
@@ -15551,7 +15571,7 @@
    "city": "Abha",
    "name": "Abha International",
    "pill": "QUIET",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 AHB boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -15562,13 +15582,13 @@
      "time": "6:24 PM",
      "flight": "SV8857",
      "city": "Jeddah",
-     "minutes_ago": 625
+     "minutes_ago": 630
     },
     "last_landing": {
      "time": "5:41 PM",
      "flight": "SV8856",
      "city": "Jeddah",
-     "minutes_ago": 668
+     "minutes_ago": 673
     }
    },
    "cancellations": {
@@ -15581,7 +15601,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-16T18:24:59+03:00",
-    "minutes_since_last_movement": 625,
+    "minutes_since_last_movement": 630,
     "movements_last_3h": 0,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -15593,7 +15613,7 @@
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -15811,7 +15831,7 @@
       "start": "2026-10-16T18:24:59+03:00",
       "end": null,
       "label": "Halt since 6:24 PM",
-      "minutes": 625
+      "minutes": 630
      }
     ]
    },
@@ -15820,7 +15840,7 @@
      "start": "2026-10-16T18:24:59+03:00",
      "end": null,
      "label": "Halt since 6:24 PM",
-     "minutes": 625
+     "minutes": 630
     },
     {
      "start": "2026-10-16T16:12:50+03:00",
@@ -15868,7 +15888,7 @@
    "city": "Jazan",
    "name": "King Abdullah bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 GIZ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -15900,7 +15920,7 @@
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -16095,7 +16115,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "QUIET",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -16106,13 +16126,13 @@
      "time": "2:41 AM",
      "flight": "XY1712",
      "city": "Dammam",
-     "minutes_ago": 128
+     "minutes_ago": 134
     },
     "last_landing": {
      "time": "1:54 AM",
      "flight": "XY711",
      "city": "Dammam",
-     "minutes_ago": 176
+     "minutes_ago": 181
     }
    },
    "cancellations": {
@@ -16125,8 +16145,8 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T02:41:31+03:00",
-    "minutes_since_last_movement": 128,
-    "movements_last_3h": 3,
+    "minutes_since_last_movement": 134,
+    "movements_last_3h": 2,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
@@ -16137,7 +16157,7 @@
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -16325,7 +16345,7 @@
       "start": "2026-10-17T02:41:31+03:00",
       "end": null,
       "label": "Halt since 2:41 AM",
-      "minutes": 128
+      "minutes": 134
      }
     ]
    },
@@ -16334,7 +16354,7 @@
      "start": "2026-10-17T02:41:31+03:00",
      "end": null,
      "label": "Halt since 2:41 AM",
-     "minutes": 128
+     "minutes": 134
     },
     {
      "start": "2026-10-16T02:33:43+03:00",
@@ -16382,7 +16402,7 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -16393,13 +16413,13 @@
      "time": "1:57 AM",
      "flight": "FZ872",
      "city": "Dubai",
-     "minutes_ago": 172
+     "minutes_ago": 177
     },
     "last_landing": {
      "time": "3:40 AM",
      "flight": "SV1254",
      "city": "Jeddah",
-     "minutes_ago": 70
+     "minutes_ago": 75
     }
    },
    "cancellations": {
@@ -16412,7 +16432,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T03:40:00+03:00",
-    "minutes_since_last_movement": 70,
+    "minutes_since_last_movement": 75,
     "movements_last_3h": 2,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -16424,7 +16444,7 @@
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -16642,7 +16662,7 @@
       "start": "2026-10-17T03:40:00+03:00",
       "end": null,
       "label": "Halt since 3:40 AM",
-      "minutes": 70
+      "minutes": 75
      }
     ]
    },
@@ -16651,7 +16671,7 @@
      "start": "2026-10-17T03:40:00+03:00",
      "end": null,
      "label": "Halt since 3:40 AM",
-     "minutes": 70
+     "minutes": 75
     },
     {
      "start": "2026-10-17T01:57:48+03:00",
@@ -16699,7 +16719,7 @@
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-17T04:50:01+03:00",
+   "as_of": "2026-10-17T04:55:01+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 1,
@@ -16710,13 +16730,13 @@
      "time": "4:17 AM",
      "flight": "SV1548",
      "city": "Jeddah",
-     "minutes_ago": 33
+     "minutes_ago": 38
     },
     "last_landing": {
      "time": "8:28 PM",
      "flight": "NP107",
      "city": "Cairo",
-     "minutes_ago": 502
+     "minutes_ago": 507
     }
    },
    "cancellations": {
@@ -16729,7 +16749,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-17T04:17:00+03:00",
-    "minutes_since_last_movement": 33,
+    "minutes_since_last_movement": 38,
     "movements_last_3h": 1,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -16747,7 +16767,7 @@
    },
    "flow24": {
     "start": "2026-10-16T05:00:00+03:00",
-    "end": "2026-10-17T04:50:01+03:00",
+    "end": "2026-10-17T04:55:01+03:00",
     "unit": "hour",
     "buckets": [
      {
