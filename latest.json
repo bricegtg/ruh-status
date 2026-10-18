@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-18T21:07:48+03:00",
+ "generated_at": "2026-10-18T21:11:46+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -15997,10 +15997,10 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-18T21:05:01+03:00",
+   "as_of": "2026-10-18T21:00:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 1,
+    "takeoffs_last_hour": 2,
     "landings_last_hour": 1,
     "takeoffs_last_30": 1,
     "landings_last_30": 1,
@@ -16008,13 +16008,13 @@
      "time": "8:54 PM",
      "flight": "SV1251",
      "city": "Jeddah",
-     "minutes_ago": 11
+     "minutes_ago": 6
     },
     "last_landing": {
      "time": "8:50 PM",
      "flight": "SVA264D",
      "city": "Istanbul",
-     "minutes_ago": 14
+     "minutes_ago": 9
     }
    },
    "cancellations": {
@@ -16027,8 +16027,8 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-18T20:54:11+03:00",
-    "minutes_since_last_movement": 11,
-    "movements_last_3h": 6,
+    "minutes_since_last_movement": 6,
+    "movements_last_3h": 7,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
@@ -16045,7 +16045,7 @@
    },
    "flow24": {
     "start": "2026-10-17T22:00:00+03:00",
-    "end": "2026-10-18T21:05:01+03:00",
+    "end": "2026-10-18T21:00:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -16349,8 +16349,8 @@
    "code": "TUU",
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
-   "pill": "QUIET",
-   "as_of": "2026-10-18T21:05:01+03:00",
+   "pill": "DISRUPTED",
+   "as_of": "2026-10-18T21:00:01+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -16361,13 +16361,13 @@
      "time": "7:03 PM",
      "flight": "FZ882",
      "city": "Dubai",
-     "minutes_ago": 122
+     "minutes_ago": 117
     },
     "last_landing": {
      "time": "8:20 PM",
      "flight": "XY449",
      "city": "Jeddah",
-     "minutes_ago": 45
+     "minutes_ago": 40
     }
    },
    "cancellations": {
@@ -16380,7 +16380,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-18T20:20:00+03:00",
-    "minutes_since_last_movement": 45,
+    "minutes_since_last_movement": 40,
     "movements_last_3h": 3,
     "due_not_operated": 1,
     "cancelled_in_window": 1,
@@ -16399,11 +16399,11 @@
      }
     ],
     "board_rows": 118,
-    "current_gap_kind": "halt"
+    "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-17T22:00:00+03:00",
-    "end": "2026-10-18T21:05:01+03:00",
+    "end": "2026-10-18T21:00:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -16634,22 +16634,10 @@
       "end": "2026-10-18T20:20:00+03:00",
       "label": "Halt 7:03\u20138:20 PM",
       "minutes": 77
-     },
-     {
-      "start": "2026-10-18T20:20:00+03:00",
-      "end": null,
-      "label": "Halt since 8:20 PM",
-      "minutes": 45
      }
     ]
    },
    "halts": [
-    {
-     "start": "2026-10-18T20:20:00+03:00",
-     "end": null,
-     "label": "Halt since 8:20 PM",
-     "minutes": 45
-    },
     {
      "start": "2026-10-18T19:03:00+03:00",
      "end": "2026-10-18T20:20:00+03:00",
@@ -16679,6 +16667,12 @@
      "end": "2026-10-18T11:25:00+03:00",
      "label": "Halt 10:25\u201311:25 AM",
      "minutes": 60
+    },
+    {
+     "start": "2026-10-18T04:14:00+03:00",
+     "end": "2026-10-18T09:43:00+03:00",
+     "label": "Halt 4:14\u20139:43 AM",
+     "minutes": 329
     }
    ],
    "ksa_bot": {
@@ -16688,7 +16682,7 @@
     "checked": "1:48 AM AST",
     "checked_at": null
    },
-   "auto_pill": "QUIET",
+   "auto_pill": "DISRUPTED",
    "pill_source": "auto (editor check stale)"
   }
  },
