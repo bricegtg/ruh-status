@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-18T04:56:00+03:00",
+ "generated_at": "2026-10-18T05:00:11+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -353,7 +353,7 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-18T04:55:01+03:00",
+  "as_of": "2026-10-18T05:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": null,
@@ -429,17 +429,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-17T05:00:00+03:00",
-   "end": "2026-10-18T04:55:01+03:00",
+   "start": "2026-10-17T06:00:00+03:00",
+   "end": "2026-10-18T05:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-17T05:00:00+03:00",
-     "label": "5 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 2
-    },
     {
      "hour_start": "2026-10-17T06:00:00+03:00",
      "label": "6 AM",
@@ -600,25 +593,32 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-18T05:00:00+03:00",
+     "label": "5 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 1
     }
    ],
    "totals": {
     "takeoffs": 0,
     "landings": 0,
-    "cancelled": 64
+    "cancelled": 63
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 9086
+     "minutes": 9091
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 5803
+     "minutes": 5808
     }
    ]
   },
@@ -627,13 +627,13 @@
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 5803
+    "minutes": 5808
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 9086
+    "minutes": 9091
    }
   ]
  },
@@ -13497,7 +13497,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-18T04:55:01+03:00",
+   "as_of": "2026-10-18T05:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -13519,26 +13519,19 @@
     "last_movement": null,
     "minutes_since_last_movement": null,
     "movements_last_3h": 0,
-    "due_not_operated": 31,
-    "cancelled_in_window": 21,
+    "due_not_operated": 29,
+    "cancelled_in_window": 20,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-18T05:10:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 1112,
+    "board_rows": 1116,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-17T05:00:00+03:00",
-    "end": "2026-10-18T04:55:01+03:00",
+    "start": "2026-10-17T06:00:00+03:00",
+    "end": "2026-10-18T05:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-17T05:00:00+03:00",
-      "label": "5 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 2
-     },
      {
       "hour_start": "2026-10-17T06:00:00+03:00",
       "label": "6 AM",
@@ -13699,25 +13692,32 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 6
+     },
+     {
+      "hour_start": "2026-10-18T05:00:00+03:00",
+      "label": "5 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 1
      }
     ],
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 64
+     "cancelled": 63
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 9086
+      "minutes": 9091
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 5803
+      "minutes": 5808
      }
     ]
    },
@@ -13726,13 +13726,13 @@
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 5803
+     "minutes": 5808
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 9086
+     "minutes": 9091
     }
    ],
    "ksa_bot": {
