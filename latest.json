@@ -1,25 +1,25 @@
 {
  "schema": 2,
- "generated_at": "2026-10-20T02:55:54+03:00",
+ "generated_at": "2026-10-20T03:00:13+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
   "title": "RUH & DMM Airport Status 3:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
   "slot": "3:00 AM",
-  "as_of": "2026-10-20T02:50:00+03:00",
-  "as_of_label": "2:50 AM",
+  "as_of": "2026-10-20T02:56:00+03:00",
+  "as_of_label": "2:56 AM",
   "date_long": "Tuesday 20 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 11,670 minutes at 12:00 AM (no movements since the 8:43 PM non-scheduled landing); Dammam moving, no open halt",
-  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (11,670 min); Dammam moving, 8 takeoffs and 9 landings since 9 PM; Tasnim Dammam drone report unconfirmed; FII postponed to 2027",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 11,670 minutes at 12:00 AM. No takeoff or landing while the halt is open. 95 flights are already cancelled for Tuesday (16% of scheduled) and 2 arrivals have diverted. Since the 9:00 PM edition Riyadh logged no takeoffs and no landings; the last movement was the non-scheduled landing of US-registered N437GA from Athens at 8:43 PM, which does not end the halt. Monday closed with 171 cancellations (72 departures, 99 arrivals, 29% of 589 scheduled). NOTAM A3650/26 still requires prior GACA permission for all traffic and GACA has announced no resumption of scheduled flights.",
-  "next_update": "3:00 AM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 11,850 minutes at 3:00 AM (no movements since the 8:43 PM Monday non-scheduled landing); Dammam moving again since 2:53 AM after two overnight halts",
+  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (11,850 min); Dammam moving after overnight halts 12:41\u20131:48 AM and 2:04\u20132:53 AM; no new attack or alert overnight",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 11,850 minutes at 3:00 AM. No takeoff or landing while the halt is open. 95 flights are already cancelled for Tuesday (16% of scheduled) and 2 arrivals have diverted. Since the 12:00 AM edition Riyadh logged no takeoffs and no landings; the last movement was the non-scheduled landing of US-registered N437GA from Athens at 8:43 PM Monday, which does not end the halt. Monday closed with 171 cancellations (72 departures, 99 arrivals, 29% of 589 scheduled). NOTAM A3650/26 still requires prior GACA permission for all traffic and GACA has announced no resumption of scheduled flights.",
+  "next_update": "6:00 AM",
   "kpis": {
    "cancelled_total": 95,
    "cancelled_departures": 43,
    "cancelled_arrivals": 52,
    "pct_of_scheduled": 16,
-   "scheduled": 592,
+   "scheduled": 593,
    "diverted": 2,
    "diverted_to": [
     "Dammam",
@@ -32,12 +32,12 @@
     "time": "8:43 PM",
     "flight": "N437GA",
     "city": "Athens",
-    "minutes_ago": 367
+    "minutes_ago": 372
    }
   },
   "flow24": {
    "start": "2026-10-19T03:00:00+03:00",
-   "end": "2026-10-20T02:50:00+03:00",
+   "end": "2026-10-20T02:56:00+03:00",
    "start_label": "3:00 AM Monday",
    "unit": "hour",
    "buckets": [
@@ -220,7 +220,7 @@
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 11841
+     "minutes": 11847
     },
     {
      "start": "2026-10-19T16:27:56+03:00",
@@ -241,7 +241,7 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 11841
+    "minutes": 11847
    }
   ],
   "gulf": [],
@@ -696,7 +696,7 @@
   ]
  },
  "maritime": {
-  "updated": "2026-10-20T02:51:28.547640+03:00",
+  "updated": "2026-10-20T02:56:44.945608+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -761,40 +761,40 @@
   }
  },
  "summary": {
-  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (11,670 min); Dammam moving, 8 takeoffs and 9 landings since 9 PM; Tasnim Dammam drone report unconfirmed; FII postponed to 2027",
-  "as_of": "2026-10-20T02:50+03:00",
+  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (11,850 min); Dammam moving after overnight halts 12:41\u20131:48 AM and 2:04\u20132:53 AM; no new attack or alert overnight",
+  "as_of": "2026-10-20T02:56+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (11841 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (11847 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "No takeoff or landing since 2:04 AM (46 min)."
+    "status_line": "0 takeoffs and 2 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday 11 Oct (11,490 min at 9:00 PM); since 6 PM no takeoffs and one non-scheduled landing, N437GA from Athens at 8:43 PM",
-   "FII Institute postpones the FII10 conference in Riyadh (26 to 29 Oct) to 2027 (6:14 PM)",
-   "Houthi spokesman claims six strikes in 48 hours on Yanbu, Shaybah, Riyadh and Abha airports and Khamis Mushait (7:41 PM); not confirmed by Saudi authorities",
-   "No new Civil Defense alert, interception, debris or casualty report in Saudi Arabia since 6:00 PM",
-   "Dammam since 6 PM: 12 takeoffs (latest RJ741 to Amman 8:46 PM) and 13 landings (latest SV1124 from Jeddah 8:45 PM), no halt"
+   "Riyadh still halted since 9:29 PM Sunday 11 Oct (11,850 min at 3:00 AM); no takeoffs or landings since the 12 AM edition",
+   "Dammam halted twice overnight, 12:41 to 1:48 AM (66 min) and 2:04 to 2:53 AM (49 min); moving again with flynas XY895 from Cairo landing at 2:53 AM",
+   "No new Civil Defense alert, interception, attack, debris or casualty report in Saudi Arabia since 12:00 AM",
+   "US Mission Saudi Arabia security alert (12:40 AM) repeats that US government staff need Chief of Mission authorization to use any Saudi airport",
+   "Al Ekhbariya: OIC to create a council of cybersecurity ministers headquartered in Riyadh, on a Saudi proposal (1:40 AM)"
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (11841 min).",
-  "as_of": "2026-10-20T02:50+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (11847 min).",
+  "as_of": "2026-10-20T02:56+03:00",
   "kpis": {
    "cancelled_total": 95,
    "cancelled_departures": 43,
    "cancelled_arrivals": 52,
    "pct_of_scheduled": 16,
-   "scheduled": 592,
+   "scheduled": 593,
    "diverted": 2,
    "diverted_to": [
     "Dammam",
@@ -811,7 +811,7 @@
   },
   "flow24": {
    "start": "2026-10-19T03:00+03:00",
-   "end": "2026-10-20T02:50+03:00",
+   "end": "2026-10-20T02:56+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-19T03:00+03:00",
@@ -1009,7 +1009,7 @@
    },
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 11841,
+    "minutes": 11847,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -1017,8 +1017,8 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "No takeoff or landing since 2:04 AM (46 min).",
-  "as_of": "2026-10-20T02:50+03:00",
+  "status_line": "0 takeoffs and 2 landings in the last hour.",
+  "as_of": "2026-10-20T02:56+03:00",
   "kpis": {
    "cancelled_total": 31,
    "cancelled_departures": 16,
@@ -1028,21 +1028,21 @@
    "diverted": 0,
    "diverted_to": [],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 1,
+   "landings_last_hour": 2,
    "last_takeoff": {
     "time": "1:48 AM",
     "flight": "XY407",
     "city": "Jeddah"
    },
    "last_landing": {
-    "time": "2:04 AM",
-    "flight": "F3466",
-    "city": "Madinah"
+    "time": "2:53 AM",
+    "flight": "XY895",
+    "city": "Cairo"
    }
   },
   "flow24": {
    "start": "2026-10-19T03:00+03:00",
-   "end": "2026-10-20T02:50+03:00",
+   "end": "2026-10-20T02:56+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-19T03:00+03:00",
@@ -1209,13 +1209,13 @@
      "hour_start": "2026-10-20T02:00+03:00",
      "label": "2 AM",
      "takeoffs": 0,
-     "landings": 1,
+     "landings": 2,
      "cancelled": 1
     }
    ],
    "totals": {
     "takeoffs": 55,
-    "landings": 55,
+    "landings": 56,
     "cancelled": 29
    },
    "halts": [
@@ -1236,17 +1236,17 @@
     },
     {
      "start": "2026-10-20T02:04+03:00",
-     "end": null,
-     "label": "Halt since 2:04 AM"
+     "end": "2026-10-20T02:53+03:00",
+     "label": "Halt 2:04\u20132:53 AM"
     }
    ]
   },
   "halts": [
    {
-    "label": "Halt since 2:04 AM",
-    "minutes": 46,
+    "label": "Halt 2:04\u20132:53 AM",
+    "minutes": 49,
     "start": "2026-10-20T02:04+03:00",
-    "end": null
+    "end": "2026-10-20T02:53+03:00"
    },
    {
     "label": "Halt 12:41\u20131:48 AM",
@@ -14232,8 +14232,8 @@
     "category": "airport",
     "airport": "DMM",
     "tag": "CONFIRMED",
-    "title": "DMM halt since 2:04 AM (ongoing)",
-    "detail": "No takeoff or landing for 46+ minutes (FR24 board).",
+    "title": "DMM halt 2:04\u20132:53 AM (49 min)",
+    "detail": "No takeoff or landing for 49 minutes (FR24 board).",
     "source": "DMM status tracker (FR24 board)",
     "url": "https://ruh-status.onrender.com"
    }
@@ -14243,7 +14243,7 @@
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
   "prev_slot": "12:00 AM",
   "window_start": "2026-10-20T00:00+03:00",
-  "window_end": "2026-10-20T02:50+03:00",
+  "window_end": "2026-10-20T02:56+03:00",
   "items": [],
   "last_24h": [
    {
