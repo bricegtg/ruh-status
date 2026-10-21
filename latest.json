@@ -1,72 +1,52 @@
 {
  "schema": 2,
- "generated_at": "2026-10-21T15:03:55+03:00",
+ "generated_at": "2026-10-21T18:00:22+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 3:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "3:00 PM",
-  "as_of": "2026-10-21T14:55:00+03:00",
-  "as_of_label": "2:55 PM",
+  "title": "RUH & DMM Airport Status 6:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "6:00 PM",
+  "as_of": "2026-10-21T17:53:00+03:00",
+  "as_of_label": "5:53 PM",
   "date_long": "Wednesday 21 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 14,011 minutes at 3:00 PM (only non-airline HZA8 landed at 1:59 PM); Dammam moving, no halt since 5:59 AM",
-  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (14,011 min); only a non-airline landing (HZA8, 1:59 PM); no new attack since this morning's 5 drone intercepts; Dammam moving",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 13,651 minutes at 9:00 AM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights. 227 Riyadh flights are already cancelled for Wednesday (36% of scheduled) and 4 arrivals have diverted. Since the 9:00 AM edition Riyadh logged no takeoffs and no landings, and none in the last hour. The last movements were the delayed Saudia SV982 to Hong Kong at 3:02 AM and the non-airline flight HZA8 to Heraklion at 4:33 AM; the last landing was Saudia SV979 from Guangzhou at 7:51 PM Tuesday. No Riyadh halt started or ended since 9:00 AM; the open halt continues.",
-  "next_update": "6:00 PM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 14,191 minutes at 6:00 PM (no takeoff or landing since 3:00 PM); Dammam moving, no halt since 5:59 AM",
+  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (14,191 min); no movement since 3:00 PM; no new attack since this morning's drone intercepts; Dammam moving",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 13,651 minutes at 9:00 AM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights. 267 Riyadh flights are already cancelled for Wednesday (42% of scheduled) and 6 arrivals have diverted. Since the 3:00 PM edition Riyadh logged no takeoffs and no landings, and none in the last hour. The last airline takeoff was the delayed Saudia SV982 to Hong Kong at 3:02 AM; the last movement was non-airline HZA8 landing from Heraklion at 1:59 PM. French President Macron's state flight arrived by 4:23 PM but is not on the airline boards. No Riyadh halt started or ended since 3:00 PM; the open halt continues.",
+  "next_update": "9:00 PM",
   "kpis": {
-   "cancelled_total": 227,
-   "cancelled_departures": 107,
-   "cancelled_arrivals": 120,
-   "pct_of_scheduled": 36,
+   "cancelled_total": 267,
+   "cancelled_departures": 128,
+   "cancelled_arrivals": 139,
+   "pct_of_scheduled": 42,
    "scheduled": 631,
-   "diverted": 4,
+   "diverted": 6,
    "diverted_to": [
     "Jeddah",
-    "Dammam"
+    "Dammam",
+    "Madinah"
    ],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 1,
+   "landings_last_hour": 0,
    "last_takeoff": {
     "time": "4:33 AM",
     "flight": "HZA8",
     "city": "Heraklion",
-    "minutes_ago": 622
+    "minutes_ago": 800
    },
    "last_landing": {
     "time": "1:59 PM",
     "flight": "HZA8",
     "city": "Heraklion",
-    "minutes_ago": 56
+    "minutes_ago": 234
    }
   },
   "flow24": {
-   "start": "2026-10-20T15:00:00+03:00",
-   "end": "2026-10-21T14:55:00+03:00",
-   "start_label": "3:00 PM Tuesday",
+   "start": "2026-10-20T18:00:00+03:00",
+   "end": "2026-10-21T17:53:00+03:00",
+   "start_label": "6:00 PM Tuesday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-20T15:00:00+03:00",
-     "label": "3 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 25
-    },
-    {
-     "hour_start": "2026-10-20T16:00:00+03:00",
-     "label": "4 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 26
-    },
-    {
-     "hour_start": "2026-10-20T17:00:00+03:00",
-     "label": "5 PM",
-     "takeoffs": 1,
-     "landings": 0,
-     "cancelled": 27
-    },
     {
      "hour_start": "2026-10-20T18:00:00+03:00",
      "label": "6 PM",
@@ -107,14 +87,14 @@
      "label": "11 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 24
+     "cancelled": 25
     },
     {
      "hour_start": "2026-10-21T00:00:00+03:00",
      "label": "12 AM",
      "takeoffs": 1,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 18
     },
     {
      "hour_start": "2026-10-21T01:00:00+03:00",
@@ -135,21 +115,21 @@
      "label": "3 AM",
      "takeoffs": 1,
      "landings": 0,
-     "cancelled": 8
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-21T04:00:00+03:00",
      "label": "4 AM",
      "takeoffs": 1,
      "landings": 0,
-     "cancelled": 9
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-21T05:00:00+03:00",
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-21T06:00:00+03:00",
@@ -213,25 +193,40 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 14
+    },
+    {
+     "hour_start": "2026-10-21T15:00:00+03:00",
+     "label": "3 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 14
+    },
+    {
+     "hour_start": "2026-10-21T16:00:00+03:00",
+     "label": "4 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 17
+    },
+    {
+     "hour_start": "2026-10-21T17:00:00+03:00",
+     "label": "5 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 14
     }
    ],
    "totals": {
-    "takeoffs": 4,
+    "takeoffs": 3,
     "landings": 2,
-    "cancelled": 405
+    "cancelled": 381
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 14006
-    },
-    {
-     "start": "2026-10-20T11:05:43+03:00",
-     "end": "2026-10-20T17:36:43+03:00",
-     "label": "Halt 11:05 AM\u20135:36 PM",
-     "minutes": 391
+     "minutes": 14184
     },
     {
      "start": "2026-10-20T17:36:43+03:00",
@@ -305,9 +300,72 @@
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh still halted; Yemen's central bank freezes Houthi-linked assets; Dammam moving",
-  "news_checked": "2:58 PM AST Wed 21 Oct",
+  "news_title": "Riyadh still halted; Macron in Riyadh; airport gives no reopening date; Dammam moving",
+  "news_checked": "5:56 PM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Crown Prince Mohammed bin Salman receives French President Emmanuel Macron in Riyadh",
+    "source": "Al Ekhbariya (@alekhbariyatv) / SPA",
+    "time": "5:23 PM",
+    "extra": "published 5:23 PM AST Wed 21 Oct (Saudi state TV, translated from Arabic); SPA English 5:27 PM; checked 5:56 PM",
+    "body": "Saudi state TV and SPA reported the Crown Prince receiving President Macron in Riyadh on Wednesday evening. Saudi Gazette reported at 5:29 PM that Macron pledged French military support against Houthi attacks; no French or Saudi text of that pledge was found yet.",
+    "url": "https://x.com/alekhbariyatv/status/2112912658454179975"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense urges caution as thunderstorms continue across most regions until Monday",
+    "source": "Saudi Civil Defense (@SaudiDCD) / SPA",
+    "time": "5:34 PM",
+    "extra": "published 4:55 PM (SPA) and 5:34 PM AST Wed 21 Oct (translated from Arabic); checked 5:56 PM",
+    "body": "Civil Defense says thunderstorms will continue over most of the Kingdom until next Monday and asks people to take care. Earlier, at 3:46 to 3:47 PM, it issued weather warnings for parts of the Makkah, Asir and Al Baha regions. This is a weather notice, not an attack warning.",
+    "url": "https://x.com/SaudiDCD/status/2112915490418970825"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Saudi state TV: Houthis block trucks with medicine, food and fuel from entering Taiz",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "5:03 PM",
+    "extra": "published 5:03 PM AST Wed 21 Oct (Saudi state TV correspondent in Yemen, translated from Arabic); checked 5:56 PM",
+    "body": "Al Ekhbariya's Yemen correspondent says the Houthis are stopping trucks carrying medical supplies, food and fuel from entering Taiz, and that more than 1.5 million residents are suffering under the siege, with hospitals appealing for help.",
+    "url": "https://x.com/alekhbariyatv/status/2112907693811806220"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Riyadh airport account gives no reopening date, tells travellers to follow the authorities and their airline",
+    "source": "King Khalid International Airport (@KKIASA)",
+    "time": "4:58 PM",
+    "extra": "reply posted 4:58 PM AST Wed 21 Oct to a traveller asking about the airport reopening; checked 5:56 PM",
+    "body": "Asked for an update on the airport reopening, the official Riyadh airport account replied that travellers should follow the official competent authorities for airspace updates and contact the airline they booked with. It gave no date for scheduled flights to resume.",
+    "url": "https://x.com/KKIASA/status/2112906341555790136"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "French President Macron lands at King Khalid International Airport, Riyadh",
+    "source": "SPA (@SPAregions) / Al Arabiya English",
+    "time": "4:23 PM",
+    "extra": "SPA published 4:23 PM AST Wed 21 Oct; Al Arabiya English 4:33 PM named King Khalid International Airport; checked 5:56 PM",
+    "body": "SPA and Al Ekhbariya said President Macron arrived in Riyadh and was met by the Deputy Governor of the Riyadh region; Al Arabiya English said the reception was at King Khalid International Airport. The state flight does not appear on the Flightradar24 airline boards, which still show no airline takeoff or landing at Riyadh since 3:02 AM.",
+    "url": "https://x.com/SPAregions/status/2112897623292080355"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Saudi and Jordanian foreign ministers sign amended coordination council protocol and review regional developments",
+    "source": "SPA (@SPAregions) / Al Ekhbariya",
+    "time": "4:11 PM",
+    "extra": "SPA published 4:11 PM AST, Al Ekhbariya 4:28 PM Wed 21 Oct (translated from Arabic); checked 5:56 PM",
+    "body": "Prince Faisal bin Farhan received Jordan's foreign minister in Riyadh and they signed an amended protocol for the Saudi-Jordanian Supreme Coordination Council chaired by the Crown Prince and the King of Jordan. Al Ekhbariya says they discussed regional events, led by the Houthis' continued strikes on Saudi territory.",
+    "url": "https://x.com/alekhbariyatv/status/2112898849379381262"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "AP: Riyadh airport open to limited domestic traffic, with Saudia and flynas flying on Wednesday",
+    "source": "AP",
+    "time": "3:22 PM",
+    "extra": "published 3:22 PM AST Wed 21 Oct, citing FlightAware; checked 5:56 PM",
+    "body": "AP reports a limited number of Saudi airline flights took off and landed at Riyadh on Wednesday, two days after airlines were told they could resume with prior GACA permission (NOTAM A3650/26). The Flightradar24 boards we check show only the delayed Saudia SV982 departure at 3:02 AM and non-airline HZA8 today, so we cannot confirm a resumption.",
+    "url": "https://apnews.com/article/mideast-yemen-saudi-israel-gaza-october-21-2026-f9b9c553a5b3c689fc3c8c5be1d75b94"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Yemeni government forces repel a Houthi attack southeast of Taiz, killing and wounding dozens of militia fighters",
@@ -327,15 +385,6 @@
     "url": "https://x.com/alekhbariyatv/status/2112808102294683947"
    },
    {
-    "tag": "CLAIM",
-    "title": "Iran says Saudi Arabia has not yet answered its offer to mediate with the Houthis",
-    "source": "Al Arabiya English (@AlArabiya_Eng)",
-    "time": "10:01 AM",
-    "extra": "posted 10:01 AM AST Wed 21 Oct, quoting Iranian Foreign Minister Abbas Araghchi; no Saudi comment; checked 11:58 AM",
-    "body": "Al Arabiya English quoted Iranian Foreign Minister Abbas Araghchi as saying Saudi Arabia has not yet responded to Iran's offer to mediate between the Kingdom and the Houthis. Riyadh has made no public statement on the offer.",
-    "url": "https://x.com/AlArabiya_Eng/status/2112801386777710607"
-   },
-   {
     "tag": "CONFIRMED",
     "title": "Coalition: another drone launched toward the Eastern Region intercepted and destroyed",
     "source": "Coalition spokesman (@CJFCSpox)",
@@ -352,64 +401,10 @@
     "extra": "published 6:52 AM AST Wed 21 Oct (Arabic, translated); SPA English 7:18 and 7:28 AM, also Al Ekhbariya, Arab News; checked 8:56 AM",
     "body": "The coalition said four drones launched toward the Kingdom were intercepted and destroyed, and that the interceptions took place in the Madinah and Eastern regions. It did not say who launched them or report any damage or casualties.",
     "url": "https://x.com/CJFCSpox/status/2112753944879300786"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Aden: growing numbers of people displaced fleeing Houthi fire",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "5:23 AM",
-    "extra": "published 5:23 AM AST Wed 21 Oct (Saudi state TV, translated from Arabic); checked 5:58 AM",
-    "body": "Saudi state channel Al Ekhbariya reported a rising number of people arriving in Aden after fleeing fire from the Houthi militia. No figures were given in the post.",
-    "url": "https://x.com/alekhbariyatv/status/2112731585166389576"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Saudi ambassador to Yemen: the Kingdom will protect its people, security and territory; Taiz will not be held hostage",
-    "source": "Saudi Ambassador Mohammed Al Jaber via SABA (Yemeni state news agency)",
-    "time": "4:20 AM",
-    "extra": "posted 4:20 AM AST Wed 21 Oct via the Yemeni Embassy in Pakistan's account quoting SABA; checked 5:58 AM",
-    "body": "Saudi Ambassador to Yemen Mohammed Al Jaber said the Houthi militia trades on Yemenis' suffering, that Yemen does not belong to it and that Taiz will not be held hostage to its project, adding that the Kingdom will protect its people, security and territory.",
-    "url": "https://x.com/YemenEmbassyPk/status/2112715521015623758"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "UN calls for aid access to besieged Taiz; Yemen's endowments ministry calls the Houthi siege a crime",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "3:39 AM",
-    "extra": "published 3:39 AM and 4:17 AM AST Wed 21 Oct (Saudi state TV, translated from Arabic); checked 5:58 AM",
-    "body": "Al Ekhbariya reported that the United Nations is calling for humanitarian aid to be allowed into Taiz province, which is besieged by the Houthis. Yemen's Ministry of Endowments told the channel the siege is a crime with no religious, customary or legal basis, and thanked Saudi Arabia for facilities given to Yemeni pilgrims.",
-    "url": "https://x.com/alekhbariyatv/status/2112705390198624421"
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "Unconfirmed reports of Houthi-Saudi border clashes near Jazan",
-    "source": "X account @MEBriefNews",
-    "time": "3:51 AM",
-    "extra": "posted 3:51 AM AST Wed 21 Oct; described by the poster as preliminary, no Saudi or coalition confirmation and no independent outlet reporting a crossing; checked 5:58 AM",
-    "body": "An X news account reported preliminary claims of clashes between Houthi supporters and Saudi forces along the border, raising the possibility of a crossing into Jazan. No authority has confirmed it; the only verified material is Houthi video of drone strikes on Saudi border positions in Jizan and Asir released Tuesday evening.",
-    "url": "https://x.com/MEBriefNews/status/2112708375133999127"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Yemeni armed forces say about 200 Houthi fighters neutralised and 90 vehicles destroyed or disabled",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "2:45 AM",
-    "extra": "published 2:45 AM AST Wed 21 Oct (Saudi state TV, translated from Arabic); figures are the Yemeni forces' own, not independently verified; checked 2:56 AM",
-    "body": "Saudi state channel Al Ekhbariya, citing Yemen's government armed forces, reported that about 200 Houthi fighters were neutralised and 90 vehicles and pieces of military equipment destroyed or disabled. No location or time frame was given in the post.",
-    "url": "https://x.com/alekhbariyatv/status/2112691706755698950"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Saudi Cabinet: regional stability and freedom of navigation are an international responsibility",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "12:59 AM",
-    "extra": "published 12:59 AM AST Wed 21 Oct in Al Ekhbariya's Tuesday roundup (translated from Arabic); checked 2:56 AM",
-    "body": "Al Ekhbariya's roundup of Tuesday's news led with the Cabinet saying that strengthening regional stability and keeping navigation secure is an international responsibility, alongside the destruction of the launcher behind Tuesday's Riyadh missile.",
-    "url": "https://x.com/alekhbariyatv/status/2112665114935713910"
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_300PM_21Oct2026.pdf",
+  "pdf_name": "RUH_status_report_600PM_21Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
@@ -775,7 +770,7 @@
   ]
  },
  "maritime": {
-  "updated": "2026-10-21T14:56:31.335635+03:00",
+  "updated": "2026-10-21T17:54:35.221345+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -840,20 +835,20 @@
   }
  },
  "summary": {
-  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (14,011 min); only a non-airline landing (HZA8, 1:59 PM); no new attack since this morning's 5 drone intercepts; Dammam moving",
-  "as_of": "2026-10-21T14:55+03:00",
+  "headline": "Riyadh still halted since 9:29 PM Sunday 11 Oct (14,191 min); no movement since 3:00 PM; no new attack since this morning's drone intercepts; Dammam moving",
+  "as_of": "2026-10-21T17:53+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (14006 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (14184 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "3 takeoffs and 5 landings in the last hour."
+    "status_line": "1 takeoff and 1 landing in the last hour."
    }
   ],
   "changed": [
@@ -866,21 +861,22 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (14006 min).",
-  "as_of": "2026-10-21T14:55+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (14184 min).",
+  "as_of": "2026-10-21T17:53+03:00",
   "kpis": {
-   "cancelled_total": 227,
-   "cancelled_departures": 107,
-   "cancelled_arrivals": 120,
-   "pct_of_scheduled": 36,
+   "cancelled_total": 267,
+   "cancelled_departures": 128,
+   "cancelled_arrivals": 139,
+   "pct_of_scheduled": 42,
    "scheduled": 631,
-   "diverted": 4,
+   "diverted": 6,
    "diverted_to": [
     "Jeddah",
-    "Dammam"
+    "Dammam",
+    "Madinah"
    ],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 1,
+   "landings_last_hour": 0,
    "last_takeoff": {
     "time": "4:33 AM",
     "flight": "HZA8",
@@ -893,30 +889,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-20T15:00+03:00",
-   "end": "2026-10-21T14:55+03:00",
+   "start": "2026-10-20T18:00+03:00",
+   "end": "2026-10-21T17:53+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-20T15:00+03:00",
-     "label": "3 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 25
-    },
-    {
-     "hour_start": "2026-10-20T16:00+03:00",
-     "label": "4 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 26
-    },
-    {
-     "hour_start": "2026-10-20T17:00+03:00",
-     "label": "5 PM",
-     "takeoffs": 1,
-     "landings": 0,
-     "cancelled": 27
-    },
     {
      "hour_start": "2026-10-20T18:00+03:00",
      "label": "6 PM",
@@ -957,14 +932,14 @@
      "label": "11 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 24
+     "cancelled": 25
     },
     {
      "hour_start": "2026-10-21T00:00+03:00",
      "label": "12 AM",
      "takeoffs": 1,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 18
     },
     {
      "hour_start": "2026-10-21T01:00+03:00",
@@ -985,21 +960,21 @@
      "label": "3 AM",
      "takeoffs": 1,
      "landings": 0,
-     "cancelled": 8
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-21T04:00+03:00",
      "label": "4 AM",
      "takeoffs": 1,
      "landings": 0,
-     "cancelled": 9
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-21T05:00+03:00",
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-21T06:00+03:00",
@@ -1063,23 +1038,39 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 14
+    },
+    {
+     "hour_start": "2026-10-21T15:00+03:00",
+     "label": "3 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 14
+    },
+    {
+     "hour_start": "2026-10-21T16:00+03:00",
+     "label": "4 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 17
+    },
+    {
+     "hour_start": "2026-10-21T17:00+03:00",
+     "label": "5 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 14
     }
    ],
    "totals": {
-    "takeoffs": 4,
+    "takeoffs": 3,
     "landings": 2,
-    "cancelled": 405
+    "cancelled": 381
    },
    "halts": [
     {
      "start": "2026-10-11T21:29+03:00",
      "end": null,
      "label": "Halt since 9:29 PM"
-    },
-    {
-     "start": "2026-10-20T11:05+03:00",
-     "end": "2026-10-20T17:36+03:00",
-     "label": "Halt 11:05 AM\u20135:36 PM"
     },
     {
      "start": "2026-10-20T17:36+03:00",
@@ -1149,54 +1140,33 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "3 takeoffs and 5 landings in the last hour.",
-  "as_of": "2026-10-21T14:55+03:00",
+  "status_line": "1 takeoff and 1 landing in the last hour.",
+  "as_of": "2026-10-21T17:53+03:00",
   "kpis": {
-   "cancelled_total": 51,
-   "cancelled_departures": 24,
-   "cancelled_arrivals": 27,
-   "pct_of_scheduled": 22,
+   "cancelled_total": 57,
+   "cancelled_departures": 27,
+   "cancelled_arrivals": 30,
+   "pct_of_scheduled": 25,
    "scheduled": 229,
    "diverted": 0,
    "diverted_to": [],
-   "takeoffs_last_hour": 3,
-   "landings_last_hour": 5,
+   "takeoffs_last_hour": 1,
+   "landings_last_hour": 1,
    "last_takeoff": {
-    "time": "2:53 PM",
-    "flight": "F3431",
-    "city": "Abha"
+    "time": "5:36 PM",
+    "flight": "G9168",
+    "city": "Sharjah"
    },
    "last_landing": {
-    "time": "2:50 PM",
-    "flight": "SV1116",
+    "time": "5:33 PM",
+    "flight": "XY420",
     "city": "Jeddah"
    }
   },
   "flow24": {
-   "start": "2026-10-20T15:00+03:00",
-   "end": "2026-10-21T14:55+03:00",
+   "start": "2026-10-20T18:00+03:00",
+   "end": "2026-10-21T17:53+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-20T15:00+03:00",
-     "label": "3 PM",
-     "takeoffs": 6,
-     "landings": 3,
-     "cancelled": 5
-    },
-    {
-     "hour_start": "2026-10-20T16:00+03:00",
-     "label": "4 PM",
-     "takeoffs": 3,
-     "landings": 3,
-     "cancelled": 5
-    },
-    {
-     "hour_start": "2026-10-20T17:00+03:00",
-     "label": "5 PM",
-     "takeoffs": 2,
-     "landings": 1,
-     "cancelled": 3
-    },
     {
      "hour_start": "2026-10-20T18:00+03:00",
      "label": "6 PM",
@@ -1286,7 +1256,7 @@
      "label": "6 AM",
      "takeoffs": 3,
      "landings": 2,
-     "cancelled": 0
+     "cancelled": 1
     },
     {
      "hour_start": "2026-10-21T07:00+03:00",
@@ -1343,12 +1313,33 @@
      "takeoffs": 3,
      "landings": 4,
      "cancelled": 3
+    },
+    {
+     "hour_start": "2026-10-21T15:00+03:00",
+     "label": "3 PM",
+     "takeoffs": 4,
+     "landings": 1,
+     "cancelled": 3
+    },
+    {
+     "hour_start": "2026-10-21T16:00+03:00",
+     "label": "4 PM",
+     "takeoffs": 1,
+     "landings": 3,
+     "cancelled": 3
+    },
+    {
+     "hour_start": "2026-10-21T17:00+03:00",
+     "label": "5 PM",
+     "takeoffs": 1,
+     "landings": 1,
+     "cancelled": 2
     }
    ],
    "totals": {
-    "takeoffs": 65,
-    "landings": 55,
-    "cancelled": 71
+    "takeoffs": 60,
+    "landings": 53,
+    "cancelled": 67
    },
    "halts": [
     {
@@ -4957,9 +4948,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-21",
-    "usd": 109.53,
+    "usd": 109.07,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-21T14:46+03:00"
+    "time": "2026-10-21T17:44+03:00"
    },
    "spot_latest": {
     "date": "2026-10-14",
@@ -6250,15 +6241,78 @@
     },
     {
      "date": "2026-10-21",
-     "usd": 109.53
+     "usd": 109.07
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "2:58 PM AST Wed 21 Oct",
+  "checked": "5:56 PM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Crown Prince Mohammed bin Salman receives French President Emmanuel Macron in Riyadh",
+    "source": "Al Ekhbariya (@alekhbariyatv) / SPA",
+    "time": "5:23 PM",
+    "url": "https://x.com/alekhbariyatv/status/2112912658454179975",
+    "body": "Saudi state TV and SPA reported the Crown Prince receiving President Macron in Riyadh on Wednesday evening. Saudi Gazette reported at 5:29 PM that Macron pledged French military support against Houthi attacks; no French or Saudi text of that pledge was found yet.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense urges caution as thunderstorms continue across most regions until Monday",
+    "source": "Saudi Civil Defense (@SaudiDCD) / SPA",
+    "time": "5:34 PM",
+    "url": "https://x.com/SaudiDCD/status/2112915490418970825",
+    "body": "Civil Defense says thunderstorms will continue over most of the Kingdom until next Monday and asks people to take care. Earlier, at 3:46 to 3:47 PM, it issued weather warnings for parts of the Makkah, Asir and Al Baha regions. This is a weather notice, not an attack warning.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Saudi state TV: Houthis block trucks with medicine, food and fuel from entering Taiz",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "5:03 PM",
+    "url": "https://x.com/alekhbariyatv/status/2112907693811806220",
+    "body": "Al Ekhbariya's Yemen correspondent says the Houthis are stopping trucks carrying medical supplies, food and fuel from entering Taiz, and that more than 1.5 million residents are suffering under the siege, with hospitals appealing for help.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Riyadh airport account gives no reopening date, tells travellers to follow the authorities and their airline",
+    "source": "King Khalid International Airport (@KKIASA)",
+    "time": "4:58 PM",
+    "url": "https://x.com/KKIASA/status/2112906341555790136",
+    "body": "Asked for an update on the airport reopening, the official Riyadh airport account replied that travellers should follow the official competent authorities for airspace updates and contact the airline they booked with. It gave no date for scheduled flights to resume.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "French President Macron lands at King Khalid International Airport, Riyadh",
+    "source": "SPA (@SPAregions) / Al Arabiya English",
+    "time": "4:23 PM",
+    "url": "https://x.com/SPAregions/status/2112897623292080355",
+    "body": "SPA and Al Ekhbariya said President Macron arrived in Riyadh and was met by the Deputy Governor of the Riyadh region; Al Arabiya English said the reception was at King Khalid International Airport. The state flight does not appear on the Flightradar24 airline boards, which still show no airline takeoff or landing at Riyadh since 3:02 AM.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Saudi and Jordanian foreign ministers sign amended coordination council protocol and review regional developments",
+    "source": "SPA (@SPAregions) / Al Ekhbariya",
+    "time": "4:11 PM",
+    "url": "https://x.com/alekhbariyatv/status/2112898849379381262",
+    "body": "Prince Faisal bin Farhan received Jordan's foreign minister in Riyadh and they signed an amended protocol for the Saudi-Jordanian Supreme Coordination Council chaired by the Crown Prince and the King of Jordan. Al Ekhbariya says they discussed regional events, led by the Houthis' continued strikes on Saudi territory.",
+    "airport": null
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "AP: Riyadh airport open to limited domestic traffic, with Saudia and flynas flying on Wednesday",
+    "source": "AP",
+    "time": "3:22 PM",
+    "url": "https://apnews.com/article/mideast-yemen-saudi-israel-gaza-october-21-2026-f9b9c553a5b3c689fc3c8c5be1d75b94",
+    "body": "AP reports a limited number of Saudi airline flights took off and landed at Riyadh on Wednesday, two days after airlines were told they could resume with prior GACA permission (NOTAM A3650/26). The Flightradar24 boards we check show only the delayed Saudia SV982 departure at 3:02 AM and non-airline HZA8 today, so we cannot confirm a resumption.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Yemeni government forces repel a Houthi attack southeast of Taiz, killing and wounding dozens of militia fighters",
@@ -6278,15 +6332,6 @@
     "airport": null
    },
    {
-    "tag": "CLAIM",
-    "title": "Iran says Saudi Arabia has not yet answered its offer to mediate with the Houthis",
-    "source": "Al Arabiya English (@AlArabiya_Eng)",
-    "time": "10:01 AM",
-    "url": "https://x.com/AlArabiya_Eng/status/2112801386777710607",
-    "body": "Al Arabiya English quoted Iranian Foreign Minister Abbas Araghchi as saying Saudi Arabia has not yet responded to Iran's offer to mediate between the Kingdom and the Houthis. Riyadh has made no public statement on the offer.",
-    "airport": null
-   },
-   {
     "tag": "CONFIRMED",
     "title": "Coalition: another drone launched toward the Eastern Region intercepted and destroyed",
     "source": "Coalition spokesman (@CJFCSpox)",
@@ -6302,60 +6347,6 @@
     "time": "6:52 AM",
     "url": "https://x.com/CJFCSpox/status/2112753944879300786",
     "body": "The coalition said four drones launched toward the Kingdom were intercepted and destroyed, and that the interceptions took place in the Madinah and Eastern regions. It did not say who launched them or report any damage or casualties.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Aden: growing numbers of people displaced fleeing Houthi fire",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "5:23 AM",
-    "url": "https://x.com/alekhbariyatv/status/2112731585166389576",
-    "body": "Saudi state channel Al Ekhbariya reported a rising number of people arriving in Aden after fleeing fire from the Houthi militia. No figures were given in the post.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Saudi ambassador to Yemen: the Kingdom will protect its people, security and territory; Taiz will not be held hostage",
-    "source": "Saudi Ambassador Mohammed Al Jaber via SABA (Yemeni state news agency)",
-    "time": "4:20 AM",
-    "url": "https://x.com/YemenEmbassyPk/status/2112715521015623758",
-    "body": "Saudi Ambassador to Yemen Mohammed Al Jaber said the Houthi militia trades on Yemenis' suffering, that Yemen does not belong to it and that Taiz will not be held hostage to its project, adding that the Kingdom will protect its people, security and territory.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "UN calls for aid access to besieged Taiz; Yemen's endowments ministry calls the Houthi siege a crime",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "3:39 AM",
-    "url": "https://x.com/alekhbariyatv/status/2112705390198624421",
-    "body": "Al Ekhbariya reported that the United Nations is calling for humanitarian aid to be allowed into Taiz province, which is besieged by the Houthis. Yemen's Ministry of Endowments told the channel the siege is a crime with no religious, customary or legal basis, and thanked Saudi Arabia for facilities given to Yemeni pilgrims.",
-    "airport": null
-   },
-   {
-    "tag": "UNVERIFIED",
-    "title": "Unconfirmed reports of Houthi-Saudi border clashes near Jazan",
-    "source": "X account @MEBriefNews",
-    "time": "3:51 AM",
-    "url": "https://x.com/MEBriefNews/status/2112708375133999127",
-    "body": "An X news account reported preliminary claims of clashes between Houthi supporters and Saudi forces along the border, raising the possibility of a crossing into Jazan. No authority has confirmed it; the only verified material is Houthi video of drone strikes on Saudi border positions in Jizan and Asir released Tuesday evening.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Yemeni armed forces say about 200 Houthi fighters neutralised and 90 vehicles destroyed or disabled",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "2:45 AM",
-    "url": "https://x.com/alekhbariyatv/status/2112691706755698950",
-    "body": "Saudi state channel Al Ekhbariya, citing Yemen's government armed forces, reported that about 200 Houthi fighters were neutralised and 90 vehicles and pieces of military equipment destroyed or disabled. No location or time frame was given in the post.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Saudi Cabinet: regional stability and freedom of navigation are an international responsibility",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "12:59 AM",
-    "url": "https://x.com/alekhbariyatv/status/2112665114935713910",
-    "body": "Al Ekhbariya's roundup of Tuesday's news led with the Cabinet saying that strengthening regional stability and keeping navigation secure is an international responsibility, alongside the destruction of the launcher behind Tuesday's Riyadh missile.",
     "airport": null
    }
   ]
@@ -6990,7 +6981,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 614,
+  "count": 620,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -14974,27 +14965,94 @@
     "detail": "Saudi state channel Al Ekhbariya reported that Yemeni forces repelled an attack by the Houthi militia southeast of Taiz, saying dozens of militia fighters were killed or wounded. No exact figures were given. This was inside Yemen, not on Sa",
     "source": "Al Ekhbariya (@alekhbariyatv)",
     "url": "https://x.com/alekhbariyatv/status/2112835502713844050"
+   },
+   {
+    "id": "news-e3aff68d5e",
+    "ts": "2026-10-21T16:23:43+03:00",
+    "date_label": "Wed 21 Oct",
+    "time_label": "4:23 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "French President Macron lands at King Khalid International Airport, Riyadh",
+    "detail": "SPA and Al Ekhbariya said President Macron arrived in Riyadh and was met by the Deputy Governor of the Riyadh region; Al Arabiya English said the reception was at King Khalid International Airport. The state flight does not appear on the Fl",
+    "source": "SPA (@SPAregions) / Al Arabiya English",
+    "url": "https://x.com/SPAregions/status/2112897623292080355"
+   },
+   {
+    "id": "news-415882649a",
+    "ts": "2026-10-21T16:28:36+03:00",
+    "date_label": "Wed 21 Oct",
+    "time_label": "4:28 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Saudi and Jordanian foreign ministers sign amended coordination council protocol and discuss Houthi strikes on the Kingd",
+    "detail": "Prince Faisal bin Farhan received Jordan's foreign minister in Riyadh and they signed an amended protocol for the Saudi-Jordanian Supreme Coordination Council chaired by the Crown Prince and the King of Jordan. Al Ekhbariya says they discus",
+    "source": "SPA (@SPAregions) / Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2112898849379381262"
+   },
+   {
+    "id": "news-df4bf649e0",
+    "ts": "2026-10-21T16:58:22+03:00",
+    "date_label": "Wed 21 Oct",
+    "time_label": "4:58 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Riyadh airport account gives no reopening date, tells travellers to follow the authorities and their airline",
+    "detail": "Asked for an update on the airport reopening, the official Riyadh airport account replied that travellers should follow the official competent authorities for airspace updates and contact the airline they booked with. It gave no date for sc",
+    "source": "King Khalid International Airport (@KKIASA)",
+    "url": "https://x.com/KKIASA/status/2112906341555790136"
+   },
+   {
+    "id": "news-b0ab89ea83",
+    "ts": "2026-10-21T17:03:44+03:00",
+    "date_label": "Wed 21 Oct",
+    "time_label": "5:03 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Saudi state TV: Houthis block trucks with medicine, food and fuel from entering Taiz",
+    "detail": "Al Ekhbariya's Yemen correspondent says the Houthis are stopping trucks carrying medical supplies, food and fuel from entering Taiz, and that more than 1.5 million residents are suffering under the siege, with hospitals appealing for help.",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2112907693811806220"
+   },
+   {
+    "id": "news-3f65731679",
+    "ts": "2026-10-21T17:23:28+03:00",
+    "date_label": "Wed 21 Oct",
+    "time_label": "5:23 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Crown Prince Mohammed bin Salman receives French President Emmanuel Macron in Riyadh",
+    "detail": "Saudi state TV and SPA reported the Crown Prince receiving President Macron in Riyadh on Wednesday evening. Saudi Gazette reported at 5:29 PM that Macron pledged French military support against Houthi attacks; no French or Saudi text of tha",
+    "source": "Al Ekhbariya (@alekhbariyatv) / SPA",
+    "url": "https://x.com/alekhbariyatv/status/2112912658454179975"
+   },
+   {
+    "id": "news-78d78bd426",
+    "ts": "2026-10-21T17:34:43+03:00",
+    "date_label": "Wed 21 Oct",
+    "time_label": "5:34 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Civil Defense urges caution as thunderstorms continue across most regions until Monday",
+    "detail": "Civil Defense says thunderstorms will continue over most of the Kingdom until next Monday and asks people to take care. Earlier, at 3:46 to 3:47 PM, it issued weather warnings for parts of the Makkah, Asir and Al Baha regions. This is a wea",
+    "source": "Saudi Civil Defense (@SaudiDCD) / SPA",
+    "url": "https://x.com/SaudiDCD/status/2112915490418970825"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "12:00 PM",
-  "window_start": "2026-10-21T12:00+03:00",
-  "window_end": "2026-10-21T14:55+03:00",
+  "prev_slot": "3:00 PM",
+  "window_start": "2026-10-21T15:00+03:00",
+  "window_end": "2026-10-21T17:53+03:00",
   "items": [],
   "last_24h": [
-   {
-    "date": "2026-10-20",
-    "time": "5:22 PM",
-    "city": "Riyadh",
-    "type": "interception",
-    "what": "Coalition: drone intercepted and destroyed over the Riyadh region",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "url": "https://x.com/CJFCSpox/status/2112550106335686822",
-    "tag": "CONFIRMED",
-    "casualties": "none reported"
-   },
    {
     "date": "2026-10-21",
     "time": "6:52 AM",
@@ -15020,15 +15078,15 @@
   ],
   "tally_24h": {
    "attack": 0,
-   "interception": 3,
+   "interception": 2,
    "alert": 0,
    "all_clear": 0,
    "debris": 0,
    "casualties": 0,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Interceptions 3.",
-  "none_text": "No new attacks, interceptions or alerts since 12:00 PM AST."
+  "tally_text": "Last 24 hours: Interceptions 2.",
+  "none_text": "No new attacks, interceptions or alerts since 3:00 PM AST."
  },
  "airports": {
   "RUH": {
