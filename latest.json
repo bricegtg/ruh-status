@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-21T02:56:18+03:00",
+ "generated_at": "2026-10-21T03:00:14+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -384,7 +384,7 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-21T02:55:02+03:00",
+  "as_of": "2026-10-21T03:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
@@ -395,13 +395,13 @@
     "time": "12:54 AM",
     "flight": "SV992",
     "city": "Shenzhen",
-    "minutes_ago": 120
+    "minutes_ago": 125
    },
    "last_landing": {
     "time": "7:51 PM",
     "flight": "SV979",
     "city": "Guangzhou",
-    "minutes_ago": 423
+    "minutes_ago": 428
    }
   },
   "cancellations": {
@@ -470,17 +470,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-20T03:00:00+03:00",
-   "end": "2026-10-21T02:55:02+03:00",
+   "start": "2026-10-20T04:00:00+03:00",
+   "end": "2026-10-21T03:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-20T03:00:00+03:00",
-     "label": "3 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 9
-    },
     {
      "hour_start": "2026-10-20T04:00:00+03:00",
      "label": "4 AM",
@@ -563,7 +556,7 @@
      "label": "3 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-20T16:00:00+03:00",
@@ -641,25 +634,32 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 8
+    },
+    {
+     "hour_start": "2026-10-21T03:00:00+03:00",
+     "label": "3 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
     "takeoffs": 3,
     "landings": 1,
-    "cancelled": 376
+    "cancelled": 368
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 13286
+     "minutes": 13291
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 10003
+     "minutes": 10008
     },
     {
      "start": "2026-10-19T20:43:39+03:00",
@@ -689,7 +689,7 @@
      "start": "2026-10-21T00:54:47+03:00",
      "end": null,
      "label": "Halt since 12:54 AM",
-     "minutes": 120
+     "minutes": 125
     }
    ]
   },
@@ -698,7 +698,7 @@
     "start": "2026-10-21T00:54:47+03:00",
     "end": null,
     "label": "Halt since 12:54 AM",
-    "minutes": 120
+    "minutes": 125
    },
    {
     "start": "2026-10-20T19:51:48+03:00",
@@ -14811,7 +14811,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-21T02:55:02+03:00",
+   "as_of": "2026-10-21T03:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -14822,13 +14822,13 @@
      "time": "12:54 AM",
      "flight": "SV992",
      "city": "Shenzhen",
-     "minutes_ago": 120
+     "minutes_ago": 125
     },
     "last_landing": {
      "time": "7:51 PM",
      "flight": "SV979",
      "city": "Guangzhou",
-     "minutes_ago": 423
+     "minutes_ago": 428
     }
    },
    "cancellations": {
@@ -14841,9 +14841,9 @@
    "diversions": 4,
    "idle": {
     "last_movement": "2026-10-21T00:54:47+03:00",
-    "minutes_since_last_movement": 120,
+    "minutes_since_last_movement": 125,
     "movements_last_3h": 1,
-    "due_not_operated": 29,
+    "due_not_operated": 32,
     "cancelled_in_window": 16,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-21T03:25:00+03:00",
@@ -14856,24 +14856,17 @@
      {
       "start": "2026-10-21T00:54:47+03:00",
       "end": null,
-      "not_operated": 29
+      "not_operated": 32
      }
     ],
-    "board_rows": 1608,
+    "board_rows": 1610,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-20T03:00:00+03:00",
-    "end": "2026-10-21T02:55:02+03:00",
+    "start": "2026-10-20T04:00:00+03:00",
+    "end": "2026-10-21T03:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-20T03:00:00+03:00",
-      "label": "3 AM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 9
-     },
      {
       "hour_start": "2026-10-20T04:00:00+03:00",
       "label": "4 AM",
@@ -14956,7 +14949,7 @@
       "label": "3 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 13
+      "cancelled": 14
      },
      {
       "hour_start": "2026-10-20T16:00:00+03:00",
@@ -15034,25 +15027,32 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 8
+     },
+     {
+      "hour_start": "2026-10-21T03:00:00+03:00",
+      "label": "3 AM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
      "takeoffs": 3,
      "landings": 1,
-     "cancelled": 376
+     "cancelled": 368
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 13286
+      "minutes": 13291
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 10003
+      "minutes": 10008
      },
      {
       "start": "2026-10-19T20:43:39+03:00",
@@ -15082,7 +15082,7 @@
       "start": "2026-10-21T00:54:47+03:00",
       "end": null,
       "label": "Halt since 12:54 AM",
-      "minutes": 120
+      "minutes": 125
      }
     ]
    },
@@ -15091,7 +15091,7 @@
      "start": "2026-10-21T00:54:47+03:00",
      "end": null,
      "label": "Halt since 12:54 AM",
-     "minutes": 120
+     "minutes": 125
     },
     {
      "start": "2026-10-20T19:51:48+03:00",
