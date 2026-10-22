@@ -1,80 +1,48 @@
 {
  "schema": 2,
- "generated_at": "2026-10-22T21:00:09+03:00",
+ "generated_at": "2026-10-23T00:02:10+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 9:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "9:00 PM",
-  "as_of": "2026-10-22T20:44:00+03:00",
-  "as_of_label": "8:44 PM",
-  "date_long": "Thursday 22 October 2026",
+  "title": "RUH & DMM Airport Status 12:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "12:00 AM",
+  "as_of": "2026-10-23T00:00:00+03:00",
+  "as_of_label": "12:00 AM",
+  "date_long": "Friday 23 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,810 minutes at 9:00 PM; no takeoffs or landings since 6:00 PM; Dammam moving again since 8:18 PM after a 7:11\u20138:18 PM halt",
-  "headline": "Riyadh still halted (15,810 min), no movements since 6 PM; Dammam moving again after 66-minute halt; wave of condemnations of Houthi attacks",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,810 minutes at 9:00 PM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights; KKIA again told a traveller at 8:33 PM to follow the official authorities or their airline for airspace updates. 161 Riyadh flights have been cancelled so far on Thursday (37% of scheduled) and 3 arrivals diverted. Since the 6:00 PM edition (board checked 8:44 PM): 0 takeoffs and 0 landings. In the last hour: 0 takeoffs and 0 landings. The last movement is still the permitted Saudia SV934 landing from Amsterdam at 5:04 PM, and the last takeoff non-airline HZCMJ to Farnborough at 1:52 PM.",
-  "next_update": "12:00 AM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,991 minutes at 12:00 AM; no takeoffs or landings since 9:00 PM; Dammam moving, no halt open",
+  "headline": "Riyadh still halted (15,991 min), no movements since 5:04 PM Thursday; Dammam moving with 21 flights since 9 PM; coalition intercepts missile toward Najran",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,991 minutes at 12:00 AM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights. Thursday closed with 191 Riyadh cancellations (43% of 440 scheduled); 64 flights are already cancelled on Friday (38% of scheduled). Since the 9:00 PM edition: 0 takeoffs and 0 landings. In the last hour: 0 takeoffs and 0 landings. The last movement is still the permitted Saudia SV934 landing from Amsterdam at 5:04 PM Thursday, and the last takeoff the non-airline HZ-CMJ to Farnborough at 1:52 PM Thursday.",
+  "next_update": "3:00 AM",
   "kpis": {
-   "cancelled_total": 161,
-   "cancelled_departures": 73,
-   "cancelled_arrivals": 88,
-   "pct_of_scheduled": 37,
-   "scheduled": 440,
-   "diverted": 3,
-   "diverted_to": [
-    "Jeddah",
-    "Madinah",
-    "Qassim"
-   ],
+   "cancelled_total": 64,
+   "cancelled_departures": 30,
+   "cancelled_arrivals": 34,
+   "pct_of_scheduled": 38,
+   "scheduled": 168,
+   "diverted": 0,
+   "diverted_to": null,
    "takeoffs_last_hour": 0,
    "landings_last_hour": 0,
    "last_takeoff": {
     "time": "1:52 PM",
     "flight": "HZCMJ",
     "city": "Farnborough",
-    "minutes_ago": 413
+    "minutes_ago": 608
    },
    "last_landing": {
     "time": "5:04 PM",
     "flight": "SV934",
     "city": "Amsterdam",
-    "minutes_ago": 220
+    "minutes_ago": 415
    }
   },
   "flow24": {
-   "start": "2026-10-21T21:00:00+03:00",
-   "end": "2026-10-22T20:44:00+03:00",
-   "start_label": "9:00 PM Wednesday",
+   "start": "2026-10-22T01:00:00+03:00",
+   "end": "2026-10-23T00:00:00+03:00",
+   "start_label": "1:00 AM Thursday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-21T21:00:00+03:00",
-     "label": "9 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 29
-    },
-    {
-     "hour_start": "2026-10-21T22:00:00+03:00",
-     "label": "10 PM",
-     "takeoffs": 0,
-     "landings": 1,
-     "cancelled": 21
-    },
-    {
-     "hour_start": "2026-10-21T23:00:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 29
-    },
-    {
-     "hour_start": "2026-10-22T00:00:00+03:00",
-     "label": "12 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 15
-    },
     {
      "hour_start": "2026-10-22T01:00:00+03:00",
      "label": "1 AM",
@@ -108,56 +76,56 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 9
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-22T06:00:00+03:00",
      "label": "6 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 8
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-22T07:00:00+03:00",
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-22T08:00:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 11
+     "cancelled": 13
     },
     {
      "hour_start": "2026-10-22T09:00:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 7
+     "cancelled": 16
     },
     {
      "hour_start": "2026-10-22T10:00:00+03:00",
      "label": "10 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-22T11:00:00+03:00",
      "label": "11 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-22T12:00:00+03:00",
      "label": "12 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-22T13:00:00+03:00",
@@ -213,32 +181,54 @@
      "label": "8 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-22T21:00:00+03:00",
+     "label": "9 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 8
+    },
+    {
+     "hour_start": "2026-10-22T22:00:00+03:00",
+     "label": "10 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-22T23:00:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-23T00:00:00+03:00",
+     "label": "12 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
     "takeoffs": 3,
-    "landings": 2,
-    "cancelled": 219
+    "landings": 1,
+    "cancelled": 178
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 15795
+     "minutes": 15991
     },
     {
      "start": "2026-10-21T13:59:44+03:00",
-     "end": "2026-10-21T22:49:50+03:00",
-     "label": "Halt 1:59\u201310:49 PM",
-     "minutes": 530
-    },
-    {
-     "start": "2026-10-21T22:49:50+03:00",
      "end": "2026-10-22T13:40:03+03:00",
-     "label": "Halt 10:49\u20131:40 PM",
-     "minutes": 890
+     "label": "Halt 1:59\u20131:40 PM",
+     "minutes": 1420
     },
     {
      "start": "2026-10-22T13:52:17+03:00",
@@ -256,16 +246,10 @@
     "minutes": 192
    },
    {
-    "start": "2026-10-21T22:49:50+03:00",
-    "end": "2026-10-22T13:40:03+03:00",
-    "label": "Halt 10:49\u20131:40 PM",
-    "minutes": 890
-   },
-   {
     "start": "2026-10-21T13:59:44+03:00",
-    "end": "2026-10-21T22:49:50+03:00",
-    "label": "Halt 1:59\u201310:49 PM",
-    "minutes": 530
+    "end": "2026-10-22T13:40:03+03:00",
+    "label": "Halt 1:59\u20131:40 PM",
+    "minutes": 1420
    },
    {
     "start": "2026-10-21T04:33:54+03:00",
@@ -284,13 +268,55 @@
     "end": "2026-10-21T03:02:50+03:00",
     "label": "Halt 5:36 PM\u20133:02 AM",
     "minutes": 566
+   },
+   {
+    "start": "2026-10-11T21:29:30+03:00",
+    "end": null,
+    "label": "Halt since 9:29 PM",
+    "minutes": 15991
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh airport still halted; Kuwait, UAE, GCC, European Parliament and UN chief condemn Houthi attacks; Dammam moving again after a 66-minute halt",
-  "news_checked": "8:46 PM",
+  "news_title": "Riyadh airport still halted; missile toward Najran intercepted; coalition rejects Houthi claims; Dammam moving normally since 9 PM",
+  "news_checked": "11:58 PM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition denies Houthi claims that the Kingdom threatened to target tribal and civilian gatherings in Yemen",
+    "source": "SPA (@SPAregions) / Al Ekhbariya",
+    "time": "11:20 PM",
+    "extra": "published 11:20\u201311:39 PM AST Thu 22 Oct; checked 11:58 PM",
+    "body": "The coalition spokesman said Houthi claims that Saudi Arabia threatened to strike tribal and civilian gatherings are false and baseless, and called them an attempt to mislead public opinion and drag Yemeni tribes into the conflict (SPA, translated from Arabic).",
+    "url": "https://x.com/SPAregions/status/2113366466888151080"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition: ballistic missile fired by the Houthis toward Najran intercepted and destroyed",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA",
+    "time": "9:29 PM",
+    "extra": "published 9:29 PM AST Thu 22 Oct (SPA English 9:41 PM); checked 11:58 PM",
+    "body": "The coalition said it intercepted and destroyed a ballistic missile launched by the Houthis toward Najran. No damage or casualties were stated.",
+    "url": "https://x.com/CJFCSpox/status/2113336996101820886"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Father of Sultan Al-Qahtani, killed in the Dammam airport attack, says his son ran to put out the fire near the aircraft",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "9:33 PM",
+    "extra": "published 9:33 PM AST Thu 22 Oct; checked 11:58 PM",
+    "body": "Al Ekhbariya interviewed the father of Sultan Al-Qahtani, one of those killed in the Houthi attack on King Fahd International Airport. He said Sultan and colleagues went out after the blast and tried to put out the fire, fearing it would reach the aircraft and passengers (translated from Arabic).",
+    "url": "https://x.com/alekhbariyatv/status/2113339211818357034"
+   },
+   {
+    "tag": "CLAIM",
+    "title": "Houthi spokesman Yahya Saree claims four drone and missile operations on Saudi Arabia in 48 hours, including the Defense Ministry in Riyadh and Dammam airport",
+    "source": "Houthi statement, as relayed on X",
+    "time": "9:58 PM",
+    "extra": "relayed 9:47\u20139:58 PM AST Thu 22 Oct; not confirmed by Saudi authorities; checked 11:58 PM",
+    "body": "Houthi military spokesman Yahya Saree claimed four operations over the past 48 hours, naming the Defense Ministry headquarters in Riyadh, King Fahd International Airport in Dammam and Aramco facilities. Saudi authorities have not confirmed a strike on the Defense Ministry.",
+    "url": "https://x.com/GlobalDefenseAn/status/2113344219888910705"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Kuwait condemns the Houthi attack on Dammam's King Fahd airport",
@@ -443,10 +469,28 @@
     "extra": "published 12:54 PM AST Thu 22 Oct; checked 2:50 PM",
     "body": "The UK Defence Ministry said it had observed Houthi attacks on Saudi infrastructure and airports resulting in casualties, and that the military support it announced is meant to help Saudi Arabia at this critical moment.",
     "url": "https://x.com/arabnews/status/2113207365885424056"
+   },
+   {
+    "tag": "CORROBORATED",
+    "title": "Reuters and AFP: Aramco orders staff out of its Dhahran headquarters to work remotely",
+    "source": "Reuters / AFP",
+    "time": "2:30 PM",
+    "extra": "Reuters published about 2:30 PM AST Thu 22 Oct, citing six sources; Aramco did not comment; checked 11:58 PM",
+    "body": "Aramco told staff, including remaining essential personnel, to evacuate its Dhahran headquarters and work remotely until further notice, the first such order since the Iran war began. Dhahran is about 15 km from Dammam airport.",
+    "url": "https://today.lorientlejour.com/article/1551701/aramco-tells-staff-to-evacuate-dhahran-headquarters.html"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "US orders non-emergency embassy staff and families to leave Saudi Arabia over Houthi attacks",
+    "source": "US State Department (via Reuters, Al Jazeera)",
+    "time": "12:57 AM",
+    "extra": "published 12:57 AM AST Thu 22 Oct (5:57 PM EDT Wed); checked 11:58 PM",
+    "body": "The State Department ordered the departure of non-emergency US government employees and their families from Saudi Arabia, citing Houthi attacks on civilian airports and critical infrastructure. The US embassy in Riyadh also issued a security alert about possible further attacks.",
+    "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat"
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_900PM_22Oct2026.pdf",
+  "pdf_name": "RUH_status_report_1200AM_23Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
@@ -812,7 +856,7 @@
   ]
  },
  "maritime": {
-  "updated": "2026-10-22T20:45:55.638873+03:00",
+  "updated": "2026-10-23T00:00:46.903992+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -877,45 +921,41 @@
   }
  },
  "summary": {
-  "headline": "Riyadh still halted (15,810 min), no movements since 6 PM; Dammam moving again after 66-minute halt; wave of condemnations of Houthi attacks",
-  "as_of": "2026-10-22T20:44+03:00",
+  "headline": "Riyadh still halted (15,991 min), no movements since 5:04 PM Thursday; Dammam moving with 21 flights since 9 PM; coalition intercepts missile toward Najran",
+  "as_of": "2026-10-23T00:00+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (15795 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (15991 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "0 takeoffs and 5 landings in the last hour."
+    "status_line": "3 takeoffs and 3 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday 11 Oct (15,810 min at 9:00 PM); 0 takeoffs and 0 landings since 6:00 PM",
-   "Dammam halted 7:11\u20138:18 PM (66 min), moving again; 4 takeoffs and 13 landings since 6:00 PM",
-   "No new coalition intercepts or Civil Defense alerts since the 2:33 PM statement; Civil Defense warns against filming interceptions",
-   "Kuwait, UAE, GCC Secretary-General, European Parliament and UN chief condemn the Houthi attacks"
+   "Riyadh still halted since 9:29 PM Sunday 11 Oct (15,991 min at 12:00 AM); 0 takeoffs and 0 landings since 9:00 PM",
+   "Dammam moving with no halt since 9:00 PM: 13 takeoffs and 8 landings, latest GF112 to Bahrain 11:45 PM and SV1126 from Jeddah 11:49 PM",
+   "Coalition: Houthi ballistic missile toward Najran intercepted at 9:29 PM; no damage reported",
+   "Coalition denies Houthi claims of threats to Yemeni tribal gatherings; Houthis claim four operations on the Kingdom in 48 hours (unconfirmed)"
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (15795 min).",
-  "as_of": "2026-10-22T20:44+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (15991 min).",
+  "as_of": "2026-10-23T00:00+03:00",
   "kpis": {
-   "cancelled_total": 161,
-   "cancelled_departures": 73,
-   "cancelled_arrivals": 88,
-   "pct_of_scheduled": 37,
-   "scheduled": 440,
-   "diverted": 3,
-   "diverted_to": [
-    "Jeddah",
-    "Madinah",
-    "Qassim"
-   ],
+   "cancelled_total": 64,
+   "cancelled_departures": 30,
+   "cancelled_arrivals": 34,
+   "pct_of_scheduled": 38,
+   "scheduled": 168,
+   "diverted": 0,
+   "diverted_to": [],
    "takeoffs_last_hour": 0,
    "landings_last_hour": 0,
    "last_takeoff": {
@@ -930,37 +970,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-21T21:00+03:00",
-   "end": "2026-10-22T20:44+03:00",
+   "start": "2026-10-22T01:00+03:00",
+   "end": "2026-10-23T00:00+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-21T21:00+03:00",
-     "label": "9 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 29
-    },
-    {
-     "hour_start": "2026-10-21T22:00+03:00",
-     "label": "10 PM",
-     "takeoffs": 0,
-     "landings": 1,
-     "cancelled": 21
-    },
-    {
-     "hour_start": "2026-10-21T23:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 29
-    },
-    {
-     "hour_start": "2026-10-22T00:00+03:00",
-     "label": "12 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 15
-    },
     {
      "hour_start": "2026-10-22T01:00+03:00",
      "label": "1 AM",
@@ -994,56 +1006,56 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 9
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-22T06:00+03:00",
      "label": "6 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 8
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-22T07:00+03:00",
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-22T08:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 11
+     "cancelled": 13
     },
     {
      "hour_start": "2026-10-22T09:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 7
+     "cancelled": 16
     },
     {
      "hour_start": "2026-10-22T10:00+03:00",
      "label": "10 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 14
     },
     {
      "hour_start": "2026-10-22T11:00+03:00",
      "label": "11 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-22T12:00+03:00",
      "label": "12 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-22T13:00+03:00",
@@ -1099,13 +1111,41 @@
      "label": "8 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-22T21:00+03:00",
+     "label": "9 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 8
+    },
+    {
+     "hour_start": "2026-10-22T22:00+03:00",
+     "label": "10 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-22T23:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 6
+    },
+    {
+     "hour_start": "2026-10-23T00:00+03:00",
+     "label": "12 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
     "takeoffs": 3,
-    "landings": 2,
-    "cancelled": 219
+    "landings": 1,
+    "cancelled": 178
    },
    "halts": [
     {
@@ -1115,13 +1155,8 @@
     },
     {
      "start": "2026-10-21T13:59+03:00",
-     "end": "2026-10-21T22:49+03:00",
-     "label": "Halt 1:59\u201310:49 PM"
-    },
-    {
-     "start": "2026-10-21T22:49+03:00",
      "end": "2026-10-22T13:40+03:00",
-     "label": "Halt 10:49\u20131:40 PM"
+     "label": "Halt 1:59\u20131:40 PM"
     },
     {
      "start": "2026-10-22T13:52+03:00",
@@ -1138,16 +1173,10 @@
     "end": "2026-10-22T17:04+03:00"
    },
    {
-    "label": "Halt 10:49\u20131:40 PM",
-    "minutes": 890,
-    "start": "2026-10-21T22:49+03:00",
-    "end": "2026-10-22T13:40+03:00"
-   },
-   {
-    "label": "Halt 1:59\u201310:49 PM",
-    "minutes": 530,
+    "label": "Halt 1:59\u20131:40 PM",
+    "minutes": 1420,
     "start": "2026-10-21T13:59+03:00",
-    "end": "2026-10-21T22:49+03:00"
+    "end": "2026-10-22T13:40+03:00"
    },
    {
     "label": "Halt 4:33 AM\u20131:59 PM",
@@ -1166,69 +1195,44 @@
     "minutes": 566,
     "start": "2026-10-20T17:36+03:00",
     "end": "2026-10-21T03:02+03:00"
+   },
+   {
+    "label": "Halt since 9:29 PM",
+    "minutes": 15991,
+    "start": "2026-10-11T21:29+03:00",
+    "end": null
    }
   ]
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "0 takeoffs and 5 landings in the last hour.",
-  "as_of": "2026-10-22T20:44+03:00",
+  "status_line": "3 takeoffs and 3 landings in the last hour.",
+  "as_of": "2026-10-23T00:00+03:00",
   "kpis": {
-   "cancelled_total": 58,
-   "cancelled_departures": 30,
-   "cancelled_arrivals": 28,
-   "pct_of_scheduled": 22,
-   "scheduled": 258,
-   "diverted": 2,
-   "diverted_to": [
-    "Madinah",
-    "Bahrain"
-   ],
-   "takeoffs_last_hour": 0,
-   "landings_last_hour": 5,
+   "cancelled_total": 26,
+   "cancelled_departures": 12,
+   "cancelled_arrivals": 14,
+   "pct_of_scheduled": 14,
+   "scheduled": 181,
+   "diverted": 0,
+   "diverted_to": [],
+   "takeoffs_last_hour": 3,
+   "landings_last_hour": 3,
    "last_takeoff": {
-    "time": "7:11 PM",
-    "flight": "PK246",
-    "city": "Islamabad"
+    "time": "11:45 PM",
+    "flight": "GF112",
+    "city": "Bahrain"
    },
    "last_landing": {
-    "time": "8:35 PM",
-    "flight": "XY412",
+    "time": "11:49 PM",
+    "flight": "SV1126",
     "city": "Jeddah"
    }
   },
   "flow24": {
-   "start": "2026-10-21T21:00+03:00",
-   "end": "2026-10-22T20:44+03:00",
+   "start": "2026-10-22T01:00+03:00",
+   "end": "2026-10-23T00:00+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-21T21:00+03:00",
-     "label": "9 PM",
-     "takeoffs": 0,
-     "landings": 2,
-     "cancelled": 6
-    },
-    {
-     "hour_start": "2026-10-21T22:00+03:00",
-     "label": "10 PM",
-     "takeoffs": 0,
-     "landings": 1,
-     "cancelled": 10
-    },
-    {
-     "hour_start": "2026-10-21T23:00+03:00",
-     "label": "11 PM",
-     "takeoffs": 2,
-     "landings": 1,
-     "cancelled": 5
-    },
-    {
-     "hour_start": "2026-10-22T00:00+03:00",
-     "label": "12 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 3
-    },
     {
      "hour_start": "2026-10-22T01:00+03:00",
      "label": "1 AM",
@@ -1276,7 +1280,7 @@
      "label": "7 AM",
      "takeoffs": 1,
      "landings": 1,
-     "cancelled": 3
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-22T08:00+03:00",
@@ -1297,7 +1301,7 @@
      "label": "10 AM",
      "takeoffs": 2,
      "landings": 5,
-     "cancelled": 1
+     "cancelled": 2
     },
     {
      "hour_start": "2026-10-22T11:00+03:00",
@@ -1311,7 +1315,7 @@
      "label": "12 PM",
      "takeoffs": 4,
      "landings": 1,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-22T13:00+03:00",
@@ -1366,26 +1370,44 @@
      "hour_start": "2026-10-22T20:00+03:00",
      "label": "8 PM",
      "takeoffs": 0,
-     "landings": 5,
+     "landings": 6,
+     "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-22T21:00+03:00",
+     "label": "9 PM",
+     "takeoffs": 2,
+     "landings": 3,
+     "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-22T22:00+03:00",
+     "label": "10 PM",
+     "takeoffs": 8,
+     "landings": 2,
+     "cancelled": 3
+    },
+    {
+     "hour_start": "2026-10-22T23:00+03:00",
+     "label": "11 PM",
+     "takeoffs": 3,
+     "landings": 3,
      "cancelled": 1
+    },
+    {
+     "hour_start": "2026-10-23T00:00+03:00",
+     "label": "12 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
-    "takeoffs": 48,
-    "landings": 53,
-    "cancelled": 72
+    "takeoffs": 59,
+    "landings": 58,
+    "cancelled": 58
    },
    "halts": [
-    {
-     "start": "2026-10-21T20:54+03:00",
-     "end": "2026-10-21T21:48+03:00",
-     "label": "Halt 8:54\u20139:48 PM"
-    },
-    {
-     "start": "2026-10-21T21:56+03:00",
-     "end": "2026-10-21T22:55+03:00",
-     "label": "Halt 9:56\u201310:55 PM"
-    },
     {
      "start": "2026-10-21T23:17+03:00",
      "end": "2026-10-22T03:07+03:00",
@@ -5002,9 +5024,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-22",
-    "usd": 112.56,
+    "usd": 112.93,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-22T20:35+03:00"
+    "time": "2026-10-22T23:50+03:00"
    },
    "spot_latest": {
     "date": "2026-10-20",
@@ -6315,15 +6337,51 @@
     },
     {
      "date": "2026-10-22",
-     "usd": 112.56
+     "usd": 112.93
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "8:46 PM",
+  "checked": "11:58 PM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition denies Houthi claims that the Kingdom threatened to target tribal and civilian gatherings in Yemen",
+    "source": "SPA (@SPAregions) / Al Ekhbariya",
+    "time": "11:20 PM",
+    "url": "https://x.com/SPAregions/status/2113366466888151080",
+    "body": "The coalition spokesman said Houthi claims that Saudi Arabia threatened to strike tribal and civilian gatherings are false and baseless, and called them an attempt to mislead public opinion and drag Yemeni tribes into the conflict (SPA, translated from Arabic).",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition: ballistic missile fired by the Houthis toward Najran intercepted and destroyed",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA",
+    "time": "9:29 PM",
+    "url": "https://x.com/CJFCSpox/status/2113336996101820886",
+    "body": "The coalition said it intercepted and destroyed a ballistic missile launched by the Houthis toward Najran. No damage or casualties were stated.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Father of Sultan Al-Qahtani, killed in the Dammam airport attack, says his son ran to put out the fire near the aircraft",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "9:33 PM",
+    "url": "https://x.com/alekhbariyatv/status/2113339211818357034",
+    "body": "Al Ekhbariya interviewed the father of Sultan Al-Qahtani, one of those killed in the Houthi attack on King Fahd International Airport. He said Sultan and colleagues went out after the blast and tried to put out the fire, fearing it would reach the aircraft and passengers (translated from Arabic).",
+    "airport": "DMM"
+   },
+   {
+    "tag": "CLAIM",
+    "title": "Houthi spokesman Yahya Saree claims four drone and missile operations on Saudi Arabia in 48 hours, including the Defense Ministry in Riyadh and Dammam airport",
+    "source": "Houthi statement, as relayed on X",
+    "time": "9:58 PM",
+    "url": "https://x.com/GlobalDefenseAn/status/2113344219888910705",
+    "body": "Houthi military spokesman Yahya Saree claimed four operations over the past 48 hours, naming the Defense Ministry headquarters in Riyadh, King Fahd International Airport in Dammam and Aramco facilities. Saudi authorities have not confirmed a strike on the Defense Ministry.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Kuwait condemns the Houthi attack on Dammam's King Fahd airport",
@@ -6475,6 +6533,24 @@
     "time": "12:54 PM",
     "url": "https://x.com/arabnews/status/2113207365885424056",
     "body": "The UK Defence Ministry said it had observed Houthi attacks on Saudi infrastructure and airports resulting in casualties, and that the military support it announced is meant to help Saudi Arabia at this critical moment.",
+    "airport": null
+   },
+   {
+    "tag": "CORROBORATED",
+    "title": "Reuters and AFP: Aramco orders staff out of its Dhahran headquarters to work remotely",
+    "source": "Reuters / AFP",
+    "time": "2:30 PM",
+    "url": "https://today.lorientlejour.com/article/1551701/aramco-tells-staff-to-evacuate-dhahran-headquarters.html",
+    "body": "Aramco told staff, including remaining essential personnel, to evacuate its Dhahran headquarters and work remotely until further notice, the first such order since the Iran war began. Dhahran is about 15 km from Dammam airport.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "US orders non-emergency embassy staff and families to leave Saudi Arabia over Houthi attacks",
+    "source": "US State Department (via Reuters, Al Jazeera)",
+    "time": "12:57 AM",
+    "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
+    "body": "The State Department ordered the departure of non-emergency US government employees and their families from Saudi Arabia, citing Houthi attacks on civilian airports and critical infrastructure. The US embassy in Riyadh also issued a security alert about possible further attacks.",
     "airport": null
    }
   ]
@@ -7175,7 +7251,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 679,
+  "count": 682,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -16004,26 +16080,88 @@
     "detail": "Kuwait condemned what it called the flagrant attack by the Houthi militia on King Fahd International Airport in Dammam (SPA, translated from Arabic).",
     "source": "SPA (@SPAregions)",
     "url": "https://x.com/SPAregions/status/2113325045690822874"
+   },
+   {
+    "id": "news-1f2001f95b",
+    "ts": "2026-10-22T21:29:38+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "9:29 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Coalition: ballistic missile fired by the Houthis toward Najran intercepted and destroyed",
+    "detail": "The coalition said it intercepted and destroyed a ballistic missile launched by the Houthis toward Najran. No damage or casualties were stated.",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA",
+    "url": "https://x.com/CJFCSpox/status/2113336996101820886"
+   },
+   {
+    "id": "news-8965605b45",
+    "ts": "2026-10-22T21:38:26+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "9:38 PM",
+    "category": "official",
+    "airport": "DMM",
+    "tag": "CONFIRMED",
+    "title": "Father of Sultan Al-Qahtani, killed in the Dammam airport attack, says his son ran to put out the fire near the aircraft",
+    "detail": "Al Ekhbariya interviewed the father of Sultan Al-Qahtani, one of those killed in the Houthi attack on King Fahd International Airport. He said Sultan and colleagues went out after the blast and tried to put out the fire, fearing it would re",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2113339211818357034"
+   },
+   {
+    "id": "news-1800672466",
+    "ts": "2026-10-22T23:26:44+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "11:26 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Coalition denies Houthi claims that the Kingdom threatened to target tribal and civilian gatherings in Yemen",
+    "detail": "The coalition spokesman said Houthi claims that Saudi Arabia threatened to strike tribal and civilian gatherings are false and baseless, and called them an attempt to mislead public opinion and drag Yemeni tribes into the conflict (SPA, tra",
+    "source": "SPA (@SPAregions) / Al Ekhbariya",
+    "url": "https://x.com/SPAregions/status/2113366466888151080"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "6:00 PM",
-  "window_start": "2026-10-22T18:00+03:00",
-  "window_end": "2026-10-22T20:44+03:00",
-  "items": [],
+  "prev_slot": "9:00 PM",
+  "window_start": "2026-10-22T21:00+03:00",
+  "window_end": "2026-10-23T00:00+03:00",
+  "items": [
+   {
+    "date": "2026-10-22",
+    "time": "9:29 PM",
+    "city": "Najran",
+    "type": "interception",
+    "what": "Coalition: a ballistic missile launched by the Houthis toward Najran was intercepted and destroyed; no damage or casualties stated",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA",
+    "url": "https://x.com/CJFCSpox/status/2113336996101820886",
+    "tag": "CONFIRMED",
+    "casualties": "none reported"
+   },
+   {
+    "date": "2026-10-22",
+    "time": "9:33 PM",
+    "city": "Dammam",
+    "type": "casualties",
+    "what": "Father of Sultan Al-Qahtani, killed in the Dammam airport attack, says his son ran to put out the fire near the aircraft",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2113339211818357034",
+    "tag": "CONFIRMED",
+    "casualties": null
+   }
+  ],
   "last_24h": [
    {
-    "date": "2026-10-21",
-    "time": "10:08 PM",
-    "city": "Eastern Region",
-    "type": "interception",
-    "what": "Ministry of Energy (announced 10:08 PM): a drone aimed at a facility in Aramco's Shaybah field was intercepted on Wednesday morning; falling debris killed 2 residents (Filipino, Nepali) and injured 2 (Pakistani, Indian), and a contractor vehicle caught fire",
-    "source": "Ministry of Energy via SPA",
-    "url": "https://x.com/Spa_Eng/status/2112984291579715715",
+    "date": "2026-10-22",
+    "time": "12:57 AM",
+    "city": "US orders non-emergency embassy staff and families to leave Saudi Arabia over Houthi attacks",
+    "type": "attack",
+    "what": "US orders non-emergency embassy staff and families to leave Saudi Arabia over Houthi attacks",
+    "source": "US State Department",
+    "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
     "tag": "CONFIRMED",
-    "casualties": "2 killed, 2 injured"
+    "casualties": null
    },
    {
     "date": "2026-10-22",
@@ -16068,19 +16206,41 @@
     "url": "https://x.com/CJFCSpox/status/2113232260103315522",
     "tag": "CONFIRMED",
     "casualties": "none reported"
+   },
+   {
+    "date": "2026-10-22",
+    "time": "9:29 PM",
+    "city": "Najran",
+    "type": "interception",
+    "what": "Coalition: a ballistic missile launched by the Houthis toward Najran was intercepted and destroyed; no damage or casualties stated",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA",
+    "url": "https://x.com/CJFCSpox/status/2113336996101820886",
+    "tag": "CONFIRMED",
+    "casualties": "none reported"
+   },
+   {
+    "date": "2026-10-22",
+    "time": "9:33 PM",
+    "city": "Dammam",
+    "type": "casualties",
+    "what": "Father of Sultan Al-Qahtani, killed in the Dammam airport attack, says his son ran to put out the fire near the aircraft",
+    "source": "Al Ekhbariya",
+    "url": "https://x.com/alekhbariyatv/status/2113339211818357034",
+    "tag": "CONFIRMED",
+    "casualties": null
    }
   ],
   "tally_24h": {
-   "attack": 1,
+   "attack": 2,
    "interception": 4,
    "alert": 0,
    "all_clear": 0,
    "debris": 0,
-   "casualties": 0,
+   "casualties": 1,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Attacks 1, interceptions 4.",
-  "none_text": "No new attacks, interceptions or alerts since 6:00 PM AST."
+  "tally_text": "Last 24 hours: Attacks 2, interceptions 4, casualty reports 1.",
+  "none_text": null
  },
  "airports": {
   "RUH": {
