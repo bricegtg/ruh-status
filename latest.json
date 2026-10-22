@@ -1,72 +1,52 @@
 {
  "schema": 2,
- "generated_at": "2026-10-22T18:00:07+03:00",
+ "generated_at": "2026-10-22T21:00:09+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 6:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "6:00 PM",
-  "as_of": "2026-10-22T17:54:00+03:00",
-  "as_of_label": "5:54 PM",
+  "title": "RUH & DMM Airport Status 9:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "9:00 PM",
+  "as_of": "2026-10-22T20:44:00+03:00",
+  "as_of_label": "8:44 PM",
   "date_long": "Thursday 22 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,630 minutes at 6:00 PM; one permitted landing (Saudia SV934 from Amsterdam 5:04 PM); Dammam moving, no open halt",
-  "headline": "Riyadh still halted (15,630 min) with one permitted landing; Qatar, Bahrain, Iraq condemn Houthi attacks; Dammam operating",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,630 minutes at 6:00 PM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights; KKIA told a traveller at 5:45 PM to follow the official authorities or their airline for airspace updates. 136 Riyadh flights have been cancelled so far on Thursday (31% of scheduled) and 2 arrivals diverted. Since the 3:00 PM edition (board checked 5:52 PM): 0 takeoffs and 1 landing, Saudia SV934 from Amsterdam at 5:04 PM, the first landing since the delayed Saudia SV993 from Shenzhen at 10:49 PM Wednesday. In the last hour: 0 takeoffs and 1 landing. The last takeoff is still non-airline HZCMJ to Farnborough at 1:52 PM.",
-  "next_update": "9:00 PM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,810 minutes at 9:00 PM; no takeoffs or landings since 6:00 PM; Dammam moving again since 8:18 PM after a 7:11\u20138:18 PM halt",
+  "headline": "Riyadh still halted (15,810 min), no movements since 6 PM; Dammam moving again after 66-minute halt; wave of condemnations of Houthi attacks",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 15,810 minutes at 9:00 PM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights; KKIA again told a traveller at 8:33 PM to follow the official authorities or their airline for airspace updates. 161 Riyadh flights have been cancelled so far on Thursday (37% of scheduled) and 3 arrivals diverted. Since the 6:00 PM edition (board checked 8:44 PM): 0 takeoffs and 0 landings. In the last hour: 0 takeoffs and 0 landings. The last movement is still the permitted Saudia SV934 landing from Amsterdam at 5:04 PM, and the last takeoff non-airline HZCMJ to Farnborough at 1:52 PM.",
+  "next_update": "12:00 AM",
   "kpis": {
-   "cancelled_total": 136,
-   "cancelled_departures": 59,
-   "cancelled_arrivals": 77,
-   "pct_of_scheduled": 31,
+   "cancelled_total": 161,
+   "cancelled_departures": 73,
+   "cancelled_arrivals": 88,
+   "pct_of_scheduled": 37,
    "scheduled": 440,
-   "diverted": 2,
+   "diverted": 3,
    "diverted_to": [
     "Jeddah",
-    "Madinah"
+    "Madinah",
+    "Qassim"
    ],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 1,
+   "landings_last_hour": 0,
    "last_takeoff": {
     "time": "1:52 PM",
     "flight": "HZCMJ",
     "city": "Farnborough",
-    "minutes_ago": 242
+    "minutes_ago": 413
    },
    "last_landing": {
     "time": "5:04 PM",
     "flight": "SV934",
     "city": "Amsterdam",
-    "minutes_ago": 49
+    "minutes_ago": 220
    }
   },
   "flow24": {
-   "start": "2026-10-21T18:00:00+03:00",
-   "end": "2026-10-22T17:54:00+03:00",
-   "start_label": "6:00 PM Wednesday",
+   "start": "2026-10-21T21:00:00+03:00",
+   "end": "2026-10-22T20:44:00+03:00",
+   "start_label": "9:00 PM Wednesday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-21T18:00:00+03:00",
-     "label": "6 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 31
-    },
-    {
-     "hour_start": "2026-10-21T19:00:00+03:00",
-     "label": "7 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 27
-    },
-    {
-     "hour_start": "2026-10-21T20:00:00+03:00",
-     "label": "8 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 22
-    },
     {
      "hour_start": "2026-10-21T21:00:00+03:00",
      "label": "9 PM",
@@ -107,14 +87,14 @@
      "label": "2 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-22T03:00:00+03:00",
      "label": "3 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-22T04:00:00+03:00",
@@ -128,35 +108,35 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-22T06:00:00+03:00",
      "label": "6 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-22T07:00:00+03:00",
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-22T08:00:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-22T09:00:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-22T10:00:00+03:00",
@@ -205,7 +185,7 @@
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-22T17:00:00+03:00",
@@ -213,19 +193,40 @@
      "takeoffs": 0,
      "landings": 1,
      "cancelled": 7
+    },
+    {
+     "hour_start": "2026-10-22T18:00:00+03:00",
+     "label": "6 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 7
+    },
+    {
+     "hour_start": "2026-10-22T19:00:00+03:00",
+     "label": "7 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-22T20:00:00+03:00",
+     "label": "8 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 4
     }
    ],
    "totals": {
     "takeoffs": 3,
     "landings": 2,
-    "cancelled": 258
+    "cancelled": 219
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 15625
+     "minutes": 15795
     },
     {
      "start": "2026-10-21T13:59:44+03:00",
@@ -287,9 +288,81 @@
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh airport still halted; Qatar, Bahrain, Iraq and the Muslim World League condemn Houthi attacks; Dammam operating",
-  "news_checked": "5:52 PM",
+  "news_title": "Riyadh airport still halted; Kuwait, UAE, GCC, European Parliament and UN chief condemn Houthi attacks; Dammam moving again after a 66-minute halt",
+  "news_checked": "8:46 PM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Kuwait condemns the Houthi attack on Dammam's King Fahd airport",
+    "source": "SPA (@SPAregions)",
+    "time": "8:42 PM",
+    "extra": "published 8:42 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "Kuwait condemned what it called the flagrant attack by the Houthi militia on King Fahd International Airport in Dammam (SPA, translated from Arabic).",
+    "url": "https://x.com/SPAregions/status/2113325045690822874"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "GCC Secretary-General condemns the Houthi attacks on Dammam airport and the Shaybah oilfield",
+    "source": "SPA (@Spa_Eng / @SPAregions)",
+    "time": "8:39 PM",
+    "extra": "published 8:39 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "The GCC Secretary-General condemned the two terrorist attacks by the Houthi militia that targeted King Fahd International Airport in Dammam and the Shaybah oilfield (SPA, 8:13 PM Arabic and 8:39 PM English).",
+    "url": "https://x.com/Spa_Eng/status/2113324326120468509"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "European Parliament affirms solidarity with Saudi Arabia and condemns the Houthi attacks",
+    "source": "SPA (@SPAregions)",
+    "time": "8:28 PM",
+    "extra": "published 8:28 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "SPA reports the European Parliament affirmed its solidarity with the Kingdom and condemned the Houthi attacks (translated from Arabic).",
+    "url": "https://x.com/SPAregions/status/2113321618865045598"
+   },
+   {
+    "tag": "CLAIM",
+    "title": "Yemeni government forces say 780 strikes on Houthi positions in 24 hours, about 512 fighters neutralised",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "8:21 PM",
+    "extra": "published 8:21 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "Al Ekhbariya relays the Yemeni armed forces' claim that, under operation \"Dawn of Yemen\", 780 operations in the past 24 hours hit Houthi field commanders, positions and supply lines, neutralising about 512 fighters. Not independently verified.",
+    "url": "https://x.com/alekhbariyatv/status/2113319887942660118"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Arab News: Dammam airport and Shaybah attacks killed four people and injured 10 in total",
+    "source": "Arab News (@arabnews)",
+    "time": "7:42 PM",
+    "extra": "published 7:42 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "Arab countries and the Muslim World League condemned the Houthi attacks on King Fahd International Airport in Dammam and the Shaybah oilfield, which Arab News says killed four people and injured 10, consistent with the GACA (2 killed, 8 injured) and Energy Ministry (2 killed, 2 injured) figures.",
+    "url": "https://x.com/arabnews/status/2113310000328364060"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "UAE strongly condemns the Houthi attack on King Fahd International Airport",
+    "source": "SPA (@Spa_Eng)",
+    "time": "7:02 PM",
+    "extra": "published 7:02 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "SPA reports the UAE strongly condemned the Houthi attack on King Fahd International Airport in Dammam.",
+    "url": "https://x.com/Spa_Eng/status/2113299902415483331"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense warns that filming or sharing interception and impact-site information is a legal offence",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "time": "6:48 PM",
+    "extra": "published 6:48 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "Saudi Civil Defense (Interior Ministry) warned that filming, publishing or sharing information about countering missiles and drones and where they fall exposes people to legal liability.",
+    "url": "https://x.com/SaudiDCD/status/2113296374141792574"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "UN chief Guterres calls Houthi attacks on civilian targets in Saudi Arabia \"totally unacceptable\"",
+    "source": "Arab News (@arabnews)",
+    "time": "6:21 PM",
+    "extra": "published 6:21 PM AST Thu 22 Oct; checked 8:46 PM",
+    "body": "Arab News reports UN Secretary-General Antonio Guterres condemned Houthi attacks on civilian targets in Saudi Arabia as \"totally unacceptable\", warning that spreading conflicts were creating \"an El Nino of war\".",
+    "url": "https://x.com/arabnews/status/2113289773544788279"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Qatar condemns the Houthi attack on Dammam's King Fahd airport",
@@ -370,82 +443,10 @@
     "extra": "published 12:54 PM AST Thu 22 Oct; checked 2:50 PM",
     "body": "The UK Defence Ministry said it had observed Houthi attacks on Saudi infrastructure and airports resulting in casualties, and that the military support it announced is meant to help Saudi Arabia at this critical moment.",
     "url": "https://x.com/arabnews/status/2113207365885424056"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition: drone intercepted and destroyed in the Riyadh region",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "time": "11:55 AM",
-    "extra": "published 11:55 AM AST Thu 22 Oct; checked 2:50 PM; SPA English 12:18 PM",
-    "body": "The coalition said a drone was intercepted and destroyed in the Riyadh region (translated from Arabic). No damage or casualties were reported.",
-    "url": "https://x.com/CJFCSpox/status/2113192544561438813"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Al Ekhbariya: GACA announces Dammam airport is operating again and air traffic is back to normal",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "11:07 AM",
-    "extra": "published 11:07 AM AST Thu 22 Oct (Arabic, translated); checked 11:55 AM",
-    "body": "Saudi state channel Al Ekhbariya reported GACA's announcement that King Fahd International Airport in Dammam has resumed operations and that air traffic has returned to normal after the attack.",
-    "url": "https://x.com/alekhbariyatv/status/2113180393709158467"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "GACA follow-up: Dammam airport attack death toll rises to 2 killed, 8 injured; operations resumed and traffic back to normal",
-    "source": "GACA (@ksagaca) / SPA (@Spa_Eng) / Al Ekhbariya",
-    "time": "9:38 AM",
-    "extra": "GACA statement published 9:38 AM AST Thu 22 Oct (Arabic), SPA English 10:01 AM, GACA English 11:29 AM; Al Ekhbariya 9:45 AM and 9:51 AM; checked 11:55 AM",
-    "body": "GACA said the death toll from Wednesday evening's attack on King Fahd International Airport in Dammam has risen to two, a Saudi citizen and an Indian resident, with 8 injured (3 Saudis, 2 Indians, 2 Yemenis and 1 Nepali). It said airport operations have resumed and air traffic has returned to normal.",
-    "url": "https://x.com/ksagaca/status/2113157919248171287"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "King Khalid airport still tells passengers to follow official authorities and their airline for airspace updates",
-    "source": "King Khalid Intl Airport (@KKIASA)",
-    "time": "8:47 AM",
-    "extra": "replies published 7:07 AM and 8:47 AM AST Thu 22 Oct (Arabic, translated); checked 8:55 AM",
-    "body": "Replying to passengers, KKIA again said the latest airspace updates come from the official authorities and the airline the booking was made with. No reopening time was given.",
-    "url": "https://x.com/KKIASA/status/2113145119344074782"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition: four drones intercepted and destroyed over the Eastern Region",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "time": "1:04 AM",
-    "extra": "published 1:04 AM AST Thu 22 Oct (Arabic; SPA English 1:14 AM); checked 2:55 AM",
-    "body": "The coalition spokesman said four drones were intercepted and destroyed in the Eastern Region. Targets, debris and casualties were not stated.",
-    "url": "https://x.com/CJFCSpox/status/2113028583933309223"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Energy Ministry: the two killed by Shaybah drone debris were Filipino and Nepali nationals; the injured are Pakistani and Indian",
-    "source": "Ministry of Energy via SPA / AP / GMA News",
-    "time": "10:08 PM",
-    "extra": "ministry statement Wed 21 Oct; GMA News published 8:08 AM AST Thu 22 Oct; checked 8:55 AM",
-    "body": "The Energy Ministry named the nationalities of the casualties from Wednesday morning's intercepted drone at Aramco's Shaybah field: a Filipino and a Nepali killed, a Pakistani and an Indian injured. Operations were not affected.",
-    "url": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1006787/filipino-killed-in-intercepted-drone-attack-near-saudi-oilfield/story/"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Ministry of Energy: drone aimed at a Shaybah field facility intercepted; falling debris killed 2 residents and injured 2",
-    "source": "SPA (@Spa_Eng)",
-    "time": "10:08 PM",
-    "extra": "published 10:08 PM AST Wed 21 Oct (official account; Arabic SPA 9:57 PM); checked 11:55 PM",
-    "body": "The Ministry of Energy said air defences intercepted a drone on Wednesday morning that tried to target a facility at Aramco's Shaybah field in the Eastern Province. Falling debris killed two residents (a Filipino and a Nepali) and injured two (a Pakistani and an Indian), and a contractor's vehicle caught fire outside the facility.",
-    "url": "https://x.com/Spa_Eng/status/2112984291579715715"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "US State Department orders non-emergency staff and families to leave Saudi Arabia",
-    "source": "Reuters / US State Department spokesperson",
-    "time": "9:57 PM",
-    "extra": "Reuters published 9:57 PM AST Wed 21 Oct; BBC and AP followed; checked 8:55 AM Thu",
-    "body": "State Department spokesperson Tommy Pigott said non-emergency US government employees and their family members in Saudi Arabia only were ordered to depart, citing Houthi attacks on civilian airports and critical infrastructure. Four US officials told Reuters that family members at other US Gulf missions will also be withdrawn.",
-    "url": "https://www.streetinsider.com/Reuters/US+orders+diplomats+to+depart+Saudi+Arabia+amid+Houthi+strikes/27215996.html"
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_600PM_22Oct2026.pdf",
+  "pdf_name": "RUH_status_report_900PM_22Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
@@ -811,7 +812,7 @@
   ]
  },
  "maritime": {
-  "updated": "2026-10-22T17:55:16.041255+03:00",
+  "updated": "2026-10-22T20:45:55.638873+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -876,46 +877,47 @@
   }
  },
  "summary": {
-  "headline": "Riyadh still halted (15,630 min) with one permitted landing; Qatar, Bahrain, Iraq condemn Houthi attacks; Dammam operating",
-  "as_of": "2026-10-22T17:54+03:00",
+  "headline": "Riyadh still halted (15,810 min), no movements since 6 PM; Dammam moving again after 66-minute halt; wave of condemnations of Houthi attacks",
+  "as_of": "2026-10-22T20:44+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (15625 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (15795 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "4 takeoffs and 2 landings in the last hour."
+    "status_line": "0 takeoffs and 5 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday 11 Oct (15,630 min at 6:00 PM); 0 takeoffs and 1 permitted landing (Saudia SV934 from Amsterdam 5:04 PM) since 3:00 PM",
-   "Dammam: 17 takeoffs and 9 landings since 3:00 PM; no halt of 45 minutes or more",
-   "No new coalition intercepts or Civil Defense alerts since the 2:33 PM statement on 4 drones over the Riyadh and Madinah regions",
-   "Qatar, Bahrain, Iraq and the Muslim World League condemn the Houthi attacks (SPA, Al Ekhbariya); KKIA tells travellers to follow official channels and their airline"
+   "Riyadh still halted since 9:29 PM Sunday 11 Oct (15,810 min at 9:00 PM); 0 takeoffs and 0 landings since 6:00 PM",
+   "Dammam halted 7:11\u20138:18 PM (66 min), moving again; 4 takeoffs and 13 landings since 6:00 PM",
+   "No new coalition intercepts or Civil Defense alerts since the 2:33 PM statement; Civil Defense warns against filming interceptions",
+   "Kuwait, UAE, GCC Secretary-General, European Parliament and UN chief condemn the Houthi attacks"
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (15625 min).",
-  "as_of": "2026-10-22T17:54+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (15795 min).",
+  "as_of": "2026-10-22T20:44+03:00",
   "kpis": {
-   "cancelled_total": 136,
-   "cancelled_departures": 59,
-   "cancelled_arrivals": 77,
-   "pct_of_scheduled": 31,
+   "cancelled_total": 161,
+   "cancelled_departures": 73,
+   "cancelled_arrivals": 88,
+   "pct_of_scheduled": 37,
    "scheduled": 440,
-   "diverted": 2,
+   "diverted": 3,
    "diverted_to": [
     "Jeddah",
-    "Madinah"
+    "Madinah",
+    "Qassim"
    ],
    "takeoffs_last_hour": 0,
-   "landings_last_hour": 1,
+   "landings_last_hour": 0,
    "last_takeoff": {
     "time": "1:52 PM",
     "flight": "HZCMJ",
@@ -928,30 +930,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-21T18:00+03:00",
-   "end": "2026-10-22T17:54+03:00",
+   "start": "2026-10-21T21:00+03:00",
+   "end": "2026-10-22T20:44+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-21T18:00+03:00",
-     "label": "6 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 31
-    },
-    {
-     "hour_start": "2026-10-21T19:00+03:00",
-     "label": "7 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 27
-    },
-    {
-     "hour_start": "2026-10-21T20:00+03:00",
-     "label": "8 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 22
-    },
     {
      "hour_start": "2026-10-21T21:00+03:00",
      "label": "9 PM",
@@ -992,14 +973,14 @@
      "label": "2 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-22T03:00+03:00",
      "label": "3 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-22T04:00+03:00",
@@ -1013,35 +994,35 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-22T06:00+03:00",
      "label": "6 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-22T07:00+03:00",
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-22T08:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-22T09:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-22T10:00+03:00",
@@ -1090,7 +1071,7 @@
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-22T17:00+03:00",
@@ -1098,12 +1079,33 @@
      "takeoffs": 0,
      "landings": 1,
      "cancelled": 7
+    },
+    {
+     "hour_start": "2026-10-22T18:00+03:00",
+     "label": "6 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 7
+    },
+    {
+     "hour_start": "2026-10-22T19:00+03:00",
+     "label": "7 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 5
+    },
+    {
+     "hour_start": "2026-10-22T20:00+03:00",
+     "label": "8 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 4
     }
    ],
    "totals": {
     "takeoffs": 3,
     "landings": 2,
-    "cancelled": 258
+    "cancelled": 219
    },
    "halts": [
     {
@@ -1169,56 +1171,36 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "4 takeoffs and 2 landings in the last hour.",
-  "as_of": "2026-10-22T17:54+03:00",
+  "status_line": "0 takeoffs and 5 landings in the last hour.",
+  "as_of": "2026-10-22T20:44+03:00",
   "kpis": {
-   "cancelled_total": 53,
-   "cancelled_departures": 26,
-   "cancelled_arrivals": 27,
-   "pct_of_scheduled": 21,
+   "cancelled_total": 58,
+   "cancelled_departures": 30,
+   "cancelled_arrivals": 28,
+   "pct_of_scheduled": 22,
    "scheduled": 258,
-   "diverted": 1,
+   "diverted": 2,
    "diverted_to": [
-    "Madinah"
+    "Madinah",
+    "Bahrain"
    ],
-   "takeoffs_last_hour": 4,
-   "landings_last_hour": 2,
+   "takeoffs_last_hour": 0,
+   "landings_last_hour": 5,
    "last_takeoff": {
-    "time": "5:48 PM",
-    "flight": "XY405",
-    "city": "Jeddah"
+    "time": "7:11 PM",
+    "flight": "PK246",
+    "city": "Islamabad"
    },
    "last_landing": {
-    "time": "5:06 PM",
-    "flight": "SV1118",
+    "time": "8:35 PM",
+    "flight": "XY412",
     "city": "Jeddah"
    }
   },
   "flow24": {
-   "start": "2026-10-21T18:00+03:00",
-   "end": "2026-10-22T17:54+03:00",
+   "start": "2026-10-21T21:00+03:00",
+   "end": "2026-10-22T20:44+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-21T18:00+03:00",
-     "label": "6 PM",
-     "takeoffs": 2,
-     "landings": 6,
-     "cancelled": 3
-    },
-    {
-     "hour_start": "2026-10-21T19:00+03:00",
-     "label": "7 PM",
-     "takeoffs": 3,
-     "landings": 2,
-     "cancelled": 4
-    },
-    {
-     "hour_start": "2026-10-21T20:00+03:00",
-     "label": "8 PM",
-     "takeoffs": 3,
-     "landings": 6,
-     "cancelled": 2
-    },
     {
      "hour_start": "2026-10-21T21:00+03:00",
      "label": "9 PM",
@@ -1259,14 +1241,14 @@
      "label": "2 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 3
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-22T03:00+03:00",
      "label": "3 AM",
      "takeoffs": 0,
      "landings": 1,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-22T04:00+03:00",
@@ -1280,7 +1262,7 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 1,
-     "cancelled": 0
+     "cancelled": 1
     },
     {
      "hour_start": "2026-10-22T06:00+03:00",
@@ -1294,21 +1276,21 @@
      "label": "7 AM",
      "takeoffs": 1,
      "landings": 1,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-22T08:00+03:00",
      "label": "8 AM",
      "takeoffs": 4,
      "landings": 2,
-     "cancelled": 3
+     "cancelled": 2
     },
     {
      "hour_start": "2026-10-22T09:00+03:00",
      "label": "9 AM",
      "takeoffs": 4,
      "landings": 1,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-22T10:00+03:00",
@@ -1365,12 +1347,33 @@
      "takeoffs": 3,
      "landings": 2,
      "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-22T18:00+03:00",
+     "label": "6 PM",
+     "takeoffs": 3,
+     "landings": 6,
+     "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-22T19:00+03:00",
+     "label": "7 PM",
+     "takeoffs": 1,
+     "landings": 2,
+     "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-22T20:00+03:00",
+     "label": "8 PM",
+     "takeoffs": 0,
+     "landings": 5,
+     "cancelled": 1
     }
    ],
    "totals": {
-    "takeoffs": 52,
-    "landings": 54,
-    "cancelled": 70
+    "takeoffs": 48,
+    "landings": 53,
+    "cancelled": 72
    },
    "halts": [
     {
@@ -1402,10 +1405,21 @@
      "start": "2026-10-22T11:25+03:00",
      "end": "2026-10-22T12:19+03:00",
      "label": "Halt 11:25 AM\u201312:19 PM"
+    },
+    {
+     "start": "2026-10-22T19:11+03:00",
+     "end": "2026-10-22T20:18+03:00",
+     "label": "Halt 7:11\u20138:18 PM"
     }
    ]
   },
   "halts": [
+   {
+    "label": "Halt 7:11\u20138:18 PM",
+    "minutes": 66,
+    "start": "2026-10-22T19:11+03:00",
+    "end": "2026-10-22T20:18+03:00"
+   },
    {
     "label": "Halt 11:25 AM\u201312:19 PM",
     "minutes": 54,
@@ -1435,12 +1449,6 @@
     "minutes": 58,
     "start": "2026-10-21T21:56+03:00",
     "end": "2026-10-21T22:55+03:00"
-   },
-   {
-    "label": "Halt 8:54\u20139:48 PM",
-    "minutes": 54,
-    "start": "2026-10-21T20:54+03:00",
-    "end": "2026-10-21T21:48+03:00"
    }
   ]
  },
@@ -4994,9 +5002,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-22",
-    "usd": 111.26,
+    "usd": 112.56,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-22T17:45+03:00"
+    "time": "2026-10-22T20:35+03:00"
    },
    "spot_latest": {
     "date": "2026-10-20",
@@ -6307,15 +6315,87 @@
     },
     {
      "date": "2026-10-22",
-     "usd": 111.26
+     "usd": 112.56
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
   }
  },
  "news": {
-  "checked": "5:52 PM",
+  "checked": "8:46 PM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Kuwait condemns the Houthi attack on Dammam's King Fahd airport",
+    "source": "SPA (@SPAregions)",
+    "time": "8:42 PM",
+    "url": "https://x.com/SPAregions/status/2113325045690822874",
+    "body": "Kuwait condemned what it called the flagrant attack by the Houthi militia on King Fahd International Airport in Dammam (SPA, translated from Arabic).",
+    "airport": "DMM"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "GCC Secretary-General condemns the Houthi attacks on Dammam airport and the Shaybah oilfield",
+    "source": "SPA (@Spa_Eng / @SPAregions)",
+    "time": "8:39 PM",
+    "url": "https://x.com/Spa_Eng/status/2113324326120468509",
+    "body": "The GCC Secretary-General condemned the two terrorist attacks by the Houthi militia that targeted King Fahd International Airport in Dammam and the Shaybah oilfield (SPA, 8:13 PM Arabic and 8:39 PM English).",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "European Parliament affirms solidarity with Saudi Arabia and condemns the Houthi attacks",
+    "source": "SPA (@SPAregions)",
+    "time": "8:28 PM",
+    "url": "https://x.com/SPAregions/status/2113321618865045598",
+    "body": "SPA reports the European Parliament affirmed its solidarity with the Kingdom and condemned the Houthi attacks (translated from Arabic).",
+    "airport": null
+   },
+   {
+    "tag": "CLAIM",
+    "title": "Yemeni government forces say 780 strikes on Houthi positions in 24 hours, about 512 fighters neutralised",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "8:21 PM",
+    "url": "https://x.com/alekhbariyatv/status/2113319887942660118",
+    "body": "Al Ekhbariya relays the Yemeni armed forces' claim that, under operation \"Dawn of Yemen\", 780 operations in the past 24 hours hit Houthi field commanders, positions and supply lines, neutralising about 512 fighters. Not independently verified.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Arab News: Dammam airport and Shaybah attacks killed four people and injured 10 in total",
+    "source": "Arab News (@arabnews)",
+    "time": "7:42 PM",
+    "url": "https://x.com/arabnews/status/2113310000328364060",
+    "body": "Arab countries and the Muslim World League condemned the Houthi attacks on King Fahd International Airport in Dammam and the Shaybah oilfield, which Arab News says killed four people and injured 10, consistent with the GACA (2 killed, 8 injured) and Energy Ministry (2 killed, 2 injured) figures.",
+    "airport": "DMM"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "UAE strongly condemns the Houthi attack on King Fahd International Airport",
+    "source": "SPA (@Spa_Eng)",
+    "time": "7:02 PM",
+    "url": "https://x.com/Spa_Eng/status/2113299902415483331",
+    "body": "SPA reports the UAE strongly condemned the Houthi attack on King Fahd International Airport in Dammam.",
+    "airport": "DMM"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense warns that filming or sharing interception and impact-site information is a legal offence",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "time": "6:48 PM",
+    "url": "https://x.com/SaudiDCD/status/2113296374141792574",
+    "body": "Saudi Civil Defense (Interior Ministry) warned that filming, publishing or sharing information about countering missiles and drones and where they fall exposes people to legal liability.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "UN chief Guterres calls Houthi attacks on civilian targets in Saudi Arabia \"totally unacceptable\"",
+    "source": "Arab News (@arabnews)",
+    "time": "6:21 PM",
+    "url": "https://x.com/arabnews/status/2113289773544788279",
+    "body": "Arab News reports UN Secretary-General Antonio Guterres condemned Houthi attacks on civilian targets in Saudi Arabia as \"totally unacceptable\", warning that spreading conflicts were creating \"an El Nino of war\".",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Qatar condemns the Houthi attack on Dammam's King Fahd airport",
@@ -6395,78 +6475,6 @@
     "time": "12:54 PM",
     "url": "https://x.com/arabnews/status/2113207365885424056",
     "body": "The UK Defence Ministry said it had observed Houthi attacks on Saudi infrastructure and airports resulting in casualties, and that the military support it announced is meant to help Saudi Arabia at this critical moment.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition: drone intercepted and destroyed in the Riyadh region",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "time": "11:55 AM",
-    "url": "https://x.com/CJFCSpox/status/2113192544561438813",
-    "body": "The coalition said a drone was intercepted and destroyed in the Riyadh region (translated from Arabic). No damage or casualties were reported.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Al Ekhbariya: GACA announces Dammam airport is operating again and air traffic is back to normal",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "11:07 AM",
-    "url": "https://x.com/alekhbariyatv/status/2113180393709158467",
-    "body": "Saudi state channel Al Ekhbariya reported GACA's announcement that King Fahd International Airport in Dammam has resumed operations and that air traffic has returned to normal after the attack.",
-    "airport": "DMM"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "GACA follow-up: Dammam airport attack death toll rises to 2 killed, 8 injured; operations resumed and traffic back to normal",
-    "source": "GACA (@ksagaca) / SPA (@Spa_Eng) / Al Ekhbariya",
-    "time": "9:38 AM",
-    "url": "https://x.com/ksagaca/status/2113157919248171287",
-    "body": "GACA said the death toll from Wednesday evening's attack on King Fahd International Airport in Dammam has risen to two, a Saudi citizen and an Indian resident, with 8 injured (3 Saudis, 2 Indians, 2 Yemenis and 1 Nepali). It said airport operations have resumed and air traffic has returned to normal.",
-    "airport": "DMM"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "King Khalid airport still tells passengers to follow official authorities and their airline for airspace updates",
-    "source": "King Khalid Intl Airport (@KKIASA)",
-    "time": "8:47 AM",
-    "url": "https://x.com/KKIASA/status/2113145119344074782",
-    "body": "Replying to passengers, KKIA again said the latest airspace updates come from the official authorities and the airline the booking was made with. No reopening time was given.",
-    "airport": "RUH"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition: four drones intercepted and destroyed over the Eastern Region",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "time": "1:04 AM",
-    "url": "https://x.com/CJFCSpox/status/2113028583933309223",
-    "body": "The coalition spokesman said four drones were intercepted and destroyed in the Eastern Region. Targets, debris and casualties were not stated.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Energy Ministry: the two killed by Shaybah drone debris were Filipino and Nepali nationals; the injured are Pakistani and Indian",
-    "source": "Ministry of Energy via SPA / AP / GMA News",
-    "time": "10:08 PM",
-    "url": "https://www.gmanetwork.com/news/pinoyabroad/dispatch/1006787/filipino-killed-in-intercepted-drone-attack-near-saudi-oilfield/story/",
-    "body": "The Energy Ministry named the nationalities of the casualties from Wednesday morning's intercepted drone at Aramco's Shaybah field: a Filipino and a Nepali killed, a Pakistani and an Indian injured. Operations were not affected.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Ministry of Energy: drone aimed at a Shaybah field facility intercepted; falling debris killed 2 residents and injured 2",
-    "source": "SPA (@Spa_Eng)",
-    "time": "10:08 PM",
-    "url": "https://x.com/Spa_Eng/status/2112984291579715715",
-    "body": "The Ministry of Energy said air defences intercepted a drone on Wednesday morning that tried to target a facility at Aramco's Shaybah field in the Eastern Province. Falling debris killed two residents (a Filipino and a Nepali) and injured two (a Pakistani and an Indian), and a contractor's vehicle caught fire outside the facility.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "US State Department orders non-emergency staff and families to leave Saudi Arabia",
-    "source": "Reuters / US State Department spokesperson",
-    "time": "9:57 PM",
-    "url": "https://www.streetinsider.com/Reuters/US+orders+diplomats+to+depart+Saudi+Arabia+amid+Houthi+strikes/27215996.html",
-    "body": "State Department spokesperson Tommy Pigott said non-emergency US government employees and their family members in Saudi Arabia only were ordered to depart, citing Houthi attacks on civilian airports and critical infrastructure. Four US officials told Reuters that family members at other US Gulf missions will also be withdrawn.",
     "airport": null
    }
   ]
@@ -7167,7 +7175,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 673,
+  "count": 679,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -15918,27 +15926,94 @@
     "detail": "Replying to a traveller, KKIA said that for the latest updates on the airspace people should follow the competent official authorities or contact their airline directly. No reopening was announced.",
     "source": "King Khalid Intl Airport (@KKIASA)",
     "url": "https://x.com/KKIASA/status/2113280532863971649"
+   },
+   {
+    "id": "news-b4f0b0fd9e",
+    "ts": "2026-10-22T18:48:13+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "6:48 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Civil Defense warns that filming or sharing interception and impact-site information is a legal offence",
+    "detail": "Saudi Civil Defense (Interior Ministry) warned that filming, publishing or sharing information about countering missiles and drones and where they fall exposes people to legal liability.",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2113296374141792574"
+   },
+   {
+    "id": "news-69038db927",
+    "ts": "2026-10-22T19:02:14+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "7:02 PM",
+    "category": "official",
+    "airport": "DMM",
+    "tag": "CONFIRMED",
+    "title": "UAE strongly condemns the Houthi attack on King Fahd International Airport",
+    "detail": "SPA reports the UAE strongly condemned the Houthi attack on King Fahd International Airport in Dammam.",
+    "source": "SPA (@Spa_Eng)",
+    "url": "https://x.com/Spa_Eng/status/2113299902415483331"
+   },
+   {
+    "id": "halt-DMM-1792685508",
+    "ts": "2026-10-22T19:11:48+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "7:11 PM",
+    "category": "airport",
+    "airport": "DMM",
+    "tag": "CONFIRMED",
+    "title": "DMM halt 7:11\u20138:18 PM (66 min)",
+    "detail": "No takeoff or landing for 66+ minutes (FR24 board).",
+    "source": "DMM status tracker (FR24 board)",
+    "url": "https://ruh-status.onrender.com"
+   },
+   {
+    "id": "news-4b1062a04d",
+    "ts": "2026-10-22T20:28:32+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "8:28 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "European Parliament affirms solidarity with Saudi Arabia and condemns the Houthi attacks",
+    "detail": "SPA reports the European Parliament affirmed its solidarity with the Kingdom and condemned the Houthi attacks (translated from Arabic).",
+    "source": "SPA (@SPAregions)",
+    "url": "https://x.com/SPAregions/status/2113321618865045598"
+   },
+   {
+    "id": "news-b382f87b54",
+    "ts": "2026-10-22T20:39:17+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "8:39 PM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "GCC Secretary-General condemns the Houthi attacks on Dammam airport and the Shaybah oilfield",
+    "detail": "The GCC Secretary-General condemned the two terrorist attacks by the Houthi militia that targeted King Fahd International Airport in Dammam and the Shaybah oilfield (SPA, 8:13 PM Arabic and 8:39 PM English).",
+    "source": "SPA (@Spa_Eng / @SPAregions)",
+    "url": "https://x.com/Spa_Eng/status/2113324326120468509"
+   },
+   {
+    "id": "news-2cce180bc9",
+    "ts": "2026-10-22T20:42:09+03:00",
+    "date_label": "Thu 22 Oct",
+    "time_label": "8:42 PM",
+    "category": "official",
+    "airport": "DMM",
+    "tag": "CONFIRMED",
+    "title": "Kuwait condemns the Houthi attack on Dammam's King Fahd airport",
+    "detail": "Kuwait condemned what it called the flagrant attack by the Houthi militia on King Fahd International Airport in Dammam (SPA, translated from Arabic).",
+    "source": "SPA (@SPAregions)",
+    "url": "https://x.com/SPAregions/status/2113325045690822874"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "3:00 PM",
-  "window_start": "2026-10-22T14:46+03:00",
-  "window_end": "2026-10-22T17:54+03:00",
+  "prev_slot": "6:00 PM",
+  "window_start": "2026-10-22T18:00+03:00",
+  "window_end": "2026-10-22T20:44+03:00",
   "items": [],
   "last_24h": [
-   {
-    "date": "2026-10-21",
-    "time": "7:08 PM",
-    "city": "Southern Region",
-    "type": "interception",
-    "what": "Coalition: a Houthi drone launched toward the Southern Region intercepted and destroyed; no damage or casualties reported",
-    "source": "Coalition spokesman via Al Arabiya English / Arab News",
-    "url": "https://x.com/AlArabiya_Eng/status/2112939005654266013",
-    "tag": "CONFIRMED",
-    "casualties": "none reported"
-   },
    {
     "date": "2026-10-21",
     "time": "10:08 PM",
@@ -15974,17 +16049,6 @@
    },
    {
     "date": "2026-10-22",
-    "time": "9:38 AM",
-    "city": "Dammam",
-    "type": "casualties",
-    "what": "GACA follow-up: Dammam airport attack death toll rises to 2 killed, 8 injured; operations resumed and traffic back to normal",
-    "source": "GACA",
-    "url": "https://x.com/ksagaca/status/2113157919248171287",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-22",
     "time": "11:55 AM",
     "city": "Riyadh",
     "type": "interception",
@@ -16008,15 +16072,15 @@
   ],
   "tally_24h": {
    "attack": 1,
-   "interception": 5,
+   "interception": 4,
    "alert": 0,
    "all_clear": 0,
    "debris": 0,
-   "casualties": 1,
+   "casualties": 0,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Attacks 1, interceptions 5, casualty reports 1.",
-  "none_text": "No new attacks, interceptions or alerts since 3:00 PM AST."
+  "tally_text": "Last 24 hours: Attacks 1, interceptions 4.",
+  "none_text": "No new attacks, interceptions or alerts since 6:00 PM AST."
  },
  "airports": {
   "RUH": {
