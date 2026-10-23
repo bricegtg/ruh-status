@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-23T11:56:03+03:00",
+ "generated_at": "2026-10-23T12:00:23+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
   "title": "RUH & DMM Airport Status 12:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
   "slot": "12:00 PM",
-  "as_of": "2026-10-23T11:45:00+03:00",
-  "as_of_label": "11:45 AM",
+  "as_of": "2026-10-23T11:55:00+03:00",
+  "as_of_label": "11:55 AM",
   "date_long": "Friday 23 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 16,531 minutes at 9:00 AM; only one permitted non-airline takeoff (8:35 AM) and no landings since 6:00 AM. Dammam airport moving, no halt since 5:48 AM",
-  "headline": "Riyadh still halted (16,531 min); Dammam moving with 11 movements since 6:00 AM; no new attacks reported this morning",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 16,531 minutes at 9:00 AM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights. Since the 6:00 AM edition: 1 takeoff and 0 landings, the takeoff being the permitted non-airline N437GA to Jerez at 8:35 AM; no scheduled airline flight has operated. In the last hour: 1 takeoff and 0 landings. The last landing is still the permitted Saudia SV934 from Amsterdam at 5:04 PM Thursday. 67 Riyadh flights are cancelled so far on Friday (40% of scheduled). No new attack, interception or Civil Defense alert was announced between 6:00 and 9:00 AM; the last was the coalition's 3:57 AM interception of a ballistic missile fired toward Riyadh.",
-  "next_update": "12:00 PM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 16,710 minutes at 12:00 PM; only one permitted landing (Saudia SV979 from Guangzhou, 10:26 AM) and no takeoffs since 9:00 AM. Dammam airport moving, no halt open; its 8:21\u20139:30 AM halt ran 69 minutes",
+  "headline": "Riyadh still halted (16,710 min); Dammam moving with 16 movements since 9:00 AM after a 69-minute halt; no new attacks reported",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 16,710 minutes at 12:00 PM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure and GACA has announced no resumption of scheduled flights. Since the 9:00 AM edition: 0 takeoffs and 1 landing, the permitted Saudia SV979 from Guangzhou at 10:26 AM; no other scheduled airline flight has operated. In the last hour: 0 takeoffs and 0 landings. The last takeoff is still the permitted non-airline N437GA to Jerez at 8:35 AM. 67 Riyadh flights are cancelled so far on Friday (40% of scheduled). No new attack, interception or Civil Defense alert was announced between 9:00 AM and 12:00 PM; the last was the coalition's 3:57 AM interception of a ballistic missile fired toward Riyadh.",
+  "next_update": "3:00 PM",
   "kpis": {
    "cancelled_total": 67,
    "cancelled_departures": 32,
@@ -28,18 +28,18 @@
     "time": "8:35 AM",
     "flight": "N437GA",
     "city": "Jerez",
-    "minutes_ago": 190
+    "minutes_ago": 200
    },
    "last_landing": {
     "time": "10:26 AM",
     "flight": "SV979",
     "city": "Guangzhou",
-    "minutes_ago": 79
+    "minutes_ago": 89
    }
   },
   "flow24": {
    "start": "2026-10-22T12:00:00+03:00",
-   "end": "2026-10-23T11:45:00+03:00",
+   "end": "2026-10-23T11:55:00+03:00",
    "start_label": "12:00 PM Thursday",
    "unit": "hour",
    "buckets": [
@@ -82,7 +82,7 @@
      "hour_start": "2026-10-22T17:00:00+03:00",
      "label": "5 PM",
      "takeoffs": 0,
-     "landings": 1,
+     "landings": 0,
      "cancelled": 22
     },
     {
@@ -118,7 +118,7 @@
      "label": "10 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 15
     },
     {
      "hour_start": "2026-10-22T23:00:00+03:00",
@@ -214,15 +214,15 @@
    ],
    "totals": {
     "takeoffs": 3,
-    "landings": 2,
-    "cancelled": 234
+    "landings": 1,
+    "cancelled": 236
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 16696
+     "minutes": 16706
     },
     {
      "start": "2026-10-21T13:59:44+03:00",
@@ -232,15 +232,9 @@
     },
     {
      "start": "2026-10-22T13:52:17+03:00",
-     "end": "2026-10-22T17:04:45+03:00",
-     "label": "Halt 1:52\u20135:04 PM",
-     "minutes": 192
-    },
-    {
-     "start": "2026-10-22T17:04:45+03:00",
      "end": "2026-10-23T08:35:20+03:00",
-     "label": "Halt 5:04 PM\u20138:35 AM",
-     "minutes": 931
+     "label": "Halt 1:52 PM\u20138:35 AM",
+     "minutes": 1123
     },
     {
      "start": "2026-10-23T08:35:20+03:00",
@@ -258,16 +252,10 @@
     "minutes": 111
    },
    {
-    "start": "2026-10-22T17:04:45+03:00",
-    "end": "2026-10-23T08:35:20+03:00",
-    "label": "Halt 5:04 PM\u20138:35 AM",
-    "minutes": 931
-   },
-   {
     "start": "2026-10-22T13:52:17+03:00",
-    "end": "2026-10-22T17:04:45+03:00",
-    "label": "Halt 1:52\u20135:04 PM",
-    "minutes": 192
+    "end": "2026-10-23T08:35:20+03:00",
+    "label": "Halt 1:52 PM\u20138:35 AM",
+    "minutes": 1123
    },
    {
     "start": "2026-10-21T13:59:44+03:00",
@@ -285,14 +273,41 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 16696
+    "minutes": 16706
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh airport still halted; Dammam moving; quiet morning after the 3:57 AM missile interception over Riyadh",
-  "news_checked": "11:44 AM",
+  "news_title": "Riyadh airport still halted; Dammam moving after a 69-minute morning halt; Arab League and European Parliament condemn the Houthi attacks",
+  "news_checked": "11:50 AM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "European Parliament calls for the Houthis to be listed as a terrorist organisation and expresses solidarity with the Kingdom",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "11:35 AM",
+    "extra": "published 11:35 AM AST Fri 23 Oct (Arabic, translated); checked 11:50 AM",
+    "body": "Al Ekhbariya reported that the European Parliament called for the Houthi group to be added to the list of terrorist organisations and for its funding channels to be dismantled, affirming its solidarity with Saudi Arabia and its support for Yemen's legitimate government (translated from Arabic).",
+    "url": "https://x.com/alekhbariyatv/status/2113549738914246876"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Arab League condemns the Houthi attacks on Dammam's King Fahd airport and the Shaybah oilfield",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "10:01 AM",
+    "extra": "published 10:01 AM and repeated 11:15 AM AST Fri 23 Oct (Arabic, translated); checked 11:50 AM",
+    "body": "The Arab League condemned the Houthi attacks on King Fahd International Airport and the Shaybah field as a violation of the Kingdom's sovereignty and a threat to its security and stability, and backed the measures Saudi Arabia takes to protect itself (translated from Arabic).",
+    "url": "https://x.com/alekhbariyatv/status/2113526233254232091"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Social account shares footage it says shows a Houthi missile impact in Riyadh overnight",
+    "source": "OSINT News (@OSINTNewsqrb) on X",
+    "time": "11:34 AM",
+    "extra": "posted 11:34 AM AST Fri 23 Oct, quoting its own 3:25 AM post; not confirmed; checked 11:50 AM",
+    "body": "An unverified social account posted video it says shows a direct missile impact in Riyadh from the overnight attack. The coalition said the 3:57 AM ballistic missile toward Riyadh was intercepted and destroyed, and no Saudi authority has reported an impact, damage or casualties.",
+    "url": "https://x.com/OSINTNewsqrb/status/2113549569879622120"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Weather centre: thunderstorms, hail and fog forecast for the Eastern Province and other regions",
@@ -516,7 +531,7 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-23T11:55:01+03:00",
+  "as_of": "2026-10-23T12:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
@@ -527,13 +542,13 @@
     "time": "8:35 AM",
     "flight": "N437GA",
     "city": "Jerez",
-    "minutes_ago": 200
+    "minutes_ago": 205
    },
    "last_landing": {
     "time": "10:26 AM",
     "flight": "SV979",
     "city": "Guangzhou",
-    "minutes_ago": 89
+    "minutes_ago": 94
    }
   },
   "cancellations": {
@@ -602,17 +617,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-22T12:00:00+03:00",
-   "end": "2026-10-23T11:55:01+03:00",
+   "start": "2026-10-22T13:00:00+03:00",
+   "end": "2026-10-23T12:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-22T12:00:00+03:00",
-     "label": "12 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 15
-    },
     {
      "hour_start": "2026-10-22T13:00:00+03:00",
      "label": "1 PM",
@@ -773,31 +781,38 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-23T12:00:00+03:00",
+     "label": "12 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 1
     }
    ],
    "totals": {
     "takeoffs": 3,
     "landings": 1,
-    "cancelled": 236
+    "cancelled": 222
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 16706
+     "minutes": 16711
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 13423
+     "minutes": 13428
     },
     {
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 3321
+     "minutes": 3326
     },
     {
      "start": "2026-10-22T13:52:17+03:00",
@@ -815,7 +830,7 @@
      "start": "2026-10-23T10:26:04+03:00",
      "end": null,
      "label": "Halt since 10:26 AM",
-     "minutes": 89
+     "minutes": 94
     }
    ]
   },
@@ -824,7 +839,7 @@
     "start": "2026-10-23T10:26:04+03:00",
     "end": null,
     "label": "Halt since 10:26 AM",
-    "minutes": 89
+    "minutes": 94
    },
    {
     "start": "2026-10-23T08:35:20+03:00",
@@ -842,19 +857,19 @@
     "start": "2026-10-21T04:33:54+03:00",
     "end": null,
     "label": "Halt since 4:33 AM",
-    "minutes": 3321
+    "minutes": 3326
    },
    {
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 13423
+    "minutes": 13428
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 16706
+    "minutes": 16711
    }
   ]
  },
@@ -924,33 +939,33 @@
   }
  },
  "summary": {
-  "headline": "Riyadh still halted (16,531 min); Dammam moving with 11 movements since 6:00 AM; no new attacks reported this morning",
-  "as_of": "2026-10-23T11:45+03:00",
+  "headline": "Riyadh still halted (16,710 min); Dammam moving with 16 movements since 9:00 AM after a 69-minute halt; no new attacks reported",
+  "as_of": "2026-10-23T11:55+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (16696 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (16706 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "4 takeoffs and 3 landings in the last hour."
+    "status_line": "3 takeoffs and 3 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh still halted since 9:29 PM Sunday 11 Oct (16,531 min at 9:00 AM); since 6:00 AM 1 permitted non-airline takeoff (N437GA to Jerez, 8:35 AM) and 0 landings",
-   "Dammam moving with no halt since 5:48 AM; since 6:00 AM 8 takeoffs and 3 landings, latest flyadeal F3461 to Medina 8:21 AM and flynas XY402 from Jeddah 8:10 AM",
-   "No new attacks, interceptions or Civil Defense alerts announced between 6:00 and 9:00 AM",
-   "Saudi weather centre (via SPA, 7:00 AM) forecasts thunderstorms, hail and fog over the Eastern Province and other regions"
+   "Riyadh still halted since 9:29 PM Sunday 11 Oct (16,710 min at 12:00 PM); since 9:00 AM 0 takeoffs and 1 permitted landing (Saudia SV979 from Guangzhou, 10:26 AM)",
+   "Dammam halted 8:21\u20139:30 AM (69 minutes, no takeoff or landing), then moving; since 9:00 AM 7 takeoffs and 9 landings, latest Gulf Air GF104 to Bahrain 11:38 AM and flynas XY765 from Tabuk 11:27 AM",
+   "No new attacks, interceptions or Civil Defense alerts announced between 9:00 AM and 12:00 PM",
+   "Arab League (10:01 AM) condemned the Dammam airport and Shaybah attacks; European Parliament (11:35 AM) called for the Houthis to be listed as a terrorist organisation"
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (16696 min).",
-  "as_of": "2026-10-23T11:45+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (16706 min).",
+  "as_of": "2026-10-23T11:55+03:00",
   "kpis": {
    "cancelled_total": 67,
    "cancelled_departures": 32,
@@ -974,7 +989,7 @@
   },
   "flow24": {
    "start": "2026-10-22T12:00+03:00",
-   "end": "2026-10-23T11:45+03:00",
+   "end": "2026-10-23T11:55+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-22T12:00+03:00",
@@ -1015,7 +1030,7 @@
      "hour_start": "2026-10-22T17:00+03:00",
      "label": "5 PM",
      "takeoffs": 0,
-     "landings": 1,
+     "landings": 0,
      "cancelled": 22
     },
     {
@@ -1051,7 +1066,7 @@
      "label": "10 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 13
+     "cancelled": 15
     },
     {
      "hour_start": "2026-10-22T23:00+03:00",
@@ -1147,8 +1162,8 @@
    ],
    "totals": {
     "takeoffs": 3,
-    "landings": 2,
-    "cancelled": 234
+    "landings": 1,
+    "cancelled": 236
    },
    "halts": [
     {
@@ -1163,13 +1178,8 @@
     },
     {
      "start": "2026-10-22T13:52+03:00",
-     "end": "2026-10-22T17:04+03:00",
-     "label": "Halt 1:52\u20135:04 PM"
-    },
-    {
-     "start": "2026-10-22T17:04+03:00",
      "end": "2026-10-23T08:35+03:00",
-     "label": "Halt 5:04 PM\u20138:35 AM"
+     "label": "Halt 1:52 PM\u20138:35 AM"
     },
     {
      "start": "2026-10-23T08:35+03:00",
@@ -1186,16 +1196,10 @@
     "end": "2026-10-23T10:26+03:00"
    },
    {
-    "label": "Halt 5:04 PM\u20138:35 AM",
-    "minutes": 931,
-    "start": "2026-10-22T17:04+03:00",
-    "end": "2026-10-23T08:35+03:00"
-   },
-   {
-    "label": "Halt 1:52\u20135:04 PM",
-    "minutes": 192,
+    "label": "Halt 1:52 PM\u20138:35 AM",
+    "minutes": 1123,
     "start": "2026-10-22T13:52+03:00",
-    "end": "2026-10-22T17:04+03:00"
+    "end": "2026-10-23T08:35+03:00"
    },
    {
     "label": "Halt 1:59\u20131:40 PM",
@@ -1211,7 +1215,7 @@
    },
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 16696,
+    "minutes": 16706,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -1219,8 +1223,8 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "4 takeoffs and 3 landings in the last hour.",
-  "as_of": "2026-10-23T11:45+03:00",
+  "status_line": "3 takeoffs and 3 landings in the last hour.",
+  "as_of": "2026-10-23T11:55+03:00",
   "kpis": {
    "cancelled_total": 33,
    "cancelled_departures": 17,
@@ -1229,7 +1233,7 @@
    "scheduled": 184,
    "diverted": 0,
    "diverted_to": [],
-   "takeoffs_last_hour": 4,
+   "takeoffs_last_hour": 3,
    "landings_last_hour": 3,
    "last_takeoff": {
     "time": "11:38 AM",
@@ -1244,7 +1248,7 @@
   },
   "flow24": {
    "start": "2026-10-22T12:00+03:00",
-   "end": "2026-10-23T11:45+03:00",
+   "end": "2026-10-23T11:55+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-22T12:00+03:00",
@@ -6356,8 +6360,35 @@
   }
  },
  "news": {
-  "checked": "11:44 AM",
+  "checked": "11:50 AM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "European Parliament calls for the Houthis to be listed as a terrorist organisation and expresses solidarity with the Kingdom",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "11:35 AM",
+    "url": "https://x.com/alekhbariyatv/status/2113549738914246876",
+    "body": "Al Ekhbariya reported that the European Parliament called for the Houthi group to be added to the list of terrorist organisations and for its funding channels to be dismantled, affirming its solidarity with Saudi Arabia and its support for Yemen's legitimate government (translated from Arabic).",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Arab League condemns the Houthi attacks on Dammam's King Fahd airport and the Shaybah oilfield",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "time": "10:01 AM",
+    "url": "https://x.com/alekhbariyatv/status/2113526233254232091",
+    "body": "The Arab League condemned the Houthi attacks on King Fahd International Airport and the Shaybah field as a violation of the Kingdom's sovereignty and a threat to its security and stability, and backed the measures Saudi Arabia takes to protect itself (translated from Arabic).",
+    "airport": "DMM"
+   },
+   {
+    "tag": "UNVERIFIED",
+    "title": "Social account shares footage it says shows a Houthi missile impact in Riyadh overnight",
+    "source": "OSINT News (@OSINTNewsqrb) on X",
+    "time": "11:34 AM",
+    "url": "https://x.com/OSINTNewsqrb/status/2113549569879622120",
+    "body": "An unverified social account posted video it says shows a direct missile impact in Riyadh from the overnight attack. The coalition said the 3:57 AM ballistic missile toward Riyadh was intercepted and destroyed, and no Saudi authority has reported an impact, damage or casualties.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Weather centre: thunderstorms, hail and fog forecast for the Eastern Province and other regions",
@@ -7294,7 +7325,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 695,
+  "count": 697,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -16331,27 +16362,42 @@
     "detail": "No takeoff or landing for 111+ minutes (FR24 board).",
     "source": "RUH status tracker (FR24 board)",
     "url": "https://ruh-status.onrender.com"
+   },
+   {
+    "id": "news-15ea3e02ce",
+    "ts": "2026-10-23T10:01:36+03:00",
+    "date_label": "Fri 23 Oct",
+    "time_label": "10:01 AM",
+    "category": "official",
+    "airport": "DMM",
+    "tag": "CONFIRMED",
+    "title": "Arab League condemns the Houthi attacks on Dammam's King Fahd airport and the Shaybah oilfield",
+    "detail": "The Arab League condemned the Houthi attacks on King Fahd International Airport and the Shaybah field as a violation of the Kingdom's sovereignty and a threat to its security and stability, and backed the measures Saudi Arabia takes to prot",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2113526233254232091"
+   },
+   {
+    "id": "news-b20a1ee06a",
+    "ts": "2026-10-23T11:35:00+03:00",
+    "date_label": "Fri 23 Oct",
+    "time_label": "11:35 AM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "European Parliament calls for the Houthis to be listed as a terrorist organisation and expresses solidarity with the Kin",
+    "detail": "Al Ekhbariya reported that the European Parliament called for the Houthi group to be added to the list of terrorist organisations and for its funding channels to be dismantled, affirming its solidarity with Saudi Arabia and its support for ",
+    "source": "Al Ekhbariya (@alekhbariyatv)",
+    "url": "https://x.com/alekhbariyatv/status/2113549738914246876"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
   "prev_slot": "9:00 AM",
-  "window_start": "2026-10-23T08:48+03:00",
-  "window_end": "2026-10-23T11:45+03:00",
+  "window_start": "2026-10-23T09:00+03:00",
+  "window_end": "2026-10-23T11:55+03:00",
   "items": [],
   "last_24h": [
-   {
-    "date": "2026-10-22",
-    "time": "11:55 AM",
-    "city": "Riyadh",
-    "type": "interception",
-    "what": "Coalition: a drone intercepted and destroyed in the Riyadh region; no damage or casualties reported",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "url": "https://x.com/CJFCSpox/status/2113192544561438813",
-    "tag": "CONFIRMED",
-    "casualties": "none reported"
-   },
    {
     "date": "2026-10-22",
     "time": "2:33 PM",
@@ -16487,14 +16533,14 @@
   ],
   "tally_24h": {
    "attack": 1,
-   "interception": 5,
+   "interception": 4,
    "alert": 3,
    "all_clear": 3,
    "debris": 0,
    "casualties": 1,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Attacks 1, interceptions 5, alerts 3, all-clears 3, casualty reports 1.",
+  "tally_text": "Last 24 hours: Attacks 1, interceptions 4, alerts 3, all-clears 3, casualty reports 1.",
   "none_text": "No new attacks, interceptions or alerts since 9:00 AM AST."
  },
  "airports": {
@@ -16503,7 +16549,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-23T11:55:01+03:00",
+   "as_of": "2026-10-23T12:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -16514,13 +16560,13 @@
      "time": "8:35 AM",
      "flight": "N437GA",
      "city": "Jerez",
-     "minutes_ago": 200
+     "minutes_ago": 205
     },
     "last_landing": {
      "time": "10:26 AM",
      "flight": "SV979",
      "city": "Guangzhou",
-     "minutes_ago": 89
+     "minutes_ago": 94
     }
    },
    "cancellations": {
@@ -16533,10 +16579,10 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-23T10:26:04+03:00",
-    "minutes_since_last_movement": 89,
+    "minutes_since_last_movement": 94,
     "movements_last_3h": 1,
-    "due_not_operated": 5,
-    "cancelled_in_window": 5,
+    "due_not_operated": 6,
+    "cancelled_in_window": 6,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-23T12:05:00+03:00",
     "qualifying_halts_6h": [
@@ -16548,24 +16594,17 @@
      {
       "start": "2026-10-23T10:26:04+03:00",
       "end": null,
-      "not_operated": 5
+      "not_operated": 6
      }
     ],
     "board_rows": 706,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-22T12:00:00+03:00",
-    "end": "2026-10-23T11:55:01+03:00",
+    "start": "2026-10-22T13:00:00+03:00",
+    "end": "2026-10-23T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-22T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 15
-     },
      {
       "hour_start": "2026-10-22T13:00:00+03:00",
       "label": "1 PM",
@@ -16726,31 +16765,38 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 2
+     },
+     {
+      "hour_start": "2026-10-23T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 1
      }
     ],
     "totals": {
      "takeoffs": 3,
      "landings": 1,
-     "cancelled": 236
+     "cancelled": 222
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 16706
+      "minutes": 16711
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 13423
+      "minutes": 13428
      },
      {
       "start": "2026-10-21T04:33:54+03:00",
       "end": null,
       "label": "Halt since 4:33 AM",
-      "minutes": 3321
+      "minutes": 3326
      },
      {
       "start": "2026-10-22T13:52:17+03:00",
@@ -16768,7 +16814,7 @@
       "start": "2026-10-23T10:26:04+03:00",
       "end": null,
       "label": "Halt since 10:26 AM",
-      "minutes": 89
+      "minutes": 94
      }
     ]
    },
@@ -16777,7 +16823,7 @@
      "start": "2026-10-23T10:26:04+03:00",
      "end": null,
      "label": "Halt since 10:26 AM",
-     "minutes": 89
+     "minutes": 94
     },
     {
      "start": "2026-10-23T08:35:20+03:00",
@@ -16795,19 +16841,19 @@
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 3321
+     "minutes": 3326
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 13423
+     "minutes": 13428
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 16706
+     "minutes": 16711
     }
    ],
    "ksa_bot": {
@@ -18236,7 +18282,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "QUIET",
-   "as_of": "2026-10-23T11:55:01+03:00",
+   "as_of": "2026-10-23T12:00:01+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -18247,7 +18293,7 @@
      "time": "4:56 AM",
      "flight": "MS816",
      "city": "Cairo",
-     "minutes_ago": 419
+     "minutes_ago": 424
     },
     "last_landing": null
    },
@@ -18261,7 +18307,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-23T04:56:00+03:00",
-    "minutes_since_last_movement": 419,
+    "minutes_since_last_movement": 424,
     "movements_last_3h": 0,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -18272,17 +18318,10 @@
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-22T12:00:00+03:00",
-    "end": "2026-10-23T11:55:01+03:00",
+    "start": "2026-10-22T13:00:00+03:00",
+    "end": "2026-10-23T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-22T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-22T13:00:00+03:00",
       "label": "1 PM",
@@ -18443,6 +18482,13 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-23T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
@@ -18455,7 +18501,7 @@
       "start": "2026-10-21T02:39:00+03:00",
       "end": null,
       "label": "Halt since 2:39 AM",
-      "minutes": 3436
+      "minutes": 3441
      },
      {
       "start": "2026-10-22T16:03:00+03:00",
@@ -18485,7 +18531,7 @@
       "start": "2026-10-23T04:56:00+03:00",
       "end": null,
       "label": "Halt since 4:56 AM",
-      "minutes": 419
+      "minutes": 424
      }
     ]
    },
@@ -18494,7 +18540,7 @@
      "start": "2026-10-23T04:56:00+03:00",
      "end": null,
      "label": "Halt since 4:56 AM",
-     "minutes": 419
+     "minutes": 424
     },
     {
      "start": "2026-10-22T23:37:00+03:00",
@@ -18524,7 +18570,7 @@
      "start": "2026-10-21T02:39:00+03:00",
      "end": null,
      "label": "Halt since 2:39 AM",
-     "minutes": 3436
+     "minutes": 3441
     }
    ],
    "ksa_bot": {
@@ -18542,7 +18588,7 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-23T11:55:01+03:00",
+   "as_of": "2026-10-23T12:00:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 2,
@@ -18553,13 +18599,13 @@
      "time": "11:33 AM",
      "flight": "QR1197",
      "city": "Doha",
-     "minutes_ago": 22
+     "minutes_ago": 27
     },
     "last_landing": {
      "time": "9:41 AM",
      "flight": "SV8254",
      "city": "Jeddah",
-     "minutes_ago": 134
+     "minutes_ago": 139
     }
    },
    "cancellations": {
@@ -18572,7 +18618,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-23T11:33:00+03:00",
-    "minutes_since_last_movement": 22,
+    "minutes_since_last_movement": 27,
     "movements_last_3h": 7,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -18583,17 +18629,10 @@
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-22T12:00:00+03:00",
-    "end": "2026-10-23T11:55:01+03:00",
+    "start": "2026-10-22T13:00:00+03:00",
+    "end": "2026-10-23T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-22T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 0,
-      "landings": 1,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-22T13:00:00+03:00",
       "label": "1 PM",
@@ -18754,20 +18793,21 @@
       "takeoffs": 2,
       "landings": 0,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-23T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
      "takeoffs": 31,
-     "landings": 12,
+     "landings": 11,
      "cancelled": 1
     },
     "halts": [
-     {
-      "start": "2026-10-22T11:56:00+03:00",
-      "end": "2026-10-22T12:42:54+03:00",
-      "label": "Halt 11:56 AM\u201312:42 PM",
-      "minutes": 47
-     },
      {
       "start": "2026-10-22T13:36:00+03:00",
       "end": "2026-10-22T14:52:00+03:00",
@@ -18877,24 +18917,24 @@
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-23T11:55:01+03:00",
+   "as_of": "2026-10-23T12:00:01+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 1,
-    "landings_last_hour": 0,
+    "landings_last_hour": 1,
     "takeoffs_last_30": 0,
-    "landings_last_30": 0,
+    "landings_last_30": 1,
     "last_takeoff": {
      "time": "11:22 AM",
      "flight": "SV1542",
      "city": "Jeddah",
-     "minutes_ago": 33
+     "minutes_ago": 38
     },
     "last_landing": {
-     "time": "8:17 PM",
-     "flight": "NP207",
-     "city": "Cairo",
-     "minutes_ago": 938
+     "time": "11:58 AM",
+     "flight": "F3385",
+     "city": "Jeddah",
+     "minutes_ago": 2
     }
    },
    "cancellations": {
@@ -18906,9 +18946,9 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-23T11:22:00+03:00",
-    "minutes_since_last_movement": 33,
-    "movements_last_3h": 4,
+    "last_movement": "2026-10-23T11:58:20+03:00",
+    "minutes_since_last_movement": 2,
+    "movements_last_3h": 5,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
@@ -18920,21 +18960,14 @@
       "not_operated": 3
      }
     ],
-    "board_rows": 97,
+    "board_rows": 98,
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-22T12:00:00+03:00",
-    "end": "2026-10-23T11:55:01+03:00",
+    "start": "2026-10-22T13:00:00+03:00",
+    "end": "2026-10-23T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-22T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 1,
-      "landings": 1,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-22T13:00:00+03:00",
       "label": "1 PM",
@@ -19093,12 +19126,19 @@
       "hour_start": "2026-10-23T11:00:00+03:00",
       "label": "11 AM",
       "takeoffs": 1,
+      "landings": 1,
+      "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-23T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
       "landings": 0,
       "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 17,
+     "takeoffs": 16,
      "landings": 5,
      "cancelled": 0
     },
@@ -19107,7 +19147,7 @@
       "start": "2026-10-21T04:29:00+03:00",
       "end": null,
       "label": "Halt since 4:29 AM",
-      "minutes": 3326
+      "minutes": 3331
      },
      {
       "start": "2026-10-22T13:19:00+03:00",
