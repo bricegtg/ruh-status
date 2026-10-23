@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-24T00:13:30+03:00",
+ "generated_at": "2026-10-24T00:28:34+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -475,18 +475,18 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-24T00:10:45+03:00",
+  "as_of": "2026-10-24T00:15:16+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
-   "takeoffs_last_hour": 0,
+   "takeoffs_last_hour": 1,
    "landings_last_hour": null,
-   "takeoffs_last_30": 0,
+   "takeoffs_last_30": 1,
    "landings_last_30": null,
    "last_takeoff": {
-    "time": "8:35 AM",
-    "flight": "N437GA",
-    "city": "Jerez",
-    "minutes_ago": 935
+    "time": "12:14 AM",
+    "flight": "SV992",
+    "city": "Shenzhen",
+    "minutes_ago": 1
    },
    "last_landing": null
   },
@@ -557,7 +557,7 @@
   ],
   "flow24": {
    "start": "2026-10-23T01:00:00+03:00",
-   "end": "2026-10-24T00:10:45+03:00",
+   "end": "2026-10-24T00:15:16+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -724,34 +724,34 @@
     {
      "hour_start": "2026-10-24T00:00:00+03:00",
      "label": "12 AM",
-     "takeoffs": 0,
+     "takeoffs": 1,
      "landings": 0,
-     "cancelled": 0
+     "cancelled": 1
     }
    ],
    "totals": {
-    "takeoffs": 1,
+    "takeoffs": 2,
     "landings": 0,
-    "cancelled": 72
+    "cancelled": 73
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 17441
+     "minutes": 17446
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 14159
+     "minutes": 14163
     },
     {
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 4057
+     "minutes": 4061
     },
     {
      "start": "2026-10-22T13:52:17+03:00",
@@ -761,18 +761,18 @@
     },
     {
      "start": "2026-10-23T08:35:20+03:00",
-     "end": null,
-     "label": "Halt since 8:35 AM",
-     "minutes": 935
+     "end": "2026-10-24T00:14:22+03:00",
+     "label": "Halt 8:35\u201312:14 AM",
+     "minutes": 939
     }
    ]
   },
   "halts": [
    {
     "start": "2026-10-23T08:35:20+03:00",
-    "end": null,
-    "label": "Halt since 8:35 AM",
-    "minutes": 935
+    "end": "2026-10-24T00:14:22+03:00",
+    "label": "Halt 8:35\u201312:14 AM",
+    "minutes": 939
    },
    {
     "start": "2026-10-22T13:52:17+03:00",
@@ -784,19 +784,19 @@
     "start": "2026-10-21T04:33:54+03:00",
     "end": null,
     "label": "Halt since 4:33 AM",
-    "minutes": 4057
+    "minutes": 4061
    },
    {
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 14159
+    "minutes": 14163
    },
    {
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 17441
+    "minutes": 17446
    }
   ]
  },
@@ -16711,18 +16711,18 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-24T00:10:45+03:00",
+   "as_of": "2026-10-24T00:15:16+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
-    "takeoffs_last_hour": 0,
+    "takeoffs_last_hour": 1,
     "landings_last_hour": null,
-    "takeoffs_last_30": 0,
+    "takeoffs_last_30": 1,
     "landings_last_30": null,
     "last_takeoff": {
-     "time": "8:35 AM",
-     "flight": "N437GA",
-     "city": "Jerez",
-     "minutes_ago": 935
+     "time": "12:14 AM",
+     "flight": "SV992",
+     "city": "Shenzhen",
+     "minutes_ago": 1
     },
     "last_landing": null
    },
@@ -16735,20 +16735,20 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-23T08:35:20+03:00",
-    "minutes_since_last_movement": 935,
-    "movements_last_3h": 0,
-    "due_not_operated": 16,
-    "cancelled_in_window": 12,
+    "last_movement": "2026-10-24T00:14:22+03:00",
+    "minutes_since_last_movement": 1,
+    "movements_last_3h": 1,
+    "due_not_operated": 1,
+    "cancelled_in_window": 1,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-24T00:20:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 711,
-    "current_gap_kind": "halt"
+    "board_rows": 713,
+    "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-23T01:00:00+03:00",
-    "end": "2026-10-24T00:10:45+03:00",
+    "end": "2026-10-24T00:15:16+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -16915,34 +16915,34 @@
      {
       "hour_start": "2026-10-24T00:00:00+03:00",
       "label": "12 AM",
-      "takeoffs": 0,
+      "takeoffs": 1,
       "landings": 0,
-      "cancelled": 0
+      "cancelled": 1
      }
     ],
     "totals": {
-     "takeoffs": 1,
+     "takeoffs": 2,
      "landings": 0,
-     "cancelled": 72
+     "cancelled": 73
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 17441
+      "minutes": 17446
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 14159
+      "minutes": 14163
      },
      {
       "start": "2026-10-21T04:33:54+03:00",
       "end": null,
       "label": "Halt since 4:33 AM",
-      "minutes": 4057
+      "minutes": 4061
      },
      {
       "start": "2026-10-22T13:52:17+03:00",
@@ -16952,18 +16952,18 @@
      },
      {
       "start": "2026-10-23T08:35:20+03:00",
-      "end": null,
-      "label": "Halt since 8:35 AM",
-      "minutes": 935
+      "end": "2026-10-24T00:14:22+03:00",
+      "label": "Halt 8:35\u201312:14 AM",
+      "minutes": 939
      }
     ]
    },
    "halts": [
     {
      "start": "2026-10-23T08:35:20+03:00",
-     "end": null,
-     "label": "Halt since 8:35 AM",
-     "minutes": 935
+     "end": "2026-10-24T00:14:22+03:00",
+     "label": "Halt 8:35\u201312:14 AM",
+     "minutes": 939
     },
     {
      "start": "2026-10-22T13:52:17+03:00",
@@ -16975,19 +16975,19 @@
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 4057
+     "minutes": 4061
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 14159
+     "minutes": 14163
     },
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 17441
+     "minutes": 17446
     }
    ],
    "ksa_bot": {
@@ -16997,7 +16997,7 @@
     "checked": "1:48 AM AST",
     "checked_at": null
    },
-   "auto_pill": "HALTED",
+   "auto_pill": "DISRUPTED",
    "pill_source": "report"
   },
   "JED": {
