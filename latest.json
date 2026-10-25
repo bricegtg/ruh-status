@@ -1,72 +1,51 @@
 {
  "schema": 2,
- "generated_at": "2026-10-25T11:51:22+03:00",
+ "generated_at": "2026-10-25T11:56:21+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
-  "title": "RUH & DMM Airport Status 9:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
-  "slot": "9:00 AM",
-  "as_of": "2026-10-25T08:45:00+03:00",
-  "as_of_label": "8:45 AM",
+  "title": "RUH & DMM Airport Status 12:00 PM AST: Riyadh HALTED, Dammam DISRUPTED",
+  "slot": "12:00 PM",
+  "as_of": "2026-10-25T11:51:00+03:00",
+  "as_of_label": "11:51 AM",
   "date_long": "Sunday 25 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 19,411 minutes at 9:00 AM; terminals due to reopen Sunday but no flight has moved and no NOTAM change seen. Dammam airport moving, no new halt since 6:00 AM",
-  "headline": "Riyadh still halted on reopening day; ballistic missile toward Riyadh intercepted at 6:21 AM; Dammam moving",
-  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 19,411 minutes at 9:00 AM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure. The airport said Terminal 1 (domestic) and Terminal 2 (international, Saudi carriers) open from Sunday 25 October, and several outlets reported a partial resumption, but no flight has operated on the board since midnight. Since the 6:00 AM edition: 0 takeoffs and 0 landings; in the last hour 0 and 0. 336 Riyadh flights are already cancelled for Sunday (58% of scheduled). Civil Defense sounded an early-warning alert in Riyadh at 6:02 AM and gave the all-clear at 6:12 AM; at 6:21 AM the coalition said a Houthi ballistic missile fired toward Riyadh was intercepted and destroyed, with no damage stated. The Houthis renewed their warning against using the airport (Reuters, claim).",
-  "next_update": "12:00 PM",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 19,590 minutes at 12:00 PM; first scheduled departure since the halt, flyadeal F313 to Abha, took off at 11:32 AM, followed by HZA22 to Belfast at 11:34 AM; no landings yet. Dammam airport moving, one halt since 9:00 AM (9:11 AM to 9:59 AM, 47 minutes)",
+  "headline": "Riyadh still formally halted but flyadeal F313 left at 11:32 AM; 10 ballistic missiles intercepted toward the south; Dammam moving",
+  "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 19,590 minutes at 12:00 PM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure. Terminals 1 and 2 were due to reopen Sunday, and at 11:32 AM flyadeal F313 to Abha became the first scheduled departure since the halt, followed by HZA22 to Belfast at 11:34 AM; no landings yet and no GACA or airport statement on a restart. Since the 9:00 AM edition: 2 takeoffs and 0 landings; in the last hour 2 and 0. 329 Riyadh flights are cancelled for Sunday (57% of scheduled). Attacks since 9:00 AM were in the south: the coalition downed a cruise missile toward Khamis Mushait at 9:58 AM and said at 11:46 AM it had intercepted 10 ballistic missiles fired toward the Southern Region, with no damage stated.",
+  "next_update": "3:00 PM",
   "kpis": {
-   "cancelled_total": 336,
-   "cancelled_departures": 176,
-   "cancelled_arrivals": 160,
-   "pct_of_scheduled": 58,
+   "cancelled_total": 329,
+   "cancelled_departures": 166,
+   "cancelled_arrivals": 163,
+   "pct_of_scheduled": 57,
    "scheduled": 576,
    "diverted": 4,
    "diverted_to": [
     "Dammam",
     "Madinah"
    ],
-   "takeoffs_last_hour": 0,
+   "takeoffs_last_hour": 2,
    "landings_last_hour": 0,
    "last_takeoff": {
-    "time": "12:14 AM",
-    "flight": "SV992",
-    "city": "Shenzhen",
-    "minutes_ago": 1951
+    "time": "11:34 AM",
+    "flight": "HZA22",
+    "city": "Belfast",
+    "minutes_ago": 17
    },
    "last_landing": {
     "time": "7:20 PM",
     "flight": "SV993",
     "city": "Shenzhen",
-    "minutes_ago": 805
+    "minutes_ago": 991
    }
   },
   "flow24": {
-   "start": "2026-10-24T09:00:00+03:00",
-   "end": "2026-10-25T08:45:00+03:00",
-   "start_label": "9:00 AM Saturday",
+   "start": "2026-10-24T12:00:00+03:00",
+   "end": "2026-10-25T11:51:00+03:00",
+   "start_label": "12:00 PM Saturday",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-24T09:00:00+03:00",
-     "label": "9 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 2
-    },
-    {
-     "hour_start": "2026-10-24T10:00:00+03:00",
-     "label": "10 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 3
-    },
-    {
-     "hour_start": "2026-10-24T11:00:00+03:00",
-     "label": "11 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 0
-    },
     {
      "hour_start": "2026-10-24T12:00:00+03:00",
      "label": "12 PM",
@@ -128,7 +107,7 @@
      "label": "8 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 1
+     "cancelled": 2
     },
     {
      "hour_start": "2026-10-24T21:00:00+03:00",
@@ -156,7 +135,7 @@
      "label": "12 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 0
+     "cancelled": 1
     },
     {
      "hour_start": "2026-10-25T01:00:00+03:00",
@@ -177,7 +156,7 @@
      "label": "3 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-25T04:00:00+03:00",
@@ -191,51 +170,84 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-25T06:00:00+03:00",
      "label": "6 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 14
+     "cancelled": 13
     },
     {
      "hour_start": "2026-10-25T07:00:00+03:00",
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 12
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-25T08:00:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 15
+     "cancelled": 16
+    },
+    {
+     "hour_start": "2026-10-25T09:00:00+03:00",
+     "label": "9 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 18
+    },
+    {
+     "hour_start": "2026-10-25T10:00:00+03:00",
+     "label": "10 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 16
+    },
+    {
+     "hour_start": "2026-10-25T11:00:00+03:00",
+     "label": "11 AM",
+     "takeoffs": 2,
+     "landings": 0,
+     "cancelled": 19
     }
    ],
    "totals": {
-    "takeoffs": 0,
+    "takeoffs": 2,
     "landings": 1,
-    "cancelled": 82
+    "cancelled": 129
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 19396
+     "minutes": 19582
     },
     {
      "start": "2026-10-24T01:19:49+03:00",
      "end": "2026-10-24T19:20:27+03:00",
      "label": "Halt 1:19 AM\u20137:20 PM",
      "minutes": 1081
+    },
+    {
+     "start": "2026-10-24T19:20:27+03:00",
+     "end": "2026-10-25T11:32:22+03:00",
+     "label": "Halt 7:20 PM\u201311:32 AM",
+     "minutes": 972
     }
    ]
   },
   "halts": [
+   {
+    "start": "2026-10-24T19:20:27+03:00",
+    "end": "2026-10-25T11:32:22+03:00",
+    "label": "Halt 7:20 PM\u201311:32 AM",
+    "minutes": 972
+   },
    {
     "start": "2026-10-24T01:19:49+03:00",
     "end": "2026-10-24T19:20:27+03:00",
@@ -258,14 +270,50 @@
     "start": "2026-10-11T21:29:30+03:00",
     "end": null,
     "label": "Halt since 9:29 PM",
-    "minutes": 19396
+    "minutes": 19582
    }
   ],
   "gulf": [],
   "gulf_footnote": null,
-  "news_title": "Riyadh still halted on its planned reopening day; second drone intercepted over Riyadh Region; Dammam moving after two halts",
-  "news_checked": "8:50 AM",
+  "news_title": "First scheduled Riyadh departure since 11 Oct as terminals reopen; 10 ballistic missiles intercepted toward the south; Dammam moving",
+  "news_checked": "11:54 AM",
   "news": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition: 10 Houthi ballistic missiles fired toward the Southern Region intercepted and destroyed",
+    "source": "Coalition spokesman (@CJFCSpox)",
+    "time": "11:46 AM",
+    "extra": "Coalition spokesman 11:46 AM AST Sun 25 Oct; translated from Arabic; checked 11:54 AM",
+    "body": "The coalition spokesman said air defenses intercepted and destroyed 10 ballistic missiles launched by the Houthis toward the Southern Region. No targets, damage or casualties were stated.",
+    "url": "https://x.com/CJFCSpox/status/2114277401764991226"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition: Houthi cruise missile fired toward Khamis Mushait intercepted and destroyed",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA / Al Ekhbariya",
+    "time": "9:58 AM",
+    "extra": "Coalition spokesman 9:58 AM, SPA Arabic 10:00 AM, Al Ekhbariya 10:05 AM, SPA English 10:23 AM AST Sun 25 Oct; translated from Arabic; checked 11:54 AM",
+    "body": "The coalition said a cruise missile launched by the Houthis toward Khamis Mushait was intercepted and destroyed. No damage or casualties were stated.",
+    "url": "https://x.com/Spa_Eng/status/2114256449136366081"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense: early-warning alerts in Khamis Mushait, Abha, Al-Namas and Tanomah, all-clear by 10:30 AM",
+    "source": "Saudi Civil Defense (@SaudiDCD) / Al Ekhbariya",
+    "time": "10:02 AM",
+    "extra": "Civil Defense 10:02\u201310:30 AM AST Sun 25 Oct; translated from Arabic; checked 11:54 AM",
+    "body": "The National Early Warning Platform alerted Khamis Mushait at 10:02 AM (all-clear 10:09 AM), then Khamis Mushait and Abha again at 10:10\u201310:11 AM and Al-Namas and Tanomah at about 10:26 AM. Civil Defense declared the danger passed in all four by 10:30 AM. At 10:31 AM the Interior Ministry repeated that filming or sharing interception and impact-site information brings legal liability.",
+    "url": "https://x.com/SaudiDCD/status/2114253593486266664"
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Board: first scheduled Riyadh departure since 11 Oct, flyadeal F313 to Abha, took off at 11:32 AM",
+    "source": "Flightradar24 RUH departures board",
+    "time": "11:32 AM",
+    "extra": "board fetched 11:49 AM AST Sun 25 Oct; no GACA or airport statement on a restart yet; checked 11:54 AM",
+    "body": "flyadeal F313 to Abha, scheduled 9:20 AM, departed at 11:32 AM, and HZA22 to Belfast departed at 11:34 AM. No landing has been recorded yet; Saudia SV1022 from Jeddah shows an expected arrival around 12:36 PM. Many other Sunday flights remain cancelled, and NOTAM A3650/26 still requires prior GACA permission for each movement.",
+    "url": "https://www.flightradar24.com/data/airports/ruh/departures"
+   },
    {
     "tag": "CONFIRMED",
     "title": "Coalition: air defenses intercepted and destroyed a Houthi ballistic missile fired toward Riyadh",
@@ -445,96 +493,15 @@
     "extra": "posted 5:55 PM AST Sat 24 Oct; translated from Arabic; checked 8:54 PM",
     "body": "Riyadh Civil Defense extinguished a fire in two commercial shops in the Manfuha district; no injuries. No link to an attack was stated.",
     "url": "https://x.com/SaudiDCD/status/2114007919708852589"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Foreign Minister takes a call from the Greek Foreign Minister on regional developments",
-    "source": "SPA (@SPAregions)",
-    "time": "8:11 PM",
-    "extra": "posted 8:11 PM AST Sat 24 Oct; translated from Arabic; checked 8:54 PM",
-    "body": "Prince Faisal bin Farhan received a phone call from the Greek Foreign Minister; they reviewed bilateral ties and developments in the region.",
-    "url": "https://x.com/SPAregions/status/2114042231527280876"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Civil Defense urges the public not to share rumours or unknown video clips and to rely on official sources",
-    "source": "Saudi Civil Defense (@SaudiDCD) on X",
-    "time": "5:15 PM",
-    "extra": "posted 5:15 PM AST Sat 24 Oct; translated from Arabic; checked 5:55 PM",
-    "body": "Civil Defense warned against circulating rumours and anonymous clips and told residents to get information from official sources. No new early-warning alert, interception or impact has been announced by Saudi official channels since the 11:55 AM coalition statement on the missiles aimed at Taif and Yanbu.",
-    "url": "https://x.com/SaudiDCD/status/2113997830348275985"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "First Saudi Aramco diesel shipment reaches Syria\u2019s Baniyas port",
-    "source": "Al Ekhbariya (@alekhbariyatv) on X",
-    "time": "4:04 PM",
-    "extra": "posted 4:04 PM AST Sat 24 Oct; translated from Arabic; checked 5:55 PM",
-    "body": "Saudi state channel Al Ekhbariya reported that the first shipment of Aramco diesel has arrived at Syria\u2019s Baniyas port.",
-    "url": "https://x.com/alekhbariyatv/status/2113979911081726222"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Saudi embassy in Paris tells citizens to take precautions and avoid protest areas",
-    "source": "Al Ekhbariya (@alekhbariyatv) on X",
-    "time": "2:05 PM",
-    "extra": "posted 2:05 PM AST Sat 24 Oct; translated from Arabic; checked 5:55 PM",
-    "body": "The Saudi embassy in Paris urged Saudi nationals to be cautious and stay away from demonstration sites.",
-    "url": "https://x.com/alekhbariyatv/status/2113949989969838351"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition: two Houthi ballistic missiles fired toward Taif and Yanbu intercepted and destroyed",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "time": "11:55 AM",
-    "extra": "published 11:55 AM AST Sat 24 Oct (Arabic), SPA English 12:03 PM; checked 2:50 PM",
-    "body": "The coalition says two ballistic missiles launched by the Houthis toward Taif and Yanbu were intercepted and destroyed. It follows the 11:16 AM Civil Defense alerts for Jeddah, Taif, Yanbu and Mecca Province. No damage or casualties were stated.",
-    "url": "https://x.com/CJFCSpox/status/2113917166474899567"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Civil Defense weather warnings for Asir, Mecca, Jazan and Al Baha regions",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "time": "12:59 PM",
-    "extra": "published 12:59 to 1:01 PM AST Sat 24 Oct; checked 2:50 PM",
-    "body": "Civil Defense urged caution over weather conditions in parts of Asir, Mecca, Jazan and Al Baha. These are weather advisories, not attack alerts.",
-    "url": "https://x.com/SaudiDCD"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Civil Defense early-warning alerts in Jeddah, Taif, Yanbu and Mecca Province, then all-clear",
-    "source": "Saudi Civil Defense (@SaudiDCD) and Al Ekhbariya (@alekhbariyatv)",
-    "time": "11:16 AM",
-    "extra": "alerts 11:16 AM (Jeddah, Taif), 11:17 AM (Yanbu), 11:20 AM (Mecca Province); all-clear 11:25\u201311:29 AM AST Sat 24 Oct (Arabic, translated); checked 11:55 AM",
-    "body": "The National Early Warning Platform issued warnings of a potential threat for Jeddah and Taif at 11:16 AM, Yanbu at 11:17 AM and Mecca Province at 11:20 AM. Civil Defense declared the danger over in Mecca Province at 11:25 AM, Yanbu 11:26 AM, Jeddah 11:28 AM and Taif 11:29 AM. No interception, impact or casualties have been announced for this alert.",
-    "url": "https://x.com/SaudiDCD/status/2113907377866965195"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Interior Ministry repeats: filming or sharing interception and impact-site information brings legal liability",
-    "source": "Saudi Civil Defense (@SaudiDCD), citing the Interior Ministry",
-    "time": "11:29 AM",
-    "extra": "published 11:29 AM AST Sat 24 Oct, right after the western-region all-clear; checked 11:55 AM",
-    "body": "Civil Defense reposted the Interior Ministry warning that filming, publishing or circulating information about missile and drone interceptions or where debris falls exposes people to legal accountability.",
-    "url": "https://x.com/SaudiDCD/status/2113910770111045892"
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Al Ekhbariya tally: Houthis have fired 1,114 missiles and 1,166 drones toward the Kingdom since 2016",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "10:20 AM",
-    "extra": "published 10:20 AM AST Sat 24 Oct (Arabic, translated); state-TV tally, 2016\u20132026; checked 11:55 AM",
-    "body": "Saudi state TV published a 10-year tally of Houthi launches toward Saudi Arabia: 1,114 missiles and 1,166 drones from 2016 to 2026.",
-    "url": "https://x.com/alekhbariyatv/status/2113893341901258976"
    }
   ],
   "pdf": "report.pdf",
-  "pdf_name": "RUH_status_report_900AM_25Oct2026.pdf",
+  "pdf_name": "RUH_status_report_1200PM_25Oct2026.pdf",
   "last_hour": null,
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-25T11:50:01+03:00",
+  "as_of": "2026-10-25T11:55:02+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 2,
@@ -545,19 +512,19 @@
     "time": "11:34 AM",
     "flight": "HZA22",
     "city": "Belfast",
-    "minutes_ago": 15
+    "minutes_ago": 20
    },
    "last_landing": {
     "time": "7:20 PM",
     "flight": "SV993",
     "city": "Shenzhen",
-    "minutes_ago": 990
+    "minutes_ago": 995
    }
   },
   "cancellations": {
-   "total": 328,
+   "total": 329,
    "departures": 166,
-   "arrivals": 162,
+   "arrivals": 163,
    "pct_of_scheduled": 57,
    "scheduled": 576
   },
@@ -621,7 +588,7 @@
   ],
   "flow24": {
    "start": "2026-10-24T12:00:00+03:00",
-   "end": "2026-10-25T11:50:01+03:00",
+   "end": "2026-10-25T11:55:02+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -713,7 +680,7 @@
      "label": "12 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 0
+     "cancelled": 1
     },
     {
      "hour_start": "2026-10-25T01:00:00+03:00",
@@ -790,32 +757,32 @@
      "label": "11 AM",
      "takeoffs": 2,
      "landings": 0,
-     "cancelled": 19
+     "cancelled": 22
     }
    ],
    "totals": {
     "takeoffs": 2,
     "landings": 1,
-    "cancelled": 128
+    "cancelled": 132
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 19581
+     "minutes": 19586
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 16298
+     "minutes": 16303
     },
     {
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 6196
+     "minutes": 6201
     },
     {
      "start": "2026-10-24T01:19:49+03:00",
@@ -860,18 +827,18 @@
     "start": "2026-10-21T04:33:54+03:00",
     "end": null,
     "label": "Halt since 4:33 AM",
-    "minutes": 6196
+    "minutes": 6201
    },
    {
     "start": "2026-10-14T04:11:57+03:00",
     "end": null,
     "label": "Halt since 4:11 AM",
-    "minutes": 16298
+    "minutes": 16303
    }
   ]
  },
  "maritime": {
-  "updated": "2026-10-25T08:47:00.472969+03:00",
+  "updated": "2026-10-25T11:53:17.908205+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -936,49 +903,49 @@
   }
  },
  "summary": {
-  "headline": "Riyadh still halted on reopening day; ballistic missile toward Riyadh intercepted at 6:21 AM; Dammam moving",
-  "as_of": "2026-10-25T08:45+03:00",
+  "headline": "Riyadh still formally halted but flyadeal F313 left at 11:32 AM; 10 ballistic missiles intercepted toward the south; Dammam moving",
+  "as_of": "2026-10-25T11:51+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (19396 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (19582 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "7 takeoffs and 1 landing in the last hour."
+    "status_line": "1 takeoff and 2 landings in the last hour."
    }
   ],
   "changed": [
-   "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 19,411 minutes at 9:00 AM",
-   "Coalition (6:21 AM): a Houthi ballistic missile fired toward Riyadh was intercepted and destroyed after a Civil Defense alert 6:02\u20136:12 AM; no damage stated",
-   "Dammam airport moving, no new halt since 6:00 AM; 10 takeoffs and 7 landings since 6:00 AM (latest Saudia SV888 to Beijing at 8:36 AM, flynas XY402 from Jeddah at 8:01 AM); 60 Dammam flights cancelled Sunday (23%)"
+   "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 19,590 minutes at 12:00 PM; first scheduled departure since the halt, flyadeal F313 to Abha, took off at 11:32 AM, followed by HZA22 to Belfast at 11:34 AM; no landings yet",
+   "Coalition (11:46 AM): 10 Houthi ballistic missiles fired toward the Southern Region intercepted and destroyed; earlier a cruise missile toward Khamis Mushait was downed at 9:58 AM, with Civil Defense alerts in Khamis Mushait, Abha, Al-Namas and Tanomah 10:02\u201310:30 AM; no damage stated",
+   "Dammam airport moving, one halt since 9:00 AM (9:11 AM to 9:59 AM, 47 minutes); 6 takeoffs and 5 landings since 9:00 AM (latest flyadeal F31652 from Islamabad at 11:46 AM); 59 Dammam flights cancelled Sunday (23%)"
   ]
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (19396 min).",
-  "as_of": "2026-10-25T08:45+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (19582 min).",
+  "as_of": "2026-10-25T11:51+03:00",
   "kpis": {
-   "cancelled_total": 336,
-   "cancelled_departures": 176,
-   "cancelled_arrivals": 160,
-   "pct_of_scheduled": 58,
+   "cancelled_total": 329,
+   "cancelled_departures": 166,
+   "cancelled_arrivals": 163,
+   "pct_of_scheduled": 57,
    "scheduled": 576,
    "diverted": 4,
    "diverted_to": [
     "Dammam",
     "Madinah"
    ],
-   "takeoffs_last_hour": 0,
+   "takeoffs_last_hour": 2,
    "landings_last_hour": 0,
    "last_takeoff": {
-    "time": "12:14 AM",
-    "flight": "SV992",
-    "city": "Shenzhen"
+    "time": "11:34 AM",
+    "flight": "HZA22",
+    "city": "Belfast"
    },
    "last_landing": {
     "time": "7:20 PM",
@@ -987,30 +954,9 @@
    }
   },
   "flow24": {
-   "start": "2026-10-24T09:00+03:00",
-   "end": "2026-10-25T08:45+03:00",
+   "start": "2026-10-24T12:00+03:00",
+   "end": "2026-10-25T11:51+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-24T09:00+03:00",
-     "label": "9 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 2
-    },
-    {
-     "hour_start": "2026-10-24T10:00+03:00",
-     "label": "10 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 3
-    },
-    {
-     "hour_start": "2026-10-24T11:00+03:00",
-     "label": "11 AM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 0
-    },
     {
      "hour_start": "2026-10-24T12:00+03:00",
      "label": "12 PM",
@@ -1072,7 +1018,7 @@
      "label": "8 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 1
+     "cancelled": 2
     },
     {
      "hour_start": "2026-10-24T21:00+03:00",
@@ -1100,7 +1046,7 @@
      "label": "12 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 0
+     "cancelled": 1
     },
     {
      "hour_start": "2026-10-25T01:00+03:00",
@@ -1121,7 +1067,7 @@
      "label": "3 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-25T04:00+03:00",
@@ -1135,34 +1081,55 @@
      "label": "5 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-25T06:00+03:00",
      "label": "6 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 14
+     "cancelled": 13
     },
     {
      "hour_start": "2026-10-25T07:00+03:00",
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 12
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-25T08:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 15
+     "cancelled": 16
+    },
+    {
+     "hour_start": "2026-10-25T09:00+03:00",
+     "label": "9 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 18
+    },
+    {
+     "hour_start": "2026-10-25T10:00+03:00",
+     "label": "10 AM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 16
+    },
+    {
+     "hour_start": "2026-10-25T11:00+03:00",
+     "label": "11 AM",
+     "takeoffs": 2,
+     "landings": 0,
+     "cancelled": 19
     }
    ],
    "totals": {
-    "takeoffs": 0,
+    "takeoffs": 2,
     "landings": 1,
-    "cancelled": 82
+    "cancelled": 129
    },
    "halts": [
     {
@@ -1174,10 +1141,21 @@
      "start": "2026-10-24T01:19+03:00",
      "end": "2026-10-24T19:20+03:00",
      "label": "Halt 1:19 AM\u20137:20 PM"
+    },
+    {
+     "start": "2026-10-24T19:20+03:00",
+     "end": "2026-10-25T11:32+03:00",
+     "label": "Halt 7:20 PM\u201311:32 AM"
     }
    ]
   },
   "halts": [
+   {
+    "label": "Halt 7:20 PM\u201311:32 AM",
+    "minutes": 972,
+    "start": "2026-10-24T19:20+03:00",
+    "end": "2026-10-25T11:32+03:00"
+   },
    {
     "label": "Halt 1:19 AM\u20137:20 PM",
     "minutes": 1081,
@@ -1198,7 +1176,7 @@
    },
    {
     "label": "Halt since 9:29 PM",
-    "minutes": 19396,
+    "minutes": 19582,
     "start": "2026-10-11T21:29+03:00",
     "end": null
    }
@@ -1206,54 +1184,33 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "7 takeoffs and 1 landing in the last hour.",
-  "as_of": "2026-10-25T08:45+03:00",
+  "status_line": "1 takeoff and 2 landings in the last hour.",
+  "as_of": "2026-10-25T11:51+03:00",
   "kpis": {
-   "cancelled_total": 60,
+   "cancelled_total": 59,
    "cancelled_departures": 29,
-   "cancelled_arrivals": 31,
+   "cancelled_arrivals": 30,
    "pct_of_scheduled": 23,
-   "scheduled": 258,
+   "scheduled": 259,
    "diverted": 0,
    "diverted_to": [],
-   "takeoffs_last_hour": 7,
-   "landings_last_hour": 1,
+   "takeoffs_last_hour": 1,
+   "landings_last_hour": 2,
    "last_takeoff": {
-    "time": "8:36 AM",
-    "flight": "SV888",
-    "city": "Beijing"
+    "time": "11:22 AM",
+    "flight": "XY764",
+    "city": "Tabuk"
    },
    "last_landing": {
-    "time": "8:01 AM",
-    "flight": "XY402",
-    "city": "Jeddah"
+    "time": "11:46 AM",
+    "flight": "F31652",
+    "city": "Islamabad"
    }
   },
   "flow24": {
-   "start": "2026-10-24T09:00+03:00",
-   "end": "2026-10-25T08:45+03:00",
+   "start": "2026-10-24T12:00+03:00",
+   "end": "2026-10-25T11:51+03:00",
    "buckets": [
-    {
-     "hour_start": "2026-10-24T09:00+03:00",
-     "label": "9 AM",
-     "takeoffs": 4,
-     "landings": 1,
-     "cancelled": 2
-    },
-    {
-     "hour_start": "2026-10-24T10:00+03:00",
-     "label": "10 AM",
-     "takeoffs": 4,
-     "landings": 1,
-     "cancelled": 0
-    },
-    {
-     "hour_start": "2026-10-24T11:00+03:00",
-     "label": "11 AM",
-     "takeoffs": 2,
-     "landings": 4,
-     "cancelled": 0
-    },
     {
      "hour_start": "2026-10-24T12:00+03:00",
      "label": "12 PM",
@@ -1308,14 +1265,14 @@
      "label": "7 PM",
      "takeoffs": 4,
      "landings": 3,
-     "cancelled": 3
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-24T20:00+03:00",
      "label": "8 PM",
      "takeoffs": 3,
      "landings": 5,
-     "cancelled": 1
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-24T21:00+03:00",
@@ -1336,7 +1293,7 @@
      "label": "11 PM",
      "takeoffs": 0,
      "landings": 3,
-     "cancelled": 0
+     "cancelled": 1
     },
     {
      "hour_start": "2026-10-25T00:00+03:00",
@@ -1400,12 +1357,33 @@
      "takeoffs": 6,
      "landings": 1,
      "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-25T09:00+03:00",
+     "label": "9 AM",
+     "takeoffs": 1,
+     "landings": 2,
+     "cancelled": 4
+    },
+    {
+     "hour_start": "2026-10-25T10:00+03:00",
+     "label": "10 AM",
+     "takeoffs": 4,
+     "landings": 1,
+     "cancelled": 2
+    },
+    {
+     "hour_start": "2026-10-25T11:00+03:00",
+     "label": "11 AM",
+     "takeoffs": 1,
+     "landings": 2,
+     "cancelled": 3
     }
    ],
    "totals": {
-    "takeoffs": 65,
-    "landings": 62,
-    "cancelled": 36
+    "takeoffs": 61,
+    "landings": 61,
+    "cancelled": 47
    },
    "halts": [
     {
@@ -1432,10 +1410,21 @@
      "start": "2026-10-25T03:19+03:00",
      "end": "2026-10-25T04:42+03:00",
      "label": "Halt 3:19\u20134:42 AM"
+    },
+    {
+     "start": "2026-10-25T09:11+03:00",
+     "end": "2026-10-25T09:59+03:00",
+     "label": "Halt 9:11\u20139:59 AM"
     }
    ]
   },
   "halts": [
+   {
+    "label": "Halt 9:11\u20139:59 AM",
+    "minutes": 48,
+    "start": "2026-10-25T09:11+03:00",
+    "end": "2026-10-25T09:59+03:00"
+   },
    {
     "label": "Halt 3:19\u20134:42 AM",
     "minutes": 83,
@@ -1465,12 +1454,6 @@
     "minutes": 80,
     "start": "2026-10-24T13:58+03:00",
     "end": "2026-10-24T15:18+03:00"
-   },
-   {
-    "label": "Halt 5:36\u20136:39 AM",
-    "minutes": 63,
-    "start": "2026-10-24T05:36+03:00",
-    "end": "2026-10-24T06:39+03:00"
    }
   ]
  },
@@ -6348,8 +6331,44 @@
   }
  },
  "news": {
-  "checked": "8:50 AM",
+  "checked": "11:54 AM",
   "items": [
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition: 10 Houthi ballistic missiles fired toward the Southern Region intercepted and destroyed",
+    "source": "Coalition spokesman (@CJFCSpox)",
+    "time": "11:46 AM",
+    "url": "https://x.com/CJFCSpox/status/2114277401764991226",
+    "body": "The coalition spokesman said air defenses intercepted and destroyed 10 ballistic missiles launched by the Houthis toward the Southern Region. No targets, damage or casualties were stated.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Coalition: Houthi cruise missile fired toward Khamis Mushait intercepted and destroyed",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA / Al Ekhbariya",
+    "time": "9:58 AM",
+    "url": "https://x.com/Spa_Eng/status/2114256449136366081",
+    "body": "The coalition said a cruise missile launched by the Houthis toward Khamis Mushait was intercepted and destroyed. No damage or casualties were stated.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Civil Defense: early-warning alerts in Khamis Mushait, Abha, Al-Namas and Tanomah, all-clear by 10:30 AM",
+    "source": "Saudi Civil Defense (@SaudiDCD) / Al Ekhbariya",
+    "time": "10:02 AM",
+    "url": "https://x.com/SaudiDCD/status/2114253593486266664",
+    "body": "The National Early Warning Platform alerted Khamis Mushait at 10:02 AM (all-clear 10:09 AM), then Khamis Mushait and Abha again at 10:10\u201310:11 AM and Al-Namas and Tanomah at about 10:26 AM. Civil Defense declared the danger passed in all four by 10:30 AM. At 10:31 AM the Interior Ministry repeated that filming or sharing interception and impact-site information brings legal liability.",
+    "airport": null
+   },
+   {
+    "tag": "CONFIRMED",
+    "title": "Board: first scheduled Riyadh departure since 11 Oct, flyadeal F313 to Abha, took off at 11:32 AM",
+    "source": "Flightradar24 RUH departures board",
+    "time": "11:32 AM",
+    "url": "https://www.flightradar24.com/data/airports/ruh/departures",
+    "body": "flyadeal F313 to Abha, scheduled 9:20 AM, departed at 11:32 AM, and HZA22 to Belfast departed at 11:34 AM. No landing has been recorded yet; Saudia SV1022 from Jeddah shows an expected arrival around 12:36 PM. Many other Sunday flights remain cancelled, and NOTAM A3650/26 still requires prior GACA permission for each movement.",
+    "airport": null
+   },
    {
     "tag": "CONFIRMED",
     "title": "Coalition: air defenses intercepted and destroyed a Houthi ballistic missile fired toward Riyadh",
@@ -6528,87 +6547,6 @@
     "time": "5:55 PM",
     "url": "https://x.com/SaudiDCD/status/2114007919708852589",
     "body": "Riyadh Civil Defense extinguished a fire in two commercial shops in the Manfuha district; no injuries. No link to an attack was stated.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Foreign Minister takes a call from the Greek Foreign Minister on regional developments",
-    "source": "SPA (@SPAregions)",
-    "time": "8:11 PM",
-    "url": "https://x.com/SPAregions/status/2114042231527280876",
-    "body": "Prince Faisal bin Farhan received a phone call from the Greek Foreign Minister; they reviewed bilateral ties and developments in the region.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Civil Defense urges the public not to share rumours or unknown video clips and to rely on official sources",
-    "source": "Saudi Civil Defense (@SaudiDCD) on X",
-    "time": "5:15 PM",
-    "url": "https://x.com/SaudiDCD/status/2113997830348275985",
-    "body": "Civil Defense warned against circulating rumours and anonymous clips and told residents to get information from official sources. No new early-warning alert, interception or impact has been announced by Saudi official channels since the 11:55 AM coalition statement on the missiles aimed at Taif and Yanbu.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "First Saudi Aramco diesel shipment reaches Syria\u2019s Baniyas port",
-    "source": "Al Ekhbariya (@alekhbariyatv) on X",
-    "time": "4:04 PM",
-    "url": "https://x.com/alekhbariyatv/status/2113979911081726222",
-    "body": "Saudi state channel Al Ekhbariya reported that the first shipment of Aramco diesel has arrived at Syria\u2019s Baniyas port.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Saudi embassy in Paris tells citizens to take precautions and avoid protest areas",
-    "source": "Al Ekhbariya (@alekhbariyatv) on X",
-    "time": "2:05 PM",
-    "url": "https://x.com/alekhbariyatv/status/2113949989969838351",
-    "body": "The Saudi embassy in Paris urged Saudi nationals to be cautious and stay away from demonstration sites.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Coalition: two Houthi ballistic missiles fired toward Taif and Yanbu intercepted and destroyed",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "time": "11:55 AM",
-    "url": "https://x.com/CJFCSpox/status/2113917166474899567",
-    "body": "The coalition says two ballistic missiles launched by the Houthis toward Taif and Yanbu were intercepted and destroyed. It follows the 11:16 AM Civil Defense alerts for Jeddah, Taif, Yanbu and Mecca Province. No damage or casualties were stated.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Civil Defense weather warnings for Asir, Mecca, Jazan and Al Baha regions",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "time": "12:59 PM",
-    "url": "https://x.com/SaudiDCD",
-    "body": "Civil Defense urged caution over weather conditions in parts of Asir, Mecca, Jazan and Al Baha. These are weather advisories, not attack alerts.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Civil Defense early-warning alerts in Jeddah, Taif, Yanbu and Mecca Province, then all-clear",
-    "source": "Saudi Civil Defense (@SaudiDCD) and Al Ekhbariya (@alekhbariyatv)",
-    "time": "11:16 AM",
-    "url": "https://x.com/SaudiDCD/status/2113907377866965195",
-    "body": "The National Early Warning Platform issued warnings of a potential threat for Jeddah and Taif at 11:16 AM, Yanbu at 11:17 AM and Mecca Province at 11:20 AM. Civil Defense declared the danger over in Mecca Province at 11:25 AM, Yanbu 11:26 AM, Jeddah 11:28 AM and Taif 11:29 AM. No interception, impact or casualties have been announced for this alert.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Interior Ministry repeats: filming or sharing interception and impact-site information brings legal liability",
-    "source": "Saudi Civil Defense (@SaudiDCD), citing the Interior Ministry",
-    "time": "11:29 AM",
-    "url": "https://x.com/SaudiDCD/status/2113910770111045892",
-    "body": "Civil Defense reposted the Interior Ministry warning that filming, publishing or circulating information about missile and drone interceptions or where debris falls exposes people to legal accountability.",
-    "airport": null
-   },
-   {
-    "tag": "CONFIRMED",
-    "title": "Al Ekhbariya tally: Houthis have fired 1,114 missiles and 1,166 drones toward the Kingdom since 2016",
-    "source": "Al Ekhbariya (@alekhbariyatv)",
-    "time": "10:20 AM",
-    "url": "https://x.com/alekhbariyatv/status/2113893341901258976",
-    "body": "Saudi state TV published a 10-year tally of Houthi launches toward Saudi Arabia: 1,114 missiles and 1,166 drones from 2016 to 2026.",
     "airport": null
    }
   ]
@@ -7408,7 +7346,7 @@
  "timeline": {
   "title": "Timeline: incidents, events and official announcements",
   "since": "2026-10-03",
-  "count": 759,
+  "count": 764,
   "items": [
    {
     "id": "seed-f8194ab2b4",
@@ -17045,6 +16983,19 @@
     "url": "https://x.com/SaudiDCD/status/2114007919708852589"
    },
    {
+    "id": "halt-RUH-1792858827",
+    "ts": "2026-10-24T19:20:27+03:00",
+    "date_label": "Sat 24 Oct",
+    "time_label": "7:20 PM",
+    "category": "airport",
+    "airport": "RUH",
+    "tag": "CONFIRMED",
+    "title": "RUH halt 7:20 PM\u201311:32 AM (972 min)",
+    "detail": "No takeoff or landing for 972+ minutes (FR24 board).",
+    "source": "RUH status tracker (FR24 board)",
+    "url": "https://ruh-status.onrender.com"
+   },
+   {
     "id": "news-77849824cd",
     "ts": "2026-10-24T20:11:02+03:00",
     "date_label": "Sat 24 Oct",
@@ -17277,149 +17228,146 @@
     "detail": "The coalition spokesman said air defenses intercepted and destroyed a ballistic missile launched by the Houthis toward Riyadh. It is the third interception over the Riyadh area since midnight, after drones at 1:00 AM and 4:52 AM. No damage ",
     "source": "Coalition spokesman (@CJFCSpox) / SPA / Al Ekhbariya",
     "url": "https://x.com/Spa_Eng/status/2114197175936700653"
+   },
+   {
+    "id": "halt-DMM-1792908694",
+    "ts": "2026-10-25T09:11:34+03:00",
+    "date_label": "Sun 25 Oct",
+    "time_label": "9:11 AM",
+    "category": "airport",
+    "airport": "DMM",
+    "tag": "CONFIRMED",
+    "title": "DMM halt 9:11\u20139:59 AM (48 min)",
+    "detail": "No takeoff or landing for 48+ minutes (FR24 board).",
+    "source": "DMM status tracker (FR24 board)",
+    "url": "https://ruh-status.onrender.com"
+   },
+   {
+    "id": "news-b9aecb8f37",
+    "ts": "2026-10-25T10:11:52+03:00",
+    "date_label": "Sun 25 Oct",
+    "time_label": "10:11 AM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Civil Defense: early-warning alerts in Khamis Mushait, Abha, Al-Namas and Tanomah, all-clear by 10:30 AM",
+    "detail": "The National Early Warning Platform alerted Khamis Mushait at 10:02 AM (all-clear 10:09 AM), then Khamis Mushait and Abha again at 10:10\u201310:11 AM and Al-Namas and Tanomah at about 10:26 AM. Civil Defense declared the danger passed in all fo",
+    "source": "Saudi Civil Defense (@SaudiDCD) / Al Ekhbariya",
+    "url": "https://x.com/SaudiDCD/status/2114253593486266664"
+   },
+   {
+    "id": "news-05c32e1989",
+    "ts": "2026-10-25T10:23:13+03:00",
+    "date_label": "Sun 25 Oct",
+    "time_label": "10:23 AM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Coalition: Houthi cruise missile fired toward Khamis Mushait intercepted and destroyed",
+    "detail": "The coalition said a cruise missile launched by the Houthis toward Khamis Mushait was intercepted and destroyed. No damage or casualties were stated.",
+    "source": "Coalition spokesman (@CJFCSpox) / SPA / Al Ekhbariya",
+    "url": "https://x.com/Spa_Eng/status/2114256449136366081"
+   },
+   {
+    "id": "news-0a66f3eda4",
+    "ts": "2026-10-25T11:46:28+03:00",
+    "date_label": "Sun 25 Oct",
+    "time_label": "11:46 AM",
+    "category": "official",
+    "airport": "",
+    "tag": "CONFIRMED",
+    "title": "Coalition: 10 Houthi ballistic missiles fired toward the Southern Region intercepted and destroyed",
+    "detail": "The coalition spokesman said air defenses intercepted and destroyed 10 ballistic missiles launched by the Houthis toward the Southern Region. No targets, damage or casualties were stated.",
+    "source": "Coalition spokesman (@CJFCSpox)",
+    "url": "https://x.com/CJFCSpox/status/2114277401764991226"
    }
   ]
  },
  "attacks": {
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
-  "prev_slot": "6:00 AM",
-  "window_start": "2026-10-25T06:00+03:00",
-  "window_end": "2026-10-25T08:45+03:00",
+  "prev_slot": "9:00 AM",
+  "window_start": "2026-10-25T09:00+03:00",
+  "window_end": "2026-10-25T11:51+03:00",
   "items": [
    {
     "date": "2026-10-25",
-    "time": "6:02 AM",
-    "city": "Riyadh",
-    "type": "alert",
-    "what": "Civil Defense National Early Warning Platform alert issued for Riyadh City",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2114190895541088350",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-25",
-    "time": "6:12 AM",
-    "city": "Riyadh",
-    "type": "all_clear",
-    "what": "Civil Defense: danger has passed in Riyadh City",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2114193544021778850",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-25",
-    "time": "6:21 AM",
-    "city": "Riyadh",
-    "type": "all_clear",
-    "what": "Coalition: a Houthi ballistic missile fired toward Riyadh was intercepted and destroyed; Civil Defense alert 6:02 AM, all-clear 6:12 AM; no damage or casualties stated",
-    "source": "Coalition spokesman (@CJFCSpox) / SPA",
-    "url": "https://x.com/Spa_Eng/status/2114197175936700653",
+    "time": "9:58 AM",
+    "city": "Khamis Mushait",
+    "type": "interception",
+    "what": "Coalition: Houthi cruise missile toward Khamis Mushait intercepted and destroyed; no damage stated",
+    "source": "Coalition spokesman / SPA",
+    "url": "https://x.com/Spa_Eng/status/2114256449136366081",
     "tag": "CONFIRMED",
     "casualties": "none reported"
    },
    {
     "date": "2026-10-25",
-    "time": "6:47 AM",
-    "city": "Dammam",
-    "type": "casualties",
-    "what": "Indian outlet reports an Indian expat killed in Saturday's Houthi drone strike on Dammam airport; not confirmed by Saudi officials",
-    "source": "Gulf Hindi News (@gulfhindinews)",
-    "url": "https://x.com/gulfhindinews/status/2114219751824097453",
-    "tag": "UNVERIFIED",
+    "time": "10:02 AM",
+    "city": "Khamis Mushait",
+    "type": "alert",
+    "what": "Civil Defense early-warning alert for Khamis Mushait (all-clear 10:09 AM)",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114251359746715676",
+    "tag": "CONFIRMED",
     "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:02 AM",
+    "city": "Abha",
+    "type": "all_clear",
+    "what": "Civil Defense: early-warning alerts in Khamis Mushait, Abha, Al-Namas and Tanomah, all-clear by 10:30 AM",
+    "source": "Saudi Civil Defense",
+    "url": "https://x.com/SaudiDCD/status/2114253593486266664",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:10 AM",
+    "city": "Abha and Khamis Mushait",
+    "type": "alert",
+    "what": "Civil Defense early-warning alerts for Abha and Khamis Mushait",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114253361998672063",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:26 AM",
+    "city": "Tanomah and Al-Namas",
+    "type": "alert",
+    "what": "Civil Defense early-warning alerts for Tanomah and Al-Namas",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114257337313595497",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:30 AM",
+    "city": "Abha, Khamis Mushait, Al-Namas, Tanomah",
+    "type": "all_clear",
+    "what": "Civil Defense declared the danger passed in Abha, Khamis Mushait, Al-Namas and Tanomah",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114258217643487484",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "11:46 AM",
+    "city": "Southern Region",
+    "type": "interception",
+    "what": "Coalition: 10 Houthi ballistic missiles fired toward the Southern Region intercepted and destroyed; no damage stated",
+    "source": "Coalition spokesman (@CJFCSpox)",
+    "url": "https://x.com/CJFCSpox/status/2114277401764991226",
+    "tag": "CONFIRMED",
+    "casualties": "none reported"
    }
   ],
   "last_24h": [
-   {
-    "date": "2026-10-24",
-    "time": "11:16 AM",
-    "city": "Jeddah",
-    "type": "alert",
-    "what": "Civil Defense early-warning alert issued for Jeddah Governorate",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113907377866965195",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-24",
-    "time": "11:16 AM",
-    "city": "Taif",
-    "type": "alert",
-    "what": "Civil Defense early-warning alert issued for Taif Governorate",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113907548441256248",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-24",
-    "time": "11:17 AM",
-    "city": "Yanbu",
-    "type": "alert",
-    "what": "Civil Defense early-warning alert issued for Yanbu Governorate",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113907797028970883",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-24",
-    "time": "11:20 AM",
-    "city": "Makkah",
-    "type": "alert",
-    "what": "Civil Defense early-warning alert issued for Mecca Province",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113908453135769656",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-24",
-    "time": "11:25 AM",
-    "city": "Makkah",
-    "type": "all_clear",
-    "what": "Civil Defense all-clear for Mecca Province; danger passed",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113909815600632086",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-24",
-    "time": "11:26 AM",
-    "city": "Yanbu",
-    "type": "all_clear",
-    "what": "Civil Defense all-clear for Yanbu; danger passed",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113910043435319386",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-24",
-    "time": "11:28 AM",
-    "city": "Jeddah",
-    "type": "all_clear",
-    "what": "Civil Defense all-clear for Jeddah; danger passed",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113910461242446241",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
-   {
-    "date": "2026-10-24",
-    "time": "11:29 AM",
-    "city": "Taif",
-    "type": "all_clear",
-    "what": "Civil Defense all-clear for Taif; danger passed",
-    "source": "Saudi Civil Defense (@SaudiDCD)",
-    "url": "https://x.com/SaudiDCD/status/2113910625608810925",
-    "tag": "CONFIRMED",
-    "casualties": null
-   },
    {
     "date": "2026-10-24",
     "time": "11:55 AM",
@@ -17606,18 +17554,95 @@
     "url": "https://x.com/gulfhindinews/status/2114219751824097453",
     "tag": "UNVERIFIED",
     "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "9:58 AM",
+    "city": "Khamis Mushait",
+    "type": "interception",
+    "what": "Coalition: Houthi cruise missile toward Khamis Mushait intercepted and destroyed; no damage stated",
+    "source": "Coalition spokesman / SPA",
+    "url": "https://x.com/Spa_Eng/status/2114256449136366081",
+    "tag": "CONFIRMED",
+    "casualties": "none reported"
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:02 AM",
+    "city": "Khamis Mushait",
+    "type": "alert",
+    "what": "Civil Defense early-warning alert for Khamis Mushait (all-clear 10:09 AM)",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114251359746715676",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:02 AM",
+    "city": "Abha",
+    "type": "all_clear",
+    "what": "Civil Defense: early-warning alerts in Khamis Mushait, Abha, Al-Namas and Tanomah, all-clear by 10:30 AM",
+    "source": "Saudi Civil Defense",
+    "url": "https://x.com/SaudiDCD/status/2114253593486266664",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:10 AM",
+    "city": "Abha and Khamis Mushait",
+    "type": "alert",
+    "what": "Civil Defense early-warning alerts for Abha and Khamis Mushait",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114253361998672063",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:26 AM",
+    "city": "Tanomah and Al-Namas",
+    "type": "alert",
+    "what": "Civil Defense early-warning alerts for Tanomah and Al-Namas",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114257337313595497",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "10:30 AM",
+    "city": "Abha, Khamis Mushait, Al-Namas, Tanomah",
+    "type": "all_clear",
+    "what": "Civil Defense declared the danger passed in Abha, Khamis Mushait, Al-Namas and Tanomah",
+    "source": "Saudi Civil Defense (@SaudiDCD)",
+    "url": "https://x.com/SaudiDCD/status/2114258217643487484",
+    "tag": "CONFIRMED",
+    "casualties": null
+   },
+   {
+    "date": "2026-10-25",
+    "time": "11:46 AM",
+    "city": "Southern Region",
+    "type": "interception",
+    "what": "Coalition: 10 Houthi ballistic missiles fired toward the Southern Region intercepted and destroyed; no damage stated",
+    "source": "Coalition spokesman (@CJFCSpox)",
+    "url": "https://x.com/CJFCSpox/status/2114277401764991226",
+    "tag": "CONFIRMED",
+    "casualties": "none reported"
    }
   ],
   "tally_24h": {
    "attack": 0,
-   "interception": 6,
-   "alert": 5,
-   "all_clear": 6,
+   "interception": 8,
+   "alert": 4,
+   "all_clear": 4,
    "debris": 4,
    "casualties": 3,
    "damage": 0
   },
-  "tally_text": "Last 24 hours: Interceptions 6, alerts 5, all-clears 6, debris falls 4, casualty reports 3.",
+  "tally_text": "Last 24 hours: Interceptions 8, alerts 4, all-clears 4, debris falls 4, casualty reports 3.",
   "none_text": null
  },
  "airports": {
@@ -17626,7 +17651,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": 2,
@@ -17637,38 +17662,38 @@
      "time": "11:34 AM",
      "flight": "HZA22",
      "city": "Belfast",
-     "minutes_ago": 15
+     "minutes_ago": 20
     },
     "last_landing": {
      "time": "7:20 PM",
      "flight": "SV993",
      "city": "Shenzhen",
-     "minutes_ago": 990
+     "minutes_ago": 995
     }
    },
    "cancellations": {
-    "total": 328,
+    "total": 329,
     "departures": 166,
-    "arrivals": 162,
+    "arrivals": 163,
     "pct_of_scheduled": 57,
     "scheduled": 576
    },
    "diversions": 4,
    "idle": {
     "last_movement": "2026-10-25T11:34:44+03:00",
-    "minutes_since_last_movement": 15,
+    "minutes_since_last_movement": 20,
     "movements_last_3h": 2,
-    "due_not_operated": 9,
-    "cancelled_in_window": 9,
+    "due_not_operated": 12,
+    "cancelled_in_window": 12,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-25T12:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 1006,
+    "board_rows": 1008,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -17760,7 +17785,7 @@
       "label": "12 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 0
+      "cancelled": 1
      },
      {
       "hour_start": "2026-10-25T01:00:00+03:00",
@@ -17837,32 +17862,32 @@
       "label": "11 AM",
       "takeoffs": 2,
       "landings": 0,
-      "cancelled": 19
+      "cancelled": 22
      }
     ],
     "totals": {
      "takeoffs": 2,
      "landings": 1,
-     "cancelled": 128
+     "cancelled": 132
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 19581
+      "minutes": 19586
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 16298
+      "minutes": 16303
      },
      {
       "start": "2026-10-21T04:33:54+03:00",
       "end": null,
       "label": "Halt since 4:33 AM",
-      "minutes": 6196
+      "minutes": 6201
      },
      {
       "start": "2026-10-24T01:19:49+03:00",
@@ -17907,13 +17932,13 @@
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 6196
+     "minutes": 6201
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 16298
+     "minutes": 16303
     }
    ],
    "ksa_bot": {
@@ -17931,23 +17956,23 @@
    "city": "Jeddah",
    "name": "King Abdulaziz International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 JED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 20,
-    "landings_last_hour": 3,
-    "takeoffs_last_30": 7,
-    "landings_last_30": 3,
+    "takeoffs_last_hour": 21,
+    "landings_last_hour": 4,
+    "takeoffs_last_30": 8,
+    "landings_last_30": 4,
     "last_takeoff": {
-     "time": "11:46 AM",
-     "flight": "TK97",
-     "city": "Istanbul",
-     "minutes_ago": 4
+     "time": "11:49 AM",
+     "flight": "SV1234",
+     "city": "Arar",
+     "minutes_ago": 6
     },
     "last_landing": {
-     "time": "11:47 AM",
-     "flight": "DV483",
-     "city": "Aktau",
+     "time": "11:51 AM",
+     "flight": "NB1501",
+     "city": "Benghazi",
      "minutes_ago": 3
     }
    },
@@ -17960,18 +17985,18 @@
    },
    "diversions": 3,
    "idle": {
-    "last_movement": "2026-10-25T11:47:20+03:00",
+    "last_movement": "2026-10-25T11:51:38+03:00",
     "minutes_since_last_movement": 3,
-    "movements_last_3h": 56,
-    "due_not_operated": 0,
-    "cancelled_in_window": 0,
+    "movements_last_3h": 59,
+    "due_not_operated": 1,
+    "cancelled_in_window": 1,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-25T12:00:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-25T07:45:00+03:00",
       "end": "2026-10-25T09:32:38+03:00",
-      "not_operated": 24
+      "not_operated": 23
      }
     ],
     "board_rows": 2000,
@@ -17979,7 +18004,7 @@
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -18146,15 +18171,15 @@
      {
       "hour_start": "2026-10-25T11:00:00+03:00",
       "label": "11 AM",
-      "takeoffs": 16,
-      "landings": 3,
-      "cancelled": 6
+      "takeoffs": 18,
+      "landings": 4,
+      "cancelled": 7
      }
     ],
     "totals": {
-     "takeoffs": 295,
-     "landings": 219,
-     "cancelled": 75
+     "takeoffs": 297,
+     "landings": 220,
+     "cancelled": 76
     },
     "halts": [
      {
@@ -18194,24 +18219,24 @@
    "city": "Dammam",
    "name": "King Fahd International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 1,
-    "landings_last_hour": 1,
-    "takeoffs_last_30": 1,
-    "landings_last_30": 1,
+    "landings_last_hour": 2,
+    "takeoffs_last_30": 0,
+    "landings_last_30": 2,
     "last_takeoff": {
      "time": "11:22 AM",
      "flight": "XY764",
      "city": "Tabuk",
-     "minutes_ago": 28
+     "minutes_ago": 33
     },
     "last_landing": {
-     "time": "11:43 AM",
-     "flight": "XY897",
-     "city": "Lucknow",
-     "minutes_ago": 7
+     "time": "11:46 AM",
+     "flight": "F31652",
+     "city": "Islamabad",
+     "minutes_ago": 8
     }
    },
    "cancellations": {
@@ -18223,20 +18248,20 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-25T11:43:16+03:00",
-    "minutes_since_last_movement": 7,
-    "movements_last_3h": 10,
+    "last_movement": "2026-10-25T11:46:55+03:00",
+    "minutes_since_last_movement": 8,
+    "movements_last_3h": 11,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-25T12:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 665,
+    "board_rows": 662,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -18404,13 +18429,13 @@
       "hour_start": "2026-10-25T11:00:00+03:00",
       "label": "11 AM",
       "takeoffs": 1,
-      "landings": 1,
+      "landings": 2,
       "cancelled": 3
      }
     ],
     "totals": {
      "takeoffs": 61,
-     "landings": 60,
+     "landings": 61,
      "cancelled": 47
     },
     "halts": [
@@ -18505,24 +18530,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 4,
     "landings_last_hour": 1,
-    "takeoffs_last_30": 2,
+    "takeoffs_last_30": 3,
     "landings_last_30": 1,
     "last_takeoff": {
      "time": "11:50 AM",
      "flight": "MS640",
      "city": "Cairo",
-     "minutes_ago": 0
+     "minutes_ago": 5
     },
     "last_landing": {
      "time": "11:36 AM",
      "flight": "GF179",
      "city": "Bahrain",
-     "minutes_ago": 13
+     "minutes_ago": 18
     }
    },
    "cancellations": {
@@ -18535,19 +18560,19 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-25T11:50:00+03:00",
-    "minutes_since_last_movement": 0,
-    "movements_last_3h": 14,
+    "minutes_since_last_movement": 5,
+    "movements_last_3h": 15,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-25T11:55:00+03:00",
+    "next_scheduled": "2026-10-25T12:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 628,
+    "board_rows": 627,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -18714,13 +18739,13 @@
      {
       "hour_start": "2026-10-25T11:00:00+03:00",
       "label": "11 AM",
-      "takeoffs": 2,
+      "takeoffs": 3,
       "landings": 1,
       "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 90,
+     "takeoffs": 91,
      "landings": 34,
      "cancelled": 12
     },
@@ -18798,7 +18823,7 @@
    "city": "Abha",
    "name": "Abha International",
    "pill": "HALTED",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 AHB boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -18809,13 +18834,13 @@
      "time": "8:55 AM",
      "flight": "SV8015",
      "city": "Medina",
-     "minutes_ago": 175
+     "minutes_ago": 180
     },
     "last_landing": {
      "time": "4:43 PM",
      "flight": "SV1648",
      "city": "Jeddah",
-     "minutes_ago": 1146
+     "minutes_ago": 1151
     }
    },
    "cancellations": {
@@ -18828,8 +18853,8 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-25T08:55:00+03:00",
-    "minutes_since_last_movement": 175,
-    "movements_last_3h": 1,
+    "minutes_since_last_movement": 180,
+    "movements_last_3h": 0,
     "due_not_operated": 7,
     "cancelled_in_window": 3,
     "diverted_in_window": 0,
@@ -18856,7 +18881,7 @@
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -19038,7 +19063,7 @@
       "start": "2026-10-21T07:04:00+03:00",
       "end": null,
       "label": "Halt since 7:04 AM",
-      "minutes": 6046
+      "minutes": 6051
      },
      {
       "start": "2026-10-24T12:14:00+03:00",
@@ -19080,7 +19105,7 @@
       "start": "2026-10-25T08:55:00+03:00",
       "end": null,
       "label": "Halt since 8:55 AM",
-      "minutes": 175
+      "minutes": 180
      }
     ]
    },
@@ -19089,7 +19114,7 @@
      "start": "2026-10-25T08:55:00+03:00",
      "end": null,
      "label": "Halt since 8:55 AM",
-     "minutes": 175
+     "minutes": 180
     },
     {
      "start": "2026-10-25T08:03:00+03:00",
@@ -19137,7 +19162,7 @@
    "city": "Jazan",
    "name": "King Abdullah bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 GIZ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": null,
@@ -19169,7 +19194,7 @@
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -19247,7 +19272,7 @@
       "label": "10 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 1
+      "cancelled": 2
      },
      {
       "hour_start": "2026-10-24T23:00:00+03:00",
@@ -19344,7 +19369,7 @@
     "totals": {
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 10
+     "cancelled": 11
     },
     "halts": []
    },
@@ -19364,7 +19389,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "QUIET",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -19375,7 +19400,7 @@
      "time": "6:05 AM",
      "flight": "SV8047",
      "city": "Al-Qassim",
-     "minutes_ago": 345
+     "minutes_ago": 350
     },
     "last_landing": null
    },
@@ -19389,7 +19414,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-25T06:05:00+03:00",
-    "minutes_since_last_movement": 345,
+    "minutes_since_last_movement": 350,
     "movements_last_3h": 0,
     "due_not_operated": 2,
     "cancelled_in_window": 1,
@@ -19407,7 +19432,7 @@
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -19589,7 +19614,7 @@
       "start": "2026-10-21T02:39:00+03:00",
       "end": null,
       "label": "Halt since 2:39 AM",
-      "minutes": 6311
+      "minutes": 6316
      },
      {
       "start": "2026-10-24T06:30:00+03:00",
@@ -19637,7 +19662,7 @@
       "start": "2026-10-25T06:05:00+03:00",
       "end": null,
       "label": "Halt since 6:05 AM",
-      "minutes": 345
+      "minutes": 350
      }
     ]
    },
@@ -19646,7 +19671,7 @@
      "start": "2026-10-25T06:05:00+03:00",
      "end": null,
      "label": "Halt since 6:05 AM",
-     "minutes": 345
+     "minutes": 350
     },
     {
      "start": "2026-10-25T02:26:00+03:00",
@@ -19694,7 +19719,7 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -19705,13 +19730,13 @@
      "time": "10:38 AM",
      "flight": "XY251",
      "city": "Amman",
-     "minutes_ago": 71
+     "minutes_ago": 76
     },
     "last_landing": {
      "time": "11:32 AM",
      "flight": "XY730",
      "city": "Dammam",
-     "minutes_ago": 18
+     "minutes_ago": 23
     }
    },
    "cancellations": {
@@ -19724,19 +19749,19 @@
    "diversions": 1,
    "idle": {
     "last_movement": "2026-10-25T11:32:20+03:00",
-    "minutes_since_last_movement": 18,
+    "minutes_since_last_movement": 23,
     "movements_last_3h": 7,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
     "next_scheduled": "2026-10-25T12:00:00+03:00",
     "qualifying_halts_6h": [],
-    "board_rows": 247,
+    "board_rows": 246,
     "current_gap_kind": null
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -20053,7 +20078,7 @@
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
    "pill": "QUIET",
-   "as_of": "2026-10-25T11:50:01+03:00",
+   "as_of": "2026-10-25T11:55:02+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -20064,13 +20089,13 @@
      "time": "10:31 AM",
      "flight": "XY785",
      "city": "Abha",
-     "minutes_ago": 79
+     "minutes_ago": 84
     },
     "last_landing": {
      "time": "4:03 PM",
      "flight": "F3331",
      "city": "Medina",
-     "minutes_ago": 1187
+     "minutes_ago": 1192
     }
    },
    "cancellations": {
@@ -20083,7 +20108,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-25T10:31:00+03:00",
-    "minutes_since_last_movement": 79,
+    "minutes_since_last_movement": 84,
     "movements_last_3h": 2,
     "due_not_operated": 1,
     "cancelled_in_window": 0,
@@ -20096,12 +20121,12 @@
       "not_operated": 13
      }
     ],
-    "board_rows": 129,
+    "board_rows": 130,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-24T12:00:00+03:00",
-    "end": "2026-10-25T11:50:01+03:00",
+    "end": "2026-10-25T11:55:02+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -20283,7 +20308,7 @@
       "start": "2026-10-21T04:29:00+03:00",
       "end": null,
       "label": "Halt since 4:29 AM",
-      "minutes": 6201
+      "minutes": 6206
      },
      {
       "start": "2026-10-24T12:03:00+03:00",
@@ -20343,7 +20368,7 @@
       "start": "2026-10-25T10:31:00+03:00",
       "end": null,
       "label": "Halt since 10:31 AM",
-      "minutes": 79
+      "minutes": 84
      }
     ]
    },
@@ -20352,7 +20377,7 @@
      "start": "2026-10-25T10:31:00+03:00",
      "end": null,
      "label": "Halt since 10:31 AM",
-     "minutes": 79
+     "minutes": 84
     },
     {
      "start": "2026-10-25T04:51:00+03:00",
