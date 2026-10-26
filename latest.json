@@ -1,19 +1,19 @@
 {
  "schema": 2,
- "generated_at": "2026-10-26T05:57:28+03:00",
+ "generated_at": "2026-10-26T06:00:08+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
   "title": "RUH & DMM Airport Status 6:00 AM AST: Riyadh HALTED, Dammam DISRUPTED",
   "slot": "6:00 AM",
-  "as_of": "2026-10-26T05:54:00+03:00",
-  "as_of_label": "5:54 AM",
+  "as_of": "2026-10-26T05:56:00+03:00",
+  "as_of_label": "5:56 AM",
   "date_long": "Monday 26 October 2026",
   "level": "HALTED",
-  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 20,490 minutes at 3:00 AM (NOTAM A3650/26); 1 takeoff and 0 landings since 12:00 AM: Saudia SV1053 to Jeddah at 1:31 AM (previous movement Saudia SV1046 at 11:22 PM). Dammam airport moving, no new halt since 12:00 AM.",
-  "headline": "Riyadh still formally halted, 1 movement(s) since 12 AM; no new attacks since 12 AM; Dammam moving",
+  "status_line": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 20,670 minutes at 6:00 AM (NOTAM A3650/26); 1 takeoff and 0 landings since 3:00 AM: Saudia SV1523 to Tabuk at 5:32 AM. Dammam airport moving after a 3:28 to 4:21 AM halt; 3 takeoffs and 8 landings since 3:00 AM.",
+  "headline": "Riyadh still halted since 11 Oct, 1 takeoff since 3 AM; missile toward Riyadh intercepted 4:07 AM; Dammam moving after 3:28-4:21 AM halt",
   "synopsis": "Riyadh airport halted since 9:29 PM Sunday 11 Oct, 20,490 minutes at 3:00 AM. NOTAM A3650/26 still requires prior GACA permission for every landing and departure, and GACA has announced no resumption of scheduled flights. Since the 12:00 AM edition: 1 takeoff and 0 landings; in the last hour 0 and 0. 1 takeoff and 0 landings since 12:00 AM: Saudia SV1053 to Jeddah at 1:31 AM (previous movement Saudia SV1046 at 11:22 PM). 72 Riyadh flights have been cancelled on Monday so far (17% of scheduled). No new attack, interception or Civil Defense alert was announced between 12:00 AM and 3:00 AM; the last incident was the Sunday 4:21 PM debris fall in Khamis Mushait and Ahad Rafidah that injured 2.",
-  "next_update": "6:00 AM",
+  "next_update": "9:00 AM",
   "kpis": {
    "cancelled_total": 72,
    "cancelled_departures": 28,
@@ -30,18 +30,18 @@
     "time": "5:32 AM",
     "flight": "SV1523",
     "city": "Tabuk",
-    "minutes_ago": 23
+    "minutes_ago": 25
    },
    "last_landing": {
     "time": "11:22 PM",
     "flight": "SV1046",
     "city": "Jeddah",
-    "minutes_ago": 392
+    "minutes_ago": 395
    }
   },
   "flow24": {
    "start": "2026-10-25T06:00:00+03:00",
-   "end": "2026-10-26T05:54:00+03:00",
+   "end": "2026-10-26T05:56:00+03:00",
    "start_label": "6:00 AM Sunday",
    "unit": "hour",
    "buckets": [
@@ -224,7 +224,7 @@
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 20665
+     "minutes": 20667
     },
     {
      "start": "2026-10-24T19:20:27+03:00",
@@ -960,7 +960,7 @@
   ]
  },
  "maritime": {
-  "updated": "2026-10-26T05:56:15.301784+03:00",
+  "updated": "2026-10-26T05:57:31.880345+03:00",
   "error": null,
   "source": "IMF PortWatch (daily transit calls, both directions)",
   "chokepoints": [
@@ -1025,20 +1025,20 @@
   }
  },
  "summary": {
-  "headline": "Riyadh still formally halted, 1 movement(s) since 12 AM; no new attacks since 12 AM; Dammam moving",
-  "as_of": "2026-10-26T05:54+03:00",
+  "headline": "Riyadh still halted since 11 Oct, 1 takeoff since 3 AM; missile toward Riyadh intercepted 4:07 AM; Dammam moving after 3:28-4:21 AM halt",
+  "as_of": "2026-10-26T05:56+03:00",
   "airports": [
    {
     "code": "RUH",
     "name": "Riyadh airport",
     "level": "HALTED",
-    "status_line": "No takeoff or landing since 9:29 PM (20665 min)."
+    "status_line": "No takeoff or landing since 9:29 PM (20667 min)."
    },
    {
     "code": "DMM",
     "name": "Dammam airport",
     "level": "DISRUPTED",
-    "status_line": "2 takeoffs and 1 landing in the last hour."
+    "status_line": "1 takeoff and 1 landing in the last hour."
    }
   ],
   "changed": [
@@ -1049,8 +1049,8 @@
  },
  "riyadh": {
   "level": "HALTED",
-  "status_line": "No takeoff or landing since 9:29 PM (20665 min).",
-  "as_of": "2026-10-26T05:54+03:00",
+  "status_line": "No takeoff or landing since 9:29 PM (20667 min).",
+  "as_of": "2026-10-26T05:56+03:00",
   "kpis": {
    "cancelled_total": 72,
    "cancelled_departures": 28,
@@ -1076,7 +1076,7 @@
   },
   "flow24": {
    "start": "2026-10-25T06:00+03:00",
-   "end": "2026-10-26T05:54+03:00",
+   "end": "2026-10-26T05:56+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-25T06:00+03:00",
@@ -1341,8 +1341,8 @@
  },
  "dammam": {
   "level": "DISRUPTED",
-  "status_line": "2 takeoffs and 1 landing in the last hour.",
-  "as_of": "2026-10-26T05:54+03:00",
+  "status_line": "1 takeoff and 1 landing in the last hour.",
+  "as_of": "2026-10-26T05:56+03:00",
   "kpis": {
    "cancelled_total": 18,
    "cancelled_departures": 8,
@@ -1351,7 +1351,7 @@
    "scheduled": 215,
    "diverted": 0,
    "diverted_to": [],
-   "takeoffs_last_hour": 2,
+   "takeoffs_last_hour": 1,
    "landings_last_hour": 1,
    "last_takeoff": {
     "time": "5:52 AM",
@@ -1366,7 +1366,7 @@
   },
   "flow24": {
    "start": "2026-10-25T06:00+03:00",
-   "end": "2026-10-26T05:54+03:00",
+   "end": "2026-10-26T05:56+03:00",
    "buckets": [
     {
      "hour_start": "2026-10-25T06:00+03:00",
@@ -5149,9 +5149,9 @@
   "brent": {
    "latest": {
     "date": "2026-10-26",
-    "usd": 109.76,
+    "usd": 109.73,
     "kind": "ICE Brent front-month futures, delayed quote",
-    "time": "2026-10-26T05:46+03:00"
+    "time": "2026-10-26T05:47+03:00"
    },
    "spot_latest": {
     "date": "2026-10-20",
@@ -6470,7 +6470,7 @@
     },
     {
      "date": "2026-10-26",
-     "usd": 109.76
+     "usd": 109.73
     }
    ],
    "source": "US EIA Europe Brent Spot Price FOB (RBRTE, daily, lagged several business days); latest = ICE Brent futures BZ=F via Yahoo Finance"
@@ -17946,7 +17946,7 @@
   "title": "Attacks, Interceptions & Alerts (KSA-wide)",
   "prev_slot": "3:00 AM",
   "window_start": "2026-10-26T03:00+03:00",
-  "window_end": "2026-10-26T05:54+03:00",
+  "window_end": "2026-10-26T05:56+03:00",
   "items": [
    {
     "date": "2026-10-26",
