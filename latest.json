@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-27T12:00:06+03:00",
+ "generated_at": "2026-10-27T12:00:55+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -552,7 +552,7 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-27T11:55:01+03:00",
+  "as_of": "2026-10-27T12:00:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
@@ -563,13 +563,13 @@
     "time": "9:26 AM",
     "flight": "SV1025",
     "city": "Jeddah",
-    "minutes_ago": 148
+    "minutes_ago": 153
    },
    "last_landing": {
     "time": "9:25 AM",
     "flight": "SV1022",
     "city": "Jeddah",
-    "minutes_ago": 150
+    "minutes_ago": 155
    }
   },
   "cancellations": {
@@ -638,17 +638,10 @@
    }
   ],
   "flow24": {
-   "start": "2026-10-26T12:00:00+03:00",
-   "end": "2026-10-27T11:55:01+03:00",
+   "start": "2026-10-26T13:00:00+03:00",
+   "end": "2026-10-27T12:00:01+03:00",
    "unit": "hour",
    "buckets": [
-    {
-     "hour_start": "2026-10-26T12:00:00+03:00",
-     "label": "12 PM",
-     "takeoffs": 0,
-     "landings": 0,
-     "cancelled": 9
-    },
     {
      "hour_start": "2026-10-26T13:00:00+03:00",
      "label": "1 PM",
@@ -809,31 +802,38 @@
      "takeoffs": 0,
      "landings": 0,
      "cancelled": 3
+    },
+    {
+     "hour_start": "2026-10-27T12:00:00+03:00",
+     "label": "12 PM",
+     "takeoffs": 0,
+     "landings": 0,
+     "cancelled": 0
     }
    ],
    "totals": {
     "takeoffs": 10,
     "landings": 12,
-    "cancelled": 157
+    "cancelled": 148
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 22466
+     "minutes": 22471
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 19183
+     "minutes": 19188
     },
     {
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 9081
+     "minutes": 9086
     },
     {
      "start": "2026-10-26T11:32:55+03:00",
@@ -899,7 +899,7 @@
      "start": "2026-10-27T09:26:45+03:00",
      "end": null,
      "label": "Halt since 9:26 AM",
-     "minutes": 148
+     "minutes": 153
     }
    ]
   },
@@ -908,7 +908,7 @@
     "start": "2026-10-27T09:26:45+03:00",
     "end": null,
     "label": "Halt since 9:26 AM",
-    "minutes": 148
+    "minutes": 153
    },
    {
     "start": "2026-10-27T07:34:32+03:00",
@@ -18841,7 +18841,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -18852,13 +18852,13 @@
      "time": "9:26 AM",
      "flight": "SV1025",
      "city": "Jeddah",
-     "minutes_ago": 148
+     "minutes_ago": 153
     },
     "last_landing": {
      "time": "9:25 AM",
      "flight": "SV1022",
      "city": "Jeddah",
-     "minutes_ago": 150
+     "minutes_ago": 155
     }
    },
    "cancellations": {
@@ -18871,12 +18871,12 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-27T09:26:45+03:00",
-    "minutes_since_last_movement": 148,
+    "minutes_since_last_movement": 153,
     "movements_last_3h": 3,
-    "due_not_operated": 23,
+    "due_not_operated": 25,
     "cancelled_in_window": 6,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-27T12:00:00+03:00",
+    "next_scheduled": "2026-10-27T12:05:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-27T05:19:21+03:00",
@@ -18886,24 +18886,17 @@
      {
       "start": "2026-10-27T09:26:45+03:00",
       "end": null,
-      "not_operated": 23
+      "not_operated": 25
      }
     ],
-    "board_rows": 953,
+    "board_rows": 954,
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 9
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -19064,31 +19057,38 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 3
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
      "takeoffs": 10,
      "landings": 12,
-     "cancelled": 157
+     "cancelled": 148
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 22466
+      "minutes": 22471
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 19183
+      "minutes": 19188
      },
      {
       "start": "2026-10-21T04:33:54+03:00",
       "end": null,
       "label": "Halt since 4:33 AM",
-      "minutes": 9081
+      "minutes": 9086
      },
      {
       "start": "2026-10-26T11:32:55+03:00",
@@ -19154,7 +19154,7 @@
       "start": "2026-10-27T09:26:45+03:00",
       "end": null,
       "label": "Halt since 9:26 AM",
-      "minutes": 148
+      "minutes": 153
      }
     ]
    },
@@ -19163,7 +19163,7 @@
      "start": "2026-10-27T09:26:45+03:00",
      "end": null,
      "label": "Halt since 9:26 AM",
-     "minutes": 148
+     "minutes": 153
     },
     {
      "start": "2026-10-27T07:34:32+03:00",
@@ -19211,24 +19211,24 @@
    "city": "Jeddah",
    "name": "King Abdulaziz International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 JED boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 8,
-    "landings_last_hour": 8,
-    "takeoffs_last_30": 4,
-    "landings_last_30": 3,
+    "landings_last_hour": 7,
+    "takeoffs_last_30": 3,
+    "landings_last_30": 1,
     "last_takeoff": {
      "time": "11:38 AM",
      "flight": "SV1256",
      "city": "Al-Qassim",
-     "minutes_ago": 17
+     "minutes_ago": 22
     },
     "last_landing": {
      "time": "11:42 AM",
      "flight": "XY448",
      "city": "Tabuk",
-     "minutes_ago": 13
+     "minutes_ago": 18
     }
    },
    "cancellations": {
@@ -19241,28 +19241,21 @@
    "diversions": 2,
    "idle": {
     "last_movement": "2026-10-27T11:42:18+03:00",
-    "minutes_since_last_movement": 13,
-    "movements_last_3h": 52,
-    "due_not_operated": 1,
-    "cancelled_in_window": 1,
+    "minutes_since_last_movement": 18,
+    "movements_last_3h": 50,
+    "due_not_operated": 2,
+    "cancelled_in_window": 2,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-27T12:00:00+03:00",
+    "next_scheduled": "2026-10-27T12:05:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 1800,
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 10,
-      "landings": 9,
-      "cancelled": 2
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -19423,12 +19416,19 @@
       "takeoffs": 8,
       "landings": 7,
       "cancelled": 2
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 1
      }
     ],
     "totals": {
-     "takeoffs": 279,
-     "landings": 164,
-     "cancelled": 72
+     "takeoffs": 269,
+     "landings": 155,
+     "cancelled": 71
     },
     "halts": [
      {
@@ -19468,24 +19468,24 @@
    "city": "Dammam",
    "name": "King Fahd International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 DMM boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 1,
-    "landings_last_hour": 2,
+    "landings_last_hour": 1,
     "takeoffs_last_30": 1,
     "landings_last_30": 1,
     "last_takeoff": {
      "time": "11:39 AM",
      "flight": "SV8026",
      "city": "Abha",
-     "minutes_ago": 15
+     "minutes_ago": 20
     },
     "last_landing": {
      "time": "11:42 AM",
      "flight": "XY731",
      "city": "Al-Qassim",
-     "minutes_ago": 13
+     "minutes_ago": 18
     }
    },
    "cancellations": {
@@ -19498,28 +19498,21 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-27T11:42:28+03:00",
-    "minutes_since_last_movement": 13,
+    "minutes_since_last_movement": 18,
     "movements_last_3h": 14,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-27T12:00:00+03:00",
+    "next_scheduled": "2026-10-27T12:15:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 609,
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 1,
-      "landings": 2,
-      "cancelled": 1
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -19680,12 +19673,19 @@
       "takeoffs": 1,
       "landings": 1,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 58,
-     "landings": 64,
-     "cancelled": 26
+     "takeoffs": 57,
+     "landings": 62,
+     "cancelled": 25
     },
     "halts": [
      {
@@ -19773,24 +19773,24 @@
    "city": "Madinah",
    "name": "Prince Mohammad bin Abdulaziz",
    "pill": "NORMAL",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 MED boards (automatic)",
    "movements": {
-    "takeoffs_last_hour": 2,
-    "landings_last_hour": 2,
-    "takeoffs_last_30": 2,
-    "landings_last_30": 1,
+    "takeoffs_last_hour": 4,
+    "landings_last_hour": 3,
+    "takeoffs_last_30": 3,
+    "landings_last_30": 2,
     "last_takeoff": {
-     "time": "11:46 AM",
-     "flight": "SM496",
+     "time": "11:55 AM",
+     "flight": "MS640",
      "city": "Cairo",
-     "minutes_ago": 9
+     "minutes_ago": 5
     },
     "last_landing": {
-     "time": "11:48 AM",
-     "flight": "IA611",
-     "city": "Kirkuk",
-     "minutes_ago": 6
+     "time": "11:57 AM",
+     "flight": "F3772",
+     "city": "Cairo",
+     "minutes_ago": 2
     }
    },
    "cancellations": {
@@ -19802,29 +19802,22 @@
    },
    "diversions": 0,
    "idle": {
-    "last_movement": "2026-10-27T11:48:32+03:00",
-    "minutes_since_last_movement": 6,
-    "movements_last_3h": 14,
+    "last_movement": "2026-10-27T11:57:36+03:00",
+    "minutes_since_last_movement": 2,
+    "movements_last_3h": 15,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-27T12:00:00+03:00",
+    "next_scheduled": "2026-10-27T12:05:00+03:00",
     "qualifying_halts_6h": [],
     "board_rows": 654,
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 5,
-      "landings": 0,
-      "cancelled": 1
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -19982,15 +19975,22 @@
      {
       "hour_start": "2026-10-27T11:00:00+03:00",
       "label": "11 AM",
-      "takeoffs": 2,
-      "landings": 2,
+      "takeoffs": 4,
+      "landings": 3,
       "cancelled": 1
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 91,
-     "landings": 45,
-     "cancelled": 19
+     "takeoffs": 88,
+     "landings": 46,
+     "cancelled": 18
     },
     "halts": []
    },
@@ -20023,7 +20023,7 @@
    "city": "Abha",
    "name": "Abha International",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 AHB boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -20034,13 +20034,13 @@
      "time": "10:46 AM",
      "flight": "NP144",
      "city": "Cairo",
-     "minutes_ago": 69
+     "minutes_ago": 74
     },
     "last_landing": {
      "time": "11:34 AM",
      "flight": "SV8854",
      "city": "Jeddah",
-     "minutes_ago": 20
+     "minutes_ago": 25
     }
    },
    "cancellations": {
@@ -20053,8 +20053,8 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-27T11:34:57+03:00",
-    "minutes_since_last_movement": 20,
-    "movements_last_3h": 5,
+    "minutes_since_last_movement": 25,
+    "movements_last_3h": 4,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
     "diverted_in_window": 0,
@@ -20075,17 +20075,10 @@
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -20246,6 +20239,13 @@
       "takeoffs": 0,
       "landings": 1,
       "cancelled": 1
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
@@ -20258,7 +20258,7 @@
       "start": "2026-10-21T07:04:00+03:00",
       "end": null,
       "label": "Halt since 7:04 AM",
-      "minutes": 8931
+      "minutes": 8936
      },
      {
       "start": "2026-10-26T11:32:00+03:00",
@@ -20584,7 +20584,7 @@
    "city": "Taif",
    "name": "Taif International",
    "pill": "QUIET",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 TIF boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -20595,7 +20595,7 @@
      "time": "10:30 PM",
      "flight": "NP102",
      "city": "Cairo",
-     "minutes_ago": 805
+     "minutes_ago": 810
     },
     "last_landing": null
    },
@@ -20609,7 +20609,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-26T22:30:00+03:00",
-    "minutes_since_last_movement": 805,
+    "minutes_since_last_movement": 810,
     "movements_last_3h": 0,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -20620,17 +20620,10 @@
     "current_gap_kind": "halt"
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 1
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -20791,19 +20784,26 @@
       "takeoffs": 0,
       "landings": 0,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
      "takeoffs": 3,
      "landings": 0,
-     "cancelled": 1
+     "cancelled": 0
     },
     "halts": [
      {
       "start": "2026-10-21T02:39:00+03:00",
       "end": null,
       "label": "Halt since 2:39 AM",
-      "minutes": 9196
+      "minutes": 9201
      },
      {
       "start": "2026-10-25T19:42:00+03:00",
@@ -20827,7 +20827,7 @@
       "start": "2026-10-26T22:30:00+03:00",
       "end": null,
       "label": "Halt since 10:30 PM",
-      "minutes": 805
+      "minutes": 810
      }
     ]
    },
@@ -20836,7 +20836,7 @@
      "start": "2026-10-26T22:30:00+03:00",
      "end": null,
      "label": "Halt since 10:30 PM",
-     "minutes": 805
+     "minutes": 810
     },
     {
      "start": "2026-10-26T20:08:00+03:00",
@@ -20884,7 +20884,7 @@
    "city": "Qassim",
    "name": "Prince Naif bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 ELQ boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -20895,13 +20895,13 @@
      "time": "10:51 AM",
      "flight": "XY731",
      "city": "Dammam",
-     "minutes_ago": 64
+     "minutes_ago": 69
     },
     "last_landing": {
      "time": "11:45 AM",
      "flight": "SV8039",
      "city": "Tabuk",
-     "minutes_ago": 9
+     "minutes_ago": 14
     }
    },
    "cancellations": {
@@ -20914,7 +20914,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-27T11:45:39+03:00",
-    "minutes_since_last_movement": 9,
+    "minutes_since_last_movement": 14,
     "movements_last_3h": 6,
     "due_not_operated": 1,
     "cancelled_in_window": 1,
@@ -20936,17 +20936,10 @@
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 3,
-      "landings": 1,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -21107,11 +21100,18 @@
       "takeoffs": 0,
       "landings": 1,
       "cancelled": 1
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
-     "takeoffs": 44,
-     "landings": 18,
+     "takeoffs": 41,
+     "landings": 17,
      "cancelled": 4
     },
     "halts": [
@@ -21236,7 +21236,7 @@
    "city": "Tabuk",
    "name": "Prince Sultan bin Abdulaziz",
    "pill": "DISRUPTED",
-   "as_of": "2026-10-27T11:55:01+03:00",
+   "as_of": "2026-10-27T12:00:01+03:00",
    "source": "Flightradar24 TUU boards (automatic)",
    "movements": {
     "takeoffs_last_hour": 1,
@@ -21247,13 +21247,13 @@
      "time": "11:32 AM",
      "flight": "SV1542",
      "city": "Jeddah",
-     "minutes_ago": 23
+     "minutes_ago": 28
     },
     "last_landing": {
      "time": "1:41 AM",
      "flight": "MS811",
      "city": "Cairo",
-     "minutes_ago": 614
+     "minutes_ago": 619
     }
    },
    "cancellations": {
@@ -21266,7 +21266,7 @@
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-27T11:32:00+03:00",
-    "minutes_since_last_movement": 23,
+    "minutes_since_last_movement": 28,
     "movements_last_3h": 3,
     "due_not_operated": 0,
     "cancelled_in_window": 0,
@@ -21279,21 +21279,14 @@
       "not_operated": 5
      }
     ],
-    "board_rows": 146,
+    "board_rows": 145,
     "current_gap_kind": null
    },
    "flow24": {
-    "start": "2026-10-26T12:00:00+03:00",
-    "end": "2026-10-27T11:55:01+03:00",
+    "start": "2026-10-26T13:00:00+03:00",
+    "end": "2026-10-27T12:00:01+03:00",
     "unit": "hour",
     "buckets": [
-     {
-      "hour_start": "2026-10-26T12:00:00+03:00",
-      "label": "12 PM",
-      "takeoffs": 0,
-      "landings": 0,
-      "cancelled": 0
-     },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
@@ -21454,6 +21447,13 @@
       "takeoffs": 1,
       "landings": 0,
       "cancelled": 0
+     },
+     {
+      "hour_start": "2026-10-27T12:00:00+03:00",
+      "label": "12 PM",
+      "takeoffs": 0,
+      "landings": 0,
+      "cancelled": 0
      }
     ],
     "totals": {
@@ -21466,7 +21466,7 @@
       "start": "2026-10-21T04:29:00+03:00",
       "end": null,
       "label": "Halt since 4:29 AM",
-      "minutes": 9086
+      "minutes": 9091
      },
      {
       "start": "2026-10-26T11:51:00+03:00",
