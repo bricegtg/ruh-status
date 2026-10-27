@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generated_at": "2026-10-27T03:26:15+03:00",
+ "generated_at": "2026-10-27T03:38:48+03:00",
  "airport": "King Khalid International Airport (RUH), Riyadh",
  "cancel_basis": "Flightradar24 RUH board count: departures + arrivals scheduled on the local day (midnight to midnight, Riyadh time), including flights still to come, identical rows de-duplicated. Percent = share of flights scheduled today.",
  "report": {
@@ -897,7 +897,7 @@
   "notams": null
  },
  "live": {
-  "as_of": "2026-10-27T03:23:18+03:00",
+  "as_of": "2026-10-27T03:35:01+03:00",
   "source": "Flightradar24 RUH boards (automatic, no editor)",
   "movements": {
    "takeoffs_last_hour": 0,
@@ -908,20 +908,20 @@
     "time": "12:04 AM",
     "flight": "SV1457",
     "city": "Medina",
-    "minutes_ago": 199
+    "minutes_ago": 211
    },
    "last_landing": {
     "time": "12:13 AM",
     "flight": "SV312",
     "city": "Cairo",
-    "minutes_ago": 190
+    "minutes_ago": 202
    }
   },
   "cancellations": {
-   "total": 43,
-   "departures": 21,
+   "total": 45,
+   "departures": 23,
    "arrivals": 22,
-   "pct_of_scheduled": 14,
+   "pct_of_scheduled": 15,
    "scheduled": 305
   },
   "diversions": 0,
@@ -984,7 +984,7 @@
   ],
   "flow24": {
    "start": "2026-10-26T04:00:00+03:00",
-   "end": "2026-10-27T03:23:18+03:00",
+   "end": "2026-10-27T03:35:01+03:00",
    "unit": "hour",
    "buckets": [
     {
@@ -992,91 +992,91 @@
      "label": "4 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 6
     },
     {
      "hour_start": "2026-10-26T05:00:00+03:00",
      "label": "5 AM",
-     "takeoffs": 0,
+     "takeoffs": 1,
      "landings": 0,
-     "cancelled": 1
+     "cancelled": 5
     },
     {
      "hour_start": "2026-10-26T06:00:00+03:00",
      "label": "6 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 1
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-26T07:00:00+03:00",
      "label": "7 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 4
     },
     {
      "hour_start": "2026-10-26T08:00:00+03:00",
      "label": "8 AM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 6
+     "cancelled": 10
     },
     {
      "hour_start": "2026-10-26T09:00:00+03:00",
      "label": "9 AM",
      "takeoffs": 0,
      "landings": 2,
-     "cancelled": 3
+     "cancelled": 7
     },
     {
      "hour_start": "2026-10-26T10:00:00+03:00",
      "label": "10 AM",
-     "takeoffs": 0,
+     "takeoffs": 1,
      "landings": 0,
-     "cancelled": 7
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-26T11:00:00+03:00",
      "label": "11 AM",
-     "takeoffs": 0,
+     "takeoffs": 1,
      "landings": 0,
-     "cancelled": 4
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-26T12:00:00+03:00",
      "label": "12 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 5
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-26T13:00:00+03:00",
      "label": "1 PM",
      "takeoffs": 0,
      "landings": 1,
-     "cancelled": 5
+     "cancelled": 11
     },
     {
      "hour_start": "2026-10-26T14:00:00+03:00",
      "label": "2 PM",
      "takeoffs": 0,
      "landings": 1,
-     "cancelled": 6
+     "cancelled": 8
     },
     {
      "hour_start": "2026-10-26T15:00:00+03:00",
      "label": "3 PM",
      "takeoffs": 1,
      "landings": 1,
-     "cancelled": 8
+     "cancelled": 9
     },
     {
      "hour_start": "2026-10-26T16:00:00+03:00",
      "label": "4 PM",
      "takeoffs": 0,
      "landings": 0,
-     "cancelled": 2
+     "cancelled": 3
     },
     {
      "hour_start": "2026-10-26T17:00:00+03:00",
@@ -1109,7 +1109,7 @@
     {
      "hour_start": "2026-10-26T21:00:00+03:00",
      "label": "9 PM",
-     "takeoffs": 0,
+     "takeoffs": 1,
      "landings": 3,
      "cancelled": 3
     },
@@ -1157,40 +1157,52 @@
     }
    ],
    "totals": {
-    "takeoffs": 7,
+    "takeoffs": 11,
     "landings": 10,
-    "cancelled": 86
+    "cancelled": 136
    },
    "halts": [
     {
      "start": "2026-10-11T21:29:30+03:00",
      "end": null,
      "label": "Halt since 9:29 PM",
-     "minutes": 21954
+     "minutes": 21966
     },
     {
      "start": "2026-10-14T04:11:57+03:00",
      "end": null,
      "label": "Halt since 4:11 AM",
-     "minutes": 18671
+     "minutes": 18683
     },
     {
      "start": "2026-10-21T04:33:54+03:00",
      "end": null,
      "label": "Halt since 4:33 AM",
-     "minutes": 8569
+     "minutes": 8581
     },
     {
-     "start": "2026-10-25T23:22:23+03:00",
+     "start": "2026-10-26T01:31:14+03:00",
+     "end": "2026-10-26T05:32:04+03:00",
+     "label": "Halt 1:31\u20135:32 AM",
+     "minutes": 241
+    },
+    {
+     "start": "2026-10-26T05:32:04+03:00",
      "end": "2026-10-26T09:20:44+03:00",
-     "label": "Halt 11:22 PM\u20139:20 AM",
-     "minutes": 598
+     "label": "Halt 5:32\u20139:20 AM",
+     "minutes": 229
     },
     {
      "start": "2026-10-26T09:37:41+03:00",
+     "end": "2026-10-26T10:49:34+03:00",
+     "label": "Halt 9:37\u201310:49 AM",
+     "minutes": 72
+    },
+    {
+     "start": "2026-10-26T11:32:55+03:00",
      "end": "2026-10-26T13:57:55+03:00",
-     "label": "Halt 9:37 AM\u20131:57 PM",
-     "minutes": 260
+     "label": "Halt 11:32 AM\u20131:57 PM",
+     "minutes": 145
     },
     {
      "start": "2026-10-26T13:57:55+03:00",
@@ -1217,16 +1229,16 @@
      "minutes": 132
     },
     {
-     "start": "2026-10-26T21:58:34+03:00",
+     "start": "2026-10-26T21:59:59+03:00",
      "end": "2026-10-26T23:32:26+03:00",
-     "label": "Halt 9:58\u201311:32 PM",
-     "minutes": 94
+     "label": "Halt 9:59\u201311:32 PM",
+     "minutes": 92
     },
     {
      "start": "2026-10-27T00:13:29+03:00",
      "end": null,
      "label": "Halt since 12:13 AM",
-     "minutes": 190
+     "minutes": 202
     }
    ]
   },
@@ -1235,13 +1247,13 @@
     "start": "2026-10-27T00:13:29+03:00",
     "end": null,
     "label": "Halt since 12:13 AM",
-    "minutes": 190
+    "minutes": 202
    },
    {
-    "start": "2026-10-26T21:58:34+03:00",
+    "start": "2026-10-26T21:59:59+03:00",
     "end": "2026-10-26T23:32:26+03:00",
-    "label": "Halt 9:58\u201311:32 PM",
-    "minutes": 94
+    "label": "Halt 9:59\u201311:32 PM",
+    "minutes": 92
    },
    {
     "start": "2026-10-26T19:31:12+03:00",
@@ -19300,7 +19312,7 @@
    "city": "Riyadh",
    "name": "King Khalid International",
    "pill": "HALTED",
-   "as_of": "2026-10-27T03:23:18+03:00",
+   "as_of": "2026-10-27T03:35:01+03:00",
    "source": "Flightradar24 RUH boards (automatic, no editor)",
    "movements": {
     "takeoffs_last_hour": 0,
@@ -19311,31 +19323,31 @@
      "time": "12:04 AM",
      "flight": "SV1457",
      "city": "Medina",
-     "minutes_ago": 199
+     "minutes_ago": 211
     },
     "last_landing": {
      "time": "12:13 AM",
      "flight": "SV312",
      "city": "Cairo",
-     "minutes_ago": 190
+     "minutes_ago": 202
     }
    },
    "cancellations": {
-    "total": 43,
-    "departures": 21,
+    "total": 45,
+    "departures": 23,
     "arrivals": 22,
-    "pct_of_scheduled": 14,
+    "pct_of_scheduled": 15,
     "scheduled": 305
    },
    "diversions": 0,
    "idle": {
     "last_movement": "2026-10-27T00:13:29+03:00",
-    "minutes_since_last_movement": 190,
+    "minutes_since_last_movement": 202,
     "movements_last_3h": 0,
-    "due_not_operated": 31,
+    "due_not_operated": 27,
     "cancelled_in_window": 7,
     "diverted_in_window": 0,
-    "next_scheduled": "2026-10-27T03:30:00+03:00",
+    "next_scheduled": "2026-10-27T03:50:00+03:00",
     "qualifying_halts_6h": [
      {
       "start": "2026-10-26T19:31:12+03:00",
@@ -19343,7 +19355,7 @@
       "not_operated": 37
      },
      {
-      "start": "2026-10-26T21:58:34+03:00",
+      "start": "2026-10-26T21:59:59+03:00",
       "end": "2026-10-26T23:32:26+03:00",
       "not_operated": 26
      },
@@ -19353,12 +19365,12 @@
       "not_operated": 31
      }
     ],
-    "board_rows": 848,
+    "board_rows": 1048,
     "current_gap_kind": "halt"
    },
    "flow24": {
     "start": "2026-10-26T04:00:00+03:00",
-    "end": "2026-10-27T03:23:18+03:00",
+    "end": "2026-10-27T03:35:01+03:00",
     "unit": "hour",
     "buckets": [
      {
@@ -19366,91 +19378,91 @@
       "label": "4 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 2
+      "cancelled": 6
      },
      {
       "hour_start": "2026-10-26T05:00:00+03:00",
       "label": "5 AM",
-      "takeoffs": 0,
+      "takeoffs": 1,
       "landings": 0,
-      "cancelled": 1
+      "cancelled": 5
      },
      {
       "hour_start": "2026-10-26T06:00:00+03:00",
       "label": "6 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 1
+      "cancelled": 8
      },
      {
       "hour_start": "2026-10-26T07:00:00+03:00",
       "label": "7 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 2
+      "cancelled": 4
      },
      {
       "hour_start": "2026-10-26T08:00:00+03:00",
       "label": "8 AM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 6
+      "cancelled": 10
      },
      {
       "hour_start": "2026-10-26T09:00:00+03:00",
       "label": "9 AM",
       "takeoffs": 0,
       "landings": 2,
-      "cancelled": 3
+      "cancelled": 7
      },
      {
       "hour_start": "2026-10-26T10:00:00+03:00",
       "label": "10 AM",
-      "takeoffs": 0,
+      "takeoffs": 1,
       "landings": 0,
-      "cancelled": 7
+      "cancelled": 11
      },
      {
       "hour_start": "2026-10-26T11:00:00+03:00",
       "label": "11 AM",
-      "takeoffs": 0,
+      "takeoffs": 1,
       "landings": 0,
-      "cancelled": 4
+      "cancelled": 11
      },
      {
       "hour_start": "2026-10-26T12:00:00+03:00",
       "label": "12 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 5
+      "cancelled": 9
      },
      {
       "hour_start": "2026-10-26T13:00:00+03:00",
       "label": "1 PM",
       "takeoffs": 0,
       "landings": 1,
-      "cancelled": 5
+      "cancelled": 11
      },
      {
       "hour_start": "2026-10-26T14:00:00+03:00",
       "label": "2 PM",
       "takeoffs": 0,
       "landings": 1,
-      "cancelled": 6
+      "cancelled": 8
      },
      {
       "hour_start": "2026-10-26T15:00:00+03:00",
       "label": "3 PM",
       "takeoffs": 1,
       "landings": 1,
-      "cancelled": 8
+      "cancelled": 9
      },
      {
       "hour_start": "2026-10-26T16:00:00+03:00",
       "label": "4 PM",
       "takeoffs": 0,
       "landings": 0,
-      "cancelled": 2
+      "cancelled": 3
      },
      {
       "hour_start": "2026-10-26T17:00:00+03:00",
@@ -19483,7 +19495,7 @@
      {
       "hour_start": "2026-10-26T21:00:00+03:00",
       "label": "9 PM",
-      "takeoffs": 0,
+      "takeoffs": 1,
       "landings": 3,
       "cancelled": 3
      },
@@ -19531,40 +19543,52 @@
      }
     ],
     "totals": {
-     "takeoffs": 7,
+     "takeoffs": 11,
      "landings": 10,
-     "cancelled": 86
+     "cancelled": 136
     },
     "halts": [
      {
       "start": "2026-10-11T21:29:30+03:00",
       "end": null,
       "label": "Halt since 9:29 PM",
-      "minutes": 21954
+      "minutes": 21966
      },
      {
       "start": "2026-10-14T04:11:57+03:00",
       "end": null,
       "label": "Halt since 4:11 AM",
-      "minutes": 18671
+      "minutes": 18683
      },
      {
       "start": "2026-10-21T04:33:54+03:00",
       "end": null,
       "label": "Halt since 4:33 AM",
-      "minutes": 8569
+      "minutes": 8581
      },
      {
-      "start": "2026-10-25T23:22:23+03:00",
+      "start": "2026-10-26T01:31:14+03:00",
+      "end": "2026-10-26T05:32:04+03:00",
+      "label": "Halt 1:31\u20135:32 AM",
+      "minutes": 241
+     },
+     {
+      "start": "2026-10-26T05:32:04+03:00",
       "end": "2026-10-26T09:20:44+03:00",
-      "label": "Halt 11:22 PM\u20139:20 AM",
-      "minutes": 598
+      "label": "Halt 5:32\u20139:20 AM",
+      "minutes": 229
      },
      {
       "start": "2026-10-26T09:37:41+03:00",
+      "end": "2026-10-26T10:49:34+03:00",
+      "label": "Halt 9:37\u201310:49 AM",
+      "minutes": 72
+     },
+     {
+      "start": "2026-10-26T11:32:55+03:00",
       "end": "2026-10-26T13:57:55+03:00",
-      "label": "Halt 9:37 AM\u20131:57 PM",
-      "minutes": 260
+      "label": "Halt 11:32 AM\u20131:57 PM",
+      "minutes": 145
      },
      {
       "start": "2026-10-26T13:57:55+03:00",
@@ -19591,16 +19615,16 @@
       "minutes": 132
      },
      {
-      "start": "2026-10-26T21:58:34+03:00",
+      "start": "2026-10-26T21:59:59+03:00",
       "end": "2026-10-26T23:32:26+03:00",
-      "label": "Halt 9:58\u201311:32 PM",
-      "minutes": 94
+      "label": "Halt 9:59\u201311:32 PM",
+      "minutes": 92
      },
      {
       "start": "2026-10-27T00:13:29+03:00",
       "end": null,
       "label": "Halt since 12:13 AM",
-      "minutes": 190
+      "minutes": 202
      }
     ]
    },
@@ -19609,13 +19633,13 @@
      "start": "2026-10-27T00:13:29+03:00",
      "end": null,
      "label": "Halt since 12:13 AM",
-     "minutes": 190
+     "minutes": 202
     },
     {
-     "start": "2026-10-26T21:58:34+03:00",
+     "start": "2026-10-26T21:59:59+03:00",
      "end": "2026-10-26T23:32:26+03:00",
-     "label": "Halt 9:58\u201311:32 PM",
-     "minutes": 94
+     "label": "Halt 9:59\u201311:32 PM",
+     "minutes": 92
     },
     {
      "start": "2026-10-26T19:31:12+03:00",
